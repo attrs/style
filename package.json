@@ -8,12 +8,13 @@
   "author": "joje <joje.attrs@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prepublish": "gulp",
     "dev": "parcel wsg/index.html",
     "dist": "parcel build entry.js -d build/output"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.1",
