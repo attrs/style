@@ -1,7 +1,7 @@
 {
   "name": "@attrs/style",
   "version": "0.0.0",
-  "description": "attrs bootstrap@5 theme",
+  "description": "attrs css theme",
   "main": "lib/index.js",
   "homepage": "https://github.com/attrs/style",
   "repository": "attrs/style",
@@ -11,14 +11,17 @@
     "dev": "parcel wsg/index.html",
     "dist": "parcel build entry.js -d build/output"
   },
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.16.0"
-  },
   "devDependencies": {
-    "autoprefixer": "^9.7.1",
-    "parcel": "^2.0.0-alpha.2.1",
-    "sass": "^1.23.3"
+    "autoprefixer": "^9.7.4",
+    "parcel-bundler": "^1.12.4",
+    "postcss-custom-properties": "^9.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-modules": "^1.5.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.2.0"
+  },
+  "dependencies": {
+    "extensions": "^4.1.2"
   }
 }
