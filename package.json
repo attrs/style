@@ -8,17 +8,23 @@
   "author": "joje <joje.attrs@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel wsg/index.html",
+    "dev": "parcel serve wsg/index.html",
     "dist": "parcel build entry.js -d build/output"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.0-alpha.3.1",
+    "postcss-apply": "^0.12.0",
     "postcss-custom-properties": "^9.1.1",
     "postcss-import": "^12.0.1",
     "postcss-modules": "^1.5.0",
     "postcss-nested": "^4.2.1",
+    "postcss-parcel-import": "0.0.2",
     "postcss-preset-env": "^6.7.0",
+    "postcss-url": "^8.0.0",
     "tailwindcss": "^1.2.0"
+  },
+  "dependencies": {
+    "extensions": "^4.1.2"
   }
 }
