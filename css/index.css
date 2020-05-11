@@ -1,7 +1,7 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "./extensions/x-page";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './extensions/x-page';
 
 :root {
   --color-primary: #5c6ac4;
@@ -9,6 +9,17 @@
   --color-border: #efefef;
 }
 
-a, a:active, a:focus, button, button:active, button:focus {
- outline: none;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a,
+a:active,
+a:focus,
+button,
+button:active,
+button:focus {
+  outline: none;
 }

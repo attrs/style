@@ -1,6 +1,6 @@
 {
   "name": "@attrs/style",
-  "version": "0.0.0",
+  "version": "0.6.0",
   "description": "attrs css theme",
   "main": "lib/index.js",
   "homepage": "https://github.com/attrs/style",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel serve wsg/index.html",
-    "dist": "parcel build entry.js -d build/output"
+    "_dist": "parcel build entry.js -d build/output"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
