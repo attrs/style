@@ -30,13 +30,7 @@ jspm_packages
 \#*\#
 \.#*
 .projectile
-
-
-
-assets
-buildpath.js
-.test/
-lib/
+.test
 .cache
-dist
 .parcel-cache
+dist
