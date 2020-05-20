@@ -1,0 +1,167 @@
+// checkbox
+input.checkbox {
+  display: none;
+  user-select: none;
+  
+  & + label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 28px;
+    font-size: 12px;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+  & + label:before {
+    content:"";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    border: 2px solid #4C4E53;
+    border-radius: 2px;
+    vertical-align: middle;
+    background: white;
+  }
+  
+  &:checked + label:before {
+    font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 12px;
+    color: #4C4E53;
+    text-align: center;
+    line-height: 17px;
+  }
+  
+  &.checkbox-default + label:before {
+    border-color: @brand-default;
+    color: @brand-default;
+  }
+  
+  &.checkbox-primary + label:before {
+    border-color: @brand-primary;
+    color: @brand-primary;
+  }
+  
+  &.checkbox-info + label:before {
+    border-color: @brand-info;
+    color: @brand-info;
+  }
+  
+  &.checkbox-success + label:before {
+    border-color: @brand-success;
+    color: @brand-success;
+  }
+  
+  &.checkbox-warning + label:before {
+    border-color: @brand-warning;
+    color: @brand-warning;
+  }
+  
+  &.checkbox-danger + label:before {
+    border-color: @brand-danger;
+    color: @brand-danger;
+  }
+  
+  &.checkbox-system + label:before {
+    border-color: @brand-system;
+    color: @brand-system;
+  }
+}
+
+
+
+.checkbox-agreement {
+  display: block;
+  padding: 8px 0;
+  
+  input[type="checkbox"] {
+    display: none;
+    
+    & + label {
+      font-weight: normal;
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      margin-bottom: 0;
+      line-height: 28px;
+      padding-left: 38px;
+    }
+    
+    & + label:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      
+      width: 28px;
+      height: 28px;
+      margin-top: -5px;
+      margin-right: 10px;
+      border: 2px solid fade(@brand-primary, 60%);
+      border-radius: 50%;
+      background: white;
+    }
+    
+    & + label:before {
+      font-family: "FontAwesome";
+      content: "\f00c";
+      color: @brand-primary;
+      text-align: center;
+      line-height: 26px;
+      font-size: 0;
+    }
+    
+    &:checked + label:before {
+      font-size: 15px;
+    }
+  }
+  
+  a {
+    color: @brand-primary;
+    margin-left: 8px;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 5px 0;
+    //text-decoration: underline;
+  }
+  
+  &.checkbox-default > input[type="checkbox"] + label:before {
+    border-color: @brand-default;
+    color: @brand-default;
+  }
+  
+  &.checkbox-primary > input[type="checkbox"] + label:before {
+    border-color: @brand-primary;
+    color: @brand-primary;
+  }
+  
+  &.checkbox-info > input[type="checkbox"] + label:before {
+    border-color: @brand-info;
+    color: @brand-info;
+  }
+  
+  &.checkbox-success > input[type="checkbox"] + label:before {
+    border-color: @brand-success;
+    color: @brand-success;
+  }
+  
+  &.checkbox-warning > input[type="checkbox"] + label:before {
+    border-color: @brand-warning;
+    color: @brand-warning;
+  }
+  
+  &.checkbox-danger > input[type="checkbox"] + label:before {
+    border-color: @brand-danger;
+    color: @brand-danger;
+  }
+  
+  &.checkbox-system > input[type="checkbox"] + label:before {
+    border-color: @brand-system;
+    color: @brand-system;
+  }
+}

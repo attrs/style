@@ -1,0 +1,139 @@
+.btn {
+  @apply font-bold py-2 px-4 rounded mx-1;
+  transition: color, background-color .35s;
+
+  & > i.icon, & > i.fa {
+    @apply text-white;
+    transition: colorm opacity .35s;
+  }
+
+  &:focus {
+    @apply outline-none shadow-outline-none !important;
+  }
+
+  &:hover {
+    & > i.icon, & > i.fa {
+      opacity: .7;
+    }
+  }
+}
+
+.btn-default {
+  @apply text-default !important;
+
+  &:hover {
+    @apply bg-gray-100 !important;
+  }
+
+  &:focus {
+    @apply outline-none shadow-outline-gray !important;
+  }
+}
+
+.btn-primary {
+  @apply bg-primary text-white !important;
+
+  &:hover {
+    @apply bg-primary-dark !important;
+  }
+
+  &:focus {
+    @apply outline-none shadow-outline-primary !important;
+  }
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white !important;
+
+  &:hover {
+    @apply bg-secondary-dark !important;
+  }
+
+  &:focus {
+    @apply outline-none shadow-outline-secondary !important;
+  }
+}
+
+.btn-info {
+  @apply bg-info text-white !important;
+
+  &:hover {
+    @apply bg-info-dark !important;
+  }
+
+  &:focus {
+    @apply outline-none shadow-outline-info !important;
+  }
+}
+
+.btn-success {
+  @apply bg-success text-white !important;
+
+  &:hover {
+    @apply bg-success-dark !important;
+  }
+
+  &:focus {
+    @apply outline-none shadow-outline-success !important;
+  }
+}
+
+.btn-warning {
+  @apply bg-warning text-white !important;
+
+  &:hover {
+    @apply bg-warning-dark !important;
+  }
+
+  &:focus {
+    @apply outline-none shadow-outline-warning !important;
+  }
+}
+
+.btn-danger {
+  @apply bg-danger text-white !important;
+
+  &:hover {
+    @apply bg-danger-dark !important;
+  }
+
+  &:focus {
+    @apply outline-none shadow-outline-danger !important;
+  }
+}
+
+.btn-system {
+  @apply bg-system text-white !important;
+
+  &:hover {
+    @apply bg-system-dark !important;
+  }
+
+  &:focus {
+    @apply outline-none shadow-outline-system !important;
+  }
+}
+
+.btn-gray {
+  @apply bg-gray text-white !important;
+
+  &:hover {
+    @apply bg-gray-400 !important;
+  }
+
+  &:focus {
+    @apply outline-none shadow-outline-gray !important;
+  }
+}
+
+.btn-black {
+  @apply bg-black text-white !important;
+
+  &:hover {
+    @apply bg-gray-700 !important;
+  }
+
+  &:focus {
+    @apply outline-none shadow-outline-gray !important;
+  }
+}

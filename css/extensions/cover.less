@@ -1,0 +1,51 @@
+.cover {
+  position: relative;
+  //height: 600px;
+  transition: all .25;
+  
+  .cover-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .28;
+    z-index: 2;
+  }
+  
+  .cover-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+  }
+  
+  .cover-contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -0.25em;
+    }
+    
+    .cover-middle {
+      display: inline-block;
+      vertical-align: middle;
+      width: 99.9%;
+    }
+  }
+}
