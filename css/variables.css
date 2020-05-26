@@ -9,29 +9,29 @@
   --color-text-default-soft: #999;
   --color-text-inverse: #444;
   --color-text-inverse-soft: #999;
-  --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-weight-normal: 400;
   --font-weight-display: 400;
   --font-weight-btn: 600;
   --rounded-btn: 0.25rem;
+  --color-primary: #5c6ac4;
+  --color-secondary: #ecc94b;
+  --color-text: #353535;
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-icon: #515151;
+  --x-page-body-bg: transparent;
+  --x-page-header-bg: transparent;
+  --x-page-header-shadow: none;
+  --x-page-footer-bg: transparent;
+  /*
+  --color-border:1px solid #e2e2e2;
+  --x-page-body-bg: #efefef;
+  --x-page-header-bg: #e9e9e9;
+  --x-page-header-shadow: inset 1px -6px 10px -6px #e2e2e2;
+  --x-page-footer-bg: var(--x-page-bg-header);
+  */
 }
 
 .theme-dark {
-  --color-bg-primary: #0252cc;
-  --color-bg-secondary: #ffc402;
-  --color-bg-default: #fff;
-  --color-bg-inverse: #fff;
-  --color-text-primary: #fff;
-  --color-text-secondary: #755f17;
-  --color-text-default: #444;
-  --color-text-default-soft: #999;
-  --color-text-inverse: #444;
-  --color-text-inverse-soft: #999;
-  --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-weight-normal: 400;
-  --font-weight-display: 400;
-  --font-weight-btn: 600;
-  --rounded-btn: 0.25rem;
 }

@@ -1,87 +1,15 @@
-.btn {
-  @apply font-bold py-2 px-4 rounded;
+.x-form-field {
+  @apply appearance-none border rounded w-full py-3 px-4 leading-tight;
 
   &:focus {
     @apply outline-none shadow-outline;
   }
-}
 
-.btn-default {
-  @apply text-default;
+  &.error {
+    @apply border-danger;
 
-  &:hover {
-    @apply bg-gray-100;
-  }
-}
-
-.btn-primary {
-  @apply bg-primary text-white;
-
-  &:hover {
-    @apply bg-primary-light;
-  }
-}
-
-.btn-secondary {
-  @apply bg-secondary text-white;
-
-  &:hover {
-    @apply bg-secondary-light;
-  }
-}
-
-.btn-info {
-  @apply bg-info text-white;
-
-  &:hover {
-    @apply bg-info-light;
-  }
-}
-
-.btn-success {
-  @apply bg-success text-white;
-
-  &:hover {
-    @apply bg-success-light;
-  }
-}
-
-.btn-warning {
-  @apply bg-warning text-white;
-
-  &:hover {
-    @apply bg-warning-light;
-  }
-}
-
-.btn-danger {
-  @apply bg-danger text-white;
-
-  &:hover {
-    @apply bg-danger-light;
-  }
-}
-
-.btn-system {
-  @apply bg-system text-white;
-
-  &:hover {
-    @apply bg-system-light;
-  }
-}
-
-.btn-gray {
-  @apply bg-gray text-white;
-
-  &:hover {
-    @apply bg-gray-400;
-  }
-}
-
-.btn-black {
-  @apply bg-black text-white;
-
-  &:hover {
-    @apply bg-gray-700;
+    &:focus {
+      @apply shadow-outline-danger bg-danger-transparent;
+    }
   }
 }

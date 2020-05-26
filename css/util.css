@@ -1,0 +1,47 @@
+.ratio-1by1 {
+  position: relative !important;
+  padding-top: 100% !important;
+}
+
+.ratio-3by2 {
+  position: relative !important;
+  padding-top: 66.66% !important;
+}
+
+.ratio-4by3 {
+  position: relative !important;
+  padding-top: 75% !important;
+}
+
+.ratio-16by9 {
+  position: relative !important;
+  padding-top: 56.25% !important;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.bg-fit {
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+a.dotted {
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    margin-right: -15px;
+    background: @text-color;
+  }
+}

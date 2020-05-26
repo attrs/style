@@ -1,0 +1,31 @@
+.x-alert {
+  @apply border rounded py-3 px-4 leading-tight bg-gray-100 text-default text-xs;
+}
+
+.x-alert-primary {
+  @apply x-alert border-primary-lighten text-primary bg-primary-transparent;
+}
+
+.x-alert-secondary {
+  @apply x-alert border-secondary-lighten text-secondary bg-secondary-transparent;
+}
+
+.x-alert-success {
+  @apply x-alert border-success-lighten text-success bg-success-transparent;
+}
+
+.x-alert-info {
+  @apply x-alert border-info-lighten text-info bg-info-transparent;
+}
+
+.x-alert-warning {
+  @apply x-alert border-warning-lighten text-warning bg-warning-transparent;
+}
+
+.x-alert-danger {
+  @apply x-alert border-danger-lighten text-danger bg-danger-transparent;
+}
+
+.x-alert-system {
+  @apply x-alert border-system-lighten text-system bg-system-transparent;
+}

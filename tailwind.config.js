@@ -1,4 +1,5 @@
 module.exports = {
+  important: true,
   theme: {
     screens: {
       sm: '640px',
@@ -12,7 +13,10 @@ module.exports = {
       inherit: 'inherit',
       black: '#000',
       white: '#fff',
-      darken: '#00000011',
+      mask: {
+        default: '#00000015',
+        darken: '#00000030'
+      },
       default: '#fff',
       background: {
         default: '#fff',
@@ -63,13 +67,13 @@ module.exports = {
         text: '#0288d1'
       },
       warning: {
-        default: '#ff9800',
-        light: '#ffa726',
-        lighten: '#ffcc80',
-        dark: '#f57c00',
-        darken: '#e65100',
-        transparent: '#fff3e0',
-        text: '#f57c00'
+        default: '#ff5722',
+        light: '#ff7043',
+        lighten: '#ffab91',
+        dark: '#e64a19',
+        darken: '#bf360c',
+        transparent: '#fbe9e7',
+        text: '#d84315'
       },
       danger: {
         default: '#f44336',
@@ -91,6 +95,7 @@ module.exports = {
       },
       border: {
         default: '#00000022',
+        normal: '#00000022',
         light: '#eaeaeaaa',
         lighten: '#f9f9f9'
       },
@@ -185,6 +190,18 @@ module.exports = {
       'full': '100%',
       ...breakpoints(theme('screens'))
     }),
+    fontSize: {
+      xs: '0.7rem',
+      sm: '0.875rem',
+      base: '14px',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+    },
     minWidth: (theme) => theme('maxWidth')
   }
 };

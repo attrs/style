@@ -1,0 +1,47 @@
+.x-label {
+  @apply inline-block font-bold text-xs max-w-full cursor-default;
+  
+  padding: 4px 6px;
+  margin: 1px 0;
+  margin-right: 4px;
+  border-radius: 3px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  &.block {
+    @apply block;
+  }
+}
+
+.x-label-default {
+  @apply bg-gray text-white;
+}
+
+.x-label-primary {
+  @apply bg-primary-light text-white;
+}
+
+.x-label-secondary {
+  @apply bg-secondary-light text-white;
+}
+
+.x-label-success {
+  @apply bg-success-light text-white;
+}
+
+.x-label-info {
+  @apply bg-info-light text-white;
+}
+
+.x-label-warning {
+  @apply bg-warning-light text-white;
+}
+
+.x-label-danger {
+  @apply bg-danger-light text-white;
+}
+
+.x-label-system {
+  @apply bg-system-light text-white;
+}

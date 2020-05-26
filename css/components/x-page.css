@@ -1,8 +1,9 @@
 .x-page {
-  background-color: var(--x-page-bg-body);
+  background-color: var(--x-page-body-bg);
 
   & .x-page-header {
-    background-color: var(--x-page-bg-header);
+    background-color: var(--x-page-header-bg);
+    box-shadow: var(--x-page-header-shadow);
     border-bottom: 1px solid var(--color-border);
     padding: 25px 23px;
     margin: 0;

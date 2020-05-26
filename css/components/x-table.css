@@ -6,11 +6,23 @@
   }
 
   & th, & td {
-    @apply px-3 py-2 text-left;
+    @apply px-3 py-2 text-left align-top;
+
+    &.table-cell-em {
+      @apply bg-mask;
+    }
+
+    & .icon {
+      opacity: .8;
+    }
   }
 
   & th {
-    @apply bg-darken;
+    @apply bg-mask py-2;
+
+    &.table-cell-em {
+      @apply bg-mask-darken;
+    }
   }
 
   &.table-bordered {
@@ -20,4 +32,11 @@
       @apply border;
     }
   }
+
+  &.table-lined {
+    & th, & td {
+      @apply border-b;
+    }
+  }
+  
 }

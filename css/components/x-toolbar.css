@@ -1,5 +1,5 @@
 .x-toolbar {
-  @apply border rounded p-3 bg-darken flex flex-row justify-between;
+  @apply flex flex-row justify-between;
 
   & .x-toolbar-left {
     @apply flex-initial flex flex-row items-center;
