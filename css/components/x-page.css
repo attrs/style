@@ -1,11 +1,12 @@
 .x-page {
-  background-color: var(--x-page-body-bg);
+  --x-page-bg-header: var(--color-bg-panel);
+  --x-page-bg-body: transparent;
+  --x-page-bg-footer: var(--color-bg-panel);
 
   & .x-page-header {
-    background-color: var(--x-page-header-bg);
-    box-shadow: var(--x-page-header-shadow);
+    background-color: var(--x-page-bg-header);
     border-bottom: 1px solid var(--color-border);
-    padding: 25px 23px;
+    padding: 2rem;
     margin: 0;
 
     & h1,
@@ -18,40 +19,41 @@
       margin: 0;
       padding: 0;
 
-      & i {
+      & .icon {
         color: var(--color-icon);
-        margin-right: 0.35em;
+        margin-right: var(--icon-margin);
       }
 
       & small {
         display: inline-block;
-        color: var(--color-icon);
+        color: var(--color-text-light);
+        font-size: .75em;
         margin-left: 0.35em;
       }
     }
 
     & h1 {
-      font-size: 22px;
+      font-size: var(--font-size-2xl);
     }
 
     & h2 {
-      font-size: 20px;
+      font-size: var(--font-size-xl);
     }
 
     & h3 {
-      font-size: 18px;
+      font-size: var(--font-size-lg);
     }
 
     & h4 {
-      font-size: 16px;
+      font-size: var(--font-size-base);
     }
 
     & h5 {
-      font-size: 15px;
+      font-size: var(--font-size-sm);
     }
 
     & h6 {
-      font-size: 14px;
+      font-size: var(--font-size-xs);
     }
 
     & > .x-page-header-controls {
@@ -59,7 +61,6 @@
       position: relative;
       float: right;
       padding-left: 5px;
-      //padding-right: 7px;
       margin-right: -8px;
 
       &.panel-controls-masked {
@@ -85,11 +86,12 @@
   }
 
   & .x-page-body {
+    background-color: var(--x-page-bg-body);
   }
 
   & .x-page-footer {
     background-color: var(--x-page-bg-footer);
     border-top: 1px solid var(--color-border);
-    padding: 15px;
+    padding: 1rem;
   }
 }

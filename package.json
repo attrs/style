@@ -2,17 +2,24 @@
   "name": "@attrs/style",
   "version": "0.6.0",
   "description": "attrs css theme",
-  "main": "dist/style.css",
+  "main": "lib/index",
   "homepage": "https://github.com/attrs/style",
   "repository": "attrs/style",
   "author": "joje <joje.attrs@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dist": "cross-env NODE_ENV=production postcss -c postcss.config.js -o dist/style.css css/index.css -m",
-    "watch": "postcss -c postcss.config.js -o dist/style.css css/index.css -w"
+    "dev": "concurrently \"npm:watch:docs\" \"npm:serve:docs\"",
+    "serve:docs": "httpd serve docs -p 9200",
+    "dist": "rimraf dist && cross-env NODE_ENV=production postcss -c postcss.config.js -d dist css/base.css css/style.css -m",
+    "dist:docs": "rimraf docs/css && cross-env NODE_ENV=production postcss -c postcss.config.js -d docs/css css/base.css css/style.css",
+    "watch": "postcss -c postcss.config.js -d dist css/base.css css/style.css -w",
+    "watch:docs": "postcss -c postcss.config.js -d docs/css css/base.css css/style.css -w"
   },
   "devDependencies": {
+    "@attrs/httpd": "^0.1.0",
     "autoprefixer": "^9.7.4",
+    "bootstrap-icons": "^1.0.0-alpha4",
+    "concurrently": "^5.2.0",
     "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
     "postcss-cli": "^7.1.1",
@@ -20,6 +27,7 @@
     "postcss-preset-env": "^6.7.0",
     "postcss-url": "^8.0.0",
     "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
     "stylelint-config-recommended": "^3.0.0",
     "tailwindcss": "^1.2.0"
   }

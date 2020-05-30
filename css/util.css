@@ -1,3 +1,11 @@
+.icon {
+  display: inline-block;
+  text-rendering: auto;
+  color: var(--color-icon);
+  font-size: var(--font-size-icon);
+  margin: 0 .2em;
+}
+
 .ratio-1by1 {
   position: relative !important;
   padding-top: 100% !important;
@@ -44,4 +52,16 @@ a.dotted {
     margin-right: -15px;
     background: @text-color;
   }
+}
+
+.fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.app-draggable {
+  -webkit-app-region: drag;
 }

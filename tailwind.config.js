@@ -1,5 +1,6 @@
 module.exports = {
   important: true,
+  purge: false,
   theme: {
     screens: {
       sm: '640px',
@@ -8,126 +9,131 @@ module.exports = {
       xl: '1280px'
     },
     colors: {
-      transparent: 'transparent',
       current: 'currentColor',
       inherit: 'inherit',
-      black: '#000',
-      white: '#fff',
-      mask: {
-        default: '#00000015',
-        darken: '#00000030'
+      transparent: 'transparent',
+      black: 'var(--color-black)',
+      white: 'var(--color-white)',
+      shadow: 'var(--color-shadow)',
+      bg: {
+        default: 'var(--color-bg-base)',
+        panel: 'var(--color-bg-panel)',
+        input: 'var(--color-bg-input)',
+        active: 'var(--color-bg-active)'
       },
-      default: '#fff',
-      background: {
-        default: '#fff',
-        secondary: '#efefef',
-        jumbotron: '#ddd',
-        modal: '#ddd',
-        inverse: '#333'
+      mask: {
+        default: 'var(--color-bg-mask)',
+        dark: 'var(--color-bg-mask)'
       },
       text: {
-        default: '#333',
-        light: '#555',
-        lighten: '#777'
-      },
-      primary: {
-        default: '#2196f3',
-        light: '#42a5f5',
-        lighten: '#90caf9',
-        dark: '#1976d2',
-        darken: '#0d47a1',
-        transparent: '#e3f2fd',
-        text: '#1976d2'
-      },
-      secondary: {
-        default: '#f44336',
-        light: '#ef5350',
-        lighten: '#ef9a9a',
-        dark: '#d32f2f',
-        darken: '#b71c1c',
-        transparent: '#ffebee',
-        text: '#d32f2f'
-      },
-      success: {
-        default: '#4caf50',
-        light: '#66bb6a',
-        lighten: '#a5d6a7',
-        dark: '#388e3c',
-        darken: '#1b5e20',
-        transparent: '#e8f5e9',
-        text: '#388e3c'
-      },
-      info: {
-        default: '#03a9f4',
-        light: '#29b6f6',
-        lighten: '#81d4fa',
-        dark: '#0288d1',
-        darken: '#01579b',
-        transparent: '#e1f5fe',
-        text: '#0288d1'
-      },
-      warning: {
-        default: '#ff5722',
-        light: '#ff7043',
-        lighten: '#ffab91',
-        dark: '#e64a19',
-        darken: '#bf360c',
-        transparent: '#fbe9e7',
-        text: '#d84315'
-      },
-      danger: {
-        default: '#f44336',
-        light: '#ef5350',
-        lighten: '#ef9a9a',
-        dark: '#d32f2f',
-        darken: '#b71c1c',
-        transparent: '#ffebee',
-        text: '#d32f2f'
-      },
-      system: {
-        default: '#673ab7',
-        light: '#7e57c2',
-        lighten: '#b39ddb',
-        dark: '#512da8',
-        darken: '#311b92',
-        transparent: '#ede7f6',
-        text: '#9f7be1'
+        default: 'var(--color-text)',
+        muted: 'var(--color-muted)',
+        active: 'var(--color-active)'
       },
       border: {
-        default: '#00000022',
-        normal: '#00000022',
-        light: '#eaeaeaaa',
-        lighten: '#f9f9f9'
+        default: 'var(--color-border)',
+        inverse: 'var(--color-border-inverse)',
+      },
+      icon: {
+        default: 'var(--color-icon)',
+        active: 'var(--color-icon-active)'
+      },
+      badge: {
+        default: 'var(--color-badge)',
+        text: 'var(--color-badge-text)'
+      },
+      primary: {
+        default: 'var(--color-primary)',
+        light: 'var(--color-primary-light)',
+        lighten: 'var(--color-primary-lighten)',
+        dark: 'var(--color-primary-dark)',
+        darken: 'var(--color-primary-darken)',
+        transparent: 'var(--color-primary-transparent)',
+        text: 'var(--color-primary-text)'
+      },
+      secondary: {
+        default: 'var(--color-secondary)',
+        light: 'var(--color-secondary-light)',
+        lighten: 'var(--color-secondary-lighten)',
+        dark: 'var(--color-secondary-dark)',
+        darken: 'var(--color-secondary-darken)',
+        transparent: 'var(--color-secondary-transparent)',
+        text: 'var(--color-secondary-text)'
+      },
+      success: {
+        default: 'var(--color-success)',
+        light: 'var(--color-success-light)',
+        lighten: 'var(--color-success-lighten)',
+        dark: 'var(--color-success-dark)',
+        darken: 'var(--color-success-darken)',
+        transparent: 'var(--color-success-transparent)',
+        text: 'var(--color-success-text)'
+      },
+      info: {
+        default: 'var(--color-info)',
+        light: 'var(--color-info-light)',
+        lighten: 'var(--color-info-lighten)',
+        dark: 'var(--color-info-dark)',
+        darken: 'var(--color-info-darken)',
+        transparent: 'var(--color-info-transparent)',
+        text: 'var(--color-info-text)'
+      },
+      warning: {
+        default: 'var(--color-warning)',
+        light: 'var(--color-warning-light)',
+        lighten: 'var(--color-warning-lighten)',
+        dark: 'var(--color-warning-dark)',
+        darken: 'var(--color-warning-darken)',
+        transparent: 'var(--color-warning-transparent)',
+        text: 'var(--color-warning-text)'
+      },
+      danger: {
+        default: 'var(--color-danger)',
+        light: 'var(--color-danger-light)',
+        lighten: 'var(--color-danger-lighten)',
+        dark: 'var(--color-danger-dark)',
+        darken: 'var(--color-danger-darken)',
+        transparent: 'var(--color-danger-transparent)',
+        text: 'var(--color-danger-text)'
+      },
+      system: {
+        default: 'var(--color-system)',
+        light: 'var(--color-system-light)',
+        lighten: 'var(--color-system-lighten)',
+        dark: 'var(--color-system-dark)',
+        darken: 'var(--color-system-darken)',
+        transparent: 'var(--color-system-transparent)',
+        text: 'var(--color-system-text)'
       },
       gray: {
-        default: '#555',
-        100: '#efefef',
-        200: '#ccc',
-        300: '#aaa',
-        400: '#7a7a7a',
-        500: '#555',
-        600: '#444',
-        700: '#333',
-        800: '#222',
-        900: '#111'
+        default: 'var(--color-gray)',
+        100: 'var(--color-gray-100)',
+        200: 'var(--color-gray-200)',
+        300: 'var(--color-gray-300)',
+        400: 'var(--color-gray-400)',
+        500: 'var(--color-gray-500)',
+        600: 'var(--color-gray-600)',
+        700: 'var(--color-gray-700)',
+        800: 'var(--color-gray-800)',
+        900: 'var(--color-gray-900)'
       }
     },
     fontFamily: {
-      sans: 'var(--font-sans)',
-      serif: 'var(--font-serif)',
-      mono: 'var(--font-mono)',
-      numeric: 'var(--font-numeric)'
+      sans: 'var(--font-family-sans)',
+      serif: 'var(--font-family-serif)',
+      mono: 'var(--font-family-mono)',
+      numeric: 'var(--font-family-numeric)'
     },
     boxShadow: (theme) => ({
-      'xs': '0 0 0 1px rgba(0, 0, 0, 0.05)',
-      'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-      'default': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-      'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-      'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-      'xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-      '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-      'inner': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
-      'outline': '0 0 0 3px rgba(66, 153, 225, 0.5)',
+      'xs': '0 0 0 1px' + theme('colors.shadow'),
+      'sm': '0 1px 2px 0' + theme('colors.shadow'),
+      'default': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 ' + theme('colors.shadow'),
+      'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px ' + theme('colors.shadow'),
+      'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px ' + theme('colors.shadow'),
+      'xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px ' + theme('colors.shadow'),
+      '2xl': '0 25px 50px -12px' + theme('colors.shadow'),
+      'inner': 'inset 0 2px 4px 0' + theme('colors.shadow'),
+      'outline': '0 0 0 3px ' + theme('colors.primary.lighten'),
       'outline-none': 'none',
       'outline-primary': '0 0 0 3px ' + theme('colors.primary.lighten'),
       'outline-secondary': '0 0 0 3px ' + theme('colors.secondary.lighten'),
@@ -141,7 +147,8 @@ module.exports = {
     }),
     backgroundColor: (theme) => ({
       ...theme('colors'),
-      default: theme('colors.background.default', 'currentColor')
+      ...theme('colors.bg'),
+      default: theme('colors.bg.default', 'currentColor')
     }),
     borderColor: (theme) => ({
       ...theme('colors.border'),
@@ -191,16 +198,16 @@ module.exports = {
       ...breakpoints(theme('screens'))
     }),
     fontSize: {
-      xs: '0.7rem',
-      sm: '0.875rem',
-      base: '14px',
-      lg: '1.125rem',
-      xl: '1.25rem',
-      '2xl': '1.5rem',
-      '3xl': '1.875rem',
-      '4xl': '2.25rem',
-      '5xl': '3rem',
-      '6xl': '4rem',
+      xs: 'var(--font-size-xs)',
+      sm: 'var(--font-size-sm)',
+      base: 'var(--font-size-base)',
+      lg: 'var(--font-size-lg)',
+      xl: 'var(--font-size-xl)',
+      '2xl': 'var(--font-size-2xl)',
+      '3xl': 'var(--font-size-3xl)',
+      '4xl': 'var(--font-size-4xl)',
+      '5xl': 'var(--font-size-5xl)',
+      '6xl': 'var(--font-size-6xl)',
     },
     minWidth: (theme) => theme('maxWidth')
   }

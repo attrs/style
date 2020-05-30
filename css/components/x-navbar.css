@@ -1,0 +1,15 @@
+.x-navbar {
+  @apply flex flex-row justify-between;
+
+  & .x-navbar-left, & .x-navbar-center, & .x-navbar-right {
+    @apply flex-initial flex flex-row items-center;
+  }
+
+  &.x-navbar-vertical {
+    @apply flex-col;
+
+    & .x-navbar-left, & .x-navbar-center, & .x-navbar-right {
+      @apply flex-col;
+    }
+  }
+}

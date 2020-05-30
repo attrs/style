@@ -1,6 +1,10 @@
 @import './variables';
-@import './base';
-@import './util';
+@import './components/x-navigation';
+@import './components/x-navbar';
+@import './components/x-badge';
+@import './components/x-button';
+@import './components/x-searchbox';
+
 @import './components/btn';
 @import './components/x-text';
 @import './components/x-label';
@@ -13,4 +17,5 @@
 @import './components/x-tabs';
 @import './components/x-thumbnail';
 @import './components/x-toolbar';
-
+@import './util';
+@import './flexbox';
