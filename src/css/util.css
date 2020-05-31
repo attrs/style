@@ -3,7 +3,7 @@
   text-rendering: auto;
   color: var(--color-icon);
   font-size: var(--font-size-icon);
-  margin: 0 .2em;
+  margin: 0 0.2em;
 }
 
 .ratio-1by1 {
@@ -77,14 +77,14 @@ a.dotted {
   &::-webkit-scrollbar {
     width: 3px;
   }
-  
+
   &::-webkit-scrollbar-track {
     margin: 3px 0;
     border-radius: 3px;
     box-shadow: none;
     background-color: var(--color-scrollbar-track);
   }
-  
+
   &::-webkit-scrollbar-thumb {
     margin: 3px 0;
     border-radius: 3px;

@@ -17,6 +17,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
           {
@@ -27,6 +28,19 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.css$/,
+        include: /node_modules/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
             options: {
               sourceMap: true
             }

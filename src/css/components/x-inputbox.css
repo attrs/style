@@ -1,7 +1,7 @@
-.x-searchbox {
+.x-inputbox {
   @apply flex flex-row justify-between;
-  border-radius: 2em;
-  padding: .25em 1.2em;
+  border-radius: var(--radius);
+  padding: .25em .5em;
   background-color: var(--color-bg-input);
 
   & > input {
@@ -19,12 +19,9 @@
       margin-right: -0.1em;
     }
   }
-}
 
-input, textarea {
-  background-color: var(--color-bg-input);
-
-  &::placeholder {
-    color: var(--color-text-muted);
+  &.x-inputbox-rounded {
+    border-radius: 2em;
+    padding: .25em 1.2em;
   }
 }

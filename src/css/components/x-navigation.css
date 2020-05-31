@@ -36,7 +36,7 @@ li.x-navitem {
     line-height: 3.5rem;
     overflow: hidden;
     font-size: var(--font-size-button);
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-normal);
     transition: background 0.25s ease-out;
     
     & > .x-navitem-text {

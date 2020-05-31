@@ -17,6 +17,7 @@
 
   & th {
     @apply bg-active py-2;
+    font-size: var(--font-size-sm);
 
     &.table-cell-em {
       @apply bg-active;

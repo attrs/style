@@ -1,9 +1,8 @@
-@import './variables';
 @import './components/x-navigation';
 @import './components/x-navbar';
 @import './components/x-badge';
 @import './components/x-button';
-@import './components/x-searchbox';
+@import './components/x-inputbox';
 
 @import './components/btn';
 @import './components/x-text';

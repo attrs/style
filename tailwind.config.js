@@ -142,7 +142,7 @@ module.exports = {
       'outline-warning': '0 0 0 3px ' + theme('colors.warning.lighten'),
       'outline-danger': '0 0 0 3px ' + theme('colors.danger.lighten'),
       'outline-system': '0 0 0 3px ' + theme('colors.system.lighten'),
-      'outline-gray': '0 0 0 3px rgba(127, 127, 127, 0.5)',
+      'outline-gray': '0 0 0 3px ' + theme('colors.gray.default'),
       'none': 'none'
     }),
     backgroundColor: (theme) => ({
@@ -155,6 +155,14 @@ module.exports = {
       ...theme('colors'),
       default: theme('colors.border.default', 'currentColor')
     }),
+    borderRadius: {
+      none: '0',
+      sm: 'var(--radius-sm)',
+      default: 'var(--radius)',
+      md: 'var(--radius-md)',
+      lg: 'var(--radius-lg)',
+      full: 'var(--radius-full)',
+    },
     textColor: (theme) => ({
       ...Object.keys(theme('colors')).reduce((o, key) => {
         const color = theme('colors.' + key);
