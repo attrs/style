@@ -82,10 +82,6 @@ li.x-navitem {
         border-left: 0;
         transform: rotate(-45deg);
       }
-      
-      & > .x-navitem-badge {
-        @apply x-badge;
-      }
     }
   }
   

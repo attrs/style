@@ -2,33 +2,51 @@
   "name": "@attrs/style",
   "version": "0.6.0",
   "description": "attrs css theme",
-  "main": "lib/index",
+  "main": "dist/attrs.style.js",
+  "module": "src/index.js",
   "homepage": "https://github.com/attrs/style",
   "repository": "attrs/style",
   "author": "joje <joje.attrs@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "concurrently \"npm:watch:docs\" \"npm:serve:docs\"",
-    "serve:docs": "httpd serve docs -p 9200",
-    "dist": "rimraf dist && cross-env NODE_ENV=production postcss -c postcss.config.js -d dist css/base.css css/style.css -m",
-    "dist:docs": "rimraf docs/css && cross-env NODE_ENV=production postcss -c postcss.config.js -d docs/css css/base.css css/style.css",
-    "watch": "postcss -c postcss.config.js -d dist css/base.css css/style.css -w",
-    "watch:docs": "postcss -c postcss.config.js -d docs/css css/base.css css/style.css -w"
+    "prepublishOnly": "npm run dist",
+    "start": "httpd serve docs -p 9200",
+    "dev": "webpack-dev-server --host 0.0.0.0 --port 9200 --config build/webpack.docs.config.js",
+    "dist": "npm run dist:docs && npm run dist:lib",
+    "dist:lib": "rimraf lib && cross-env NODE_ENV=production webpack --config build/webpack.lib.config.js",
+    "dist:docs": "rimraf docs && cross-env NODE_ENV=production webpack --config build/webpack.docs.config.js"
   },
   "devDependencies": {
     "@attrs/httpd": "^0.1.0",
+    "@babel/core": "^7.10.2",
     "autoprefixer": "^9.7.4",
-    "bootstrap-icons": "^1.0.0-alpha4",
-    "concurrently": "^5.2.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.0.1",
     "cross-env": "^7.0.2",
+    "css-loader": "^3.5.3",
     "cssnano": "^4.1.10",
-    "postcss-cli": "^7.1.1",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
     "postcss-url": "^8.0.0",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
+    "stylelint": "^13.5.0",
     "stylelint-config-recommended": "^3.0.0",
-    "tailwindcss": "^1.2.0"
-  }
+    "tailwindcss": "^1.2.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "files": [
+    "src",
+    "lib",
+    "LICENSE",
+    "README.md"
+  ]
 }

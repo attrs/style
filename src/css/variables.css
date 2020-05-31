@@ -5,8 +5,8 @@
   --color-bg-panel: #292C33;
   --color-bg-input: #191D25;
   --color-bg-active: #2B3035;
-  --color-bg-mask: rgba(0, 0, 0, 0.15);
-  --color-bg-mask-dark: rgba(0, 0, 0, 0.2);
+  --color-bg-mask: rgba(0, 0, 0, 0.075);
+  --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
   --color-text: #7F8185;
   --color-text-light: #4F5155;
   --color-text-muted: #3B3E44;
@@ -15,8 +15,9 @@
   --color-border-inverse: #191D23;
   --color-icon: #6F7175;
   --color-icon-active: var(--color-primary);
-  --color-scrollbar-track: #333539;
-  --color-scrollbar-thumb: #8D8D8E;
+  --color-scrollbar-track: transparent;
+  --color-scrollbar-thumb: rgba(0,0,0,0.5);
+  --color-scrollbar-thumb-border: rgba(255,255,255,0.05);
   --color-shadow: rgba(0, 0, 0, 0.05);
   --color-badge: #5D6167;
   --color-badge-text: #fff;
@@ -84,7 +85,7 @@
   --line-height: 1.5;
   --font-size-base: 14px;
   --font-size-xs: 0.65rem;
-  --font-size-sm: 0.85rem;
+  --font-size-sm: 0.9rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
   --font-size-2xl: 1.5rem;

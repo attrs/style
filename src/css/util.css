@@ -54,7 +54,12 @@ a.dotted {
   }
 }
 
-.fullscreen {
+.fullsize {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.abs-full {
   position: absolute;
   top: 0;
   left: 0;
@@ -64,4 +69,26 @@ a.dotted {
 
 .app-draggable {
   -webkit-app-region: drag;
+}
+
+.overflow-y-scroll {
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    margin: 3px 0;
+    border-radius: 3px;
+    box-shadow: none;
+    background-color: var(--color-scrollbar-track);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    margin: 3px 0;
+    border-radius: 3px;
+    border: 1px solid var(--color-scrollbar-thumb-border);
+    background-color: var(--color-scrollbar-thumb);
+  }
 }

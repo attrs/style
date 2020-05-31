@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>@attrs/style</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="-abs-full fullsize border border-inverse" flexbox="horizontal">
+      <div class="bg-panel border-r" flexbox="vertical">
+        <div class="x-navbar x-navbar-vertical" flex="1">
+          <div class="x-navbar-left">
+            <a class="x-button border-b">
+              <svg
+                class="icon"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"
+                />
+              </svg>
+            </a>
+            <a class="x-button x-button-active">
+              <svg
+                class="icon"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                />
+              </svg>
+            </a>
+            <a class="x-button">
+              <svg
+                class="icon"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.887 7.2l-.964-.165A2.5 2.5 0 1 0 3.5 12h10a1.5 1.5 0 0 0 .237-2.981L12.7 8.854l.216-1.028a4 4 0 1 0-7.843-1.587l-.185.96zm9.084.341a5 5 0 0 0-9.88-1.492A3.5 3.5 0 1 0 3.5 13h9.999a2.5 2.5 0 0 0 .394-4.968c.033-.16.06-.324.077-.49z"
+                />
+              </svg>
+            </a>
+            <a class="x-button">
+              <svg
+                class="icon"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </a>
+            <a class="x-button">
+              <svg
+                class="icon"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="x-navbar-right">
+            <a class="x-button">
+              <svg
+                class="icon"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.464 10.536a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3.5a.5.5 0 0 1-.5-.5v-3.5a.5.5 0 0 1 .5-.5z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M5.964 10a.5.5 0 0 1 0 .707l-4.146 4.147a.5.5 0 0 1-.707-.708L5.257 10a.5.5 0 0 1 .707 0zm8.854-8.854a.5.5 0 0 1 0 .708L10.672 6a.5.5 0 0 1-.708-.707l4.147-4.147a.5.5 0 0 1 .707 0z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M10.5 1.5A.5.5 0 0 1 11 1h3.5a.5.5 0 0 1 .5.5V5a.5.5 0 0 1-1 0V2h-3a.5.5 0 0 1-.5-.5zm4 9a.5.5 0 0 0-.5.5v3h-3a.5.5 0 0 0 0 1h3.5a.5.5 0 0 0 .5-.5V11a.5.5 0 0 0-.5-.5z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M10 9.964a.5.5 0 0 0 0 .708l4.146 4.146a.5.5 0 0 0 .708-.707l-4.147-4.147a.5.5 0 0 0-.707 0zM1.182 1.146a.5.5 0 0 0 0 .708L5.328 6a.5.5 0 0 0 .708-.707L1.889 1.146a.5.5 0 0 0-.707 0z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M5.5 1.5A.5.5 0 0 0 5 1H1.5a.5.5 0 0 0-.5.5V5a.5.5 0 0 0 1 0V2h3a.5.5 0 0 0 .5-.5z"
+                />
+              </svg>
+            </a>
+            <a class="x-button">
+              <svg
+                class="icon"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.578 4.437a5 5 0 1 0 4.922.044l.5-.866a6 6 0 1 1-5.908-.053l.486.875z"
+                />
+                <path fill-rule="evenodd" d="M7.5 8V1h1v7h-1z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div flex="1" flexbox="vertical">
+        <div class="bg-panel app-draggable" id="topbar" flexbox="horizontal">
+          <div id="topnav" flexbox="horizontal" flex="1">
+            <div class="x-navbar" flex="1">
+              <div class="x-navbar-left">
+                <div class="text-xl font-light px-5" id="logo" style="width: 250px;">
+                  <a href="/">
+                    <b>ATTRS</b>
+                    STYLE
+                  </a>
+                </div>
+                <div class="x-searchbox ml-5 hidden">
+                  <input type="text" placeholder="Search" />
+                  <svg
+                    class="icon"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                    />
+                  </svg>
+                </div>
+                <a class="x-button">
+                  <svg
+                    class="icon"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="x-navbar-right">
+                <a class="x-button">
+                  <svg
+                    class="icon"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+                    />
+                  </svg>
+                  <div class="x-badge x-badge-warning">99+</div>
+                </a>
+                <a class="x-button x-button-dropdown">
+                  <svg
+                    class="icon"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"
+                    />
+                    <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"
+                    />
+                  </svg>
+                  John Doe
+                  <div class="x-button-items">
+                    context menu
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="center" class="-overflow-y-scroll" flexbox="horizontal" flex="1">
+          <div
+            id="sidebar"
+            class="bg-panel border-t border-r -overflow-y-scroll"
+            flexbox="vertical"
+            style="width: 250px;"
+          >
+            <div id="sidebar-navigation">
+              <div class="x-navigation" id="navigation-space-navs" data-navigation-group="space">
+                <div class="x-navigation-title">Navigation</div>
+                <ul class="x-navigation-items">
+                  <li class="x-navitem x-navitem-expand x-navitem-active">
+                    <a href="javascript:;">
+                      <span class="x-navitem-icon">
+                        <svg
+                          class="icon"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+                          />
+                          <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                          <path
+                            fill-rule="evenodd"
+                            d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                          />
+                        </svg>
+                      </span>
+                      <span class="x-navitem-text">My Profile</span>
+                      <div class="x-navitem-acc">
+                        <span class="x-navitem-caret"></span>
+                      </div>
+                    </a>
+                    <ul class="x-navitem-items">
+                      <li class="x-navitem">
+                        <a href="javascript:;">
+                          <span class="x-navitem-icon">
+                            <svg
+                              class="icon"
+                              width="1em"
+                              height="1em"
+                              viewBox="0 0 16 16"
+                              fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+                              />
+                              <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                              <path
+                                fill-rule="evenodd"
+                                d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                              />
+                            </svg>
+                          </span>
+                          <span class="x-navitem-text">Profile</span>
+                        </a>
+                      </li>
+                      <li class="x-navitem x-navitem-active x-navitem-expand" id="billing">
+                        <a href="javascript:;">
+                          <span class="x-navitem-icon">
+                            <svg
+                              class="icon"
+                              width="1em"
+                              height="1em"
+                              viewBox="0 0 16 16"
+                              fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+                              />
+                              <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                              <path
+                                fill-rule="evenodd"
+                                d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                              />
+                            </svg>
+                          </span>
+                          <span class="x-navitem-text">Billing</span>
+                          <div class="x-navitem-acc">
+                            <span class="x-navitem-caret"></span>
+                          </div>
+                        </a>
+                        <ul class="x-navitem-items">
+                          <li
+                            class="x-navitem x-navitem-active x-navitem-selected"
+                            id="billing-service"
+                          >
+                            <a href="javascript:;">
+                              <span class="x-navitem-icon">
+                                <svg
+                                  class="icon"
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+                                  />
+                                  <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="x-navitem-text">Service</span>
+                            </a>
+                          </li>
+                          <li class="x-navitem">
+                            <a href="javascript:;">
+                              <span class="x-navitem-icon">
+                                <svg
+                                  class="icon"
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+                                  />
+                                  <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="x-navitem-text">Etc</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="x-navitem">
+                        <a href="javascript:;">
+                          <span class="x-navitem-icon">
+                            <svg
+                              class="icon"
+                              width="1em"
+                              height="1em"
+                              viewBox="0 0 16 16"
+                              fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+                              />
+                              <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                              <path
+                                fill-rule="evenodd"
+                                d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                              />
+                            </svg>
+                          </span>
+                          <span class="x-navitem-text">Subscribes</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="x-navitem">
+                    <a href="javascript:;">
+                      <span class="x-navitem-icon">
+                        <svg
+                          class="icon"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+                          />
+                          <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                          <path
+                            fill-rule="evenodd"
+                            d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                          />
+                        </svg>
+                      </span>
+                      <span class="x-navitem-text">Actions</span>
+                    </a>
+                  </li>
+                  <li class="x-navitem">
+                    <a href="javascript:;">
+                      <span class="x-navitem-icon">
+                        <svg
+                          class="icon"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+                          />
+                          <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                          <path
+                            fill-rule="evenodd"
+                            d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                          />
+                        </svg>
+                      </span>
+                      <span class="x-navitem-text">Messages</span>
+                      <div class="x-navitem-acc">
+                        <span class="x-badge">99+</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <hr class="mx-5 my-10" />
+
+              <div class="x-navigation" id="navigation-space-navs" data-navigation-group="space">
+                <div class="x-navigation-title">My Service</div>
+                <ul class="x-navigation-items">
+                  <li
+                    class="x-navitem x-state-responder"
+                    data-state="/space/system/applications,/space/system/applications/**/*"
+                  >
+                    <a href="javascript:;">
+                      <span class="x-navitem-icon">
+                        <svg
+                          class="icon"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v9A1.5 1.5 0 0 0 1.5 12H4v2.5A1.5 1.5 0 0 0 5.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 4H12V1.5A1.5 1.5 0 0 0 10.5 0h-9zM12 4H5.5A1.5 1.5 0 0 0 4 5.5V12h6.5a1.5 1.5 0 0 0 1.5-1.5V4z"
+                          />
+                        </svg>
+                      </span>
+                      <span class="x-navitem-text">Applications</span>
+                    </a>
+                  </li>
+                  <li
+                    class="x-navitem x-state-responder"
+                    data-state="/space/system/services,/space/system/services/**/*"
+                  >
+                    <a href="javascript:;">
+                      <span class="x-navitem-icon">
+                        <svg
+                          class="icon"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"
+                          />
+                        </svg>
+                      </span>
+                      <span class="x-navitem-text">Services</span>
+                    </a>
+                  </li>
+                  <li
+                    class="x-navitem x-state-responder"
+                    data-state="/space/system/instances,/space/system/instances/**/*"
+                  >
+                    <a href="javascript:;">
+                      <span class="x-navitem-icon">
+                        <svg
+                          class="icon"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4 4H2v2h2V4zm1 7V9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 5V9a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 4H7v2h2V4zm5 0h-2v2h2V4zM4 9H2v2h2V9zm5 0H7v2h2V9zm5 0h-2v2h2V9zm-3-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-2z"
+                          />
+                        </svg>
+                      </span>
+                      <span class="x-navitem-text">Instances</span>
+                    </a>
+                  </li>
+                  <li
+                    class="x-navitem x-state-responder"
+                    data-state="/space/system/volumes,/space/system/volumes/**/*"
+                  >
+                    <a href="javascript:;">
+                      <span class="x-navitem-icon">
+                        <svg
+                          class="icon"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M3.188 8L.264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l-1.063.567L14.438 10 8 13.433 1.562 10 4.25 8.567 3.187 8z"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4zM1.563 6L8 9.433 14.438 6 8 2.567 1.562 6z"
+                          />
+                        </svg>
+                      </span>
+                      <span class="x-navitem-text">Volumes</span>
+                    </a>
+                  </li>
+                  <li
+                    class="x-navitem x-state-responder"
+                    data-state="/space/system/routes,/space/system/routes/**/*"
+                  >
+                    <a href="javascript:;">
+                      <span class="x-navitem-icon">
+                        <svg
+                          class="icon"
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            d="M6 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H6.5A.5.5 0 0 1 6 8zm-2.5 6a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 1 0v11a.5.5 0 0 1-.5.5z"
+                          />
+                        </svg>
+                      </span>
+                      <span class="x-navitem-text">Route Rules</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="border-t" id="page" flexbox="vertical" flex="1">
+            <div class="x-page" flexbox="vertical" flex="1">
+              <header class="x-page-header">
+                <h1>
+                  <svg
+                    class="icon"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.5 0A1.5 1.5 0 0 0 0 1.5v9A1.5 1.5 0 0 0 1.5 12H4v2.5A1.5 1.5 0 0 0 5.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 4H12V1.5A1.5 1.5 0 0 0 10.5 0h-9zM12 4H5.5A1.5 1.5 0 0 0 4 5.5V12h6.5a1.5 1.5 0 0 0 1.5-1.5V4z"
+                    />
+                  </svg>
+                  Applications
+                  <small>Applications</small>
+                </h1>
+              </header>
+              <div class="x-page-body p-10 bg-panel" flex="1">
+                <!-- filter navbar-->
+                <div class="x-navbar border -border-inverse rounded bg-panel">
+                  <div class="x-navbar-left">
+                    <div class="x-searchbox mx-3">
+                      <svg
+                        class="icon"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"
+                        />
+                      </svg>
+                      <input type="text" placeholder="Search" />
+                    </div>
+                  </div>
+                  <div class="x-navbar-right">
+                    <a class="x-button x-button-dropdown">
+                      <svg
+                        class="icon"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                        />
+                      </svg>
+                      View Type
+                      <div class="x-button-items">
+                        context menu
+                      </div>
+                    </a>
+                    <a class="x-button x-button-dropdown">
+                      <svg
+                        class="icon"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+                        />
+                      </svg>
+                      Sort
+                      <div class="x-button-items">
+                        context menu
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- // filter navbar -->
+                <!-- contents table-->
+                <div class="my-10 bg-panel border -border-inverse">
+                  <table class="table table-full table-fixed table-lined">
+                    <thead>
+                      <tr>
+                        <th class="table-cell-em">NAME</th>
+                        <th>PRESET</th>
+                        <th>CREATED</th>
+                        <th>MODIFIED</th>
+                        <th>LABELS</th>
+                        <th width="150"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr v-if="!deployments.length">
+                        <td class="py-5 text-center font-semibold text-sm" colspan="6">
+                          No Applications
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- // contents table -->
+                <!-- contents table-->
+                <div class="my-10 bg-panel border -border-inverse">
+                  <table class="table table-full table-fixed table-lined">
+                    <thead>
+                      <tr>
+                        <th class="table-cell-em">NAME</th>
+                        <th>PRESET</th>
+                        <th>CREATED</th>
+                        <th>MODIFIED</th>
+                        <th>LABELS</th>
+                        <th width="150"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="table-cell-em font-bold">
+                          <a>web</a>
+                        </td>
+                        <td class="font-bold text-info">nginx@latest</td>
+                        <td>2020.05.31 00:00</td>
+                        <td>2020.05.31 00:00</td>
+                        <td>labels</td>
+                        <td class="text-right">
+                          <a
+                            href="javascript:;"
+                            route
+                            ghost
+                            class="btn btn-xs btn-outline btn-default"
+                          >
+                            <svg
+                              class="icon"
+                              width="1em"
+                              height="1em"
+                              viewBox="0 0 16 16"
+                              fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"
+                              />
+                              <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                              <path
+                                fill-rule="evenodd"
+                                d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                              />
+                            </svg>
+                          </a>
+                          <a class="btn btn-xs btn-outline btn-default">
+                            <svg
+                              class="icon"
+                              width="1em"
+                              height="1em"
+                              viewBox="0 0 16 16"
+                              fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4.887 6.2l-.964-.165A2.5 2.5 0 1 0 3.5 11H6v1H3.5a3.5 3.5 0 1 1 .59-6.95 5.002 5.002 0 1 1 9.804 1.98A2.501 2.501 0 0 1 13.5 12H10v-1h3.5a1.5 1.5 0 0 0 .237-2.981L12.7 7.854l.216-1.028a4 4 0 1 0-7.843-1.587l-.185.96z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M5 8.854a.5.5 0 0 0 .707 0L8 6.56l2.293 2.293A.5.5 0 1 0 11 8.146L8.354 5.5a.5.5 0 0 0-.708 0L5 8.146a.5.5 0 0 0 0 .708z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M8 6a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8A.5.5 0 0 1 8 6z"
+                              />
+                            </svg>
+                          </a>
+                          <a class="btn btn-xs btn-outline btn-danger">
+                            <svg
+                              class="icon"
+                              width="1em"
+                              height="1em"
+                              viewBox="0 0 16 16"
+                              fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"
+                              />
+                            </svg>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- // contents table -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

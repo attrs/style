@@ -21,8 +21,8 @@
   
   & > .x-badge {
     position: absolute;
-    top: 1px;
-    right: 1px;
+    top: 3px;
+    right: 3px;
   }
 
   & > .icon {

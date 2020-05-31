@@ -1,6 +1,4 @@
 .table {
-  @apply mb-5;
-
   &.table-full {
     width: 100%;
   }
@@ -9,7 +7,7 @@
     @apply px-3 py-2 text-left align-top;
 
     &.table-cell-em {
-      @apply bg-mask;
+      @apply bg-active;
     }
 
     & .icon {
@@ -18,10 +16,10 @@
   }
 
   & th {
-    @apply bg-mask py-2;
+    @apply bg-active py-2;
 
     &.table-cell-em {
-      @apply bg-mask-dark;
+      @apply bg-active;
     }
   }
 
@@ -36,6 +34,12 @@
   &.table-lined {
     & th, & td {
       @apply border-b;
+    }
+
+    & > tbody > tr:last-child {
+      & th, & td {
+        @apply border-0;
+      }
     }
   }
   

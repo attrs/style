@@ -2,7 +2,6 @@
   display: inline-block;
   transition: color, background-color .35s;
   text-overflow: ellipsis;
-  overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
 
@@ -12,7 +11,7 @@
   border-radius: 4px;
   line-height: 1.6;
 
-  & > i.icon {
+  & > .icon {
     @apply text-white;
     transition: colorm opacity .35s;
   }
@@ -29,7 +28,7 @@
 
   &.btn-xs {
     @apply text-xs;
-    padding: 3px 8px 2px 8px;
+    padding: 3px 8px 3px 8px;
     border-radius: 2px;
   }
 
