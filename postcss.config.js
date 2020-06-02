@@ -15,12 +15,12 @@ module.exports = (ctx) => ({
     require('tailwindcss')(path.join(__dirname, 'tailwind.config.js')),
     require('postcss-preset-env')({
       stage: 1,
+      autoprefixer: {},
       features: {
         'nesting-rules': true,
         'color-mod-function': { unresolved: 'warn' }
       }
     }),
-    require('autoprefixer'),
     ctx.env === 'production' && require('cssnano')
   ].filter((v) => v)
 });

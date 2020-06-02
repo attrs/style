@@ -1,138 +1,87 @@
 .x-navigation {
+  --x-navigation-padding: 1.5rem;
+
   margin: 1rem 0;
-  
+  font-size: var(--navigation-font-size);
+  font-weight: var(--navigation-font-weight);
+
   & .x-navigation-title {
-    padding: 0 1.5rem;
-    margin-bottom: .5rem;
+    padding: 0 var(--x-navigation-padding);
+    margin-bottom: 0.5rem;
     line-height: 2.5rem;
     text-transform: uppercase;
     color: var(--color-text-light);
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-sm);
   }
-    
+
   & > ul.x-navigation-items {
     user-select: none;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  
-  & a, & a:hover, & a:active, & a:focus {
+
+  & a,
+  & a:hover,
+  & a:active,
+  & a:focus {
     text-decoration: none;
   }
-}
 
-li.x-navitem {
-  position: relative;
-  display: block;
-  padding: 0;
-  margin: 0;
-  
-  & > a {
+  & .x-navitem {
     position: relative;
     display: block;
-    padding: 0 1.5rem;
-    line-height: 3.5rem;
-    overflow: hidden;
-    font-size: var(--font-size-button);
-    font-weight: var(--font-weight-normal);
-    transition: background 0.25s ease-out;
-    
-    & > .x-navitem-text {
-      display: inline-block;
-    }
-    
-    & > .x-navitem-icon > .icon {
-      display: inline-block;
-      color: var(--color-icon);
-      font-size: var(--font-size-icon);
-      margin-right: var(--icon-margin);
-    }
-    
-    &:hover, &:active, &:focus {
-      text-decoration: none;
-      background: none;
-    }
-    
-    &:hover {
-      background: var(--color-bg-active);
-      color: var(--color-text-active);
-      
-      & > .x-navitem-icon > .icon {
-        color: var(--color-icon-active);
-      }
-    }
-    
-    & > .x-navitem-acc {
-      position: absolute;
-      right: 1.5rem;
-      top: 0;
-      bottom: 0;
-      
-      & > .x-navitem-caret {
-        display: inline-block;
-        margin-left: 1rem;
-        vertical-align: middle;
-        content: "";
-        width: .42em;
-        height: .42em;
-        border: 1px solid;
-        border-top: 0;
-        border-left: 0;
-        transform: rotate(-45deg);
-      }
-    }
-  }
-  
-  &.x-navitem-expand > a > .x-navitem-acc > .x-navitem-caret {
-    transform: rotate(45deg);
-  }
-  
-  &.x-navitem-active {
-    & > a {
-      color: var(--color-text-active);
-
-      & > .x-navitem-icon > .icon {
-        color: var(--color-icon-active);
-      }
-    }
-  }
-
-  &.x-navitem-selected {
-    background-color: var(--color-bg-active);
-  }
-  
-  & > .x-navitem-items {
-    display: none;
-    user-select: none;
-    list-style: none;
-    margin: 0;
     padding: 0;
-    
-    & > li {
-      & > a {
-        padding-left: 2.5rem;
+    margin: 0;
+    cursor: pointer;
+
+    & > a {
+      @apply x-row;
+      padding: 0 var(--x-navigation-padding);
+
+      & .icon {
+        margin-left: 0;
       }
-      
-      &.x-navitem-active {
-        & > a > .x-navitem-icon > i {
-          color: var(--x-active-color);
+    }
+
+    &.active {
+      & > a {
+        background: var(--color-bg-active);
+        color: var(--color-text-active);
+
+        & .icon {
+          color: var(--color-icon-active);
         }
       }
-      
-      & > ul.x-navitem-items li > a {
-        padding-left: 3.5rem;
+    }
+
+    &.x-navitem-expand .x-caret {
+      transform: rotate(45deg);
+    }
+
+    &.x-navitem-selected {
+      background-color: var(--color-bg-active);
+    }
+
+    & > .x-navitem-items {
+      display: none;
+      user-select: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      & > li > a {
+        padding-left: 2rem;
+
+        & > li > a {
+          padding-left: 3rem;
+        }
       }
     }
-  }
-  
-  &.x-navitem-expand > ul.x-navitem-items {
-    display: block;
+
+    &.x-navitem-expand > ul.x-navitem-items {
+      display: block;
+    }
   }
 }
-
-.x-dark .x-navitem-caret {
-  filter: invert(100%);
-}
-

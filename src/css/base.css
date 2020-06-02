@@ -23,10 +23,90 @@ button:focus {
   outline: none;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: var(--color-bg-input);
 
   &::placeholder {
     color: var(--color-text-muted);
   }
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.813rem;
+}
+
+h3 {
+  font-size: 1.563rem;
+}
+
+h4 {
+  font-size: 1.313rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.894rem;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+mark {
+  padding: 0.2em;
+  color: var(--color-text-highlight);
+  background-color: var(--color-bg-highlight);
+}
+
+abbr[title] {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+  cursor: help;
+  text-decoration-skip-ink: none;
+}
+
+blockquote {
+  margin-bottom: 1rem;
+  font-size: var(--font-size-lg);
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: var(--font-size-sm);
+  margin: 0.25em;
+}
+
+code, .code  {
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-mono);
+}
+
+.code {
+  padding: 1rem;
+  overflow: auto;
+  border-radius: var(--radius);
+}
+
+ul {
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 1rem;
 }

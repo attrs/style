@@ -70,9 +70,9 @@ module.exports = merge(base, {
     new CopyPlugin({
       patterns: [{ from: path.join(assets, 'favicon.png'), to: dist }]
     }),
-    new PurgecssPlugin({
+    production && new PurgecssPlugin({
       paths: glob.sync(src + '/**/*', { nodir: true }),
       whitelistPatterns: [/^x-/]
     })
-  ]
+  ].filter((v) => v)
 });

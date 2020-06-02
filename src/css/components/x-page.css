@@ -1,7 +1,9 @@
 .x-page {
   --x-page-bg-header: var(--color-bg-panel);
-  --x-page-bg-body: transparent;
+  --x-page-bg-body: var(--color-bg-base);
   --x-page-bg-footer: var(--color-bg-panel);
+
+  background-color: var(--x-page-bg-body);
 
   & .x-page-header {
     background-color: var(--x-page-bg-header);
@@ -83,10 +85,6 @@
         }
       }
     }
-  }
-
-  & .x-page-body {
-    background-color: var(--x-page-bg-body);
   }
 
   & .x-page-footer {

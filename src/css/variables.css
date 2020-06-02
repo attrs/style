@@ -1,79 +1,80 @@
 :root {
   --color-black: #000;
   --color-white: #fff;
-  --color-bg-base: #1D2126;
+  --color-bg-base: #23262d;
   --color-bg-panel: #292C33;
+  --color-bg-inverse: #efefef;
   --color-bg-active: #2d3036;
   --color-bg-input: #191D25;
-
-  /*
-  --color-bg-base: #22262B;
-  --color-bg-panel: #2D3036;
-  --color-bg-input: #1F222A;
-  --color-bg-active: #2F3338;
-  */
-
+  --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
   --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
+
+  --color-border: #2e3237;
+  --color-border-outer: #2C3136;
+  --color-border-inverse: #ccc;
+
   --color-text: #7F8185;
   --color-text-light: #4F5155;
   --color-text-muted: #3B3E44;
   --color-text-active: #cfcfcf;
-  --color-border: #2C3136;
-  --color-border-inverse: #191D23;
+  --color-text-highlight: #333;
+
   --color-icon: #6F7175;
   --color-icon-active: var(--color-primary);
+
   --color-scrollbar-track: transparent;
   --color-scrollbar-thumb: rgba(0,0,0,0.5);
   --color-scrollbar-thumb-border: rgba(255,255,255,0.05);
+
   --color-shadow: rgba(0, 0, 0, 0.05);
   --color-badge: #5D6167;
   --color-badge-text: #fff;
 
-  --color-primary: #2196f3;
-  --color-primary-light: #42a5f5;
+  --color-primary: #42a5f5;
+  --color-primary-light: #90caf9;
   --color-primary-lighten: #90caf9;
   --color-primary-dark: #1976d2;
   --color-primary-darken: #0d47a1;
   --color-primary-transparent: #e3f2fd;
   --color-primary-text: #1976d2;
-  --color-secondary: #f44336;
-  --color-secondary-light: #ef5350;
+  --color-secondary: #ef5350;
+  --color-secondary-light: #ef9a9a;
   --color-secondary-lighten: #ef9a9a;
   --color-secondary-dark: #d32f2f;
   --color-secondary-darken: #b71c1c;
   --color-secondary-transparent: #ffebee;
   --color-secondary-text: #d32f2f;
-  --color-success: #4caf50;
-  --color-success-light: #66bb6a;
+  --color-success: #66bb6a;
+  --color-success-light: #a5d6a7;
   --color-success-lighten: #a5d6a7;
   --color-success-dark: #388e3c;
   --color-success-darken: #1b5e20;
   --color-success-transparent: #e8f5e9;
   --color-success-text: #388e3c;
-  --color-info: #03a9f4;
-  --color-info-light: #29b6f6;
+  --color-info: #29b6f6;
+  --color-info-light: #81d4fa;
   --color-info-lighten: #81d4fa;
   --color-info-dark: #0288d1;
   --color-info-darken: #01579b;
   --color-info-transparent: #e1f5fe;
   --color-info-text: #0288d1;
-  --color-warning: #ff5722;
-  --color-warning-light: #ff7043;
+  --color-warning: #ff7043;
+  --color-warning-light: #ffab91;
   --color-warning-lighten: #ffab91;
   --color-warning-dark: #e64a19;
   --color-warning-darken: #bf360c;
   --color-warning-transparent: #fbe9e7;
   --color-warning-text: #d84315;
-  --color-danger: #f44336;
-  --color-danger-light: #ef5350;
+  --color-danger: #ef5350;
+  --color-danger-light: #ef9a9a;
   --color-danger-lighten: #ef9a9a;
   --color-danger-dark: #d32f2f;
   --color-danger-darken: #b71c1c;
   --color-danger-transparent: #ffebee;
   --color-danger-text: #d32f2f;
-  --color-system: #673ab7;
-  --color-system-light: #7e57c2;
+  --color-system: #7e57c2;
+  --color-system-light: #b39ddb;
   --color-system-lighten: #b39ddb;
   --color-system-dark: #512da8;
   --color-system-darken: #311b92;
@@ -90,9 +91,9 @@
   --color-gray-800: #424242;
   --color-gray-900: #212121;
 
-  --line-height: 1.5;
-  --font-size-base: 14px;
-  --font-size-xs: 0.65rem;
+  --line-height: 1.52;
+  --font-size-base: 15px;
+  --font-size-xs: 0.75rem;
   --font-size-sm: 0.9rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
@@ -101,8 +102,7 @@
   --font-size-4xl: 2.25rem;
   --font-size-5xl: 3rem;
   --font-size-6xl: 4rem;
-  --font-size-button: 0.95rem;
-  --font-size-icon: 1.2em;
+  --font-size-icon: 1em;
   --font-weight-hairline: 100;
   --font-weight-thin: 200;
   --font-weight-light: 400;
@@ -117,14 +117,74 @@
   --font-family-mono: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   --font-family-numeric: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
 
-  --icon-margin: .65rem;
+  --spacing-xs: .34rem;
+  --spacing-sm: 1rem;
+  --spacing: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 5rem;
 
-  --radius: 4px;
-  --radius-sm: 2px;
+  --radius: 5px;
+  --radius-sm: 3px;
   --radius-md: 6px;
   --radius-lg: 8px;
   --radius-full: 9999px;
+
+  /* x-row */
+  --row-color-bg-hover: var(--color-bg-active);
+  --row-color-bg-active: var(--color-bg-active);
+  --row-color-text: var(--color-text);
+  --row-color-text-active: var(--color-text-active);
+  --row-color-icon: var(--color-icon);
+  --row-color-icon-active: var(--color-icon-active);
+  --row-line-height: 3.6rem;
+  --row-icon-margin: .65rem;
+  --row-padding: 1rem;
+
+  /* x-navigation */
+  --navigation-font-size: 0.92rem;
+  --navigation-font-weight: var(--font-weight-normal);
+
+  /* btn */
+  --btn-font-size: var(--font-size-sm);
+  --btn-font-weight: var(--font-weight-semibold);
+  --btn-line-height: calc(var(--row-line-height) * 0.75);
+  --btn-color-bg: #2f353e;
+  --btn-color-bg-active: #3c414a;
+  --btn-color-text: var(--color-text);
+  --btn-color-text-active: var(--color-text-active);
+  --btn-color-outline: #3e4247;
+  --btn-border-radius: var(--radius-sm);
+  --btn-rounded-radius: 50rem;
+  --btn-outline: 1px solid var(--btn-color-outline);
+  --btn-padding: calc(var(--row-padding) * 1.3);
+  --btn-rounded-padding: calc(var(--btn-padding) * 1.4);
+  --btn-icon-margin: .35rem;
+  
+  /* table */
+  --table-font-size: var(--font-size-sm);
+  --table-font-weight: var(--font-weight-semibold);
+  --table-bg-th: var(--color-bg-active);
+  --table-bg-active: var(--color-bg-active);
+  --table-bg-td: transparent;
+  --table-color-border: var(--color-border);
+  --table-padding-x: .75rem;
+  --table-padding-y: .75rem;
+  --table-border-radius: var(--radius);
 }
 
 .theme-dark {
 }
+
+
+  /*
+  --color-bg-base: #1D2126;
+  --color-bg-panel: #292C33;
+  --color-bg-inverse: #efefef;
+  --color-bg-active: #2d3036;
+  --color-bg-input: #191D25;
+  --color-bg-base: #22262B;
+  --color-bg-panel: #2D3036;
+  --color-bg-input: #1F222A;
+  --color-bg-active: #2F3338;
+  --color-border-outer: #191D23;
+  */

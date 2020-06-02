@@ -1,104 +1,10 @@
 .x-button {
-  position: relative;
-  display: inline-block;
-  padding: 0 15px;
-  line-height: 3.85rem;
-  vertical-align: middle;
-  font-size: var(--font-size-button);
-  font-weight: var(--font-weight-semibold);
-  text-align: center;
-  white-space: nowrap;
+  @apply x-row;
 
+  display: inline-block;
+  white-space: nowrap;
   transition: background 0.25s ease-out;
   touch-action: manipulation;
   cursor: pointer;
   user-select: none;
-  
-  &:hover, &:active, &:focus {
-    text-decoration: none;
-    background-color: var(--color-bg-active);
-  }
-  
-  & > .x-badge {
-    margin-bottom: 2px;
-    &.x-badge-abs {
-      position: absolute;
-      top: 3px;
-      right: 3px;
-    }
-  }
-
-  & > .icon {
-    font-size: var(--font-size-icon);
-    margin-bottom: 0.1em;
-  }
-  
-  &.x-button-dropdown:after {
-    display: inline-block;
-    margin-left: .5em;
-    vertical-align: middle;
-    content: "";
-    margin-top: -.28em;
-    width: .42em;
-    height: .42em;
-    border: 1px solid;
-    border-top: 0;
-    border-left: 0;
-    transform: rotate(45deg);
-  }
-  
-  & > .x-button-items {
-    position: absolute;
-    visibility: hidden;
-    left: 0;
-    margin: 0;
-    padding: 0;
-
-    background-color: var(--color-bg-panel);
-    text-align: left;
-    opacity: 0;
-    transform: perspective(500px) rotateX(-15deg);
-    transform-origin: 50% -50px;
-    will-change: transform, opacity;
-    transition: transform .15s ease-out, opacity .25s;
-    box-shadow: -3px -3px 15px var(--color-shadow);
-  }
-    
-  &.x-button-dropdown-open > .x-button-items {
-    opacity: 1;
-    pointer-events: initial;
-    visibility: visible;
-    transform: perspective(500px) rotateX(0deg);
-  }
-  
-  &.x-button-dropdown-right {
-    & > .x-button-items {
-      left: auto;
-      right: 0;
-      
-      &:before {
-        left: auto;
-        right: 30px;
-      }
-    }
-  }
-  
-  &.x-button-dropdown-center {
-    & > .x-button-items {
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
-  }
-
-  /* status */
-  &.x-button-active {
-    background-color: var(--color-bg-active);
-    color: var(--color-text-active);
-
-    & .icon {
-     color: var(--color-icon-active);
-    }
-  }
-
-  /* sizing */
 }

@@ -18,8 +18,10 @@ module.exports = {
       bg: {
         default: 'var(--color-bg-base)',
         panel: 'var(--color-bg-panel)',
+        inverse: 'var(--color-bg-inverse)',
         input: 'var(--color-bg-input)',
-        active: 'var(--color-bg-active)'
+        active: 'var(--color-bg-active)',
+        highlight: 'var(--color-bg-highlight)'
       },
       mask: {
         default: 'var(--color-bg-mask)',
@@ -27,12 +29,14 @@ module.exports = {
       },
       text: {
         default: 'var(--color-text)',
-        muted: 'var(--color-muted)',
-        active: 'var(--color-active)'
+        muted: 'var(--color-text-muted)',
+        active: 'var(--color-text-active)',
+        highlight: 'var(--color-text-highlight)'
       },
       border: {
         default: 'var(--color-border)',
-        inverse: 'var(--color-border-inverse)',
+        outer: 'var(--color-border-outer)',
+        inverse: 'var(--color-border-inverse)'
       },
       icon: {
         default: 'var(--color-icon)',
@@ -118,12 +122,6 @@ module.exports = {
         900: 'var(--color-gray-900)'
       }
     },
-    fontFamily: {
-      sans: 'var(--font-family-sans)',
-      serif: 'var(--font-family-serif)',
-      mono: 'var(--font-family-mono)',
-      numeric: 'var(--font-family-numeric)'
-    },
     boxShadow: (theme) => ({
       'xs': '0 0 0 1px' + theme('colors.shadow'),
       'sm': '0 1px 2px 0' + theme('colors.shadow'),
@@ -161,17 +159,8 @@ module.exports = {
       default: 'var(--radius)',
       md: 'var(--radius-md)',
       lg: 'var(--radius-lg)',
-      full: 'var(--radius-full)',
+      full: 'var(--radius-full)'
     },
-    textColor: (theme) => ({
-      ...Object.keys(theme('colors')).reduce((o, key) => {
-        const color = theme('colors.' + key);
-        if (~['text', 'gray'].indexOf(key) || typeof color === 'string') o[key] = color;
-        else if (color.text) o[key] = color.text;
-        return o;
-      }, {}),
-      default: theme('colors.text.default', 'currentColor')
-    }),
     maxHeight: {
       'none': 'none',
       '50': '50px',
@@ -205,18 +194,59 @@ module.exports = {
       'full': '100%',
       ...breakpoints(theme('screens'))
     }),
+    minWidth: (theme) => theme('maxWidth'),
     fontSize: {
-      xs: 'var(--font-size-xs)',
-      sm: 'var(--font-size-sm)',
-      base: 'var(--font-size-base)',
-      lg: 'var(--font-size-lg)',
-      xl: 'var(--font-size-xl)',
+      'xs': 'var(--font-size-xs)',
+      'sm': 'var(--font-size-sm)',
+      'base': 'var(--font-size-base)',
+      'lg': 'var(--font-size-lg)',
+      'xl': 'var(--font-size-xl)',
       '2xl': 'var(--font-size-2xl)',
       '3xl': 'var(--font-size-3xl)',
       '4xl': 'var(--font-size-4xl)',
       '5xl': 'var(--font-size-5xl)',
-      '6xl': 'var(--font-size-6xl)',
+      '6xl': 'var(--font-size-6xl)'
     },
-    minWidth: (theme) => theme('maxWidth')
+    fontFamily: {
+      sans: 'var(--font-family-sans)',
+      serif: 'var(--font-family-serif)',
+      mono: 'var(--font-family-mono)',
+      numeric: 'var(--font-family-numeric)'
+    },
+    textColor: (theme) => ({
+      ...Object.keys(theme('colors')).reduce((o, key) => {
+        const color = theme('colors.' + key);
+        if (~['text', 'gray'].indexOf(key) || typeof color === 'string') o[key] = color;
+        else if (color.text) o[key] = color.text;
+        return o;
+      }, {}),
+      default: theme('colors.text.default', 'currentColor')
+    }),
+    spacing: {
+      'px': '1px',
+      '0': '0',
+      '1': '0.25rem',
+      '2': '0.5rem',
+      '3': '0.75rem',
+      '4': '1rem',
+      '5': '1.25rem',
+      '6': '1.5rem',
+      '8': '2rem',
+      '10': '2.5rem',
+      '12': '3rem',
+      '16': '4rem',
+      '20': '5rem',
+      '24': '6rem',
+      '32': '8rem',
+      '40': '10rem',
+      '48': '12rem',
+      '56': '14rem',
+      '64': '16rem',
+      'xs': 'var(--spacing-xs)',
+      'sm': 'var(--spacing-sm)',
+      'md': 'var(--spacing)',
+      'lg': 'var(--spacing-lg)',
+      'xl': 'var(--spacing-xl)'
+    }
   }
 };

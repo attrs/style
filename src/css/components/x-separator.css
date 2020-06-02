@@ -1,0 +1,12 @@
+.x-separator {
+  --x-separator-width: 100%;
+  --x-separator-thickness: 1px;
+  --x-separator-margin: 0;
+  --x-separator-style: solid;
+  --x-separator-color: var(--color-border);
+
+  margin: var(--x-separator-margin) 0;
+  border-bottom: var(--x-separator-thickness) var(--x-separator-style) var(--x-separator-color);
+  width: 98%;
+  margin: 0 auto;
+}
