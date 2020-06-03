@@ -1,4 +1,5 @@
 .icon {
+  @apply antialiased;
   display: inline-block;
   text-rendering: auto;
   margin: 0 0.2em;
@@ -99,25 +100,25 @@ a.dotted {
 
 .display-1 {
   @apply display;
-  font-size: 3.5rem;
+  font-size: var(--font-size-6xl);
   letter-spacing: 0.03em;
 }
 
 .display-2 {
   @apply display;
-  font-size: 3rem;
+  font-size: var(--font-size-5xl);
   letter-spacing: 0.03em;
 }
 
 .display-3 {
   @apply display;
-  font-size: 2.5rem;
+  font-size: var(--font-size-4xl);
   letter-spacing: 0.03em;
 }
 
 .display-4 {
   @apply display;
-  font-size: 2rem;
+  font-size: var(--font-size-3xl);
   letter-spacing: 0.03em;
 }
 

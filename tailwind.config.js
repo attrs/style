@@ -15,8 +15,10 @@ module.exports = {
       black: 'var(--color-black)',
       white: 'var(--color-white)',
       shadow: 'var(--color-shadow)',
+      outline: 'var(--color-outline)',
       bg: {
         default: 'var(--color-bg-base)',
+        base: 'var(--color-bg-base)',
         panel: 'var(--color-bg-panel)',
         inverse: 'var(--color-bg-inverse)',
         input: 'var(--color-bg-input)',
@@ -29,6 +31,7 @@ module.exports = {
       },
       text: {
         default: 'var(--color-text)',
+        light: 'var(--color-text-light)',
         muted: 'var(--color-text-muted)',
         active: 'var(--color-text-active)',
         highlight: 'var(--color-text-highlight)'
@@ -53,7 +56,8 @@ module.exports = {
         dark: 'var(--color-primary-dark)',
         darken: 'var(--color-primary-darken)',
         transparent: 'var(--color-primary-transparent)',
-        text: 'var(--color-primary-text)'
+        text: 'var(--color-primary-text)',
+        outline: 'var(--color-primary-outline)'
       },
       secondary: {
         default: 'var(--color-secondary)',
@@ -62,7 +66,8 @@ module.exports = {
         dark: 'var(--color-secondary-dark)',
         darken: 'var(--color-secondary-darken)',
         transparent: 'var(--color-secondary-transparent)',
-        text: 'var(--color-secondary-text)'
+        text: 'var(--color-secondary-text)',
+        outline: 'var(--color-secondary-outline)'
       },
       success: {
         default: 'var(--color-success)',
@@ -71,7 +76,8 @@ module.exports = {
         dark: 'var(--color-success-dark)',
         darken: 'var(--color-success-darken)',
         transparent: 'var(--color-success-transparent)',
-        text: 'var(--color-success-text)'
+        text: 'var(--color-success-text)',
+        outline: 'var(--color-success-outline)'
       },
       info: {
         default: 'var(--color-info)',
@@ -80,7 +86,8 @@ module.exports = {
         dark: 'var(--color-info-dark)',
         darken: 'var(--color-info-darken)',
         transparent: 'var(--color-info-transparent)',
-        text: 'var(--color-info-text)'
+        text: 'var(--color-info-text)',
+        outline: 'var(--color-info-outline)'
       },
       warning: {
         default: 'var(--color-warning)',
@@ -89,7 +96,8 @@ module.exports = {
         dark: 'var(--color-warning-dark)',
         darken: 'var(--color-warning-darken)',
         transparent: 'var(--color-warning-transparent)',
-        text: 'var(--color-warning-text)'
+        text: 'var(--color-warning-text)',
+        outline: 'var(--color-warning-outline)'
       },
       danger: {
         default: 'var(--color-danger)',
@@ -98,7 +106,8 @@ module.exports = {
         dark: 'var(--color-danger-dark)',
         darken: 'var(--color-danger-darken)',
         transparent: 'var(--color-danger-transparent)',
-        text: 'var(--color-danger-text)'
+        text: 'var(--color-danger-text)',
+        outline: 'var(--color-danger-outline)'
       },
       system: {
         default: 'var(--color-system)',
@@ -107,7 +116,8 @@ module.exports = {
         dark: 'var(--color-system-dark)',
         darken: 'var(--color-system-darken)',
         transparent: 'var(--color-system-transparent)',
-        text: 'var(--color-system-text)'
+        text: 'var(--color-system-text)',
+        outline: 'var(--color-system-outline)'
       },
       gray: {
         default: 'var(--color-gray)',
@@ -119,7 +129,8 @@ module.exports = {
         600: 'var(--color-gray-600)',
         700: 'var(--color-gray-700)',
         800: 'var(--color-gray-800)',
-        900: 'var(--color-gray-900)'
+        900: 'var(--color-gray-900)',
+        outline: 'var(--color-gray-outline)'
       }
     },
     boxShadow: (theme) => ({
@@ -131,16 +142,16 @@ module.exports = {
       'xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px ' + theme('colors.shadow'),
       '2xl': '0 25px 50px -12px' + theme('colors.shadow'),
       'inner': 'inset 0 2px 4px 0' + theme('colors.shadow'),
-      'outline': '0 0 0 3px ' + theme('colors.primary.lighten'),
+      'outline': '0 0 0 var(--outline-thickness) ' + theme('colors.outline'),
       'outline-none': 'none',
-      'outline-primary': '0 0 0 3px ' + theme('colors.primary.lighten'),
-      'outline-secondary': '0 0 0 3px ' + theme('colors.secondary.lighten'),
-      'outline-success': '0 0 0 3px ' + theme('colors.success.lighten'),
-      'outline-info': '0 0 0 3px ' + theme('colors.info.lighten'),
-      'outline-warning': '0 0 0 3px ' + theme('colors.warning.lighten'),
-      'outline-danger': '0 0 0 3px ' + theme('colors.danger.lighten'),
-      'outline-system': '0 0 0 3px ' + theme('colors.system.lighten'),
-      'outline-gray': '0 0 0 3px ' + theme('colors.gray.default'),
+      'outline-primary': '0 0 0 var(--outline-thickness) ' + theme('colors.primary.outline'),
+      'outline-secondary': '0 0 0 var(--outline-thickness) ' + theme('colors.secondary.outline'),
+      'outline-success': '0 0 0 var(--outline-thickness) ' + theme('colors.success.outline'),
+      'outline-info': '0 0 0 var(--outline-thickness) ' + theme('colors.info.outline'),
+      'outline-warning': '0 0 0 var(--outline-thickness) ' + theme('colors.warning.outline'),
+      'outline-danger': '0 0 0 var(--outline-thickness) ' + theme('colors.danger.outline'),
+      'outline-system': '0 0 0 var(--outline-thickness) ' + theme('colors.system.outline'),
+      'outline-gray': '0 0 0 var(--outline-thickness) ' + theme('colors.gray.outline'),
       'none': 'none'
     }),
     backgroundColor: (theme) => ({
@@ -152,6 +163,16 @@ module.exports = {
       ...theme('colors.border'),
       ...theme('colors'),
       default: theme('colors.border.default', 'currentColor')
+    }),
+    textColor: (theme) => ({
+      ...Object.keys(theme('colors')).reduce((o, key) => {
+        const color = theme('colors.' + key);
+        if (~['text', 'gray'].indexOf(key) || typeof color === 'string') o[key] = color;
+        else if (color.text) o[key] = color.text;
+        return o;
+      }, {}),
+      ...theme('colors.text'),
+      default: theme('colors.text.default', 'currentColor')
     }),
     borderRadius: {
       none: '0',
@@ -213,15 +234,6 @@ module.exports = {
       mono: 'var(--font-family-mono)',
       numeric: 'var(--font-family-numeric)'
     },
-    textColor: (theme) => ({
-      ...Object.keys(theme('colors')).reduce((o, key) => {
-        const color = theme('colors.' + key);
-        if (~['text', 'gray'].indexOf(key) || typeof color === 'string') o[key] = color;
-        else if (color.text) o[key] = color.text;
-        return o;
-      }, {}),
-      default: theme('colors.text.default', 'currentColor')
-    }),
     spacing: {
       'px': '1px',
       '0': '0',

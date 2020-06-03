@@ -1,20 +1,10 @@
 .x-card {
-  --x-card-color-bg: var(--color-bg-panel);
-  --x-card-color-border-outer: var(--color-border-outer);
-  --x-card-color-border: var(--color-border);
-  --x-card-radius: var(--radius-sm);
-  --x-card-shadow: 0 1px 4px var(--color-shadow);
-
-  --x-card-header-color-bg: transparent;
-  --x-card-header-color-text: var(--color-text);
-  --x-card-header-font-size: var(--font-size-base);
-  --x-card-header-font-weight: var(--font-weight-semibold);
-
-  display: block;
+  @apply flex flex-col;
   background-color: var(--x-card-color-bg);
   border-radius: var(--x-card-radius);
   border: 1px solid var(--x-card-color-border-outer);
   box-shadow: var(--x-card-shadow);
+  overflow: hidden;
 
   & > .x-card-header {
     @apply x-row;

@@ -4,4 +4,4 @@ import { observer } from './observer';
 
 observer.start();
 
-export * from './assist';
+export * from './observer';

@@ -33,27 +33,27 @@ textarea {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: var(--font-size-5xl);
 }
 
 h2 {
-  font-size: 1.813rem;
+  font-size: var(--font-size-4xl);
 }
 
 h3 {
-  font-size: 1.563rem;
+  font-size: var(--font-size-3xl);
 }
 
 h4 {
-  font-size: 1.313rem;
+  font-size: var(--font-size-2xl);
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: var(--font-size-lg);
 }
 
 h6 {
-  font-size: 0.894rem;
+  font-size: var(--font-size-base);
 }
 
 hr {
@@ -62,7 +62,11 @@ hr {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 mark {
@@ -85,9 +89,10 @@ blockquote {
 
 figcaption {
   text-align: center;
-  font-style: italic;
+  font-style: normal;
+  font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-sm);
-  margin: 0.25em;
+  margin-top: 0.5em;
 }
 
 code, .code  {

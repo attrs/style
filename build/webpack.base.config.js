@@ -17,7 +17,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: /node_modules/,
+        include: /src/,
         use: [
           MiniCssExtractPlugin.loader,
           {
@@ -36,7 +36,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: /node_modules/,
+        exclude: /src/,
         use: [
           MiniCssExtractPlugin.loader,
           {

@@ -1,22 +1,96 @@
 <div class="x-page">
   <header class="x-page-header">
     <h1>
-      <svg
-        class="icon"
-        width="1em"
-        height="1em"
-        viewBox="0 0 16 16"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-      ><path
-      fill-rule="evenodd"
-      d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
-    />
-      </svg>
+      <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" /></svg>
       Form
       <small>Form</small>
     </h1>
   </header>
-  <div class="p-10">
+  <div class="p-md">
+    <div class="x-card grid grid-cols-2 divide-x divide-y divide-border mb-md">
+      <div class="p-sm">
+        <div class="w-full max-w-md m-auto self-center">
+          <form class="x-form">
+            <div class="mb-3">
+              <label class="x-form-label" for="username">
+                Username
+              </label>
+              <input class="x-form-control" ref="username" id="username" type="text" placeholder="Username" autocomplete="username" />
+            </div>
+            <div class="mb-3">
+              <label class="x-form-label" for="password">
+                Password
+              </label>
+              <input class="x-form-control" ref="password" id="password" type="password" placeholder="Password" autocomplete="current-password" />
+            </div>
+            <div class="flex items-center justify-between mt-6">
+              <div>
+                <label class="inline-flex items-center">
+                  <input type="checkbox" class="form-checkbox h-4 w-4" checked />
+                  <span class="ml-2">Remember username</span>
+                </label>
+              </div>
+              <button class="btn btn-primary" type="button">
+                Log In
+              </button>
+            </div>
+          </form>
+
+          <div class="font-semibold text-base text-center py-md">
+            <a href="javascript:;">
+              Forgot Password?
+            </a>
+            <div class="x-separator-h"></div>
+            <a href="javascript:;">
+              Create an account?
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="p-sm">
+        <div class="w-full max-w-md m-auto self-center">
+          <form class="x-form">
+            <div class="mb-3">
+              <label class="x-form-label" for="username">
+                Username
+              </label>
+              <input class="x-form-control" ref="username" id="username" type="text" placeholder="Username" autocomplete="username" />
+            </div>
+            <div class="mb-3">
+              <label class="x-form-label" for="password">
+                Password
+              </label>
+              <input class="x-form-control error" ref="password" id="password" type="password" placeholder="Password" autocomplete="current-password" />
+              <p class="x-form-field-error">Password Incorrect</p>
+            </div>
+            <div class="flex items-center justify-between mt-6">
+              <div>
+                <label class="inline-flex items-center">
+                  <input type="checkbox" class="form-checkbox h-4 w-4" checked />
+                  <span class="ml-2">Remember username</span>
+                </label>
+              </div>
+              <button class="btn btn-primary" type="button">
+                Log In
+              </button>
+            </div>
+          </form>
+
+          <div class="font-semibold text-base text-center py-md">
+            <a href="javascript:;">
+              Forgot Password?
+            </a>
+            <div class="x-separator-h"></div>
+            <a href="javascript:;">
+              Create an account?
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="x-card grid grid-cols-2 divide-x divide-y divide-border mb-md">
+      <div class="p-sm col-span-2">form</div>
+    </div>
   </div>
 </div>

@@ -4,6 +4,11 @@ import router from '@attrs/router';
 
 export default router()
   .set('view.target', '#page')
+  .set('view.modal.options', {
+    maxWidth: 800,
+    top: 50,
+    borderRadius: 3
+  })
   .boot(async (req, res, next) => {
     await res.view(await import('./layout/dashboard.html')).render('body');
     await res.view(await import('./layout/perspectives.html')).render('#perspectives');
@@ -21,10 +26,13 @@ export default router()
   .get('/component/card', async (req, res, next) => await res.view(await import('./component/card.html')).render())
   .get('/component/icon', async (req, res, next) => await res.view(await import('./component/icon.html')).render())
   .get('/component/tab', async (req, res, next) => await res.view(await import('./component/tab.html')).render())
+  .get('/component/navbar', async (req, res, next) => await res.view(await import('./component/navbar.html')).render())
   .get('/component/pagination', async (req, res, next) => await res.view(await import('./component/pagination.html')).render())
   .get('/examples/list', async (req, res, next) => await res.view(await import('./examples/list.html')).render())
   .get('/examples/login', async (req, res, next) => await res.view(await import('./examples/login.html')).render())
-  .get('/examples/modal', async (req, res, next) => await res.view(await import('./examples/login.html')).modal())
+  .get('/examples/modal', async (req, res, next) => await res.view(await import('./examples/modal.html')).modal({ center: true }))
+  .get('/examples/modal-list', async (req, res, next) => await res.view(await import('./examples/list.html')).modal({ width: 1000 }))
+  .get('/examples/modal-fullsize', async (req, res, next) => await res.view(await import('./examples/list.html')).modal({ fullscreen: true, background: 'var(--color-bg-base)', closebtn: true }))
   .on('error', (e) => {
     console.error(e.detail.error);
   })

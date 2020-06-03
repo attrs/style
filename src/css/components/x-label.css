@@ -1,47 +1,256 @@
 .x-label {
-  @apply inline-block font-bold text-xs max-w-full cursor-default;
-  
-  padding: 4px 6px;
-  margin: 1px 0;
-  margin-right: 4px;
-  border-radius: 3px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  @apply x-button;
 
-  &.block {
-    @apply block;
+  font-size: var(--x-label-font-size);
+  line-height: var(--x-label-line-height);
+  padding: 0 var(--x-label-padding);
+  border-radius: var(--x-label-border-radius);
+  font-weight: var(--x-label-font-weight);
+  cursor: default;
+
+  & .icon {
+    margin-left: 0;
+    margin-right: var(--x-label-icon-margin);
   }
-}
 
-.x-label-default {
-  @apply bg-gray text-white;
-}
+  /* color */
+  &.x-label-default {
+    background-color: var(--x-label-color-bg);
+    color: var(--x-label-color-text);
 
-.x-label-primary {
-  @apply bg-primary-light text-white;
-}
+    &:hover,
+    &.active {
+      background-color: var(--x-label-color-bg-active);
+      color: var(--x-label-color-text-active);
+    }
+  }
 
-.x-label-secondary {
-  @apply bg-secondary-light text-white;
-}
+  &.x-label-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
 
-.x-label-success {
-  @apply bg-success-light text-white;
-}
+    &:hover,
+    &.active {
+      background-color: var(--color-primary-dark);
+      color: var(--color-white);
+    }
+  }
 
-.x-label-info {
-  @apply bg-info-light text-white;
-}
+  &.x-label-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
 
-.x-label-warning {
-  @apply bg-warning-light text-white;
-}
+    &:hover,
+    &.active {
+      background-color: var(--color-secondary-dark);
+      color: var(--color-white);
+    }
+  }
 
-.x-label-danger {
-  @apply bg-danger-light text-white;
-}
+  &.x-label-info {
+    background-color: var(--color-info);
+    color: var(--color-white);
 
-.x-label-system {
-  @apply bg-system-light text-white;
+    &:hover,
+    &.active {
+      background-color: var(--color-info-dark);
+      color: var(--color-white);
+    }
+  }
+
+  &.x-label-success {
+    background-color: var(--color-success);
+    color: var(--color-white);
+
+    &:hover,
+    &.active {
+      background-color: var(--color-success-dark);
+      color: var(--color-white);
+    }
+  }
+
+  &.x-label-warning {
+    background-color: var(--color-warning);
+    color: var(--color-white);
+
+    &:hover,
+    &.active {
+      background-color: var(--color-warning-dark);
+      color: var(--color-white);
+    }
+  }
+
+  &.x-label-danger {
+    background-color: var(--color-danger);
+    color: var(--color-white);
+
+    &:hover,
+    &.active {
+      background-color: var(--color-danger-dark);
+      color: var(--color-white);
+    }
+  }
+
+  &.x-label-system {
+    background-color: var(--color-system);
+    color: var(--color-white);
+
+    &:hover,
+    &.active {
+      background-color: var(--color-system-dark);
+      color: var(--color-white);
+    }
+  }
+
+  &.x-label-black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+    &:hover,
+    &.active {
+      background-color: var(--color-black-dark);
+      color: var(--color-white);
+    }
+  }
+
+  &.x-label-outline {
+    border: var(--x-label-outline);
+    background-color: transparent;
+
+    &.x-label-default {
+      background-color: var(--x-label-color-bg);
+      color: var(--x-label-color-text);
+      border-color: var(--x-label-color-outline);
+
+      &:hover,
+      &.active {
+        background-color: var(--x-label-color-bg-active);
+        color: var(--x-label-color-text-active);
+      }
+    }
+
+    &.x-label-primary {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+
+      &:hover,
+      &.active {
+        background-color: var(--color-primary-dark);
+        color: var(--color-white);
+      }
+    }
+
+    &.x-label-secondary {
+      border-color: var(--color-secondary);
+      color: var(--color-secondary);
+
+      &:hover,
+      &.active {
+        background-color: var(--color-secondary-dark);
+        color: var(--color-white);
+      }
+    }
+
+    &.x-label-info {
+      border-color: var(--color-info);
+      color: var(--color-info);
+
+      &:hover,
+      &.active {
+        background-color: var(--color-info-dark);
+        color: var(--color-white);
+      }
+    }
+
+    &.x-label-success {
+      border-color: var(--color-success);
+      color: var(--color-success);
+
+      &:hover,
+      &.active {
+        background-color: var(--color-success-dark);
+        color: var(--color-white);
+      }
+    }
+
+    &.x-label-warning {
+      border-color: var(--color-warning);
+      color: var(--color-warning);
+
+      &:hover,
+      &.active {
+        background-color: var(--color-warning-dark);
+        color: var(--color-white);
+      }
+    }
+
+    &.x-label-danger {
+      border-color: var(--color-danger);
+      color: var(--color-danger);
+
+      &:hover,
+      &.active {
+        background-color: var(--color-danger-dark);
+        color: var(--color-white);
+      }
+    }
+
+    &.x-label-system {
+      border-color: var(--color-system);
+      color: var(--color-system);
+
+      &:hover,
+      &.active {
+        background-color: var(--color-system-dark);
+        color: var(--color-white);
+      }
+    }
+
+    &.x-label-black {
+      border-color: var(--color-black);
+      color: var(--color-black);
+
+      &:hover,
+      &.active {
+        background-color: var(--color-black);
+        color: var(--color-white);
+      }
+    }
+  }
+
+  /* sizing */
+  &.x-label-xs {
+    font-size: calc(var(--x-label-font-size) * 0.83);
+    line-height: calc(var(--x-label-line-height) * 0.6);
+    padding: 0 calc(var(--x-label-padding) * 0.5);
+  }
+
+  &.x-label-sm {
+    font-size: calc(var(--x-label-font-size) * 0.9);
+    line-height: calc(var(--x-label-line-height) * 0.75);
+    padding: 0 calc(var(--x-label-padding) * 0.75);
+  }
+
+  &.x-label-lg {
+    font-size: calc(var(--x-label-font-size) * 1);
+    line-height: calc(var(--x-label-line-height) * 1.3);
+    padding: 0 calc(var(--x-label-padding) * 1.3);
+  }
+
+  &.x-label-rounded {
+    border-radius: var(--x-label-rounded-radius);
+    padding: 0 var(--x-label-rounded-padding);
+
+    &.x-label-xs {
+      padding: 0 calc(var(--x-label-rounded-padding) * 0.5);
+    }
+
+    &.x-label-sm {
+      padding: 0 calc(var(--x-label-rounded-padding) * 0.75);
+    }
+
+    &.x-label-lg {
+      padding: 0 calc(var(--x-label-rounded-padding) * 1.3);
+    }
+  }
 }

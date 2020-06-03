@@ -1,4 +1,8 @@
-.x-form-field {
+.x-form {
+  @apply px-md py-md;
+}
+
+.x-form-control {
   @apply appearance-none border rounded w-full py-3 px-4 leading-tight;
 
   &:focus {
@@ -9,7 +13,16 @@
     @apply border-danger;
 
     &:focus {
-      @apply shadow-outline-danger bg-danger-transparent;
+      @apply border-transparent shadow-outline-danger;
     }
   }
+}
+
+.x-form-field-error {
+  @apply text-xs mt-2;
+  color: var(--color-danger-text);
+}
+
+.x-form-label {
+  @apply block text-sm font-bold mb-2;
 }

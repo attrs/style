@@ -1,9 +1,4 @@
 .x-contextmenu {
-  --x-contextmenu-bg: var(--color-bg-panel);
-  --x-contextmenu-border: 1px solid var(--color-border);
-  --x-contextmenu-border-radius: var(--radius);
-  --x-contextmenu-shadow: -3px -3px 15px var(--color-shadow);
-
   min-width: var(--x-contextmenu-min-width);
   background-color: var(--x-contextmenu-bg);
   border: var(--x-contextmenu-border);

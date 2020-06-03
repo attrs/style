@@ -13,7 +13,14 @@
   &.btn-black,
   &.btn-default,
   &.btn-rounded,
-  &.btn-outline {
+  &.btn-outline,
+  &.btn-xs,
+  &.btn-sm,
+  &.btn-md,
+  &.btn-lg,
+  &.btn-xl,
+  &.btn-2xl,
+  &.btn-3xl {
     line-height: var(--btn-line-height);
     padding: 0 var(--btn-padding);
     border-radius: var(--btn-border-radius);
