@@ -1,0 +1,27 @@
+.x-inputbox {
+  @apply flex flex-row justify-between;
+  border-radius: var(--radius);
+  padding: .25em .5em;
+  background-color: var(--color-bg-input);
+
+  & > input {
+    outline: none;
+    line-height: 1.5rem;
+    background-color: transparent;
+  }
+
+  & > .icon {
+    @apply self-center;
+    margin-right: .75em;
+    font-size: 0.9rem;
+
+    &:last-child {
+      margin-right: -0.1em;
+    }
+  }
+
+  &.x-inputbox-rounded {
+    border-radius: 2em;
+    padding: .25em 1.2em;
+  }
+}

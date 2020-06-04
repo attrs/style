@@ -1,0 +1,36 @@
+.x-caret {
+  display: inline-block;
+  margin-left: .65rem;
+  margin-bottom: 2px;
+  vertical-align: middle;
+  content: '';
+  width: 0.42em;
+  height: 0.42em;
+  border: 1px solid;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(-45deg);
+}
+
+.x-caret-right {
+  @apply x-caret;
+}
+
+.x-caret-down {
+  @apply x-caret;
+  transform: rotate(45deg);
+  margin-bottom: 4px;
+}
+
+.x-caret-left {
+  @apply x-caret;
+  transform: rotate(135deg);
+  margin-bottom: 2px;
+}
+
+.x-caret-up {
+  @apply x-caret;
+  transform: rotate(225deg);
+  margin-top: 4px;
+  margin-bottom: 0;
+}

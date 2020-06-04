@@ -1,0 +1,35 @@
+.x-navbar {
+  @apply flex flex-row justify-between;
+
+  &.x-navbar-align-start {
+    @apply justify-start;
+  }
+
+  &.x-navbar-align-end {
+    @apply justify-end;
+  }
+
+  &.x-navbar-align-center {
+    @apply justify-center;
+  }
+
+  &.x-navbar-align-around {
+    @apply justify-around;
+  }
+
+  &.x-navbar-align-between {
+    @apply justify-between;
+  }
+
+  & .x-navbar-left, & .x-navbar-center, & .x-navbar-right {
+    @apply flex-initial flex flex-row items-center;
+  }
+
+  &.x-navbar-vertical {
+    @apply flex-col;
+
+    & .x-navbar-left, & .x-navbar-center, & .x-navbar-right {
+      @apply flex-col;
+    }
+  }
+}

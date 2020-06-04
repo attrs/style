@@ -1,0 +1,152 @@
+.x-pagination {
+  display: inline-block;
+  position: relative;
+  font-size: var(--x-pagination-font-size);
+  font-weight: var(--x-pagination-font-weight);
+  margin: 3px 0;
+
+  & > a {
+    display: inline-block;
+    cursor: pointer;
+    line-height: var(--x-pagination-line-height);
+    padding: 0 var(--x-pagination-padding);
+    margin: var(--x-pagination-margin);
+    background-color: var(--x-pagination-bg);
+    color: var(--x-pagination-color);
+
+    border: var(--x-pagination-border-width) var(--x-pagination-border-style) transparent;
+    border-radius: var(--x-pagination-border-radius);
+
+    &:hover,
+    &.selected {
+      background-color: var(--x-pagination-selected-bg);
+      border-color: var(--x-pagination-selected-border-color);
+      color: var(--x-pagination-selected-color);
+    }
+  }
+
+  & > * > .icon {
+    font-size: var(--x-pagination-icon-size);
+    margin-bottom: 2px;
+  }
+
+  /* borderless */
+  &.x-pagination-plain {
+    & > a {
+      border: 0;
+
+      &:hover,
+      &.selected {
+        border: 0;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &.x-pagination-bordered {
+    display: inline-flex;
+
+    & > a {
+      margin-left: -1px;
+      line-height: calc(var(--x-pagination-line-height) * 1.1);
+      padding: 0 calc(var(--x-pagination-padding) * 1.1);
+      border: var(--x-pagination-border-width) var(--x-pagination-border-style) var(--x-pagination-border-color);
+      border-radius: 0;
+
+      &:hover,
+      &.selected {
+        border-color: var(--x-pagination-selected-bg);
+        background-color: var(--x-pagination-selected-bg);
+      }
+
+      &:first-child {
+        border-top-left-radius: var(--x-pagination-border-radius);
+        border-bottom-left-radius: var(--x-pagination-border-radius);
+      }
+
+      &:last-child {
+        border-top-right-radius: var(--x-pagination-border-radius);
+        border-bottom-right-radius: var(--x-pagination-border-radius);
+      }
+    }
+  }
+
+  &.x-pagination-primary {
+    --x-pagination-selected-border-color: var(--color-primary);
+    --x-pagination-selected-bg: var(--color-primary);
+    --x-pagination-selected-color: var(--color-white);
+  }
+
+  &.x-pagination-secondary {
+    --x-pagination-selected-border-color: var(--color-secondary);
+    --x-pagination-selected-bg: var(--color-secondary);
+    --x-pagination-selected-color: var(--color-white);
+  }
+
+  &.x-pagination-info {
+    --x-pagination-selected-border-color: var(--color-info);
+    --x-pagination-selected-bg: var(--color-info);
+    --x-pagination-selected-color: var(--color-white);
+  }
+
+  &.x-pagination-success {
+    --x-pagination-selected-border-color: var(--color-success);
+    --x-pagination-selected-bg: var(--color-success);
+    --x-pagination-selected-color: var(--color-white);
+  }
+
+  &.x-pagination-warning {
+    --x-pagination-selected-border-color: var(--color-warning);
+    --x-pagination-selected-bg: var(--color-warning);
+    --x-pagination-selected-color: var(--color-white);
+  }
+
+  &.x-pagination-danger {
+    --x-pagination-selected-border-color: var(--color-danger);
+    --x-pagination-selected-bg: var(--color-danger);
+    --x-pagination-selected-color: var(--color-white);
+  }
+
+  &.x-pagination-system {
+    --x-pagination-selected-border-color: var(--color-system);
+    --x-pagination-selected-bg: var(--color-system);
+    --x-pagination-selected-color: var(--color-white);
+  }
+
+  &.x-pagination-dark {
+    --x-pagination-selected-border-color: var(--color-bg-base);
+    --x-pagination-selected-bg: var(--color-bg-panel);
+  }
+
+  &.x-pagination-black {
+    --x-pagination-selected-border-color: var(--color-black);
+    --x-pagination-selected-bg: var(--color-black);
+    --x-pagination-selected-color: var(--color-white);
+  }
+
+  &.x-pagination-xs {
+    font-size: calc(var(--x-pagination-font-size) * 0.8);
+
+    & > a {
+      line-height: calc(var(--x-pagination-line-height) * 0.6);
+      padding: 0 calc(var(--x-pagination-padding) * 0.6);
+    }
+  }
+
+  &.x-pagination-sm {
+    & > a {
+      line-height: calc(var(--x-pagination-line-height) * 0.8);
+      padding: 0 calc(var(--x-pagination-padding) * 0.8);
+    }
+  }
+
+  &.x-pagination-md {
+  }
+
+  &.x-pagination-lg {
+    & > a {
+      line-height: calc(var(--x-pagination-line-height) * 1.5);
+      padding: 0 calc(var(--x-pagination-padding) * 1.5);
+    }
+  }
+}

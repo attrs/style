@@ -1,0 +1,10 @@
+.x-button {
+  @apply x-row;
+
+  display: inline-block;
+  white-space: nowrap;
+  transition: background 0.25s ease-out;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+}

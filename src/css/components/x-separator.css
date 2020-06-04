@@ -1,0 +1,14 @@
+.x-separator {
+  margin: var(--x-separator-margin) 0;
+  border-bottom: var(--x-separator-thickness) var(--x-separator-style) var(--x-separator-color);
+  width: var(--x-separator-width);
+  margin: 0 auto;
+}
+
+.x-separator-h {
+  display: inline-block;
+  height: var(--x-separator-h-height);
+  margin: 0 var(--x-separator-h-margin);
+  vertical-align: text-bottom;
+  border-right: var(--x-separator-h-thickness) var(--x-separator-style) var(--x-separator-color);
+}
