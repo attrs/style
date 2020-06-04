@@ -41,4 +41,6 @@ export default router()
   .on('notfound', (e) => {
     console.log('not found', e.detail.href);
   })
-  .listen();
+  .listen({
+    mode: 'hashbang'
+  });
