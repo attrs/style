@@ -17,6 +17,9 @@
     "dist:docs": "rimraf docs && cross-env NODE_ENV=production webpack --config build/webpack.docs.config.js",
     "watch": "webpack --config build/webpack.lib.config.js --watch"
   },
+  "dependencies": {
+    "debounce": "^1.2.0"
+  },
   "devDependencies": {
     "@attrs/httpd": "^0.1.0",
     "@attrs/router": "^0.6.0",
@@ -54,8 +57,5 @@
     "lib",
     "LICENSE",
     "README.md"
-  ],
-  "dependencies": {
-    "debounce": "^1.2.0"
-  }
+  ]
 }
