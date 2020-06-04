@@ -1,7 +1,7 @@
 .x-badge {
   display: inline-block;
   min-width: 1em;
-  padding: .3em .75em .35em .75em;
+  padding: .25em .75em .3em .75em;
   margin-left: 6px;
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-semibold);

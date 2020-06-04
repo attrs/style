@@ -95,7 +95,8 @@ a.dotted {
 
 .display {
   font-weight: var(--font-weight-thin);
-  line-height: 1.1;
+  line-height: 1.3;
+  margin: 0;
 }
 
 .display-1 {
@@ -119,6 +120,18 @@ a.dotted {
 .display-4 {
   @apply display;
   font-size: var(--font-size-3xl);
+  letter-spacing: 0.03em;
+}
+
+.display-5 {
+  @apply display;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+}
+
+.display-6 {
+  @apply display;
+  font-size: var(--font-size-xl);
   letter-spacing: 0.03em;
 }
 

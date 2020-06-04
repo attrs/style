@@ -1,12 +1,7 @@
 let opened;
 
-const findDropdown = (el) => {
-  if( el.classList && el.classList.contains('x-dropdown') ) return el;
-  return findDropdown(el.parentNode);
-};
-
 const listener = (e) => {
-  const dropdown = findDropdown(e.target);
+  const dropdown = e.target.closest('.x-dropdown');
 
   if (!dropdown ) {
     dropdown.removeEventListener('click', listener);

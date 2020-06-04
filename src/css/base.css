@@ -2,6 +2,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import './util';
+@import './flexbox';
 
 html {
   font-family: var(--font-family-sans);
@@ -34,26 +36,32 @@ textarea {
 
 h1 {
   font-size: var(--font-size-5xl);
+  margin-bottom: 0.5em;
 }
 
 h2 {
   font-size: var(--font-size-4xl);
+  margin-bottom: 0.5em;
 }
 
 h3 {
   font-size: var(--font-size-3xl);
+  margin-bottom: 0.5em;
 }
 
 h4 {
   font-size: var(--font-size-2xl);
+  margin-bottom: 0.5em;
 }
 
 h5 {
   font-size: var(--font-size-lg);
+  margin-bottom: 0.5em;
 }
 
 h6 {
   font-size: var(--font-size-base);
+  margin-bottom: 0.5em;
 }
 
 hr {
@@ -98,12 +106,6 @@ figcaption {
 code, .code  {
   font-size: var(--font-size-sm);
   font-family: var(--font-family-mono);
-}
-
-.code {
-  padding: 1rem;
-  overflow: auto;
-  border-radius: var(--radius);
 }
 
 ul {

@@ -16,8 +16,10 @@ export default router()
     await res.view(await import('./layout/navigation-side.html')).render('#navigation-side');
     next();
   })
-  .get('/', async (req, res, next) => await res.view(await import('./examples/list.html')).render())
+  .get('/', 'base')
+  .get('/base', 'base/typography')
   .get('/base/typography', async (req, res, next) => await res.view(await import('./base/typography.html')).render())
+  .get('/component', 'component/button')
   .get('/component/button', async (req, res, next) => await res.view(await import('./component/button.html')).render())
   .get('/component/label', async (req, res, next) => await res.view(await import('./component/label.html')).render())
   .get('/component/table', async (req, res, next) => await res.view(await import('./component/table.html')).render())
@@ -32,7 +34,7 @@ export default router()
   .get('/examples/login', async (req, res, next) => await res.view(await import('./examples/login.html')).render())
   .get('/examples/modal', async (req, res, next) => await res.view(await import('./examples/modal.html')).modal({ center: true }))
   .get('/examples/modal-list', async (req, res, next) => await res.view(await import('./examples/list.html')).modal({ width: 1000 }))
-  .get('/examples/modal-fullsize', async (req, res, next) => await res.view(await import('./examples/list.html')).modal({ fullscreen: true, background: 'var(--color-bg-base)', closebtn: true }))
+  .get('/examples/modal-fullsize', async (req, res, next) => await res.view(await import('./base/typography.html')).modal({ fullscreen: true, background: 'var(--color-bg-base)', closebtn: true }))
   .on('error', (e) => {
     console.error(e.detail.error);
   })

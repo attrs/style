@@ -1,0 +1,213 @@
+.x-tab {
+  @apply flex flex-row justify-start;
+
+  background-color: var(--x-tab-bg);
+  font-size: var(--x-tab-font-size);
+  font-weight: var(--x-tab-font-weight);
+  margin: var(--x-tab-margin) 0;
+  text-align: center;
+
+  & > .x-tab-item {
+    @apply x-row;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    line-height: var(--x-tab-line-height);
+    padding: 0 var(--x-tab-padding);
+    border: var(--x-tab-border-width) solid transparent;
+    border-radius: var(--x-tab-border-radius);
+    margin: 0 var(--x-tab-gap);
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &.active {
+      background-color: var(--x-tab-selection-bg);
+      border-color: var(--x-tab-border-color);
+      color: var(--x-tab-selection-color);
+      font-size: var(--x-tab-selection-font-size);
+      font-weight: var(--x-tab-selection-font-weight);
+    }
+  }
+
+  &.x-tab-top {
+    margin-bottom: 0;
+
+    & > .x-tab-item {
+      border-bottom: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-bottom: -1px;
+    }
+  }
+
+  &.x-tab-bottom {
+    margin-top: 0;
+
+    & > .x-tab-item {
+      border-top: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      margin-top: -1px;
+    }
+  }
+
+  &.x-tab-outline {
+    & > .x-tab-item {
+      background-color: transparent;
+
+      &:hover,
+      &.active {
+        background-color: var(--color-bg-base);
+      }
+    }
+  }
+
+  &.x-tab-outline-panel {
+    & > .x-tab-item {
+      background-color: transparent;
+
+      &:hover,
+      &.active {
+        background-color: var(--color-bg-panel);
+      }
+    }
+  }
+
+  &.x-tab-bg-panel {
+    --x-tab-selection-bg: var(--color-bg-panel);
+  }
+
+  &.x-tab-bg-base {
+    --x-tab-selection-bg: var(--color-bg-base);
+  }
+
+  &.x-tab-bg-active {
+    --x-tab-selection-bg: var(--color-bg-active);
+  }
+
+  &.x-tab-bg-white {
+    --x-tab-selection-bg: var(--color-bg-white);
+  }
+
+  &.x-tab-bg-primary {
+    --x-tab-selection-bg: var(--color-primary);
+    --x-tab-selection-color: var(--color-white);
+  }
+
+  &.x-tab-bg-info {
+    --x-tab-selection-bg: var(--color-info);
+    --x-tab-selection-color: var(--color-white);
+  }
+
+  &.x-tab-bg-success {
+    --x-tab-selection-bg: var(--color-success);
+    --x-tab-selection-color: var(--color-white);
+  }
+
+  &.x-tab-bg-warning {
+    --x-tab-selection-bg: var(--color-warning);
+    --x-tab-selection-color: var(--color-white);
+  }
+
+  &.x-tab-bg-danger {
+    --x-tab-selection-bg: var(--color-danger);
+    --x-tab-selection-color: var(--color-white);
+  }
+
+  &.x-tab-bg-system {
+    --x-tab-selection-bg: var(--color-system);
+    --x-tab-selection-color: var(--color-white);
+  }
+
+  &.x-tab-bg-black {
+    --x-tab-selection-bg: var(--color-black);
+    --x-tab-selection-color: var(--color-white);
+  }
+
+  &.x-tab-bg-border {
+    --x-tab-selection-bg: var(--color-border);
+    --x-tab-selection-color: var(--color-text);
+  }
+
+  &.x-tab-align-start {
+    @apply justify-start;
+  }
+
+  &.x-tab-align-end {
+    @apply justify-end;
+  }
+
+  &.x-tab-align-center {
+    @apply justify-center;
+  }
+
+  &.x-tab-align-around {
+    @apply justify-around;
+  }
+
+  &.x-tab-align-between {
+    @apply justify-between;
+  }
+
+  &.x-tab-stretch {
+    & > .x-tab-item {
+      @apply flex-1;
+    }
+  }
+
+  &.x-tab-plain {
+    --x-tab-border-width: 0;
+    --x-tab-bg: transparent;
+    --x-tab-selection-bg: transparent;
+  }
+
+  &.x-tab-xs {
+    font-size: calc(var(--x-tab-font-size) * 0.8);
+
+    & > .x-tab-item {
+      line-height: calc(var(--x-tab-line-height) * 0.6);
+      padding: 0 calc(var(--x-tab-padding) * 0.6);
+    }
+  }
+
+  &.x-tab-sm {
+    & > .x-tab-item {
+      line-height: calc(var(--x-tab-line-height) * 0.75);
+      padding: 0 calc(var(--x-tab-padding) * 0.75);
+    }
+  }
+
+  &.x-tab-md {
+  }
+
+  &.x-tab-lg {
+    & > .x-tab-item {
+      line-height: calc(var(--x-tab-line-height) * 1.2);
+      padding: 0 calc(var(--x-tab-padding) * 2);
+    }
+  }
+
+  &.x-tab-xl {
+    & > .x-tab-item {
+      line-height: calc(var(--x-tab-line-height) * 1.5);
+      padding: 0 calc(var(--x-tab-padding) * 3);
+    }
+  }
+
+  &.x-tab-2xl {
+    & > .x-tab-item {
+      line-height: calc(var(--x-tab-line-height) * 2);
+      padding: 0 calc(var(--x-tab-padding) * 4);
+    }
+  }
+}
+
+.x-tab-contents {
+  @apply x-stack;
+}

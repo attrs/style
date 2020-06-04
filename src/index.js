@@ -1,5 +1,5 @@
 import './css/base.css';
-import './css/style.css';
+import './css/components.css';
 import { observer } from './observer';
 
 observer.start();

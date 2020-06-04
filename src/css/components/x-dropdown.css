@@ -1,18 +1,9 @@
 .x-dropdown {
   position: relative;
+  display: inline-block;
 
   &:not(.x-dropdown-nocaret) > .btn:after {
-    display: inline-block;
-    margin-left: 0.5em;
-    vertical-align: middle;
-    content: '';
-    margin-top: -0.28em;
-    width: 0.42em;
-    height: 0.42em;
-    border: 1px solid;
-    border-top: 0;
-    border-left: 0;
-    transform: rotate(45deg);
+    @apply x-caret-down;
   }
 
   & > .x-dropdown-items {

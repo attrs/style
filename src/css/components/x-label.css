@@ -1,12 +1,15 @@
 .x-label {
-  @apply x-button;
+  @apply x-row;
 
+  display: inline-block;
+  white-space: nowrap;
   font-size: var(--x-label-font-size);
   line-height: var(--x-label-line-height);
   padding: 0 var(--x-label-padding);
   border-radius: var(--x-label-border-radius);
   font-weight: var(--x-label-font-weight);
   cursor: default;
+  margin: var(--x-label-margin);
 
   & .icon {
     margin-left: 0;
@@ -17,100 +20,51 @@
   &.x-label-default {
     background-color: var(--x-label-color-bg);
     color: var(--x-label-color-text);
-
-    &:hover,
-    &.active {
-      background-color: var(--x-label-color-bg-active);
-      color: var(--x-label-color-text-active);
-    }
   }
 
   &.x-label-primary {
     background-color: var(--color-primary);
     color: var(--color-white);
-
-    &:hover,
-    &.active {
-      background-color: var(--color-primary-dark);
-      color: var(--color-white);
-    }
   }
 
   &.x-label-secondary {
     background-color: var(--color-secondary);
     color: var(--color-white);
-
-    &:hover,
-    &.active {
-      background-color: var(--color-secondary-dark);
-      color: var(--color-white);
-    }
   }
 
   &.x-label-info {
     background-color: var(--color-info);
     color: var(--color-white);
-
-    &:hover,
-    &.active {
-      background-color: var(--color-info-dark);
-      color: var(--color-white);
-    }
   }
 
   &.x-label-success {
     background-color: var(--color-success);
     color: var(--color-white);
-
-    &:hover,
-    &.active {
-      background-color: var(--color-success-dark);
-      color: var(--color-white);
-    }
   }
 
   &.x-label-warning {
     background-color: var(--color-warning);
     color: var(--color-white);
-
-    &:hover,
-    &.active {
-      background-color: var(--color-warning-dark);
-      color: var(--color-white);
-    }
   }
 
   &.x-label-danger {
     background-color: var(--color-danger);
     color: var(--color-white);
-
-    &:hover,
-    &.active {
-      background-color: var(--color-danger-dark);
-      color: var(--color-white);
-    }
   }
 
   &.x-label-system {
     background-color: var(--color-system);
     color: var(--color-white);
-
-    &:hover,
-    &.active {
-      background-color: var(--color-system-dark);
-      color: var(--color-white);
-    }
   }
 
   &.x-label-black {
     background-color: var(--color-black);
     color: var(--color-white);
+  }
 
-    &:hover,
-    &.active {
-      background-color: var(--color-black-dark);
-      color: var(--color-white);
-    }
+  &.x-label-dark {
+    background-color: var(--color-bg-base);
+    color: var(--color-text);
   }
 
   &.x-label-outline {
@@ -121,100 +75,51 @@
       background-color: var(--x-label-color-bg);
       color: var(--x-label-color-text);
       border-color: var(--x-label-color-outline);
-
-      &:hover,
-      &.active {
-        background-color: var(--x-label-color-bg-active);
-        color: var(--x-label-color-text-active);
-      }
     }
 
     &.x-label-primary {
       border-color: var(--color-primary);
       color: var(--color-primary);
-
-      &:hover,
-      &.active {
-        background-color: var(--color-primary-dark);
-        color: var(--color-white);
-      }
     }
 
     &.x-label-secondary {
       border-color: var(--color-secondary);
       color: var(--color-secondary);
-
-      &:hover,
-      &.active {
-        background-color: var(--color-secondary-dark);
-        color: var(--color-white);
-      }
     }
 
     &.x-label-info {
       border-color: var(--color-info);
       color: var(--color-info);
-
-      &:hover,
-      &.active {
-        background-color: var(--color-info-dark);
-        color: var(--color-white);
-      }
     }
 
     &.x-label-success {
       border-color: var(--color-success);
       color: var(--color-success);
-
-      &:hover,
-      &.active {
-        background-color: var(--color-success-dark);
-        color: var(--color-white);
-      }
     }
 
     &.x-label-warning {
       border-color: var(--color-warning);
       color: var(--color-warning);
-
-      &:hover,
-      &.active {
-        background-color: var(--color-warning-dark);
-        color: var(--color-white);
-      }
     }
 
     &.x-label-danger {
       border-color: var(--color-danger);
       color: var(--color-danger);
-
-      &:hover,
-      &.active {
-        background-color: var(--color-danger-dark);
-        color: var(--color-white);
-      }
     }
 
     &.x-label-system {
       border-color: var(--color-system);
       color: var(--color-system);
-
-      &:hover,
-      &.active {
-        background-color: var(--color-system-dark);
-        color: var(--color-white);
-      }
     }
 
     &.x-label-black {
       border-color: var(--color-black);
       color: var(--color-black);
+    }
 
-      &:hover,
-      &.active {
-        background-color: var(--color-black);
-        color: var(--color-white);
-      }
+    &.x-label-dark {
+      border-color: var(--color-bg-base);
+      color: var(--color-bg-base);
     }
   }
 
