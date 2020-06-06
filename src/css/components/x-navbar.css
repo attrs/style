@@ -1,12 +1,20 @@
 .x-navbar {
-  @apply flex flex-row justify-between;
+  @apply flex flex-row justify-between items-center;
 
   &.x-navbar-align-start {
     @apply justify-start;
+
+    &:last-child {
+      @apply flex-1;
+    }
   }
 
   &.x-navbar-align-end {
     @apply justify-end;
+
+    &:first-child {
+      @apply flex-1;
+    }
   }
 
   &.x-navbar-align-center {
@@ -20,16 +28,8 @@
   &.x-navbar-align-between {
     @apply justify-between;
   }
+}
 
-  & .x-navbar-left, & .x-navbar-center, & .x-navbar-right {
-    @apply flex-initial flex flex-row items-center;
-  }
-
-  &.x-navbar-vertical {
-    @apply flex-col;
-
-    & .x-navbar-left, & .x-navbar-center, & .x-navbar-right {
-      @apply flex-col;
-    }
-  }
+.x-navbar-v {
+  @apply x-navbar flex-col;
 }
