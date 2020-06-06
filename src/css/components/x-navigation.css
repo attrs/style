@@ -1,18 +1,16 @@
 .x-navigation {
-  --x-navigation-padding: 1.5rem;
-
   margin: 1rem 0;
-  font-size: var(--navigation-font-size);
-  font-weight: var(--navigation-font-weight);
+  font-size: var(--x-navigation-font-size);
+  font-weight: var(--x-navigation-font-weight);
 
   & .x-navigation-title {
     padding: 0 var(--x-navigation-padding);
-    margin-bottom: 0.5rem;
+    margin: var(--x-navigation-title-margin-top) 0 var(--x-navigation-title-margin-bottom);
     line-height: 2.5rem;
     text-transform: uppercase;
-    color: var(--color-text-light);
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--font-size-sm);
+    color: var(--x-navigation-title-color);
+    font-weight: var(--x-navigation-title-font-weight);
+    font-size: var(--x-navigation-title-font-size);
   }
 
   & > ul.x-navigation-items {
@@ -43,15 +41,19 @@
       & .icon {
         margin-left: 0;
       }
+
+      &:hover {
+        background: var(--x-navigation-hover-bg);
+      }
     }
 
     &.active {
       & > a {
-        background: var(--color-bg-active);
-        color: var(--color-text-active);
+        background-color: var(--x-navigation-active-bg);
+        color: var(--x-navigation-active-text);
 
         & .icon {
-          color: var(--color-icon-active);
+          color: var(--x-navigation-active-icon);
         }
       }
     }
@@ -61,7 +63,7 @@
     }
 
     &.x-navitem-selected {
-      background-color: var(--color-bg-active);
+      background-color: var(--x-navigation-selected-bg);
     }
 
     & > .x-navitem-items {

@@ -3,6 +3,10 @@
 
   font-size: var(--btn-font-size);
 
+  &:not(.btn-icon) .icon {
+    margin-left: 0;
+  }
+
   &.btn-primary,
   &.btn-secondary,
   &.btn-info,
@@ -25,12 +29,7 @@
     padding: 0 var(--btn-padding);
     border-radius: var(--btn-border-radius);
     font-weight: var(--btn-font-weight);
-    margin: 1px;
-
-    & .icon {
-      margin-left: 0;
-      margin-right: var(--btn-icon-margin);
-    }
+    margin: var(--btn-margin);
 
     /* color */
     &.btn-default {
@@ -305,7 +304,7 @@
 
     &.btn-icon {
       --btn-padding: var(--row-padding);
-      
+
       & .icon {
         margin: 0;
         margin-bottom: 2px;
