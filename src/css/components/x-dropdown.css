@@ -19,8 +19,10 @@
     transform-origin: 50% -50px;
     will-change: transform, opacity;
     transition: transform 0.15s ease-out, opacity 0.25s;
+  }
 
-    &.x-dropdown-items-right {
+  &.x-dropdown-align-right {
+    & > .x-dropdown-items {
       left: auto;
       right: 0;
 
@@ -29,8 +31,10 @@
         right: 30px;
       }
     }
+  }
 
-    &.x-dropdown-items-center {
+  &.x-dropdown-align-center {
+    & > .x-dropdown-items {
       left: 50%;
       transform: translate(-50%, 0);
     }
