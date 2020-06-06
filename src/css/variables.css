@@ -6,6 +6,7 @@
   --color-bg-inverse: #efefef;
   --color-bg-active: #2d3036;
   --color-bg-input: #191d25;
+  --color-bg-hover: color-mod(var(--color-bg-active) alpha(50%));
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
   --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
@@ -126,8 +127,8 @@
   --font-family-mono: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   --font-family-numeric: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
 
-  --spacing-xs: 0.34rem;
-  --spacing-sm: 1rem;
+  --spacing-xs: 0.75rem;
+  --spacing-sm: 1.5rem;
   --spacing: 2rem;
   --spacing-lg: 3rem;
   --spacing-xl: 5rem;
@@ -148,15 +149,12 @@
   --row-color-icon: var(--color-icon);
   --row-color-icon-active: var(--color-icon-active);
   --row-line-height: 3.6rem;
-  --row-icon-margin: 0.65rem;
+  --row-icon-margin: 0.75rem;
   --row-padding: 1rem;
-
-  /* x-navigation */
-  --navigation-font-size: 0.92rem;
-  --navigation-font-weight: var(--font-weight-normal);
 
   /* btn */
   --btn-font-size: var(--font-size-sm);
+  --btn-margin: 0.18em;
   --btn-font-weight: var(--font-weight-semibold);
   --btn-line-height: calc(var(--row-line-height) * 0.75);
   --btn-color-bg: #2f353e;
@@ -262,11 +260,31 @@
   --x-tab-gap: 0.15rem;
   --x-tab-line-height: 3.2;
   --x-tab-selection-bg: var(--color-bg-panel);
+  --x-tab-hover-bg: var(--color-bg-hover);
   --x-tab-selection-color: var(--color-text-active);
   --x-tab-selection-font-weight: var(--font-weight-semibold);
   --x-tab-border-width: 1px;
   --x-tab-border-color: var(--color-border);
   --x-tab-border-radius: var(--radius-sm);
+
+  /* x-navigation */
+  --x-navigation-font-size: 0.92rem;
+  --x-navigation-font-weight: var(--font-weight-normal);
+  --x-navigation-padding: var(--spacing-sm);
+  --x-navigation-title-color: var(--color-text-muted);
+  --x-navigation-title-font-weight: var(--font-weight-semibold);
+  --x-navigation-title-font-size: var(--font-size-sm);
+  --x-navigation-title-color: var(--color-text-muted);
+  --x-navigation-title-margin-top: 1rem;
+  --x-navigation-title-margin-bottom: .5rem;
+  --x-navigation-active-bg: var(--color-bg-active);
+  --x-navigation-active-text: var(--color-text-active);
+  --x-navigation-active-icon: var(--color-icon-active);
+  --x-navigation-selected-bg: var(--x-navigation-active-bg);
+  --x-navigation-hover-bg: var(--color-bg-hover);
+
+  /* x-profile */
+  --x-profile-padding: var(--spacing-sm);
 }
 
 .theme-dark {

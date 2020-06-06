@@ -10,7 +10,6 @@
   white-space: nowrap;
   
   & .icon {
-    display: inline-block;
     margin: 0 var(--row-icon-margin);
     margin-bottom: 0.065em;
   }
