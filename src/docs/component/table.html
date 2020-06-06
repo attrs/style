@@ -49,7 +49,7 @@
       <div class="flex-1">
         <h6 class="text-muted font-semibold">Table in Card</h6>
         <div class="x-card">
-          <table class="table">
+          <table class="table table-lined">
             <thead>
               <tr>
                 <th>NAME</th>
@@ -196,7 +196,7 @@
                   <path d="M2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM9 5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-2-2V5z" />
                 </svg>
               </button>
-              <div class="x-dropdown">
+              <div class="x-dropdown x-dropdown-align-right">
                 <button class="btn btn-sm btn-outline btn-default">
                   <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
@@ -206,7 +206,7 @@
                   Actions
                 </button>
 
-                <div class="x-dropdown-items x-dropdown-items-right">
+                <div class="x-dropdown-items">
                   <div class="x-contextmenu">
                     <div class="x-list min-w-200">
                       <div class="x-list-header">Header A</div>
@@ -260,10 +260,10 @@
     <div class="my-md">
       <h6 class="text-muted font-semibold">with Toolbar & Pagination</h6>
 
-      <div class="border">
+      <div class="border bg-panel">
         <!-- filter navbar-->
         <div class="x-navbar">
-          <div class="x-navbar-left">
+          <div class="x-navbar">
             <div class="x-inputbox mx-3">
               <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -273,21 +273,21 @@
               <input type="text" placeholder="Search" />
             </div>
           </div>
-          <div class="x-navbar-right">
-            <a href="/examples/modal-list" route ghost class="btn">
+          <div class="x-navbar">
+            <a href="/examples/modal-list" route ghost class="btn btn-icon">
               <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 0 0 3 14.5h8a1.5 1.5 0 0 0 1.5-1.5V9a.5.5 0 0 0-1 0v4a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 0 0-1H3A1.5 1.5 0 0 0 1.5 5v8zm7-11a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.5H9a.5.5 0 0 1-.5-.5z" />
                 <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 0 1 0 .708l-8 8a.5.5 0 0 1-.708-.708l8-8a.5.5 0 0 1 .708 0z" />
               </svg>
             </a>
-            <div class="x-dropdown">
+            <div class="x-dropdown x-dropdown-align-right">
               <a class="btn">
                 <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                 </svg>
                 View Type
               </a>
-              <div class="x-dropdown-items x-dropdown-items-right">
+              <div class="x-dropdown-items">
                 <div class="x-contextmenu">
                   <div class="x-list min-w-200">
                     <div class="x-list-header">Header A</div>
@@ -332,14 +332,14 @@
                 </div>
               </div>
             </div>
-            <div class="x-dropdown">
+            <div class="x-dropdown x-dropdown-align-right">
               <a class="btn">
                 <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
                 </svg>
                 Sort
               </a>
-              <div class="x-dropdown-items x-dropdown-items-right">
+              <div class="x-dropdown-items">
                 <div class="x-contextmenu">
                   <div class="x-list min-w-200">
                     <div class="x-list-header">Header A</div>
@@ -421,7 +421,7 @@
             </tr>
           </tbody>
         </table>
-        <div class="border-t py-1 text-right">
+        <div class="border-t p-xs text-right">
           <div class="x-pagination">
             <a class="x-pagination-prev">
               <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
