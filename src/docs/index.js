@@ -41,10 +41,6 @@ export default router()
   .on('notfound', (e) => {
     console.log('not found', e.detail.href);
   })
-<<<<<<< HEAD
-  .listen();
-=======
   .listen({
     mode: 'hashbang'
   });
->>>>>>> development
