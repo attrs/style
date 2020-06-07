@@ -2,6 +2,7 @@
   @apply x-button;
 
   font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
 
   &:not(.btn-icon) .icon {
     margin-left: 0;

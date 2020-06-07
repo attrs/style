@@ -2,7 +2,7 @@
   @apply antialiased;
   display: inline-block;
   text-rendering: auto;
-  margin: 0 0.2em;
+  margin: 0 var(--icon-margin);
   font-size: var(--font-size-icon);
 }
 

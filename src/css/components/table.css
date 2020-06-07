@@ -18,6 +18,7 @@
 
   & th {
     background-color: var(--table-bg-th);
+    font-weight: var(--table-header-font-weight);
 
     &.table-cell-em {
       background-color: var(--table-bg-active);

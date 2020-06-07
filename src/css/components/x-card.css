@@ -4,7 +4,6 @@
   border-radius: var(--x-card-radius);
   border: 1px solid var(--x-card-color-border-outer);
   box-shadow: var(--x-card-shadow);
-  overflow: hidden;
 
   & > .x-card-header {
     @apply x-row;

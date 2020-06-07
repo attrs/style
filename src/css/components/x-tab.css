@@ -29,17 +29,18 @@
       margin-left: 0;
     }
 
-    &:hover,
+    &:hover {
+      background-color: var(--x-tab-hover-bg);
+      border-color: var(--x-tab-hover-border-color);
+      color: var(--x-tab-hover-color);
+    }
+    
     &.active {
       background-color: var(--x-tab-selection-bg);
       border-color: var(--x-tab-border-color);
       color: var(--x-tab-selection-color);
       font-size: var(--x-tab-selection-font-size);
       font-weight: var(--x-tab-selection-font-weight);
-    }
-
-    &:hover {
-      background-color: var(--x-tab-hover-bg);
     }
   }
 

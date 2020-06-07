@@ -1,8 +1,9 @@
 .x-inputbox {
   @apply flex flex-row justify-between;
-  border-radius: var(--radius);
+  border-radius: var(--x-inputbox-radius);
   padding: .25em .5em;
-  background-color: var(--color-bg-input);
+  background-color: var(--x-inputbox-color-bg);
+  border: 1px solid var(--x-inputbox-color-border);
 
   & > input {
     outline: none;
