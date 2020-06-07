@@ -19,14 +19,15 @@ const scan = () => {
   });
 };
 
-let instance;
+
 const start = () => {
-  if (instance) instance.disconnect();
+  if (window._attrs_style_observer_) _attrs_style_observer_.disconnect();
   if (!window.MutationObserver) return console.warn('[@attrs/style] browser does not support "MutationObserver"');
-  instance = new MutationObserver(debounce(scan, 150));
+  
+  const observer = window._attrs_style_observer_ = new MutationObserver(debounce(scan, 150));
 
   const connect = () => {
-    instance.observe(document.body, {
+    observer.observe(document.body, {
       childList: true,
       subtree: true
     });
@@ -37,7 +38,7 @@ const start = () => {
 };
 
 const stop = () => {
-  if (instance) instance.disconnect();
+  if (window._attrs_style_observer_) _attrs_style_observer_.disconnect();
 };
 
 export const observer = {

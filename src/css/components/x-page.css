@@ -23,7 +23,6 @@
 
       & .icon {
         color: var(--color-icon);
-        margin-right: var(--icon-margin);
       }
 
       & small {
