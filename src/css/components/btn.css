@@ -8,6 +8,15 @@
     margin-left: 0;
   }
 
+  &:hover, &.active {
+    background: var(--row-color-bg-hover);
+    color: var(--row-color-text-active);
+    
+    & .icon {
+      color: var(--row-color-icon-active);
+    }
+  }
+
   &.btn-primary,
   &.btn-secondary,
   &.btn-info,

@@ -2,6 +2,23 @@ import '../';
 import './style.css';
 import router from '@attrs/router';
 
+window.theme = (theme) => {
+  const body = document.body;
+  const contents = document.querySelector('#page');
+
+  body.classList.remove('theme-dark', 'theme-light');
+  contents.classList.remove('theme-light');
+
+  if (theme === 'dark') {
+    body.classList.add('theme-dark');
+  } else if (theme === 'light') {
+    body.classList.add('theme-light');
+  } else if (theme === 'hybrid') {
+    body.classList.add('theme-dark');
+    contents.classList.add('theme-light');
+  }
+};
+
 export default router()
   .set('view.target', '#page')
   .set('view.modal.options', {
