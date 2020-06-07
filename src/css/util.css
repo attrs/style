@@ -31,6 +31,11 @@
   filter: grayscale(100%);
 }
 
+.highlight {
+  color: var(--color-text-highlight);
+  background-color: var(--color-bg-highlight);
+}
+
 .bg-fit {
   background-size: 100% auto;
   background-position: center center;
@@ -50,7 +55,7 @@ a.dotted {
     width: 2px;
     height: 2px;
     margin-right: -15px;
-    background: @text-color;
+    background: var(--color-text);
   }
 }
 

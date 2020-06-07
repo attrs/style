@@ -23,13 +23,4 @@
     text-decoration: none;
     background: none;
   }
-
-  &:hover, &.active {
-    background: var(--row-color-bg-hover);
-    color: var(--row-color-text-active);
-    
-    & .icon {
-      color: var(--row-color-icon-active);
-    }
-  }
 }
