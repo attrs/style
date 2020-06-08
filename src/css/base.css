@@ -117,3 +117,80 @@ ol {
   list-style-type: decimal;
   margin-left: 1rem;
 }
+
+/* divide border fix */
+.grid-cols-1.divide-border {
+  &.divide-x > *:nth-child(n + 1) {
+    border-left-width: 0 !important;
+  }
+}
+
+.grid-cols-2.divide-border {
+  &.divide-y > *:nth-child(2) {
+    border-top-width: 0 !important;
+  }
+
+  &.divide-x > *:nth-child(2n + 1) {
+    border-left-width: 0 !important;
+  }
+}
+
+.grid-cols-3.divide-border {
+  &.divide-y > *:nth-child(-n+3) {
+    border-top-width: 0 !important;
+  }
+
+  &.divide-x > *:nth-child(3n + 1) {
+    border-left-width: 0 !important;
+  }
+}
+
+.grid-cols-4.divide-border {
+  &.divide-y > *:nth-child(-n+4) {
+    border-top-width: 0 !important;
+  }
+
+  &.divide-x > *:nth-child(4n + 1) {
+    border-left-width: 0 !important;
+  }
+}
+
+.grid-cols-5.divide-border {
+  &.divide-y > *:nth-child(-n+5) {
+    border-top-width: 0 !important;
+  }
+
+  &.divide-x > *:nth-child(5n + 1) {
+    border-left-width: 0 !important;
+  }
+}
+
+.grid-cols-6.divide-border {
+  &.divide-y > *:nth-child(-n+6) {
+    border-top-width: 0 !important;
+  }
+
+  &.divide-x > *:nth-child(6n + 1) {
+    border-left-width: 0 !important;
+  }
+}
+
+.grid-cols-7.divide-border {
+  &.divide-y > *:nth-child(-n+7) {
+    border-top-width: 0 !important;
+  }
+
+  &.divide-x > *:nth-child(7n + 1) {
+    border-left-width: 0 !important;
+  }
+}
+
+.grid-cols-8.divide-border {
+  &.divide-y > *:nth-child(-n+8) {
+    border-top-width: 0 !important;
+  }
+
+  &.divide-x > *:nth-child(8n + 1) {
+    border-left-width: 0 !important;
+  }
+}
