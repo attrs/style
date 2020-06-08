@@ -12,8 +12,8 @@
   --x-switch-border-radius: 4px;
   --x-switch-text-margin: 8px;
   --x-switch-btn-radius: 4px;
-  --x-switch-btn-size: calc(@input-height-base - (var(--x-switch-border-width) * 2));
-  --x-switch-btn-pl: calc(var(--x-switch-width) - @input-height-base);
+  --x-switch-btn-size: calc(var(--x-switch-size) - (var(--x-switch-border-width) * 2));
+  --x-switch-btn-pl: calc(var(--x-switch-width) - var(--x-switch-size));
   
 }
 

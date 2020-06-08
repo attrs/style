@@ -87,7 +87,6 @@ label.x-switch {
     background: #fff;
   }
   
-  // brand
   &.x-switch-primary > input:checked + label {
     background: var(--color-primary);
     border-color: var(--color-primary);
