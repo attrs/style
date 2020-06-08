@@ -1,13 +1,13 @@
-.cols {
+.x-cells {
   display: table;
   width: 100%;
   
-  .col {
+  & .x-cell {
     display: table-cell;
     vertical-align: top;
   }
   
-  &.cols-fixed {
+  &.x-cells-fixed {
     table-layout: fixed;
   }
 }
