@@ -2,16 +2,28 @@
 @import './themes/theme-light';
 
 :root {
-  @apply theme-dark;
+  @apply theme-light;
+
+  --x-switch-font-size: var(--font-size-sm);
+  --x-switch-size: var(--row-line-height);
+  --x-switch-line-height: var(--row-line-height);
+  --x-switch-width: 70px;
+  --x-switch-border-width: 3px;
+  --x-switch-border-radius: 4px;
+  --x-switch-text-margin: 8px;
+  --x-switch-btn-radius: 4px;
+  --x-switch-btn-size: calc(var(--x-switch-size) - (var(--x-switch-border-width) * 2));
+  --x-switch-btn-pl: calc(var(--x-switch-width) - var(--x-switch-size));
+  
 }
 
+/* apply prefers-color-scheme */
 @media (prefers-color-scheme: light) {
   :root {
     @apply theme-light;
   }
 }
 
-/* dark theme */
 @media (prefers-color-scheme: dark) {
   :root {
     @apply theme-dark;

@@ -1,0 +1,117 @@
+.x-mouse {
+  --x-mouse-color-bg: rgba(22,22,22, 0.5);
+  --x-mouse-color-outline: rgba(255,255,255, 0.5);
+  --x-mouse-width-mouse: 25px;
+  --x-mouse-height-mouse: 35px;
+  --x-mouse-border-mouse: 2px;
+  --x-mouse-pos-mouse: 8px;
+  --x-mouse-pos-text: 2px;
+  --x-mouse-size-trackball: 5px;
+  --x-mouse-pos-trackball: 8px;
+  --x-mouse-shrink-trackball: 0.4;
+  --x-mouse-anim-duration: 5s;
+
+  position: relative;
+  width: var(--x-mouse-width-mouse);
+  height: var(--x-mouse-height-mouse);
+  background-size: 100% 100%;
+  border-radius: 100px;
+  background-size: 225%;
+  animation: 
+    nudgeMouse var(--x-mouse-anim-duration) ease-out 10;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: auto;
+  }
+
+  &:before {
+    width: calc(var(--x-mouse-width-mouse) - var(--x-mouse-border-mouse));
+    height: calc(var(--x-mouse-height-mouse) - var(--x-mouse-border-mouse));
+    background-color: var(--x-mouse-color-bg);
+    border-radius: 100px;
+    border: var(--x-mouse-border-mouse) solid var(--x-mouse-color-outline);
+  }
+  &:after {
+    background-color: var(--x-mouse-color-outline);
+    width: var(--x-mouse-size-trackball);
+    height: var(--x-mouse-size-trackball);
+    border-radius: 100%;
+    animation: trackBallSlide var(--x-mouse-anim-duration) linear infinite;
+  }
+}
+
+@keyframes trackBallSlide {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
+  }
+  6% { 
+    opacity: 1;
+    transform: scale(0.9) translateY(var(--x-mouse-pos-trackball)/4);
+  }
+  14% {
+    opacity: 0;
+    transform: scale(var(--x-mouse-shrink-trackball)) translateY(var(--x-mouse-pos-trackball)*2);
+  }
+  15%, 19% {
+    opacity: 0;
+    transform: scale(var(--x-mouse-shrink-trackball)) translateY(-var(--x-mouse-pos-trackball));
+  }
+  28%, 29.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
+  }
+  36% { 
+    opacity: 1;
+    transform: scale(0.9) translateY(var(--x-mouse-pos-trackball)/4);
+  }
+  44% {
+    opacity: 0;
+    transform: scale(var(--x-mouse-shrink-trackball)) translateY(var(--x-mouse-pos-trackball)*2);
+  }
+  45%, 49% {
+    opacity: 0;
+    transform: scale(var(--x-mouse-shrink-trackball)) translateY(-var(--x-mouse-pos-trackball));
+  }
+  58%, 59.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
+  }
+  66% { 
+    opacity: 1;
+    transform: scale(0.9) translateY(var(--x-mouse-pos-trackball)/4);
+  }
+  74% {
+    opacity: 0;
+    transform: scale(var(--x-mouse-shrink-trackball)) translateY(var(--x-mouse-pos-trackball)*2);
+  }
+  75%, 79% {
+    opacity: 0;
+    transform: scale(var(--x-mouse-shrink-trackball)) translateY(-var(--x-mouse-pos-trackball));
+  }
+  88%, 100% {
+    opacity: 1;
+    transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
+  }
+}
+
+@keyframes nudgeMouse {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(var(--x-mouse-pos-mouse)); }
+  30% { transform: translateY(0); }
+  50% { transform: translateY(var(--x-mouse-pos-mouse)); }
+  60% { transform: translateY(0); }
+  80% { transform: translateY(var(--x-mouse-pos-mouse)); }
+  90% { transform: translateY(0); }
+}

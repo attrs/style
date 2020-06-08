@@ -1,4 +1,7 @@
 .theme-light {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
+  
   --color-black: #000;
   --color-white: #fefefe;
   --color-bg-base: #eee;

@@ -1,4 +1,7 @@
 .theme-dark {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
+
   --color-black: #000;
   --color-white: #fefefe;
   --color-bg-base: #23262d;
@@ -6,11 +9,12 @@
   --color-bg-inverse: #efefef;
   --color-bg-active: #2d3036;
   --color-bg-input: #191d25;
-  --color-bg-hover: color-mod(var(--color-bg-active) alpha(50%));
+
+  --color-bg-hover: rgba(45, 48, 54, 0.5);
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
   --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
-  --color-outline: var(--color-primary);
+  --color-outline: var(--color-info);
 
   --color-border: #2e3237;
   --color-border-outer: #2c3136;
@@ -29,7 +33,7 @@
   --color-scrollbar-thumb: rgba(0, 0, 0, 0.5);
   --color-scrollbar-thumb-border: rgba(255, 255, 255, 0.05);
 
-  --color-shadow: rgba(0, 0, 0, 0.05);
+  --color-shadow: rgba(0, 0, 0, 0.1);
   --color-badge: #5d6167;
   --color-badge-text: #fff;
 

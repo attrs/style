@@ -1,21 +1,24 @@
-.headline {
+.x-headline {
+  --x-headline-font-family: var(--font-family-serif);
+  --x-headline-font-size: var(--font-size-4xl);
+
   display: block;
   text-align: center;
   
-  .headline-title {
+  & .x-headline-title {
     margin: 0;
     padding: 0;
     padding-top: 12px;
     line-height: 40px;
     
-    font-size: 32px;
+    font-size: var(--x-headline-font-size);
     font-weight: 400;
     letter-spacing: 0.05em;
     word-wrap: break-word;
-    font-family: @font-family-serif;
+    font-family: var(--x-headline-font-family);
   }
   
-  .headline-desc, .headline-category {
+  & .x-headline-desc, & .x-headline-category {
     margin: 0;
     padding: 0;
     
@@ -28,7 +31,7 @@
     font-weight: 100;
   }
   
-  .headline-category {
+  & .x-headline-category {
     display: inline-block;
     font-size: 14px;
     font-weight: normal;

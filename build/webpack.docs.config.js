@@ -70,7 +70,7 @@ module.exports = merge(base, {
     new CopyPlugin({
       patterns: [
         { from: path.join(assets, 'favicon.png'), to: dist },
-        { from: path.join(assets, 'screenshot.png'), to: dist },
+        { from: path.join(assets, 'screenshot.jpg'), to: dist },
         { from: path.join(assets, 'CNAME'), to: dist }
       ]
     }),

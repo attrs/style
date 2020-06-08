@@ -1,0 +1,161 @@
+label.x-switch {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  height: var(--x-switch-size);
+  min-height: var(--x-switch-size);
+  margin-bottom: 0;
+  width: var(--x-switch-width);
+
+  & > label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+
+    font-size: var(--x-switch-font-size);
+    line-height: var(--x-switch-line-height);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    background: #D7D7D7;
+    border: var(--x-switch-border-width) solid #D7D7D7;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    transition: 0.3s ease-out;
+    border-radius: var(--x-switch-border-radius);
+  }
+
+  & > label:before {
+    content: attr(data-off);
+    position: absolute;
+    top: 1px;
+    right: var(--x-switch-text-margin);
+    line-height: var(--x-switch-btn-size);
+  }
+
+  & > label:after {
+    content: "";
+    width: var(--x-switch-btn-size);
+    height: var(--x-switch-btn-size);
+    display: block;
+    background: #fff;
+    border-radius: var(--x-switch-btn-radius);
+  }
+
+  & > input {
+    appearance: none;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    left: 0;
+    top: 0;
+  }
+
+  & > input:focus {
+    outline: none;
+  }
+
+  & > input:focus + label {
+    color: #fff;
+    border-color: var(--color-border);
+    background: #C7C7C7;
+  }
+
+  & > input:focus + label:after {
+    background: #fff;
+  }
+  
+  & > input:checked + label {
+    border-color: var(--color-border);
+    background: var(--color-border);
+    padding-left: var(--x-switch-btn-pl);
+    color: #fff;
+  }
+
+  & > input:checked + label:before {
+    content: attr(data-on);
+    left: var(--x-switch-text-margin);
+    right: initial;
+  }
+
+  & > input:checked + label:after {
+    background: #fff;
+  }
+  
+  &.x-switch-primary > input:checked + label {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+  &.x-switch-primary > input:checked + label:after {
+    color: var(--color-primary);
+  }
+  &.x-switch-primary > input:checked:focus + label {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+  
+  &.x-switch-success > input:checked + label {
+    background: var(--color-success);
+    border-color: var(--color-success);
+  }
+  &.x-switch-success > input:checked + label:after {
+    color: var(--color-success);
+  }
+  &.x-switch-success > input:checked:focus + label {
+    background: var(--color-success);
+    border-color: var(--color-success);
+  }
+  
+  &.x-switch-info > input:checked + label {
+    background: var(--color-info);
+    border-color: var(--color-info);
+  }
+  &.x-switch-info > input:checked + label:after {
+    color: var(--color-info);
+  }
+  &.x-switch-info > input:checked:focus + label {
+    background: var(--color-info);
+    border-color: var(--color-info);
+  }
+  
+  &.x-switch-warning > input:checked + label {
+    background: var(--color-warning);
+    border-color: var(--color-warning);
+  }
+  &.x-switch-warning > input:checked + label:after {
+    color: var(--color-warning);
+  }
+  &.x-switch-warning > input:checked:focus + label {
+    background: var(--color-warning);
+    border-color: var(--color-warning);
+  }
+  
+  &.x-switch-danger > input:checked + label {
+    background: var(--color-danger);
+    border-color: var(--color-danger);
+  }
+  &.x-switch-danger > input:checked + label:after {
+    color: var(--color-danger);
+  }
+  &.x-switch-danger > input:checked:focus + label {
+    background: var(--color-danger);
+    border-color: var(--color-danger);
+  }
+  
+  &.x-switch-system > input:checked + label {
+    background: var(--color-system);
+    border-color: var(--color-system);
+  }
+  &.x-switch-system > input:checked + label:after {
+    color: var(--color-system);
+  }
+  &.x-switch-system > input:checked:focus + label {
+    background: var(--color-system);
+    border-color: var(--color-system);
+  }
+}
