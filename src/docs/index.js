@@ -28,7 +28,6 @@ export default router()
   })
   .boot(async (req, res, next) => {
     await res.view(await import('./layout/dashboard.html')).render('body');
-    await res.view(await import('./layout/perspectives.html')).render('#perspectives');
     await res.view(await import('./layout/navigation-top.html')).render('#navigation-top');
     await res.view(await import('./layout/navigation-side.html')).render('#navigation-side');
     next();
