@@ -59,6 +59,11 @@
     }
 
     &.btn-primary {
+      --btn-color-icon: var(--color-white);
+      --btn-color-icon-active: var(--color-white);
+      --btn-color-text: var(--color-white);
+      --btn-color-text-active: var(--color-white);
+
       background-color: var(--color-primary);
       color: var(--color-white);
 
@@ -70,6 +75,11 @@
     }
 
     &.btn-secondary {
+      --btn-color-icon: var(--color-white);
+      --btn-color-icon-active: var(--color-white);
+      --btn-color-text: var(--color-white);
+      --btn-color-text-active: var(--color-white);
+
       background-color: var(--color-secondary);
       color: var(--color-white);
 
@@ -81,6 +91,11 @@
     }
 
     &.btn-info {
+      --btn-color-icon: var(--color-white);
+      --btn-color-icon-active: var(--color-white);
+      --btn-color-text: var(--color-white);
+      --btn-color-text-active: var(--color-white);
+
       background-color: var(--color-info);
       color: var(--color-white);
 
@@ -92,6 +107,11 @@
     }
 
     &.btn-success {
+      --btn-color-icon: var(--color-white);
+      --btn-color-icon-active: var(--color-white);
+      --btn-color-text: var(--color-white);
+      --btn-color-text-active: var(--color-white);
+
       background-color: var(--color-success);
       color: var(--color-white);
 
@@ -103,6 +123,11 @@
     }
 
     &.btn-warning {
+      --btn-color-icon: var(--color-white);
+      --btn-color-icon-active: var(--color-white);
+      --btn-color-text: var(--color-white);
+      --btn-color-text-active: var(--color-white);
+
       background-color: var(--color-warning);
       color: var(--color-white);
 
@@ -114,6 +139,11 @@
     }
 
     &.btn-danger {
+      --btn-color-icon: var(--color-white);
+      --btn-color-icon-active: var(--color-white);
+      --btn-color-text: var(--color-white);
+      --btn-color-text-active: var(--color-white);
+
       background-color: var(--color-danger);
       color: var(--color-white);
 
@@ -125,6 +155,11 @@
     }
 
     &.btn-system {
+      --btn-color-icon: var(--color-white);
+      --btn-color-icon-active: var(--color-white);
+      --btn-color-text: var(--color-white);
+      --btn-color-text-active: var(--color-white);
+
       background-color: var(--color-system);
       color: var(--color-white);
 
@@ -136,6 +171,11 @@
     }
 
     &.btn-black {
+      --btn-color-icon: var(--color-white);
+      --btn-color-icon-active: var(--color-white);
+      --btn-color-text: var(--color-white);
+      --btn-color-text-active: var(--color-white);
+
       background-color: var(--color-black);
       color: var(--color-white);
 
