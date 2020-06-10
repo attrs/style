@@ -12,10 +12,11 @@
     "prepublishOnly": "npm run dist",
     "start": "httpd serve docs -p 9200 -s",
     "dev": "webpack-dev-server --host 0.0.0.0 --port 9200 --config build/webpack.docs.config.js",
-    "dist": "npm run dist:docs && npm run dist:lib",
+    "dist": "npm run format && npm run dist:docs && npm run dist:lib",
     "dist:lib": "rimraf lib && cross-env NODE_ENV=production webpack --config build/webpack.lib.config.js",
     "dist:docs": "rimraf docs && cross-env NODE_ENV=production webpack --config build/webpack.docs.config.js",
-    "watch": "webpack --config build/webpack.lib.config.js --watch"
+    "watch": "webpack --config build/webpack.lib.config.js --watch",
+    "format": "prettier --write \"src/**/*.{js,css}\""
   },
   "dependencies": {
     "debounce": "^1.2.0"

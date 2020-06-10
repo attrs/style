@@ -3,7 +3,7 @@ let opened;
 const listener = (e) => {
   const dropdown = e.target.closest('.x-dropdown');
 
-  if (!dropdown ) {
+  if (!dropdown) {
     dropdown.removeEventListener('click', listener);
     return;
   }

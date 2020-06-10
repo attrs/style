@@ -70,7 +70,7 @@ hr {
 
 p {
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -103,7 +103,8 @@ figcaption {
   margin-top: 0.5em;
 }
 
-code, .code  {
+code,
+.code {
   font-size: var(--font-size-sm);
   font-family: var(--font-family-mono);
 }
@@ -136,7 +137,7 @@ ol {
 }
 
 .grid-cols-3.divide-border {
-  &.divide-y > *:nth-child(-n+3) {
+  &.divide-y > *:nth-child(-n + 3) {
     border-top-width: 0 !important;
   }
 
@@ -146,7 +147,7 @@ ol {
 }
 
 .grid-cols-4.divide-border {
-  &.divide-y > *:nth-child(-n+4) {
+  &.divide-y > *:nth-child(-n + 4) {
     border-top-width: 0 !important;
   }
 
@@ -156,7 +157,7 @@ ol {
 }
 
 .grid-cols-5.divide-border {
-  &.divide-y > *:nth-child(-n+5) {
+  &.divide-y > *:nth-child(-n + 5) {
     border-top-width: 0 !important;
   }
 
@@ -166,7 +167,7 @@ ol {
 }
 
 .grid-cols-6.divide-border {
-  &.divide-y > *:nth-child(-n+6) {
+  &.divide-y > *:nth-child(-n + 6) {
     border-top-width: 0 !important;
   }
 
@@ -176,7 +177,7 @@ ol {
 }
 
 .grid-cols-7.divide-border {
-  &.divide-y > *:nth-child(-n+7) {
+  &.divide-y > *:nth-child(-n + 7) {
     border-top-width: 0 !important;
   }
 
@@ -186,7 +187,7 @@ ol {
 }
 
 .grid-cols-8.divide-border {
-  &.divide-y > *:nth-child(-n+8) {
+  &.divide-y > *:nth-child(-n + 8) {
     border-top-width: 0 !important;
   }
 

@@ -1,6 +1,6 @@
 .x-mouse {
-  --x-mouse-color-bg: rgba(22,22,22, 0.5);
-  --x-mouse-color-outline: rgba(255,255,255, 0.5);
+  --x-mouse-color-bg: rgba(22, 22, 22, 0.5);
+  --x-mouse-color-outline: rgba(255, 255, 255, 0.5);
   --x-mouse-width-mouse: 25px;
   --x-mouse-height-mouse: 35px;
   --x-mouse-border-mouse: 2px;
@@ -17,13 +17,15 @@
   background-size: 100% 100%;
   border-radius: 100px;
   background-size: 225%;
-  animation: 
-    nudgeMouse var(--x-mouse-anim-duration) ease-out 10;
+  animation: nudgeMouse var(--x-mouse-anim-duration) ease-out 10;
   &:before,
   &:after {
-    content: "";
+    content: '';
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     margin: auto;
   }
 
@@ -48,19 +50,21 @@
     opacity: 1;
     transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
   }
-  6% { 
+  6% {
     opacity: 1;
-    transform: scale(0.9) translateY(var(--x-mouse-pos-trackball)/4);
+    transform: scale(0.9) translateY(var(--x-mouse-pos-trackball) / 4);
   }
   14% {
     opacity: 0;
-    transform: scale(var(--x-mouse-shrink-trackball)) translateY(var(--x-mouse-pos-trackball)*2);
+    transform: scale(var(--x-mouse-shrink-trackball)) translateY(var(--x-mouse-pos-trackball) * 2);
   }
-  15%, 19% {
+  15%,
+  19% {
     opacity: 0;
     transform: scale(var(--x-mouse-shrink-trackball)) translateY(-var(--x-mouse-pos-trackball));
   }
-  28%, 29.99% {
+  28%,
+  29.99% {
     opacity: 1;
     transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
   }
@@ -68,19 +72,21 @@
     opacity: 1;
     transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
   }
-  36% { 
+  36% {
     opacity: 1;
-    transform: scale(0.9) translateY(var(--x-mouse-pos-trackball)/4);
+    transform: scale(0.9) translateY(var(--x-mouse-pos-trackball) / 4);
   }
   44% {
     opacity: 0;
-    transform: scale(var(--x-mouse-shrink-trackball)) translateY(var(--x-mouse-pos-trackball)*2);
+    transform: scale(var(--x-mouse-shrink-trackball)) translateY(var(--x-mouse-pos-trackball) * 2);
   }
-  45%, 49% {
+  45%,
+  49% {
     opacity: 0;
     transform: scale(var(--x-mouse-shrink-trackball)) translateY(-var(--x-mouse-pos-trackball));
   }
-  58%, 59.99% {
+  58%,
+  59.99% {
     opacity: 1;
     transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
   }
@@ -88,30 +94,46 @@
     opacity: 1;
     transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
   }
-  66% { 
+  66% {
     opacity: 1;
-    transform: scale(0.9) translateY(var(--x-mouse-pos-trackball)/4);
+    transform: scale(0.9) translateY(var(--x-mouse-pos-trackball) / 4);
   }
   74% {
     opacity: 0;
-    transform: scale(var(--x-mouse-shrink-trackball)) translateY(var(--x-mouse-pos-trackball)*2);
+    transform: scale(var(--x-mouse-shrink-trackball)) translateY(var(--x-mouse-pos-trackball) * 2);
   }
-  75%, 79% {
+  75%,
+  79% {
     opacity: 0;
     transform: scale(var(--x-mouse-shrink-trackball)) translateY(-var(--x-mouse-pos-trackball));
   }
-  88%, 100% {
+  88%,
+  100% {
     opacity: 1;
     transform: scale(1) translateY(-var(--x-mouse-pos-trackball));
   }
 }
 
 @keyframes nudgeMouse {
-  0% { transform: translateY(0); }
-  20% { transform: translateY(var(--x-mouse-pos-mouse)); }
-  30% { transform: translateY(0); }
-  50% { transform: translateY(var(--x-mouse-pos-mouse)); }
-  60% { transform: translateY(0); }
-  80% { transform: translateY(var(--x-mouse-pos-mouse)); }
-  90% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(var(--x-mouse-pos-mouse));
+  }
+  30% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(var(--x-mouse-pos-mouse));
+  }
+  60% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(var(--x-mouse-pos-mouse));
+  }
+  90% {
+    transform: translateY(0);
+  }
 }

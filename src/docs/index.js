@@ -30,7 +30,14 @@ export default router()
     await res.view(await import('./layout/dashboard.html')).render('body');
     await res.view(await import('./layout/navigation-top.html')).render('#navigation-top');
     await res.view(await import('./layout/navigation-side.html')).render('#navigation-side');
+
     next();
+
+    const response = await fetch('https://api.github.com/repos/attrs/style');
+    const result = await response.json();
+
+    const githubStargazersElement = document.querySelector('#github_stargazers');
+    if (result && githubStargazersElement) githubStargazersElement.innerHTML = `${result.stargazers_count}`;
   })
   .get('/', 'base')
   .get('/base', 'base/typography')

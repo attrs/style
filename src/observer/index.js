@@ -6,12 +6,8 @@ import { tab } from './tab';
 const blacklist = ['.x-noob'];
 const scan = () => {
   const blacklistselector = blacklist.join(',');
-  const selectors = [
-    '.x-dropdown:not(' + blacklistselector + ')',
-    '.x-tab:not(' + blacklistselector + ')',
-    '.x-navigation:not(' + blacklistselector + ')'
-  ];
-  
+  const selectors = ['.x-dropdown:not(' + blacklistselector + ')', '.x-tab:not(' + blacklistselector + ')', '.x-navigation:not(' + blacklistselector + ')'];
+
   document.body.querySelectorAll(selectors.join(',')).forEach((element) => {
     if (element.classList.contains('x-dropdown')) dropdown(element);
     if (element.classList.contains('x-tab')) tab(element);
@@ -19,12 +15,11 @@ const scan = () => {
   });
 };
 
-
 const start = () => {
   if (window._attrs_style_observer_) _attrs_style_observer_.disconnect();
   if (!window.MutationObserver) return console.warn('[@attrs/style] browser does not support "MutationObserver"');
-  
-  const observer = window._attrs_style_observer_ = new MutationObserver(debounce(scan, 150));
+
+  const observer = (window._attrs_style_observer_ = new MutationObserver(debounce(scan, 150)));
 
   const connect = () => {
     observer.observe(document.body, {

@@ -6,7 +6,7 @@
 
   position: relative;
   padding: 0 var(--x-profile-padding);
-  margin: var( --x-profile-font-margin) 0;
+  margin: var(--x-profile-font-margin) 0;
   font-size: var(--x-profile-font-size);
 
   & .x-profile-image {

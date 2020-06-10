@@ -1,7 +1,7 @@
 .x-badge {
   display: inline-block;
   min-width: 1em;
-  padding: .25em .75em .3em .75em;
+  padding: 0.25em 0.75em 0.3em 0.75em;
   margin-left: 6px;
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-semibold);
@@ -12,9 +12,10 @@
   border-radius: 1em;
   background-color: var(--color-badge);
   color: var(--color-badge-text);
-  transition: opacity .35s;
-  
-  &:active, &:focus {
+  transition: opacity 0.35s;
+
+  &:active,
+  &:focus {
     outline: none !important;
   }
 

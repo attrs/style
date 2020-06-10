@@ -8,12 +8,17 @@
     margin-left: 0;
   }
 
-  &:hover, &.active {
-    background: var(--row-color-bg-hover);
-    color: var(--row-color-text-active);
-    
+  & .icon {
+    color: var(--btn-color-icon);
+  }
+
+  &:hover,
+  &.active {
+    background: var(--btn-color-bg-hover);
+    color: var(--btn-color-text-active);
+
     & .icon {
-      color: var(--row-color-icon-active);
+      color: var(--btn-color-icon-active);
     }
   }
 
@@ -285,35 +290,35 @@
 
     &.btn-rounded {
       border-radius: var(--btn-rounded-radius);
-      padding: 0 var(--btn-rounded-padding);
+      padding: 0 var(--btn-padding-rounded);
 
       &.btn-xs {
-        padding: 0 calc(var(--btn-rounded-padding) * 0.5);
+        padding: 0 calc(var(--btn-padding-rounded) * 0.5);
       }
 
       &.btn-sm {
-        padding: 0 calc(var(--btn-rounded-padding) * 0.75);
+        padding: 0 calc(var(--btn-padding-rounded) * 0.75);
       }
 
       &.btn-lg {
-        padding: 0 calc(var(--btn-rounded-padding) * 1.3);
+        padding: 0 calc(var(--btn-padding-rounded) * 1.3);
       }
 
       &.btn-xl {
-        padding: 0 calc(var(--btn-rounded-padding) * 1.6);
+        padding: 0 calc(var(--btn-padding-rounded) * 1.6);
       }
 
       &.btn-2xl {
-        padding: 0 calc(var(--btn-rounded-padding) * 2);
+        padding: 0 calc(var(--btn-padding-rounded) * 2);
       }
 
       &.btn-3xl {
-        padding: 0 calc(var(--btn-rounded-padding) * 3);
+        padding: 0 calc(var(--btn-padding-rounded) * 3);
       }
     }
 
     &.btn-icon {
-      --btn-padding: var(--row-padding);
+      --btn-padding: var(--btn-padding-icon-only);
 
       & .icon {
         margin: 0;
@@ -322,10 +327,10 @@
 
       &:hover,
       &.active {
-        color: var(--row-color-text-active);
+        color: var(--btn-color-text-active);
 
         & .icon {
-          color: var(--row-color-text-active);
+          color: var(--btn-color-text-active);
         }
       }
     }

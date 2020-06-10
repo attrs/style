@@ -1,21 +1,21 @@
 .x-tagbox {
-  & > .x-tag:nth-child(1n+0) {
+  & > .x-tag:nth-child(1n + 0) {
     background-color: var(--color-primary);
   }
-  
-  & > .x-tag:nth-child(2n+0) {
+
+  & > .x-tag:nth-child(2n + 0) {
     background-color: var(--color-info);
   }
-  
-  & > .x-tag:nth-child(3n+0) {
+
+  & > .x-tag:nth-child(3n + 0) {
     background-color: var(--color-success);
   }
-  
-  & > .x-tag:nth-child(4n+0) {
+
+  & > .x-tag:nth-child(4n + 0) {
     background-color: var(--color-warning);
   }
-  
-  & > .x-tag:nth-child(5n+0) {
+
+  & > .x-tag:nth-child(5n + 0) {
     background-color: var(--color-danger);
   }
 }
@@ -32,46 +32,46 @@
   border-radius: 3px;
   vertical-align: middle;
   line-height: 25px;
-  
+
   & .tag-remove {
     margin-left: 5px;
     color: white;
     font-size: 16px;
     line-height: 25px;
   }
-  
+
   &:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
-  
+
   &.x-tag-primary {
     background-color: var(--color-primary);
   }
-  
+
   &.x-tag-secondary {
     background-color: var(--color-primary);
   }
-  
+
   &.x-tag-info {
     background-color: var(--color-info);
   }
-  
+
   &.x-tag-success {
     background-color: var(--color-success);
   }
-  
+
   &.x-tag-warning {
     background-color: var(--color-warning);
   }
-  
+
   &.x-tag-danger {
     background-color: var(--color-danger);
   }
-  
+
   &.x-tag-default {
     background-color: var(--color-panel);
   }
-  
+
   &.x-tag-system {
     background-color: var(--color-system);
   }

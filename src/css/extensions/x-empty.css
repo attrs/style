@@ -1,11 +1,11 @@
 .x-empty {
   text-align: center;
   padding: 200px 0;
-  
+
   & .x-empty-icon {
     font-size: 120px;
     color: var(--text-color);
-    
+
     /*
     & > .icon {
       text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
@@ -15,7 +15,7 @@
     }
     */
   }
-  
+
   & .x-empty-text {
     font-size: 1.25em;
     font-weight: normal;
@@ -23,7 +23,7 @@
     line-height: 60px;
     /* text-shadow: 2px 2px 3px rgba(255,255,255,0.1); */
   }
-  
+
   & .x-empty-desc {
     margin-top: -10px;
     font-size: 0.95em;
