@@ -34,7 +34,7 @@
       border-color: var(--x-tab-hover-border-color);
       color: var(--x-tab-hover-color);
     }
-    
+
     &.active {
       background-color: var(--x-tab-selection-bg);
       border-color: var(--x-tab-border-color);
@@ -48,10 +48,17 @@
     margin-bottom: 0;
 
     & > .x-tab-item {
-      border-bottom: 0;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       margin-bottom: -1px;
+
+      &:hover {
+        border-bottom-color: var(--x-tab-border-color);
+      }
+
+      &.active {
+        border-bottom: 0;
+      }
     }
   }
 
@@ -59,10 +66,17 @@
     margin-top: 0;
 
     & > .x-tab-item {
-      border-top: 0;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       margin-top: -1px;
+
+      &:hover {
+        border-top-color: var(--x-tab-border-color);
+      }
+
+      &.active {
+        border-top: 0;
+      }
     }
   }
 

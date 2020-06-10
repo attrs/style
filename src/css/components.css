@@ -5,7 +5,6 @@
 @import './components/x-navigation';
 @import './components/x-navbar';
 @import './components/x-badge';
-@import './components/x-page';
 @import './components/x-dropdown';
 @import './components/x-inputbox';
 @import './components/x-card';
@@ -17,14 +16,15 @@
 @import './components/x-stack';
 @import './components/x-tab';
 @import './components/x-alert';
-@import './components/x-switch';
 @import './components/x-checkbox';
-@import './components/x-cells';
-@import './components/x-empty';
 @import './components/x-section';
 @import './components/btn';
 @import './components/table';
 
+@import './extensions/x-page-header';
+@import './extensions/x-switch';
+@import './extensions/x-empty';
+@import './extensions/x-cells';
 @import './extensions/x-profile';
 @import './extensions/x-chip';
 @import './extensions/x-tagbox';

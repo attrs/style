@@ -1,7 +1,7 @@
 .theme-light {
   background-color: var(--color-bg-base);
   color: var(--color-text);
-  
+
   --color-black: #000;
   --color-white: #fefefe;
   --color-bg-base: #eee;
@@ -166,12 +166,8 @@
   --outline-gray: 0 0 0 var(--outline-thickness) var(--color-gray-outline);
 
   /* x-row */
-  --row-color-bg-hover: var(--color-bg-active);
-  --row-color-bg-active: var(--color-bg-active);
   --row-color-text: var(--color-text);
-  --row-color-text-active: var(--color-text-active);
   --row-color-icon: var(--color-icon);
-  --row-color-icon-active: var(--color-icon-active);
   --row-line-height: 3.6rem;
   --row-icon-margin: 0.75rem;
   --row-padding: 1rem;
@@ -183,15 +179,19 @@
   --btn-font-weight: var(--font-weight-semibold);
   --btn-line-height: calc(var(--row-line-height) * 0.75);
   --btn-color-bg: #eee;
+  --btn-color-bg-hover: var(--color-bg-hover);
   --btn-color-bg-active: #e9e9e9;
   --btn-color-text: var(--color-text);
   --btn-color-text-active: var(--color-text-active);
+  --btn-color-icon: var(--color-icon);
+  --btn-color-icon-active: var(--color-icon-active);
   --btn-color-outline: var(--color-border);
   --btn-border-radius: var(--radius-sm);
   --btn-rounded-radius: 50rem;
   --btn-outline: 1px solid var(--btn-color-outline);
   --btn-padding: calc(var(--row-padding) * 1.3);
-  --btn-rounded-padding: calc(var(--btn-padding) * 1.4);
+  --btn-padding-rounded: calc(var(--btn-padding) * 1.4);
+  --btn-padding-icon-only: 1rem;
   --btn-icon-margin: 0.35rem;
 
   /* x-label */
@@ -318,4 +318,21 @@
 
   /* x-profile */
   --x-profile-padding: var(--spacing-sm);
+
+  /* x-page-header */
+  --x-page-header-bg: var(--color-bg-panel);
+  --x-page-header-border: var(--color-border);
+  --x-page-header-padding: 2rem;
+
+  /* x-switch */
+  --x-switch-font-size: var(--font-size-sm);
+  --x-switch-size: var(--row-line-height);
+  --x-switch-line-height: var(--row-line-height);
+  --x-switch-width: 70px;
+  --x-switch-border-width: 3px;
+  --x-switch-border-radius: 4px;
+  --x-switch-text-margin: 8px;
+  --x-switch-btn-radius: 4px;
+  --x-switch-btn-size: calc(var(--x-switch-size) - (var(--x-switch-border-width) * 2));
+  --x-switch-btn-pl: calc(var(--x-switch-width) - var(--x-switch-size));
 }

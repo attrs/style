@@ -21,8 +21,8 @@ label.x-switch {
     color: #fff;
     font-weight: bold;
     text-align: center;
-    background: #D7D7D7;
-    border: var(--x-switch-border-width) solid #D7D7D7;
+    background: #d7d7d7;
+    border: var(--x-switch-border-width) solid #d7d7d7;
     text-transform: uppercase;
     font-family: Helvetica, Arial, sans-serif;
     transition: 0.3s ease-out;
@@ -38,7 +38,7 @@ label.x-switch {
   }
 
   & > label:after {
-    content: "";
+    content: '';
     width: var(--x-switch-btn-size);
     height: var(--x-switch-btn-size);
     display: block;
@@ -63,13 +63,13 @@ label.x-switch {
   & > input:focus + label {
     color: #fff;
     border-color: var(--color-border);
-    background: #C7C7C7;
+    background: #c7c7c7;
   }
 
   & > input:focus + label:after {
     background: #fff;
   }
-  
+
   & > input:checked + label {
     border-color: var(--color-border);
     background: var(--color-border);
@@ -86,7 +86,7 @@ label.x-switch {
   & > input:checked + label:after {
     background: #fff;
   }
-  
+
   &.x-switch-primary > input:checked + label {
     background: var(--color-primary);
     border-color: var(--color-primary);
@@ -98,7 +98,7 @@ label.x-switch {
     background: var(--color-primary);
     border-color: var(--color-primary);
   }
-  
+
   &.x-switch-success > input:checked + label {
     background: var(--color-success);
     border-color: var(--color-success);
@@ -110,7 +110,7 @@ label.x-switch {
     background: var(--color-success);
     border-color: var(--color-success);
   }
-  
+
   &.x-switch-info > input:checked + label {
     background: var(--color-info);
     border-color: var(--color-info);
@@ -122,7 +122,7 @@ label.x-switch {
     background: var(--color-info);
     border-color: var(--color-info);
   }
-  
+
   &.x-switch-warning > input:checked + label {
     background: var(--color-warning);
     border-color: var(--color-warning);
@@ -134,7 +134,7 @@ label.x-switch {
     background: var(--color-warning);
     border-color: var(--color-warning);
   }
-  
+
   &.x-switch-danger > input:checked + label {
     background: var(--color-danger);
     border-color: var(--color-danger);
@@ -146,7 +146,7 @@ label.x-switch {
     background: var(--color-danger);
     border-color: var(--color-danger);
   }
-  
+
   &.x-switch-system > input:checked + label {
     background: var(--color-system);
     border-color: var(--color-system);

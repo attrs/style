@@ -2,7 +2,7 @@
   & > * {
     display: none;
   }
-  
+
   & > .active {
     display: inherit;
   }

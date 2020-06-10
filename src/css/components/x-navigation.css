@@ -44,6 +44,11 @@
 
       &:hover {
         background: var(--x-navigation-hover-bg);
+        color: var(--x-navigation-active-text);
+
+        & .icon {
+          color: var(--x-navigation-active-icon);
+        }
       }
     }
 

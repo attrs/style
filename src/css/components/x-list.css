@@ -25,12 +25,13 @@
     & .icon {
       margin-left: 0;
     }
-    
+
     padding: var(--x-list-item-padding);
     line-height: var(--x-list-item-line-height);
     cursor: pointer;
 
-    &.active, &:hover {
+    &.active,
+    &:hover {
       background: var(--color-bg-active);
       color: var(--color-text-active);
 
