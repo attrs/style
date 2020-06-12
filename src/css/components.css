@@ -21,7 +21,7 @@
 @import './components/btn';
 @import './components/table';
 
-@import './extensions/x-page-header';
+@import './extensions/x-page';
 @import './extensions/x-switch';
 @import './extensions/x-empty';
 @import './extensions/x-cells';

@@ -32,6 +32,8 @@ module.exports = {
       text: {
         default: 'var(--color-text)',
         light: 'var(--color-text-light)',
+        input: 'var(--color-text-input)',
+        placeholder: 'var(--color-text-placeholder)',
         muted: 'var(--color-text-muted)',
         active: 'var(--color-text-active)',
         highlight: 'var(--color-text-highlight)'
@@ -49,73 +51,59 @@ module.exports = {
         default: 'var(--color-badge)',
         text: 'var(--color-badge-text)'
       },
+      black: {
+        default: 'var(--color-black)',
+        active: 'var(--color-black-active)',
+        bg: 'var(--color-black-bg)',
+        text: 'var(--color-black-text)',
+        outline: 'var(--color-black-outline)'
+      },
       primary: {
         default: 'var(--color-primary)',
-        light: 'var(--color-primary-light)',
-        lighten: 'var(--color-primary-lighten)',
-        dark: 'var(--color-primary-dark)',
-        darken: 'var(--color-primary-darken)',
-        transparent: 'var(--color-primary-transparent)',
+        active: 'var(--color-primary-active)',
+        bg: 'var(--color-primary-bg)',
         text: 'var(--color-primary-text)',
         outline: 'var(--color-primary-outline)'
       },
       secondary: {
         default: 'var(--color-secondary)',
-        light: 'var(--color-secondary-light)',
-        lighten: 'var(--color-secondary-lighten)',
-        dark: 'var(--color-secondary-dark)',
-        darken: 'var(--color-secondary-darken)',
-        transparent: 'var(--color-secondary-transparent)',
+        active: 'var(--color-secondary-active)',
+        bg: 'var(--color-secondary-bg)',
         text: 'var(--color-secondary-text)',
         outline: 'var(--color-secondary-outline)'
       },
       success: {
         default: 'var(--color-success)',
-        light: 'var(--color-success-light)',
-        lighten: 'var(--color-success-lighten)',
-        dark: 'var(--color-success-dark)',
-        darken: 'var(--color-success-darken)',
-        transparent: 'var(--color-success-transparent)',
+        active: 'var(--color-success-active)',
+        bg: 'var(--color-success-bg)',
         text: 'var(--color-success-text)',
         outline: 'var(--color-success-outline)'
       },
       info: {
         default: 'var(--color-info)',
-        light: 'var(--color-info-light)',
-        lighten: 'var(--color-info-lighten)',
-        dark: 'var(--color-info-dark)',
-        darken: 'var(--color-info-darken)',
-        transparent: 'var(--color-info-transparent)',
+        active: 'var(--color-info-active)',
+        bg: 'var(--color-info-bg)',
         text: 'var(--color-info-text)',
         outline: 'var(--color-info-outline)'
       },
       warning: {
         default: 'var(--color-warning)',
-        light: 'var(--color-warning-light)',
-        lighten: 'var(--color-warning-lighten)',
-        dark: 'var(--color-warning-dark)',
-        darken: 'var(--color-warning-darken)',
-        transparent: 'var(--color-warning-transparent)',
+        active: 'var(--color-warning-active)',
+        bg: 'var(--color-warning-bg)',
         text: 'var(--color-warning-text)',
         outline: 'var(--color-warning-outline)'
       },
       danger: {
         default: 'var(--color-danger)',
-        light: 'var(--color-danger-light)',
-        lighten: 'var(--color-danger-lighten)',
-        dark: 'var(--color-danger-dark)',
-        darken: 'var(--color-danger-darken)',
-        transparent: 'var(--color-danger-transparent)',
+        active: 'var(--color-danger-active)',
+        bg: 'var(--color-danger-bg)',
         text: 'var(--color-danger-text)',
         outline: 'var(--color-danger-outline)'
       },
       system: {
         default: 'var(--color-system)',
-        light: 'var(--color-system-light)',
-        lighten: 'var(--color-system-lighten)',
-        dark: 'var(--color-system-dark)',
-        darken: 'var(--color-system-darken)',
-        transparent: 'var(--color-system-transparent)',
+        active: 'var(--color-system-active)',
+        bg: 'var(--color-system-bg)',
         text: 'var(--color-system-text)',
         outline: 'var(--color-system-outline)'
       },
@@ -168,7 +156,7 @@ module.exports = {
       ...Object.keys(theme('colors')).reduce((o, key) => {
         const color = theme('colors.' + key);
         if (~['text', 'gray'].indexOf(key) || typeof color === 'string') o[key] = color;
-        else if (color.text) o[key] = color.text;
+        else if (color.default) o[key] = color.default;
         return o;
       }, {}),
       ...theme('colors.text'),

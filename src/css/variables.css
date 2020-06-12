@@ -1,5 +1,6 @@
-@import './themes/theme-dark';
 @import './themes/theme-light';
+@import './themes/theme-dark';
+@import './themes/theme-violet';
 
 :root {
   @apply theme-light;

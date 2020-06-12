@@ -30,9 +30,12 @@
     line-height: var(--x-list-item-line-height);
     cursor: pointer;
 
-    &.active,
-    &:hover {
+    &.active {
       background: var(--color-bg-active);
+    }
+
+    &:hover {
+      background: var(--color-bg-hover);
       color: var(--color-text-active);
 
       & .icon {

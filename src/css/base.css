@@ -28,9 +28,10 @@ button:focus {
 input,
 textarea {
   background-color: var(--color-bg-input);
+  color: var(--color-text-input);
 
   &::placeholder {
-    color: var(--color-text-muted);
+    color: var(--color-text-placeholder);
   }
 }
 

@@ -1,0 +1,36 @@
+.theme-violet {
+  @apply theme-light;
+
+  --color-black: #000;
+  --color-white: #fff;
+  --color-bg-base: #796ea5;
+  --color-bg-panel: #796ea5;
+  --color-bg-inverse: #efefef;
+  --color-bg-active: #796ea5;
+  --color-bg-input: #fff;
+
+  --color-bg-hover: #988fc6;
+  --color-bg-highlight: var(--color-info-transparent);
+  --color-bg-mask: rgba(255, 255, 255, 0.075);
+  --color-bg-mask-dark: rgba(255, 255, 255, 0.1);
+  --color-outline: #796ea5;
+
+  --color-border: #887fb6;
+  --color-border-outer: #887fb6;
+  --color-border-inverse: #2e3237;
+
+  --color-text: #fff;
+  --color-text-light: #fff;
+  --color-text-muted: #a99ed5;
+  --color-text-active: #fff;
+  --color-text-highlight: #fff;
+  --color-text-input: #5e5e5e;
+  --color-text-placeholder: #aeaeae;
+
+  --color-icon: #fff;
+  --color-icon-active: var(--color-primary);
+
+  --color-shadow: rgba(0, 0, 0, 0.05);
+  --color-badge: #5d6167;
+  --color-badge-text: #fff;
+}

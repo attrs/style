@@ -6,13 +6,15 @@ window.theme = (theme) => {
   const body = document.body;
   const contents = document.querySelector('#page');
 
-  body.classList.remove('theme-dark', 'theme-light');
+  body.classList.remove('theme-dark', 'theme-light', 'theme-violet');
   contents.classList.remove('theme-light');
 
   if (theme === 'dark') {
     body.classList.add('theme-dark');
   } else if (theme === 'light') {
     body.classList.add('theme-light');
+  } else if (theme === 'violet') {
+    body.classList.add('theme-violet');
   } else if (theme === 'hybrid') {
     body.classList.add('theme-dark');
     contents.classList.add('theme-light');
