@@ -1,31 +1,31 @@
 .x-alert {
-  @apply border rounded py-3 px-4 leading-tight bg-gray-100 text-default text-xs;
+  @apply border rounded py-3 px-4 leading-tight bg-active text-default text-xs;
 }
 
 .x-alert-primary {
-  @apply x-alert border-primary-lighten text-primary bg-primary-transparent;
+  @apply x-alert border-primary text-primary bg-primary-bg;
 }
 
 .x-alert-secondary {
-  @apply x-alert border-secondary-lighten text-secondary bg-secondary-transparent;
+  @apply x-alert border-secondary-outline text-secondary bg-secondary-bg;
 }
 
 .x-alert-success {
-  @apply x-alert border-success-lighten text-success bg-success-transparent;
+  @apply x-alert border-success-outline text-success bg-success-bg;
 }
 
 .x-alert-info {
-  @apply x-alert border-info-lighten text-info bg-info-transparent;
+  @apply x-alert border-info-outline text-info bg-info-bg;
 }
 
 .x-alert-warning {
-  @apply x-alert border-warning-lighten text-warning bg-warning-transparent;
+  @apply x-alert border-warning-outline text-warning bg-warning-bg;
 }
 
 .x-alert-danger {
-  @apply x-alert border-danger-lighten text-danger bg-danger-transparent;
+  @apply x-alert border-danger-outline text-danger bg-danger-bg;
 }
 
 .x-alert-system {
-  @apply x-alert border-system-lighten text-system bg-system-transparent;
+  @apply x-alert border-system-outline text-system bg-system-bg;
 }

@@ -12,9 +12,12 @@
     color: var(--btn-color-icon);
   }
 
-  &:hover,
-  &.active {
+  &:hover {
     background: var(--btn-color-bg-hover);
+  }
+
+  &.active {
+    background: var(--btn-color-bg-active);
     color: var(--btn-color-text-active);
 
     & .icon {
@@ -39,7 +42,8 @@
   &.btn-lg,
   &.btn-xl,
   &.btn-2xl,
-  &.btn-3xl {
+  &.btn-3xl,
+  &.btn-disabled {
     line-height: var(--btn-line-height);
     padding: 0 var(--btn-padding);
     border-radius: var(--btn-border-radius);
@@ -51,7 +55,10 @@
       background-color: var(--btn-color-bg);
       color: var(--btn-color-text);
 
-      &:hover,
+      &:hover {
+        background-color: var(--btn-color-bg-hover);
+      }
+
       &.active {
         background-color: var(--btn-color-bg-active);
         color: var(--btn-color-text-active);
@@ -59,234 +66,247 @@
     }
 
     &.btn-primary {
-      --btn-color-icon: var(--color-white);
-      --btn-color-icon-active: var(--color-white);
-      --btn-color-text: var(--color-white);
-      --btn-color-text-active: var(--color-white);
+      --btn-color-icon: var(--color-primary-text);
+      --btn-color-icon-active: var(--color-primary-text-active);
+      --btn-color-text: var(--color-primary-text);
+      --btn-color-text-active: var(--color-primary-text-active);
 
       background-color: var(--color-primary);
-      color: var(--color-white);
+      color: var(--color-primary-text);
 
       &:hover,
       &.active {
-        background-color: var(--color-primary-dark);
-        color: var(--color-white);
+        background-color: var(--color-primary-active);
+        color: var(--color-primary-text);
       }
     }
 
     &.btn-secondary {
-      --btn-color-icon: var(--color-white);
-      --btn-color-icon-active: var(--color-white);
-      --btn-color-text: var(--color-white);
-      --btn-color-text-active: var(--color-white);
+      --btn-color-icon: var(--color-secondary-text);
+      --btn-color-icon-active: var(--color-secondary-text-active);
+      --btn-color-text: var(--color-secondary-text);
+      --btn-color-text-active: var(--color-secondary-text-active);
 
       background-color: var(--color-secondary);
-      color: var(--color-white);
+      color: var(--color-secondary-text);
 
       &:hover,
       &.active {
-        background-color: var(--color-secondary-dark);
-        color: var(--color-white);
+        background-color: var(--color-secondary-active);
+        color: var(--color-secondary-text);
       }
     }
 
     &.btn-info {
-      --btn-color-icon: var(--color-white);
-      --btn-color-icon-active: var(--color-white);
-      --btn-color-text: var(--color-white);
-      --btn-color-text-active: var(--color-white);
+      --btn-color-icon: var(--color-info-text);
+      --btn-color-icon-active: var(--color-info-text-active);
+      --btn-color-text: var(--color-info-text);
+      --btn-color-text-active: var(--color-info-text-active);
 
       background-color: var(--color-info);
-      color: var(--color-white);
+      color: var(--color-info-text);
 
       &:hover,
       &.active {
-        background-color: var(--color-info-dark);
-        color: var(--color-white);
+        background-color: var(--color-info-active);
+        color: var(--color-info-text);
       }
     }
 
     &.btn-success {
-      --btn-color-icon: var(--color-white);
-      --btn-color-icon-active: var(--color-white);
-      --btn-color-text: var(--color-white);
-      --btn-color-text-active: var(--color-white);
+      --btn-color-icon: var(--color-success-text);
+      --btn-color-icon-active: var(--color-success-text-active);
+      --btn-color-text: var(--color-success-text);
+      --btn-color-text-active: var(--color-success-text-active);
 
       background-color: var(--color-success);
-      color: var(--color-white);
+      color: var(--color-success-text);
 
       &:hover,
       &.active {
-        background-color: var(--color-success-dark);
-        color: var(--color-white);
+        background-color: var(--color-success-active);
+        color: var(--color-success-text);
       }
     }
 
     &.btn-warning {
-      --btn-color-icon: var(--color-white);
-      --btn-color-icon-active: var(--color-white);
-      --btn-color-text: var(--color-white);
-      --btn-color-text-active: var(--color-white);
+      --btn-color-icon: var(--color-warning-text);
+      --btn-color-icon-active: var(--color-warning-text-active);
+      --btn-color-text: var(--color-warning-text);
+      --btn-color-text-active: var(--color-warning-text-active);
 
       background-color: var(--color-warning);
-      color: var(--color-white);
+      color: var(--color-warning-text);
 
       &:hover,
       &.active {
-        background-color: var(--color-warning-dark);
-        color: var(--color-white);
+        background-color: var(--color-warning-active);
+        color: var(--color-warning-text);
       }
     }
 
     &.btn-danger {
-      --btn-color-icon: var(--color-white);
-      --btn-color-icon-active: var(--color-white);
-      --btn-color-text: var(--color-white);
-      --btn-color-text-active: var(--color-white);
+      --btn-color-icon: var(--color-danger-text);
+      --btn-color-icon-active: var(--color-danger-text-active);
+      --btn-color-text: var(--color-danger-text);
+      --btn-color-text-active: var(--color-danger-text-active);
 
       background-color: var(--color-danger);
-      color: var(--color-white);
+      color: var(--color-danger-text);
 
       &:hover,
       &.active {
-        background-color: var(--color-danger-dark);
-        color: var(--color-white);
+        background-color: var(--color-danger-active);
+        color: var(--color-danger-text);
       }
     }
 
     &.btn-system {
-      --btn-color-icon: var(--color-white);
-      --btn-color-icon-active: var(--color-white);
-      --btn-color-text: var(--color-white);
-      --btn-color-text-active: var(--color-white);
+      --btn-color-icon: var(--color-system-text);
+      --btn-color-icon-active: var(--color-system-text-active);
+      --btn-color-text: var(--color-system-text);
+      --btn-color-text-active: var(--color-system-text-active);
 
       background-color: var(--color-system);
-      color: var(--color-white);
+      color: var(--color-system-text);
 
       &:hover,
       &.active {
-        background-color: var(--color-system-dark);
-        color: var(--color-white);
+        background-color: var(--color-system-active);
+        color: var(--color-system-text);
       }
     }
 
     &.btn-black {
-      --btn-color-icon: var(--color-white);
-      --btn-color-icon-active: var(--color-white);
-      --btn-color-text: var(--color-white);
-      --btn-color-text-active: var(--color-white);
+      --btn-color-icon: var(--color-black-text);
+      --btn-color-icon-active: var(--color-black-text-active);
+      --btn-color-text: var(--color-black-text);
+      --btn-color-text-active: var(--color-black-text-active);
 
       background-color: var(--color-black);
-      color: var(--color-white);
+      color: var(--color-black-text);
 
       &:hover,
       &.active {
-        background-color: var(--color-black-dark);
-        color: var(--color-white);
+        background-color: var(--color-black-active);
+        color: var(--color-black-text);
       }
     }
 
+    /* btn outline */
     &.btn-outline {
       border: var(--btn-outline);
       background-color: transparent;
 
       &.btn-default {
-        background-color: var(--btn-color-bg);
-        color: var(--btn-color-text);
         border-color: var(--btn-color-outline);
+        color: var(--btn-color-text);
+
+        & .icon {
+          color: var(--btn-color-text);
+        }
 
         &:hover,
         &.active {
-          background-color: var(--btn-color-bg-active);
+          border-color: var(--btn-color-bg-hover);
+          background-color: var(--btn-color-bg-hover);
           color: var(--btn-color-text-active);
         }
       }
 
       &.btn-primary {
-        border-color: var(--color-primary);
+        border-color: var(--color-primary-outline);
         color: var(--color-primary);
 
         &:hover,
         &.active {
-          background-color: var(--color-primary-dark);
-          color: var(--color-white);
+          border-color: var(--color-primary-active);
+          background-color: var(--color-primary-active);
+          color: var(--color-primary-text-active);
         }
       }
 
       &.btn-secondary {
-        border-color: var(--color-secondary);
+        border-color: var(--color-secondary-outline);
         color: var(--color-secondary);
 
         &:hover,
         &.active {
-          background-color: var(--color-secondary-dark);
-          color: var(--color-white);
+          border-color: var(--color-secondary-active);
+          background-color: var(--color-secondary-active);
+          color: var(--color-secondary-text-active);
         }
       }
 
       &.btn-info {
-        border-color: var(--color-info);
+        border-color: var(--color-info-outline);
         color: var(--color-info);
 
         &:hover,
         &.active {
-          background-color: var(--color-info-dark);
-          color: var(--color-white);
+          border-color: var(--color-info-active);
+          background-color: var(--color-info-active);
+          color: var(--color-info-text-active);
         }
       }
 
       &.btn-success {
-        border-color: var(--color-success);
+        border-color: var(--color-success-outline);
         color: var(--color-success);
 
         &:hover,
         &.active {
-          background-color: var(--color-success-dark);
-          color: var(--color-white);
+          border-color: var(--color-success-active);
+          background-color: var(--color-success-active);
+          color: var(--color-success-text-active);
         }
       }
 
       &.btn-warning {
-        border-color: var(--color-warning);
+        border-color: var(--color-warning-outline);
         color: var(--color-warning);
 
         &:hover,
         &.active {
-          background-color: var(--color-warning-dark);
-          color: var(--color-white);
+          border-color: var(--color-warning-active);
+          background-color: var(--color-warning-active);
+          color: var(--color-warning-text-active);
         }
       }
 
       &.btn-danger {
-        border-color: var(--color-danger);
+        border-color: var(--color-danger-outline);
         color: var(--color-danger);
 
         &:hover,
         &.active {
-          background-color: var(--color-danger-dark);
-          color: var(--color-white);
+          border-color: var(--color-danger-active);
+          background-color: var(--color-danger-active);
+          color: var(--color-danger-text-active);
         }
       }
 
       &.btn-system {
-        border-color: var(--color-system);
+        border-color: var(--color-system-outline);
         color: var(--color-system);
 
         &:hover,
         &.active {
-          background-color: var(--color-system-dark);
-          color: var(--color-white);
+          border-color: var(--color-system-active);
+          background-color: var(--color-system-active);
+          color: var(--color-system-text-active);
         }
       }
 
       &.btn-black {
-        border-color: var(--color-black);
+        border-color: var(--color-black-outline);
         color: var(--color-black);
 
         &:hover,
         &.active {
-          background-color: var(--color-black);
-          color: var(--color-white);
+          border-color: var(--color-black-active);
+          background-color: var(--color-black-active);
+          color: var(--color-black-text-active);
         }
       }
     }
@@ -328,6 +348,7 @@
       padding: 0 calc(var(--btn-padding) * 3);
     }
 
+    /* rounded */
     &.btn-rounded {
       border-radius: var(--btn-rounded-radius);
       padding: 0 var(--btn-padding-rounded);
@@ -357,6 +378,20 @@
       }
     }
 
+    /* disabled */
+    &.btn-disabled {
+      cursor: not-allowed;
+      background-color: var(--btn-color-bg) !important;
+      color: var(--color-text-muted) !important;
+
+      &:hover,
+      &.active {
+        background-color: var(--btn-color-bg-active) !important;
+        color: var(--color-text-muted) !important;
+      }
+    }
+
+    /* icon only */
     &.btn-icon {
       --btn-padding: var(--btn-padding-icon-only);
 

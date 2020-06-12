@@ -69,7 +69,7 @@
 
   &.x-label-outline {
     border: var(--x-label-outline);
-    background-color: transparent;
+    background-color: transparent !important;
 
     &.x-label-default {
       background-color: var(--x-label-color-bg);

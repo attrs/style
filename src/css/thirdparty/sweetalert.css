@@ -1,0 +1,50 @@
+.swal-modal {
+  background-color: var(--color-bg-panel);
+  box-shadow: var(--shadow-xl);
+
+  & .swal-title {
+    color: var(--color-text-active);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  & .swal-text {
+    color: var(--color-text);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+  }
+
+  & .swal-button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: var(--btn-color-bg);
+    color: var(--btn-color-text);
+
+    &:hover,
+    &.active {
+      background-color: var(--btn-color-bg-active);
+      color: var(--btn-color-text);
+    }
+
+    &.swal-button--confirm {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+
+      &:hover {
+        background-color: var(--color-primary-active);
+        color: var(--color-white);
+      }
+    }
+  }
+
+  & .swal-icon--success:before,
+  & .swal-icon--success:after,
+  & .swal-icon--success__hide-corners {
+    background-color: var(--color-bg-panel);
+  }
+
+  & .swal-icon--success__ring {
+    border-color: #a5dc86;
+  }
+}

@@ -1,3 +1,8 @@
+.x-page {
+  background-color: var(--x-page-color-bg);
+  color: var(--x-page-color-text);
+}
+
 .x-page-header {
   background-color: var(--x-page-header-bg);
   border-bottom: 1px solid var(--x-page-header-border);
