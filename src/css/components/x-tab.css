@@ -25,6 +25,10 @@
       margin-right: 0;
     }
 
+    & .icon {
+      margin: 0.5rem;
+    }
+
     & > .icon:first-child {
       margin-left: 0;
     }

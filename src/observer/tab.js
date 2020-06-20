@@ -1,4 +1,5 @@
 const findRelatedTabContentsItem = (el, tabid) => {
+  if (!el) return null;
   const item = el.querySelector('.x-tab-contents *[data-tab="' + tabid + '"]');
   if (item) return item;
   return findRelatedTabContentsItem(el.parentNode, tabid);

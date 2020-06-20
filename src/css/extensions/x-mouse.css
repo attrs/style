@@ -1,16 +1,4 @@
 .x-mouse {
-  --x-mouse-color-bg: rgba(22, 22, 22, 0.5);
-  --x-mouse-color-outline: rgba(255, 255, 255, 0.5);
-  --x-mouse-width-mouse: 25px;
-  --x-mouse-height-mouse: 35px;
-  --x-mouse-border-mouse: 2px;
-  --x-mouse-pos-mouse: 8px;
-  --x-mouse-pos-text: 2px;
-  --x-mouse-size-trackball: 5px;
-  --x-mouse-pos-trackball: 8px;
-  --x-mouse-shrink-trackball: 0.4;
-  --x-mouse-anim-duration: 5s;
-
   position: relative;
   width: var(--x-mouse-width-mouse);
   height: var(--x-mouse-height-mouse);

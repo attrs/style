@@ -1,7 +1,4 @@
 .x-headline {
-  --x-headline-font-family: var(--font-family-serif);
-  --x-headline-font-size: var(--font-size-4xl);
-
   display: block;
   text-align: center;
 

@@ -1,9 +1,4 @@
 .x-profile {
-  --x-profile-image-border-width: 2px;
-  --x-profile-image-border-color: var(--color-text);
-  --x-profile-font-size: var(--font-size-sm);
-  --x-profile-font-margin: 1rem;
-
   position: relative;
   padding: 0 var(--x-profile-padding);
   margin: var(--x-profile-font-margin) 0;
