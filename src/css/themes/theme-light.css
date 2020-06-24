@@ -14,9 +14,10 @@
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
   --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
-  --color-outline: var(--color-primary);
+  --color-outline: rgba(66, 165, 255, 0.55);
 
   --color-border: #e2e2e2;
+  --color-border-light: #efefef;
   --color-border-outer: #e2e2e2;
   --color-border-inverse: #2e3237;
 
@@ -149,7 +150,7 @@
   --radius-lg: 8px;
   --radius-full: 9999px;
 
-  --outline-thickness: 2px;
+  --outline-thickness: 3px;
   --icon-margin: 0.5rem;
 
   --shadow-xs: 0 0 0 1px var(--color-shadow);
@@ -161,7 +162,7 @@
   --shadow-2xl: 0 25px 50px -12px var(--color-shadow);
   --shadow-inner: inset 0 2px 4px 0 var(--color-shadow);
 
-  --outline: 0 0 0 var(--outline-thickness) var(--colors-outline);
+  --outline: 0 0 0 var(--outline-thickness) var(--color-outline);
   --outline-primary: 0 0 0 var(--outline-thickness) var(--color-primary-outline);
   --outline-secondary: 0 0 0 var(--outline-thickness) var(--color-secondary-outline);
   --outline-success: 0 0 0 var(--outline-thickness) var(--color-success-outline);
@@ -170,6 +171,21 @@
   --outline-danger: 0 0 0 var(--outline-thickness) var(--color-danger-outline);
   --outline-system: 0 0 0 var(--outline-thickness) var(--color-system-outline);
   --outline-gray: 0 0 0 var(--outline-thickness) var(--color-gray-outline);
+
+  /* input/textarea/select */
+  --controls-line-height: 2.5;
+  --controls-margin: 2px;
+  --controls-padding: 0 1rem;
+  --controls-vertical-align: middle;
+  --controls-border-color: #c2c2c2;
+  --controls-border: 1px solid var(--controls-border-color);
+  --controls-color: var(--color-text-active);
+  --controls-placeholder-color: var(--color-text-muted);
+  --controls-select-options-padding: 0.65em;
+  --controls-select-chevron: url("data:image/svg+xml,<svg class='bi bi-chevron-down' width='1em' height='1em' viewBox='0 0 16 16' fill='%23232323' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+  --controls-select-chevron-position: right 0.65em center;
+  --controls-select-chevron-size: 0.75em;
+  --controls-select-chevron-padding: 2.2em;
 
   /* x-row */
   --row-color-text: var(--color-text);
@@ -390,7 +406,4 @@
   --x-profile-image-border-color: var(--color-text);
   --x-profile-font-size: var(--font-size-sm);
   --x-profile-font-margin: 1rem;
-
-  /* x-form */
-  --x-form-control-select-chevron: url("data:image/svg+xml,<svg class='bi bi-chevron-down' width='1em' height='1em' viewBox='0 0 16 16' fill='%23232323' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 }

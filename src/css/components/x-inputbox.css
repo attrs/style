@@ -11,6 +11,14 @@
     outline: none;
     line-height: var(--x-inputbox-line-height);
     background-color: transparent;
+    border: none;
+    padding: 0 0.35rem;
+
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
   }
 
   & > .icon {

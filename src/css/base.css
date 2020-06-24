@@ -26,13 +26,46 @@ button:focus {
 }
 
 input,
+textarea,
+select {
+  @apply appearance-none rounded-sm px-4 leading-tight bg-input;
+  line-height: var(--controls-line-height);
+  margin: var(--controls-margin);
+  vertical-align: var(--controls-vertical-align);
+  border: var(--controls-border);
+  color: var(--controls-color);
+
+  &:focus {
+    @apply border-transparent outline-none shadow-outline;
+  }
+}
+
+input,
 textarea {
-  background-color: var(--color-bg-input);
-  color: var(--color-text-input);
+  padding: var(--controls-padding);
 
   &::placeholder {
-    color: var(--color-text-placeholder);
+    color: var(--controls-placeholder-color);
   }
+}
+
+select {
+  background-image: var(--controls-select-chevron);
+  background-position: var(--controls-select-chevron-position);
+  background-repeat: no-repeat;
+  background-size: var(--controls-select-chevron-size);
+  padding-right: var(--controls-select-chevron-padding);
+
+  & > option {
+    padding: var(--controls-select-options-padding);
+  }
+}
+
+select[multiple] {
+  background-image: none;
+  background-size: 0;
+  padding: 0;
+  border-radius: var(--radius-sm);
 }
 
 h1 {
@@ -76,6 +109,10 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+a.link {
+  color: var(--color-primary);
 }
 
 mark {

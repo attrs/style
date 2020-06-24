@@ -3,12 +3,6 @@
 }
 
 .x-form-control {
-  @apply appearance-none rounded-sm py-3 px-4 border leading-tight bg-input;
-
-  &:focus {
-    @apply outline-none shadow-outline;
-  }
-
   &.error {
     @apply border-danger;
 
@@ -23,36 +17,24 @@ textarea.x-form-control {
   @apply w-full;
 }
 
-select.x-form-control {
-  background-image: var(--x-form-control-select-chevron);
-  background-position: right 0.65em center;
-  background-repeat: no-repeat;
-  background-size: 0.75em;
-  padding-right: 2.2em;
-}
-
 p.x-form-control,
 span.x-form-control {
   @apply bg-transparent border-none px-0 font-semibold;
+  line-height: var(--controls-line-height);
+  margin: var(--controls-margin);
+  vertical-align: var(--controls-vertical-align);
+  color: var(--controls-color);
 }
 
-select.x-form-control[multiple] {
-  background-image: none;
-  background-size: 0;
-  padding: 0;
-  border-radius: var(--radius-sm);
-
-  & > option {
-    padding: 0.65em;
-  }
-}
-
-.x-form-field-error {
+.x-form-control-error {
   @apply text-xs mt-2;
   color: var(--color-danger-text);
 }
 
 .x-form-label {
   @apply block text-sm font-bold mb-2;
+  line-height: 2.5;
+  margin: 2px;
   padding: 0 2px;
+  vertical-align: middle;
 }

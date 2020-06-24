@@ -7,4 +7,6 @@
   touch-action: manipulation;
   cursor: pointer;
   user-select: none;
+  vertical-align: middle;
+  text-align: center;
 }

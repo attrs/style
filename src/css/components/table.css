@@ -1,4 +1,8 @@
 .table {
+  font-size: var(--table-font-size);
+  font-weight: var(--table-font-weight);
+  table-layout: fixed;
+
   &.table-full {
     width: 100%;
   }
@@ -6,10 +10,10 @@
   & th,
   & td {
     padding: var(--table-padding-y) var(--table-padding-x);
-    font-size: var(--table-font-size);
-    font-weight: var(--table-font-weight);
     background-color: var(--table-bg-td);
     text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 
     &.table-cell-em {
       background-color: var(--table-bg-active);
@@ -40,7 +44,8 @@
       border-bottom: 1px solid var(--table-color-border);
     }
 
-    & > tbody > tr:last-child {
+    & > tbody > tr:last-child,
+    & > tr:last-child {
       & th,
       & td {
         border: 0;

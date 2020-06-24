@@ -42,6 +42,14 @@
         color: var(--color-icon-active);
       }
     }
+
+    &.x-list-item-disabled {
+      & .icon {
+        color: var(--color-text-muted);
+      }
+
+      color: var(--color-text-muted);
+    }
   }
 
   &.x-list-lined > .x-list-item {
