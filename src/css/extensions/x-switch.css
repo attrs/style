@@ -1,11 +1,12 @@
 label.x-switch {
   position: relative;
   display: inline-block;
+  vertical-align: bottom;
   cursor: pointer;
-  height: var(--x-switch-size);
-  min-height: var(--x-switch-size);
-  margin-bottom: 0;
+  height: var(--x-switch-height);
+  min-height: var(--x-switch-height);
   width: var(--x-switch-width);
+  margin-bottom: 0;
 
   & > label {
     cursor: pointer;
@@ -17,14 +18,13 @@ label.x-switch {
     margin-bottom: 0;
 
     font-size: var(--x-switch-font-size);
+    font-weight: var(--x-switch-font-weight);
+    font-family: var(--x-switch-font-family);
     line-height: var(--x-switch-line-height);
     color: #fff;
-    font-weight: bold;
     text-align: center;
-    background: #d7d7d7;
-    border: var(--x-switch-border-width) solid #d7d7d7;
-    text-transform: uppercase;
-    font-family: Helvetica, Arial, sans-serif;
+    background: var(--x-switch-color-bg);
+    border: var(--x-switch-border-width) solid var(--x-switch-color-bg);
     transition: 0.3s ease-out;
     border-radius: var(--x-switch-border-radius);
   }
@@ -32,7 +32,6 @@ label.x-switch {
   & > label:before {
     content: attr(data-off);
     position: absolute;
-    top: 1px;
     right: var(--x-switch-text-margin);
     line-height: var(--x-switch-btn-size);
   }
@@ -62,8 +61,8 @@ label.x-switch {
 
   & > input:focus + label {
     color: #fff;
-    border-color: var(--color-border);
-    background: #c7c7c7;
+    border-color: var(--x-switch-color-bg);
+    background: var(--x-switch-color-bg);
   }
 
   & > input:focus + label:after {
@@ -71,8 +70,8 @@ label.x-switch {
   }
 
   & > input:checked + label {
-    border-color: var(--color-border);
-    background: var(--color-border);
+    border-color: var(--x-switch-color-bg-checked);
+    background: var(--x-switch-color-bg-checked);
     padding-left: var(--x-switch-btn-pl);
     color: #fff;
   }
@@ -157,5 +156,15 @@ label.x-switch {
   &.x-switch-system > input:checked:focus + label {
     background: var(--color-system);
     border-color: var(--color-system);
+  }
+
+  &.x-switch-rounded {
+    & > label {
+      border-radius: 50rem;
+    }
+
+    & > label:after {
+      border-radius: 50rem;
+    }
   }
 }

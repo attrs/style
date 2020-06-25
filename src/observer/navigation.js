@@ -7,7 +7,11 @@ const setParentActive = (el) => {
 const listener = (e) => {
   const navigation = e.target.closest('.x-navigation');
   const navitem = e.target.closest('.x-navitem');
+  const group = navigation.getAttribute('data-navigation-group');
+
   if (!navigation || !navitem) return;
+
+  group && document.querySelectorAll(`.x-navigation[data-navigation-group="${group}"] .x-navitem.active`).forEach((n) => n.classList.remove('active'));
 
   if (navitem.querySelector('ul')) {
     if (navitem.classList.contains('x-navitem-expand')) navitem.classList.remove('x-navitem-expand');

@@ -11,6 +11,7 @@
 @import './components/x-contextmenu';
 @import './components/x-list';
 @import './components/x-form';
+@import './components/x-field';
 @import './components/x-pagination';
 @import './components/x-label';
 @import './components/x-stack';

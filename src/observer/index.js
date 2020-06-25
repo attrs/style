@@ -2,6 +2,7 @@ import debounce from 'debounce';
 import { dropdown } from './dropdown';
 import { navigation } from './navigation';
 import { tab } from './tab';
+import activestate from './activestate';
 
 const blacklist = ['.x-noob'];
 const scan = () => {
@@ -13,6 +14,7 @@ const scan = () => {
     if (element.classList.contains('x-tab')) tab(element);
     if (element.classList.contains('x-navigation')) navigation(element);
   });
+  activestate.scan();
 };
 
 const start = () => {
@@ -26,6 +28,7 @@ const start = () => {
       childList: true,
       subtree: true
     });
+    activestate.start();
   };
 
   if (document.body) connect();
@@ -34,6 +37,7 @@ const start = () => {
 
 const stop = () => {
   if (window._attrs_style_observer_) _attrs_style_observer_.disconnect();
+  activestate.stop();
 };
 
 export const observer = {

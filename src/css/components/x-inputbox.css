@@ -1,14 +1,24 @@
 .x-inputbox {
   @apply flex flex-row justify-between;
+
   border-radius: var(--x-inputbox-radius);
-  padding: 0.25em 0.5em;
+  padding: var(--x-inputbox-padding);
   background-color: var(--x-inputbox-color-bg);
-  border: 1px solid var(--x-inputbox-color-border);
+  border: var(--x-inputbox-border);
+  margin: var(--x-inputbox-margin);
 
   & > input {
     outline: none;
-    line-height: 1.5rem;
+    line-height: var(--x-inputbox-line-height);
     background-color: transparent;
+    border: none;
+    padding: 0 0.35rem;
+
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
   }
 
   & > .icon {

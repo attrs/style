@@ -14,9 +14,10 @@
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
   --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
-  --color-outline: var(--color-primary);
+  --color-outline: rgba(66, 165, 255, 0.55);
 
   --color-border: #e2e2e2;
+  --color-border-light: #efefef;
   --color-border-outer: #e2e2e2;
   --color-border-inverse: #2e3237;
 
@@ -149,7 +150,7 @@
   --radius-lg: 8px;
   --radius-full: 9999px;
 
-  --outline-thickness: 2px;
+  --outline-thickness: 3px;
   --icon-margin: 0.5rem;
 
   --shadow-xs: 0 0 0 1px var(--color-shadow);
@@ -161,7 +162,7 @@
   --shadow-2xl: 0 25px 50px -12px var(--color-shadow);
   --shadow-inner: inset 0 2px 4px 0 var(--color-shadow);
 
-  --outline: 0 0 0 var(--outline-thickness) var(--colors-outline);
+  --outline: 0 0 0 var(--outline-thickness) var(--color-outline);
   --outline-primary: 0 0 0 var(--outline-thickness) var(--color-primary-outline);
   --outline-secondary: 0 0 0 var(--outline-thickness) var(--color-secondary-outline);
   --outline-success: 0 0 0 var(--outline-thickness) var(--color-success-outline);
@@ -170,6 +171,21 @@
   --outline-danger: 0 0 0 var(--outline-thickness) var(--color-danger-outline);
   --outline-system: 0 0 0 var(--outline-thickness) var(--color-system-outline);
   --outline-gray: 0 0 0 var(--outline-thickness) var(--color-gray-outline);
+
+  /* input/textarea/select */
+  --controls-line-height: 2.5;
+  --controls-margin: 2px;
+  --controls-padding: 0 1rem;
+  --controls-vertical-align: middle;
+  --controls-border-color: #c2c2c2;
+  --controls-border: 1px solid var(--controls-border-color);
+  --controls-color: var(--color-text-active);
+  --controls-placeholder-color: var(--color-text-muted);
+  --controls-select-options-padding: 0.65em;
+  --controls-select-chevron: url("data:image/svg+xml,<svg class='bi bi-chevron-down' width='1em' height='1em' viewBox='0 0 16 16' fill='%23232323' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+  --controls-select-chevron-position: right 0.65em center;
+  --controls-select-chevron-size: 0.75em;
+  --controls-select-chevron-padding: 2.2em;
 
   /* x-row */
   --row-color-text: var(--color-text);
@@ -240,9 +256,12 @@
   --x-separator-h-height: 1.2em;
 
   /* x-inputbox */
+  --x-inputbox-margin: 0.6rem 0;
+  --x-inputbox-padding: 0.25em 0.5em;
   --x-inputbox-radius: var(--radius);
   --x-inputbox-color-bg: var(--color-bg-input);
-  --x-inputbox-color-border: var(--color-border);
+  --x-inputbox-border: 1px solid var(--color-border);
+  --x-inputbox-line-height: var(--line-height);
 
   /* x-card */
   --x-card-color-bg: var(--color-bg-panel);
@@ -274,7 +293,7 @@
   /* x-pagination */
   --x-pagination-line-height: calc(var(--btn-line-height) * 0.8);
   --x-pagination-padding: 0.9rem;
-  --x-pagination-margin: 0;
+  --x-pagination-margin: 0 0.08em;
   --x-pagination-bg: transparent;
   --x-pagination-color: var(--color-text);
   --x-pagination-border-radius: var(--radius-sm);
@@ -307,7 +326,7 @@
   --x-tab-border-radius: var(--radius-sm);
 
   /* x-navigation */
-  --x-navigation-font-size: 0.92rem;
+  --x-navigation-font-size: 0.95rem;
   --x-navigation-font-weight: var(--font-weight-normal);
   --x-navigation-padding: var(--spacing-sm);
   --x-navigation-title-color: var(--color-text-muted);
@@ -333,14 +352,58 @@
   --x-page-header-padding: 2rem;
 
   /* x-switch */
-  --x-switch-font-size: var(--font-size-sm);
-  --x-switch-size: var(--row-line-height);
-  --x-switch-line-height: var(--row-line-height);
-  --x-switch-width: 70px;
+  --x-switch-font-family: var(--font-family-sans);
+  --x-switch-font-size: var(--font-size-xs);
+  --x-switch-font-weight: var(--font-weight-semibold);
+  --x-switch-height: 2rem;
+  --x-switch-width: 4.5rem;
+  --x-switch-color-bg: var(--color-text-muted);
+  --x-switch-color-bg-checked: var(--color-bg-input);
+  --x-switch-line-height: var(--line-height);
   --x-switch-border-width: 3px;
-  --x-switch-border-radius: 4px;
-  --x-switch-text-margin: 8px;
-  --x-switch-btn-radius: 4px;
-  --x-switch-btn-size: calc(var(--x-switch-size) - (var(--x-switch-border-width) * 2));
-  --x-switch-btn-pl: calc(var(--x-switch-width) - var(--x-switch-size));
+  --x-switch-border-radius: var(--radius-sm);
+  --x-switch-text-margin: 10px;
+  --x-switch-btn-radius: var(--radius-sm);
+  --x-switch-btn-size: calc(var(--x-switch-height) - (var(--x-switch-border-width) * 2));
+  --x-switch-btn-pl: calc(var(--x-switch-width) - var(--x-switch-height));
+
+  /* x-empty */
+  --x-empty-padding: 10rem;
+  --x-empty-icon-color: var(--color-text-);
+  --x-empty-icon-size: 3rem;
+  --x-empty-icon-bottom: 1rem;
+  --x-empty-icon-shadow: none;
+  --x-empty-text-color: var(--color-text);
+  --x-empty-text-size: var(--font-size-lg);
+  --x-empty-text-line-height: 3rem;
+  --x-empty-text-weight: var(--font-weight-semibold);
+  --x-empty-text-shadow: none;
+  --x-empty-desc-color: var(--color-text);
+  --x-empty-desc-size: var(--font-size-sm);
+  --x-empty-desc-line-height: 3rem;
+  --x-empty-desc-weight: var(--font-weight-normal);
+  --x-empty-desc-shadow: none;
+
+  /* x-headline */
+  --x-headline-font-family: var(--font-family-serif);
+  --x-headline-font-size: var(--font-size-4xl);
+
+  /* x-mouse */
+  --x-mouse-color-bg: rgba(22, 22, 22, 0.5);
+  --x-mouse-color-outline: rgba(255, 255, 255, 0.5);
+  --x-mouse-width-mouse: 25px;
+  --x-mouse-height-mouse: 35px;
+  --x-mouse-border-mouse: 2px;
+  --x-mouse-pos-mouse: 8px;
+  --x-mouse-pos-text: 2px;
+  --x-mouse-size-trackball: 5px;
+  --x-mouse-pos-trackball: 8px;
+  --x-mouse-shrink-trackball: 0.4;
+  --x-mouse-anim-duration: 5s;
+
+  /* x-profile */
+  --x-profile-image-border-width: 2px;
+  --x-profile-image-border-color: var(--color-text);
+  --x-profile-font-size: var(--font-size-sm);
+  --x-profile-font-margin: 1rem;
 }

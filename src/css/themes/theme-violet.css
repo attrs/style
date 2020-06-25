@@ -33,4 +33,7 @@
   --color-shadow: rgba(0, 0, 0, 0.05);
   --color-badge: #5d6167;
   --color-badge-text: #fff;
+
+  --controls-color: #3e3e3e;
+  --controls-placeholder-color: #c1c1c1;
 }
