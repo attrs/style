@@ -4,12 +4,13 @@
   font-size: var(--btn-font-size);
   font-weight: var(--btn-font-weight);
 
-  &:not(.btn-icon) .icon {
-    margin-left: 0;
+  & .icon {
+    margin: 0 var(--btn-icon-margin);
+    color: var(--btn-color-icon);
   }
 
-  & .icon {
-    color: var(--btn-color-icon);
+  &:not(.btn-icon) .icon {
+    margin-left: 0;
   }
 
   &:hover {
