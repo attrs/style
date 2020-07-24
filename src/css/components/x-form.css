@@ -27,8 +27,8 @@ span.x-form-control {
 }
 
 .x-form-control-error {
-  @apply text-xs mt-2;
-  color: var(--color-danger-text);
+  @apply text-xs m-1;
+  color: var(--color-danger);
 }
 
 .x-form-label {

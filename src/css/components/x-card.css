@@ -12,6 +12,12 @@
     color: var(--x-card-header-color-text);
     font-size: var(--x-card-header-font-size);
     font-weight: var(--x-card-header-font-weight);
+
+    &.x-card-header-sm {
+      line-height: 2.5;
+      font-weight: normal;
+      font-size: 0.9em;
+    }
   }
 
   & > .x-card-footer {

@@ -1,5 +1,5 @@
 .theme-dark {
-  @apply theme-light;
+  @apply theme-default;
 
   --color-black: #000;
   --color-white: #fefefe;
