@@ -1,8 +1,8 @@
 {
   "name": "@attrs/style",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "description": "attrs css theme",
-  "main": "dist/attrs.style.js",
+  "main": "lib/index.js",
   "module": "src/index.js",
   "homepage": "https://github.com/attrs/style",
   "repository": "attrs/style",
