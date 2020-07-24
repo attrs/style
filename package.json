@@ -1,6 +1,6 @@
 {
   "name": "@attrs/style",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "attrs css theme",
   "main": "dist/attrs.style.js",
   "module": "src/index.js",
