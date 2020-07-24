@@ -18,19 +18,5 @@ module.exports = merge.strategy({
     filename: '[name].js',
     libraryTarget: 'umd'
   },
-  optimization: production
-    ? {
-        splitChunks: {
-          cacheGroups: {
-            styles: {
-              name: 'style',
-              test: /\.css$/,
-              chunks: 'all',
-              enforce: true
-            }
-          }
-        },
-        minimize: true
-      }
-    : {}
+  optimization: {}
 });

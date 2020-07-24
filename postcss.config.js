@@ -21,6 +21,6 @@ module.exports = (ctx) => ({
         'color-mod-function': { unresolved: 'warn' }
       }
     }),
-    ctx.env === 'production' && require('cssnano')
+    // ctx.env === 'production' && require('cssnano')
   ].filter((v) => v)
 });
