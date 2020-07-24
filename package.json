@@ -19,10 +19,10 @@
     "format": "prettier --write \"src/**/*.{js,css}\""
   },
   "dependencies": {
+    "@attrs/httpd": "^0.1.0",
     "debounce": "^1.2.0"
   },
   "devDependencies": {
-    "@attrs/httpd": "^0.1.0",
     "@attrs/router": "^0.6.0",
     "@babel/core": "^7.10.2",
     "babel-loader": "^8.1.0",
