@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) .container {
+  max-width: 540px;
+}
+
+@media (min-width: 768px) .container {
+  max-width: 720px;
+}
+
+@media (min-width: 992px) .container {
+  max-width: 960px;
+}
+
+@media (min-width: 1200px) .container {
+  max-width: 1140px;
+}
+
+@media (min-width: 992px) .container, .container-fluid {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.container,
+.container-fluid {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.jumbotron {
+  padding: 3rem 1.5rem;
+  margin-bottom: 3rem;
+  border-radius: 0.25rem;
+  min-height: 55vh;
+}
+
+@media (min-width: 576px) .jumbotron {
+  padding: 6rem 3rem;
+}
