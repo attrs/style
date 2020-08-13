@@ -4,7 +4,7 @@
 
   --color-black: #000;
   --color-white: #fefefe;
-  --color-bg-base: #eee;
+  --color-bg-base: #f7f7f7;
   --color-bg-panel: #fcfcfc;
   --color-bg-inverse: #efefef;
   --color-bg-active: #e9e9e9;
@@ -16,9 +16,9 @@
   --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
   --color-outline: rgba(66, 165, 255, 0.55);
 
-  --color-border: #e2e2e2;
+  --color-border: #efefef;
   --color-border-light: #efefef;
-  --color-border-outer: #e2e2e2;
+  --color-border-outer: #efefef;
   --color-border-inverse: #2e3237;
 
   --color-text: #5e5e5e;
@@ -406,4 +406,9 @@
   --x-profile-image-border-color: var(--color-text);
   --x-profile-font-size: var(--font-size-sm);
   --x-profile-font-margin: 1rem;
+
+  /* x-badge */
+  --x-badge-padding: 0.25em 0.75em 0.3em 0.75em;
+  --x-badge-background: var(--color-text);
+  --x-badge-color: #fff;
 }
