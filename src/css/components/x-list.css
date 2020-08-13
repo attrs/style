@@ -1,5 +1,4 @@
 .x-list {
-  margin: 1rem 0;
   user-select: none;
   list-style: none;
   margin: 0;
@@ -54,5 +53,23 @@
 
   &.x-list-lined > .x-list-item {
     border-bottom: var(--x-list-item-border);
+  }
+
+  &.x-list-plain {
+    @apply mb-5;
+
+    & .x-list-header {
+      padding-left: 0;
+    }
+
+    & .x-list-item {
+      padding-left: 0;
+
+      &:hover,
+      &.active {
+        @apply text-primary;
+        background: none;
+      }
+    }
   }
 }
