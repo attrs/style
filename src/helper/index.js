@@ -40,9 +40,11 @@ const stop = () => {
   activestate.stop();
 };
 
-export const observer = {
+export const helper = {
   blacklist,
   scan,
   start,
   stop
 };
+
+start();

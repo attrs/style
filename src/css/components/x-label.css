@@ -63,8 +63,8 @@
   }
 
   &.x-label-dark {
-    background-color: var(--color-bg-base);
-    color: var(--color-text);
+    background-color: var(--color-gray-800);
+    color: var(--color-white);
   }
 
   &.x-label-outline {

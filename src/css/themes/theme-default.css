@@ -34,9 +34,9 @@
 
   --color-scrollbar-track: transparent;
   --color-scrollbar-thumb: rgba(0, 0, 0, 0.5);
-  --color-scrollbar-thumb-border: rgba(255, 255, 255, 0.05);
+  --color-scrollbar-thumb-border: rgba(255, 255, 255, 0.07);
 
-  --color-shadow: rgba(0, 0, 0, 0.05);
+  --color-shadow: rgba(0, 0, 0, 0.03);
   --color-badge: #5d6167;
   --color-badge-text: #fff;
 
@@ -152,14 +152,15 @@
 
   --outline-thickness: 3px;
   --icon-margin: 0.5rem;
+  --li-margin: 0.5rem;
 
   --shadow-xs: 0 0 0 1px var(--color-shadow);
-  --shadow-sm: 0 1px 2px 0 var(--color-shadow);
-  --shadow: 0 1px 3px 0 var(--color-shadow), 0 1px 2px 0 var(--color-shadow);
-  --shadow-md: 0 4px 6px -1px var(--color-shadow), 0 2px 4px -1px var(--color-shadow);
-  --shadow-lg: 0 10px 15px -3px var(--color-shadow), 0 4px 6px -2px var(--color-shadow);
-  --shadow-xl: 0 20px 25px -5px var(--color-shadow), 0 10px 10px -5px var(--color-shadow);
-  --shadow-2xl: 0 25px 50px -12px var(--color-shadow);
+  --shadow-sm: 0 3px 2px var(--color-shadow);
+  --shadow: 0 3px 2px var(--color-shadow),0 6px 10px var(--color-shadow);
+  --shadow-md: 0 3px 2px var(--color-shadow),0 6px 5px var(--color-shadow),0 12px 10px var(--color-shadow));
+  --shadow-lg: 0 3px 2px var(--color-shadow),0 6px 5px var(--color-shadow),0 12px 10px var(--color-shadow),0 22px 17px var(--color-shadow);
+  --shadow-xl: 0 3px 2px var(--color-shadow),0 6px 5px var(--color-shadow),0 12px 10px var(--color-shadow),0 22px 17px var(--color-shadow),0 41px 33px var(--color-shadow);
+  --shadow-2xl: 0 3px 2px var(--color-shadow),0 6px 5px var(--color-shadow),0 12px 10px var(--color-shadow),0 22px 17px var(--color-shadow),0 41px 33px var(--color-shadow),0 100px 80px var(--color-shadow);
   --shadow-inner: inset 0 2px 4px 0 var(--color-shadow);
 
   --outline: 0 0 0 var(--outline-thickness) var(--color-outline);
@@ -225,7 +226,7 @@
   --x-label-color-bg-active: var(--btn-color-bg-active);
   --x-label-color-text: var(--color-text);
   --x-label-color-text-active: var(--color-text-active);
-  --x-label-color-outline: #3e4247;
+  --x-label-color-outline: var(--color-gray-400);
   --x-label-border-radius: var(--radius-sm);
   --x-label-rounded-radius: 50rem;
   --x-label-outline: 1px solid var(--btn-color-outline);

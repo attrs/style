@@ -233,3 +233,7 @@ ol {
     border-left-width: 0 !important;
   }
 }
+
+li {
+  margin: var(--li-margin) 0;
+}
