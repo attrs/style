@@ -52,7 +52,7 @@ const popstatelistener = (e) => {
 const opushstate = history.pushState;
 const oreplacestate = history.replaceState;
 
-export default {
+export const activestate = {
   start() {
     history.pushState = wrap('pushState');
     history.replaceState = wrap('replaceState');

@@ -8,7 +8,7 @@ label.x-switch {
   width: var(--x-switch-width);
   margin-bottom: 0;
 
-  & > label {
+  & > span {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -21,28 +21,32 @@ label.x-switch {
     font-weight: var(--x-switch-font-weight);
     font-family: var(--x-switch-font-family);
     line-height: var(--x-switch-line-height);
-    color: #fff;
+    color: var(--color-white);
     text-align: center;
     background: var(--x-switch-color-bg);
     border: var(--x-switch-border-width) solid var(--x-switch-color-bg);
-    transition: 0.3s ease-out;
+    transition: 0.2s ease-in-out;
     border-radius: var(--x-switch-border-radius);
   }
 
-  & > label:before {
+  & > span:before {
     content: attr(data-off);
     position: absolute;
     right: var(--x-switch-text-margin);
     line-height: var(--x-switch-btn-size);
   }
 
-  & > label:after {
+  & > span:after {
     content: '';
     width: var(--x-switch-btn-size);
     height: var(--x-switch-btn-size);
     display: block;
-    background: #fff;
+    background: var(--color-white);
     border-radius: var(--x-switch-btn-radius);
+  }
+
+  &.x-switch-rounded > span, &.x-switch-rounded > span:after {
+    border-radius: var(--radius-full);
   }
 
   & > input {
@@ -59,111 +63,155 @@ label.x-switch {
     outline: none;
   }
 
-  & > input:focus + label {
-    color: #fff;
+  & > input:focus + span {
+    color: var(--color-white);
     border-color: var(--x-switch-color-bg);
     background: var(--x-switch-color-bg);
   }
 
-  & > input:focus + label:after {
-    background: #fff;
+  & > input:focus + span:after {
+    background: var(--color-white);
   }
 
-  & > input:checked + label {
-    border-color: var(--x-switch-color-bg-checked);
-    background: var(--x-switch-color-bg-checked);
+  & > input:checked + span {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
     padding-left: var(--x-switch-btn-pl);
-    color: #fff;
+    color: var(--color-white);
   }
 
-  & > input:checked + label:before {
+  & > input:checked + span:before {
     content: attr(data-on);
     left: var(--x-switch-text-margin);
     right: initial;
   }
 
-  & > input:checked + label:after {
-    background: #fff;
+  & > input:checked + span:after {
+    background: var(--color-white);
   }
 
-  &.x-switch-primary > input:checked + label {
+  &.x-switch-default > input:checked + span {
+    background: var(--color-text);
+    border-color: var(--color-text);
+  }
+
+  &.x-switch-default > input:checked + span:after {
+    color: var(--color-text);
+  }
+
+  &.x-switch-default > input:checked:focus + span {
+    background: var(--color-text);
+    border-color: var(--color-text);
+  }
+
+  &.x-switch-primary > input:checked + span {
     background: var(--color-primary);
     border-color: var(--color-primary);
   }
-  &.x-switch-primary > input:checked + label:after {
+
+  &.x-switch-primary > input:checked + span:after {
     color: var(--color-primary);
   }
-  &.x-switch-primary > input:checked:focus + label {
+
+  &.x-switch-primary > input:checked:focus + span {
     background: var(--color-primary);
     border-color: var(--color-primary);
   }
 
-  &.x-switch-success > input:checked + label {
+  &.x-switch-secondary > input:checked + span {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+  }
+
+  &.x-switch-secondary > input:checked + span:after {
+    color: var(--color-secondary);
+  }
+
+  &.x-switch-secondary > input:checked:focus + span {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+  }
+
+  &.x-switch-success > input:checked + span {
     background: var(--color-success);
     border-color: var(--color-success);
   }
-  &.x-switch-success > input:checked + label:after {
+
+  &.x-switch-success > input:checked + span:after {
     color: var(--color-success);
   }
-  &.x-switch-success > input:checked:focus + label {
+
+  &.x-switch-success > input:checked:focus + span {
     background: var(--color-success);
     border-color: var(--color-success);
   }
 
-  &.x-switch-info > input:checked + label {
+  &.x-switch-info > input:checked + span {
     background: var(--color-info);
     border-color: var(--color-info);
   }
-  &.x-switch-info > input:checked + label:after {
+  &.x-switch-info > input:checked + span:after {
     color: var(--color-info);
   }
-  &.x-switch-info > input:checked:focus + label {
+  &.x-switch-info > input:checked:focus + span {
     background: var(--color-info);
     border-color: var(--color-info);
   }
 
-  &.x-switch-warning > input:checked + label {
+  &.x-switch-warning > input:checked + span {
     background: var(--color-warning);
     border-color: var(--color-warning);
   }
-  &.x-switch-warning > input:checked + label:after {
+  &.x-switch-warning > input:checked + span:after {
     color: var(--color-warning);
   }
-  &.x-switch-warning > input:checked:focus + label {
+  &.x-switch-warning > input:checked:focus + span {
     background: var(--color-warning);
     border-color: var(--color-warning);
   }
 
-  &.x-switch-danger > input:checked + label {
+  &.x-switch-danger > input:checked + span {
     background: var(--color-danger);
     border-color: var(--color-danger);
   }
-  &.x-switch-danger > input:checked + label:after {
+  &.x-switch-danger > input:checked + span:after {
     color: var(--color-danger);
   }
-  &.x-switch-danger > input:checked:focus + label {
+  &.x-switch-danger > input:checked:focus + span {
     background: var(--color-danger);
     border-color: var(--color-danger);
   }
 
-  &.x-switch-system > input:checked + label {
+  &.x-switch-system > input:checked + span {
     background: var(--color-system);
     border-color: var(--color-system);
   }
-  &.x-switch-system > input:checked + label:after {
+  &.x-switch-system > input:checked + span:after {
     color: var(--color-system);
   }
-  &.x-switch-system > input:checked:focus + label {
+  &.x-switch-system > input:checked:focus + span {
     background: var(--color-system);
     border-color: var(--color-system);
+  }
+
+  &.x-switch-black > input:checked + span {
+    background: var(--color-black);
+    border-color: var(--color-black);
+  }
+  &.x-switch-black > input:checked + span:after {
+    color: var(--color-black);
+  }
+  &.x-switch-black > input:checked:focus + span {
+    background: var(--color-black);
+    border-color: var(--color-black);
   }
 
   &.x-switch-rounded {
-    & > label {
+    & > span {
       border-radius: 50rem;
     }
 
-    & > label:after {
+    & > span:after {
       border-radius: 50rem;
     }
   }

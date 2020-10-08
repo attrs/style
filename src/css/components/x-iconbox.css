@@ -1,0 +1,92 @@
+
+.x-iconbox {
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: var(--radius-sm);
+  background-color: var(--x-iconbox-background-color);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  & svg {
+    height: 50%;
+    width: 50%;
+    fill: var(--x-iconbox-foreground-color);
+  }
+
+  & img {
+    height: 100%;
+    width: 100%;
+  }
+
+  &.x-iconbox-circle {
+    border-radius: var(--radius-full);
+  }
+
+  &.x-iconbox-md {
+  }
+
+  &.x-iconbox-xs {
+    height: 30px;
+    width: 30px;
+    border-radius: var(--radius-xs);
+  }
+
+  &.x-iconbox-sm {
+    height: 45px;
+    width: 45px;
+    border-radius: var(--radius-sm);
+  }
+
+  &.x-iconbox-lg {
+    height: 90px;
+    width: 90px;
+    border-radius: var(--radius-md);
+  }
+
+  &.x-iconbox-xl {
+    height: 120px;
+    width: 120px;
+    border-radius: var(--radius-lg);
+  }
+
+  &.x-iconbox-primary {
+   background-color: var(--color-primary);
+  }
+
+  &.x-iconbox-secondary {
+   background-color: var(--color-secondary);
+  }
+
+  &.x-iconbox-info {
+   background-color: var(--color-info);
+  }
+
+  &.x-iconbox-success {
+   background-color: var(--color-success);
+  }
+
+  &.x-iconbox-warning {
+   background-color: var(--color-warning);
+  }
+
+  &.x-iconbox-danger {
+   background-color: var(--color-danger);
+  }
+
+  &.x-iconbox-system {
+   background-color: var(--color-system);
+  }
+
+  &.x-iconbox-gray {
+   background-color: var(--color-gray);
+  }
+
+  &.x-iconbox-transparent {
+   background-color: transparent;
+  }
+}

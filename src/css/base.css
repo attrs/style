@@ -25,10 +25,11 @@ button:focus {
   outline: none;
 }
 
+
 input,
 textarea,
 select {
-  @apply appearance-none rounded-sm px-4 leading-tight bg-input;
+  @apply rounded-sm px-4 leading-tight bg-input;
   line-height: var(--controls-line-height);
   margin: var(--controls-margin);
   vertical-align: var(--controls-vertical-align);
@@ -50,6 +51,8 @@ textarea {
 }
 
 select {
+  @apply appearance-none;
+
   background-image: var(--controls-select-chevron);
   background-position: var(--controls-select-chevron-position);
   background-repeat: no-repeat;

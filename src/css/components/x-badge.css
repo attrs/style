@@ -3,9 +3,9 @@
   min-width: 1em;
   padding: var(--x-badge-padding);
   margin-left: 6px;
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-semibold);
-  line-height: 1.25;
+  font-size: var(--x-badge-font-size);
+  font-weight: var(--x-badge-font-weight);
+  line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round:wght@100;300;400;600;700;800;900&display=swap');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 /*
 Istok Web
 Maven Pro
@@ -6,5 +8,5 @@ Source Sans Pro
 */
 
 :root {
-  --font-family-sans: 'Overpass', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  --font-family-sans: -apple-system, BlinkMacSystemFont, Overpass, NanumSquare, 'Varela Round', Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }

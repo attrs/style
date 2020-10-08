@@ -2,17 +2,19 @@ import debounce from 'debounce';
 import { dropdown } from './dropdown';
 import { navigation } from './navigation';
 import { tab } from './tab';
-import activestate from './activestate';
+import { toggle } from './toggle';
+import { activestate } from './activestate';
 
 const blacklist = ['.x-noob'];
 const scan = () => {
   const blacklistselector = blacklist.join(',');
-  const selectors = ['.x-dropdown:not(' + blacklistselector + ')', '.x-tab:not(' + blacklistselector + ')', '.x-navigation:not(' + blacklistselector + ')'];
+  const selectors = ['.x-dropdown:not(' + blacklistselector + ')', '.x-tab:not(' + blacklistselector + ')', '.x-navigation:not(' + blacklistselector + ')', '[data-toggle]'];
 
   document.body.querySelectorAll(selectors.join(',')).forEach((element) => {
     if (element.classList.contains('x-dropdown')) dropdown(element);
     if (element.classList.contains('x-tab')) tab(element);
     if (element.classList.contains('x-navigation')) navigation(element);
+    if (element.getAttribute('data-toggle')) toggle(element);
   });
   activestate.scan();
 };

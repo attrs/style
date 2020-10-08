@@ -3,14 +3,14 @@
   color: var(--color-text);
 
   --color-black: #000;
-  --color-white: #fefefe;
-  --color-bg-base: #f7f7f7;
-  --color-bg-panel: #fcfcfc;
-  --color-bg-inverse: #efefef;
-  --color-bg-active: #e9e9e9;
+  --color-white: #fff;
+  --color-bg-base: #f3f5f8;
+  --color-bg-panel: #fff;
+  --color-bg-inverse: #e6eaf2;
+  --color-bg-active: #f5f8f9;
   --color-bg-input: #fff;
 
-  --color-bg-hover: #f0f0f0;
+  --color-bg-hover: #f2f5f9;
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
   --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
@@ -22,7 +22,7 @@
   --color-border-inverse: #2e3237;
 
   --color-text: #5e5e5e;
-  --color-text-light: #999;
+  --color-text-light: #9baeb8;
   --color-text-muted: #c1c1c1;
   --color-text-active: #232323;
   --color-text-highlight: #333;
@@ -144,10 +144,11 @@
   --spacing-lg: 3rem;
   --spacing-xl: 5rem;
 
-  --radius: 5px;
-  --radius-sm: 3px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
+  --radius: 0.5rem;
+  --radius-sm: 0.3rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
   --radius-full: 9999px;
 
   --outline-thickness: 3px;
@@ -155,7 +156,7 @@
   --li-margin: 0.5rem;
 
   --shadow-xs: 0 0 0 1px var(--color-shadow);
-  --shadow-sm: 0 3px 2px var(--color-shadow);
+  --shadow-sm: 0 2px 6px var(--color-shadow);
   --shadow: 0 3px 2px var(--color-shadow),0 6px 10px var(--color-shadow);
   --shadow-md: 0 3px 2px var(--color-shadow),0 6px 5px var(--color-shadow),0 12px 10px var(--color-shadow));
   --shadow-lg: 0 3px 2px var(--color-shadow),0 6px 5px var(--color-shadow),0 12px 10px var(--color-shadow),0 22px 17px var(--color-shadow);
@@ -274,10 +275,14 @@
   --x-card-header-color-text: var(--color-text);
   --x-card-header-font-size: var(--font-size-base);
   --x-card-header-font-weight: var(--font-weight-semibold);
+  --x-card-title-color: var(--color-text-light);
+  --x-card-title-font-size: var(--font-size-sm);
+  --x-card-title-font-weight: var(--font-weight-semibold);
 
   /* x-list */
-  --x-list-item-line-height: 3em;
-  --x-list-item-padding: 0 1.5em;
+  --x-list-shadow: var(--shadow-sm);
+  --x-list-item-line-height: 1.8;
+  --x-list-item-padding: 0.75rem 1.5rem;
   --x-list-item-border: 1px solid var(--color-border);
   --x-list-header-color: var(--color-text-light);
   --x-list-header-padding: 0.5rem 1.5rem 0.1rem;
@@ -330,10 +335,9 @@
   --x-navigation-font-size: 0.95rem;
   --x-navigation-font-weight: var(--font-weight-normal);
   --x-navigation-padding: var(--spacing-sm);
-  --x-navigation-title-color: var(--color-text-muted);
+  --x-navigation-title-color: var(--color-text-light);
   --x-navigation-title-font-weight: var(--font-weight-semibold);
   --x-navigation-title-font-size: var(--font-size-sm);
-  --x-navigation-title-color: var(--color-text-muted);
   --x-navigation-title-margin-top: 1rem;
   --x-navigation-title-margin-bottom: 0.5rem;
   --x-navigation-active-bg: var(--color-bg-active);
@@ -354,16 +358,15 @@
 
   /* x-switch */
   --x-switch-font-family: var(--font-family-sans);
-  --x-switch-font-size: var(--font-size-xs);
+  --x-switch-font-size: 0.75em;
   --x-switch-font-weight: var(--font-weight-semibold);
   --x-switch-height: 2rem;
-  --x-switch-width: 4.5rem;
+  --x-switch-width: 4.1rem;
   --x-switch-color-bg: var(--color-text-muted);
-  --x-switch-color-bg-checked: var(--color-bg-input);
   --x-switch-line-height: var(--line-height);
   --x-switch-border-width: 3px;
   --x-switch-border-radius: var(--radius-sm);
-  --x-switch-text-margin: 10px;
+  --x-switch-text-margin: 0.75em;
   --x-switch-btn-radius: var(--radius-sm);
   --x-switch-btn-size: calc(var(--x-switch-height) - (var(--x-switch-border-width) * 2));
   --x-switch-btn-pl: calc(var(--x-switch-width) - var(--x-switch-height));
@@ -409,7 +412,21 @@
   --x-profile-font-margin: 1rem;
 
   /* x-badge */
-  --x-badge-padding: 0.25em 0.75em 0.3em 0.75em;
+  --x-badge-font-size: 0.9em;
+  --x-badge-font-weight: var(--font-weight-semibold);
+  --x-badge-padding: 0.35em 0.6em 0.35em 0.6em;
   --x-badge-background: var(--color-text);
-  --x-badge-color: #fff;
+  --x-badge-color: var(--color-white);
+
+  /* x-iconbox */
+  --x-iconbox-background-color: var(--color-text);
+  --x-iconbox-foreground-color: var(--color-white);
+
+  /* x-checkbox */
+  --x-checkbox-border-color: var(--controls-border-color);
+  --x-checkbox-border: 1px solid var(--x-checkbox-border-color);
+  --x-checkbox-border-radius: .3em;
+  --x-checkbox-top: 2px;
+  --x-checkbox-label-margin: 2em;
+  --x-checkbox-bg: var(--color-bg-input);
 }
