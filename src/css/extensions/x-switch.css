@@ -45,7 +45,8 @@ label.x-switch {
     border-radius: var(--x-switch-btn-radius);
   }
 
-  &.x-switch-rounded > span, &.x-switch-rounded > span:after {
+  &.x-switch-rounded > span,
+  &.x-switch-rounded > span:after {
     border-radius: var(--radius-full);
   }
 

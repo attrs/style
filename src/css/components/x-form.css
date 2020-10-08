@@ -26,7 +26,8 @@ span.x-form-control {
   color: var(--controls-color);
 }
 
-.x-form-control-message, .x-form-control-error {
+.x-form-control-message,
+.x-form-control-error {
   @apply text-xs m-1;
   margin: var(--controls-margin);
 }

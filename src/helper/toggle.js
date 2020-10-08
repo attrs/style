@@ -1,20 +1,22 @@
 const closest = (element, selector) => {
-  if( typeof element === 'string' ) {
+  if (typeof element === 'string') {
     selector = element;
     element = document._currentScript || document.currentScript;
   }
 
-  let found, parent = element.parentNode, fn = selector;
-  
+  let found,
+    parent = element.parentNode,
+    fn = selector;
+
   fn = (current) => {
     return current.querySelector(selector);
-  }
-  
+  };
+
   do {
     found = fn(parent);
-    if( found ) return found;
-  } while( (parent = parent.parentNode ) );
-  
+    if (found) return found;
+  } while ((parent = parent.parentNode));
+
   return null;
 };
 
@@ -23,8 +25,8 @@ export const toggle = (element) => {
   const listener = (e) => {
     const target = closest(e.target, `[data-toggle-id="${toggleid}"]`);
     if (!target) return;
-    
-    if( !target.style.display ) {
+
+    if (!target.style.display) {
       target.style.display = 'none';
     } else {
       target.style.display = null;

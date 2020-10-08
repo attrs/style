@@ -38,9 +38,11 @@
     }
   }
 
-  & > a.x-list-item, & > .x-list-item.x-list-item-hover, &.x-list-hover > .x-list-item {
+  & > a.x-list-item,
+  & > .x-list-item.x-list-item-hover,
+  &.x-list-hover > .x-list-item {
     cursor: pointer;
-    
+
     &.active {
       background: var(--color-bg-active);
     }

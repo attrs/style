@@ -157,11 +157,11 @@
 
   --shadow-xs: 0 0 0 1px var(--color-shadow);
   --shadow-sm: 0 2px 6px var(--color-shadow);
-  --shadow: 0 3px 2px var(--color-shadow),0 6px 10px var(--color-shadow);
-  --shadow-md: 0 3px 2px var(--color-shadow),0 6px 5px var(--color-shadow),0 12px 10px var(--color-shadow));
-  --shadow-lg: 0 3px 2px var(--color-shadow),0 6px 5px var(--color-shadow),0 12px 10px var(--color-shadow),0 22px 17px var(--color-shadow);
-  --shadow-xl: 0 3px 2px var(--color-shadow),0 6px 5px var(--color-shadow),0 12px 10px var(--color-shadow),0 22px 17px var(--color-shadow),0 41px 33px var(--color-shadow);
-  --shadow-2xl: 0 3px 2px var(--color-shadow),0 6px 5px var(--color-shadow),0 12px 10px var(--color-shadow),0 22px 17px var(--color-shadow),0 41px 33px var(--color-shadow),0 100px 80px var(--color-shadow);
+  --shadow: 0 3px 2px var(--color-shadow), 0 6px 10px var(--color-shadow);
+  --shadow-md: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow);
+  --shadow-lg: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow);
+  --shadow-xl: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow), 0 41px 33px var(--color-shadow);
+  --shadow-2xl: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow), 0 41px 33px var(--color-shadow), 0 100px 80px var(--color-shadow);
   --shadow-inner: inset 0 2px 4px 0 var(--color-shadow);
 
   --outline: 0 0 0 var(--outline-thickness) var(--color-outline);
@@ -373,7 +373,7 @@
 
   /* x-empty */
   --x-empty-padding: 10rem;
-  --x-empty-icon-color: var(--color-text-);
+  --x-empty-icon-color: var(--color-text);
   --x-empty-icon-size: 3rem;
   --x-empty-icon-bottom: 1rem;
   --x-empty-icon-shadow: none;
@@ -425,7 +425,7 @@
   /* x-checkbox */
   --x-checkbox-border-color: var(--controls-border-color);
   --x-checkbox-border: 1px solid var(--x-checkbox-border-color);
-  --x-checkbox-border-radius: .3em;
+  --x-checkbox-border-radius: 0.3em;
   --x-checkbox-top: 2px;
   --x-checkbox-label-margin: 2em;
   --x-checkbox-bg: var(--color-bg-input);

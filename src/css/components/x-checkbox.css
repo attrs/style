@@ -27,20 +27,20 @@ label.x-checkbox {
     vertical-align: middle;
     background-color: var(--x-checkbox-bg);
   }
-  
-  & > input[type=checkbox] + span:before {
+
+  & > input[type='checkbox'] + span:before {
     border-radius: var(--x-checkbox-border-radius);
   }
 
-  &.x-checkbox-rounded > input[type=checkbox] + span:before {
+  &.x-checkbox-rounded > input[type='checkbox'] + span:before {
     border-radius: var(--radius-full);
   }
 
-  & > input[type=radio] + span:before {
+  & > input[type='radio'] + span:before {
     border-radius: var(--radius-full);
   }
 
-  &.x-checkbox-square > input[type=radio] + span:before {
+  &.x-checkbox-square > input[type='radio'] + span:before {
     border-radius: var(--x-checkbox-border-radius);
   }
 
@@ -57,7 +57,7 @@ label.x-checkbox {
     background-color: var(--color-primary);
   }
 
-  & > input[type=checkbox]:checked + span:before {
+  & > input[type='checkbox']:checked + span:before {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=);
     background-repeat: no-repeat;
     background-position: center;
@@ -65,7 +65,7 @@ label.x-checkbox {
     text-align: center;
   }
 
-  & > input[type=radio]:checked + span:after {
+  & > input[type='radio']:checked + span:after {
     border-color: var(--color-primary);
     background-color: var(--color-primary);
     background-size: 75%;
@@ -81,52 +81,61 @@ label.x-checkbox {
     border-radius: 30%;
   }
 
-  &.x-checkbox-default > input:checked + span:before, &.x-checkbox-default > input:checked + span:after {
+  &.x-checkbox-default > input:checked + span:before,
+  &.x-checkbox-default > input:checked + span:after {
     border-color: var(--color-text-muted);
     background-color: var(--color-text-muted);
   }
 
-  &.x-checkbox-primary > input:checked + span:before, &.x-checkbox-primary > input:checked + span:after {
+  &.x-checkbox-primary > input:checked + span:before,
+  &.x-checkbox-primary > input:checked + span:after {
     border-color: var(--color-primary);
     background-color: var(--color-primary);
   }
 
-  &.x-checkbox-secondary > input:checked + span:before, &.x-checkbox-secondary > input:checked + span:after {
+  &.x-checkbox-secondary > input:checked + span:before,
+  &.x-checkbox-secondary > input:checked + span:after {
     border-color: var(--color-secondary);
     background-color: var(--color-secondary);
   }
 
-  &.x-checkbox-info > input:checked + span:before, &.x-checkbox-info > input:checked + span:after {
+  &.x-checkbox-info > input:checked + span:before,
+  &.x-checkbox-info > input:checked + span:after {
     border-color: var(--color-info);
     background-color: var(--color-info);
   }
 
-  &.x-checkbox-success > input:checked + span:before, &.x-checkbox-success > input:checked + span:after {
+  &.x-checkbox-success > input:checked + span:before,
+  &.x-checkbox-success > input:checked + span:after {
     border-color: var(--color-success);
     background-color: var(--color-success);
   }
 
-  &.x-checkbox-warning > input:checked + span:before, &.x-checkbox-warning > input:checked + span:after {
+  &.x-checkbox-warning > input:checked + span:before,
+  &.x-checkbox-warning > input:checked + span:after {
     border-color: var(--color-warning);
     background-color: var(--color-warning);
   }
 
-  &.x-checkbox-danger > input:checked + span:before, &.x-checkbox-danger > input:checked + span:after {
+  &.x-checkbox-danger > input:checked + span:before,
+  &.x-checkbox-danger > input:checked + span:after {
     border-color: var(--color-danger);
     background-color: var(--color-danger);
   }
 
-  &.x-checkbox-system > input:checked + span:before, &.x-checkbox-system > input:checked + span:after {
+  &.x-checkbox-system > input:checked + span:before,
+  &.x-checkbox-system > input:checked + span:after {
     border-color: var(--color-system);
     background-color: var(--color-system);
   }
 
-  &.x-checkbox-black > input:checked + span:before, &.x-checkbox-black > input:checked + span:after {
+  &.x-checkbox-black > input:checked + span:before,
+  &.x-checkbox-black > input:checked + span:after {
     border-color: var(--color-black);
     background-color: var(--color-black);
   }
 
-  & > input[type=radio]:checked + span:before {
+  & > input[type='radio']:checked + span:before {
     background-color: var(--x-checkbox-bg);
     border-width: 2px;
   }
