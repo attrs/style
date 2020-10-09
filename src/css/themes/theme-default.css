@@ -270,7 +270,7 @@
   --x-card-color-border-outer: var(--color-border-outer);
   --x-card-color-border: var(--color-border);
   --x-card-radius: var(--radius-sm);
-  --x-card-shadow: none;
+  --x-card-shadow: var(--shadow-sm);
   --x-card-header-color-bg: var(--color-bg-panel);
   --x-card-header-color-text: var(--color-text);
   --x-card-header-font-size: var(--font-size-base);
@@ -282,13 +282,14 @@
   /* x-list */
   --x-list-shadow: var(--shadow-sm);
   --x-list-item-line-height: 1.8;
-  --x-list-item-padding: 0.75rem 1.5rem;
+  --x-list-item-padding: 0.75rem 1.25rem 0.75rem 1.5rem;
   --x-list-item-border: 1px solid var(--color-border);
   --x-list-header-color: var(--color-text-light);
-  --x-list-header-padding: 0.5rem 1.5rem 0.1rem;
+  --x-list-header-padding: 0.75rem 1.25rem 0.25rem 1.5rem;
   --x-list-header-font-size: var(--font-size-xs);
   --x-list-item-font-size: var(--font-size-sm);
   --x-list-item-font-weight: var(--font-weight-normal);
+  --x-list-plain-line-height: 2.5;
 
   /* x-contextmenu */
   --x-contextmenu-bg: var(--color-bg-panel);
@@ -354,7 +355,8 @@
   --x-page-color-text: var(--color-text);
   --x-page-header-bg: var(--color-bg-panel);
   --x-page-header-border: var(--color-border);
-  --x-page-header-padding: 2rem;
+  --x-page-header-padding: 1rem;
+  --x-page-header-min-height: 7rem;
 
   /* x-switch */
   --x-switch-font-family: var(--font-family-sans);
@@ -427,6 +429,6 @@
   --x-checkbox-border: 1px solid var(--x-checkbox-border-color);
   --x-checkbox-border-radius: 0.3em;
   --x-checkbox-top: 2px;
-  --x-checkbox-label-margin: 2em;
+  --x-checkbox-label-margin: 2.15em;
   --x-checkbox-bg: var(--color-bg-input);
 }

@@ -1,5 +1,6 @@
 label.x-checkbox {
   user-select: none;
+  line-height: 23px;
 
   & > input {
     display: none;
@@ -78,13 +79,13 @@ label.x-checkbox {
     width: 8px;
     height: 8px;
     position: absolute;
-    border-radius: 30%;
+    border-radius: 25%;
   }
 
   &.x-checkbox-default > input:checked + span:before,
   &.x-checkbox-default > input:checked + span:after {
-    border-color: var(--color-text-muted);
-    background-color: var(--color-text-muted);
+    border-color: var(--color-text-light);
+    background-color: var(--color-text-light);
   }
 
   &.x-checkbox-primary > input:checked + span:before,

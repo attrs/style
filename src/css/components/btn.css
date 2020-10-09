@@ -34,6 +34,7 @@
   &.btn-danger,
   &.btn-system,
   &.btn-black,
+  &.btn-transparent,
   &.btn-default,
   &.btn-rounded,
   &.btn-outline,
@@ -191,6 +192,26 @@
       &.active {
         background-color: var(--color-black-active);
         color: var(--color-black-text);
+      }
+    }
+
+    &.btn-transparent {
+      --btn-color-icon: var(--color-text);
+      --btn-color-icon-active: var(--color-text-active);
+      --btn-color-text: var(--color-text);
+      --btn-color-text-active: var(--color-text-active);
+
+      background-color: transparent;
+      color: var(--color-text);
+
+      &:hover {
+        background-color: var(--btn-color-bg-hover);
+        color: var(--color-text);
+      }
+
+      &:hover {
+        background-color: var(--btn-color-bg-active);
+        color: var(--color-text);
       }
     }
 

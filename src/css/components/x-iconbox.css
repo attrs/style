@@ -22,10 +22,6 @@
     width: 100%;
   }
 
-  &.x-iconbox-circle {
-    border-radius: var(--radius-full);
-  }
-
   &.x-iconbox-md {
   }
 
@@ -51,6 +47,10 @@
     height: 120px;
     width: 120px;
     border-radius: var(--radius-lg);
+  }
+
+  &.x-iconbox-circle {
+    border-radius: var(--radius-full);
   }
 
   &.x-iconbox-primary {

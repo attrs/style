@@ -239,3 +239,7 @@ ol {
 li {
   margin: var(--li-margin) 0;
 }
+
+[data-toggle] {
+  cursor: pointer;
+}

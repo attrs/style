@@ -44,11 +44,11 @@
     cursor: pointer;
 
     &.active {
-      background: var(--color-bg-active);
+      background-color: var(--color-bg-active);
     }
 
     &:hover {
-      background: var(--color-bg-hover);
+      background-color: var(--color-bg-hover);
       color: var(--color-text-active);
 
       & .icon {
@@ -67,7 +67,7 @@
 }
 
 .x-list-plain {
-  @apply mb-5;
+  @apply mb-5 shadow-none;
   user-select: initial;
 
   & .x-list-header {
@@ -75,12 +75,30 @@
   }
 
   & .x-list-item {
-    padding-left: 0;
+    padding: 0;
+    line-height: var(--x-list-plain-line-height);
 
     &:hover,
     &.active {
       @apply text-primary;
-      background: none;
+      background-color: none;
+    }
+  }
+
+  & > a.x-list-item {
+    cursor: pointer;
+
+    &.active {
+      background-color: transparent;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: var(--color-primary);
+
+      & .icon {
+        color: var(--color-primary);
+      }
     }
   }
 }

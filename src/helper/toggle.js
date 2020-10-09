@@ -20,19 +20,23 @@ const closest = (element, selector) => {
   return null;
 };
 
+const listener = (e) => {
+  const trigger = e.target.closest('[data-toggle]');
+  const toggleid = trigger && trigger.getAttribute('data-toggle');
+  const target = toggleid && closest(e.target, `[data-toggle-id="${toggleid}"]`);
+  // console.log('toggle click', trigger, toggleid, target);
+  if (!target) return;
+
+  // console.log('toggle display', target.style.display);
+  if (target.style.display === 'none') {
+    target.style.display = null;
+  } else {
+    target.style.display = 'none';
+  }
+};
+
 export const toggle = (element) => {
-  const toggleid = element.getAttribute('data-toggle');
-  const listener = (e) => {
-    const target = closest(e.target, `[data-toggle-id="${toggleid}"]`);
-    if (!target) return;
-
-    if (!target.style.display) {
-      target.style.display = 'none';
-    } else {
-      target.style.display = null;
-    }
-  };
-
+  // console.log('toggle', element);
   element.removeEventListener('click', listener);
   element.addEventListener('click', listener);
 };
