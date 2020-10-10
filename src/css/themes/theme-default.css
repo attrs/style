@@ -282,13 +282,13 @@
   /* x-list */
   --x-list-shadow: var(--shadow-sm);
   --x-list-item-line-height: 1.8;
-  --x-list-item-padding: 0.75rem 1.25rem 0.75rem 1.5rem;
+  --x-list-item-padding: 0.65rem 1.15rem 0.65rem 1.35rem;
   --x-list-item-border: 1px solid var(--color-border);
   --x-list-header-color: var(--color-text-light);
-  --x-list-header-padding: 0.75rem 1.25rem 0.25rem 1.5rem;
+  --x-list-header-padding: 0.65rem 1.15rem 0.35rem 1.35rem;
   --x-list-header-font-size: var(--font-size-xs);
-  --x-list-item-font-size: var(--font-size-sm);
-  --x-list-item-font-weight: var(--font-weight-normal);
+  --x-list-item-font-size: var(--font-size-xs);
+  --x-list-item-font-weight: var(--font-weight-medium);
   --x-list-plain-line-height: 2.5;
 
   /* x-contextmenu */
