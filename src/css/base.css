@@ -25,6 +25,10 @@ button:focus {
   outline: none;
 }
 
+input:not([type=checkbox]):not([type=radio]), select, textarea {
+  @apply appearance-none;
+}
+
 input,
 textarea,
 select {
@@ -50,8 +54,6 @@ textarea {
 }
 
 select {
-  @apply appearance-none;
-
   background-image: var(--controls-select-chevron);
   background-position: var(--controls-select-chevron-position);
   background-repeat: no-repeat;
