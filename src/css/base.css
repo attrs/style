@@ -25,10 +25,16 @@ button:focus {
   outline: none;
 }
 
+input:not([type='checkbox']):not([type='radio']),
+select,
+textarea {
+  @apply appearance-none;
+}
+
 input,
 textarea,
 select {
-  @apply appearance-none rounded-sm px-4 leading-tight bg-input;
+  @apply rounded-sm px-4 leading-tight bg-input;
   line-height: var(--controls-line-height);
   margin: var(--controls-margin);
   vertical-align: var(--controls-vertical-align);
@@ -232,4 +238,12 @@ ol {
   &.divide-x > *:nth-child(8n + 1) {
     border-left-width: 0 !important;
   }
+}
+
+li {
+  margin: var(--li-margin) 0;
+}
+
+[data-toggle] {
+  cursor: pointer;
 }

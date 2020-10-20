@@ -1,17 +1,17 @@
 .x-badge {
   display: inline-block;
   min-width: 1em;
-  padding: 0.25em 0.75em 0.3em 0.75em;
+  padding: var(--x-badge-padding);
   margin-left: 6px;
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-semibold);
-  line-height: 1.25;
+  font-size: var(--x-badge-font-size);
+  font-weight: var(--x-badge-font-weight);
+  line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   border-radius: 1em;
-  background-color: var(--color-badge);
-  color: var(--color-badge-text);
+  background-color: var(--x-badge-background);
+  color: var(--x-badge-color);
   transition: opacity 0.35s;
 
   &:active,

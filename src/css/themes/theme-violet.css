@@ -6,7 +6,7 @@
   --color-bg-base: #796ea5;
   --color-bg-panel: #796ea5;
   --color-bg-inverse: #efefef;
-  --color-bg-active: #796ea5;
+  --color-bg-active: #887fb6;
   --color-bg-input: #fff;
 
   --color-bg-hover: #988fc6;
@@ -16,11 +16,12 @@
   --color-outline: #796ea5;
 
   --color-border: #887fb6;
+  --color-border-light: #7f74a9;
   --color-border-outer: #887fb6;
   --color-border-inverse: #2e3237;
 
   --color-text: #fff;
-  --color-text-light: #fff;
+  --color-text-light: #b9aee5;
   --color-text-muted: #a99ed5;
   --color-text-active: #fff;
   --color-text-highlight: #fff;
@@ -36,4 +37,6 @@
 
   --controls-color: #3e3e3e;
   --controls-placeholder-color: #c1c1c1;
+
+  --x-badge-background: var(--color-text-muted);
 }

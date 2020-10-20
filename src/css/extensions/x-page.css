@@ -4,20 +4,24 @@
 }
 
 .x-page-header {
+  @apply flex items-center;
+
   background-color: var(--x-page-header-bg);
   border-bottom: 1px solid var(--x-page-header-border);
   padding: var(--x-page-header-padding);
+  min-height: var(--x-page-header-min-height);
   margin: 0;
-
-  & .icon {
-    color: var(--color-icon);
-  }
 
   & small {
     display: inline-block;
     color: var(--color-text-light);
     font-size: 0.75em;
     margin-left: 0.35em;
+  }
+
+  &.x-page-header-sm {
+    padding: calc(var(--x-page-header-padding) * 0.8);
+    min-height: calc(var(--x-page-header-min-height) * 0.8);
   }
 
   & h1,

@@ -3,26 +3,26 @@
   color: var(--color-text);
 
   --color-black: #000;
-  --color-white: #fefefe;
-  --color-bg-base: #eee;
-  --color-bg-panel: #fcfcfc;
-  --color-bg-inverse: #efefef;
-  --color-bg-active: #e9e9e9;
+  --color-white: #fff;
+  --color-bg-base: #f3f5f8;
+  --color-bg-panel: #fff;
+  --color-bg-inverse: #e6eaf2;
+  --color-bg-active: #f5f8f9;
   --color-bg-input: #fff;
 
-  --color-bg-hover: #f0f0f0;
+  --color-bg-hover: #f2f5f9;
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
   --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
   --color-outline: rgba(66, 165, 255, 0.55);
 
-  --color-border: #e2e2e2;
+  --color-border: #efefef;
   --color-border-light: #efefef;
-  --color-border-outer: #e2e2e2;
+  --color-border-outer: #efefef;
   --color-border-inverse: #2e3237;
 
   --color-text: #5e5e5e;
-  --color-text-light: #999;
+  --color-text-light: #9baeb8;
   --color-text-muted: #c1c1c1;
   --color-text-active: #232323;
   --color-text-highlight: #333;
@@ -34,9 +34,9 @@
 
   --color-scrollbar-track: transparent;
   --color-scrollbar-thumb: rgba(0, 0, 0, 0.5);
-  --color-scrollbar-thumb-border: rgba(255, 255, 255, 0.05);
+  --color-scrollbar-thumb-border: rgba(255, 255, 255, 0.07);
 
-  --color-shadow: rgba(0, 0, 0, 0.05);
+  --color-shadow: rgba(0, 0, 0, 0.03);
   --color-badge: #5d6167;
   --color-badge-text: #fff;
 
@@ -144,22 +144,24 @@
   --spacing-lg: 3rem;
   --spacing-xl: 5rem;
 
-  --radius: 5px;
-  --radius-sm: 3px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
+  --radius: 0.5rem;
+  --radius-sm: 0.3rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
   --radius-full: 9999px;
 
   --outline-thickness: 3px;
   --icon-margin: 0.5rem;
+  --li-margin: 0.5rem;
 
   --shadow-xs: 0 0 0 1px var(--color-shadow);
-  --shadow-sm: 0 1px 2px 0 var(--color-shadow);
-  --shadow: 0 1px 3px 0 var(--color-shadow), 0 1px 2px 0 var(--color-shadow);
-  --shadow-md: 0 4px 6px -1px var(--color-shadow), 0 2px 4px -1px var(--color-shadow);
-  --shadow-lg: 0 10px 15px -3px var(--color-shadow), 0 4px 6px -2px var(--color-shadow);
-  --shadow-xl: 0 20px 25px -5px var(--color-shadow), 0 10px 10px -5px var(--color-shadow);
-  --shadow-2xl: 0 25px 50px -12px var(--color-shadow);
+  --shadow-sm: 0 2px 6px var(--color-shadow);
+  --shadow: 0 3px 2px var(--color-shadow), 0 6px 10px var(--color-shadow);
+  --shadow-md: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow);
+  --shadow-lg: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow);
+  --shadow-xl: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow), 0 41px 33px var(--color-shadow);
+  --shadow-2xl: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow), 0 41px 33px var(--color-shadow), 0 100px 80px var(--color-shadow);
   --shadow-inner: inset 0 2px 4px 0 var(--color-shadow);
 
   --outline: 0 0 0 var(--outline-thickness) var(--color-outline);
@@ -214,7 +216,7 @@
   --btn-padding: calc(var(--row-padding) * 1.3);
   --btn-padding-rounded: calc(var(--btn-padding) * 1.4);
   --btn-padding-icon-only: 1rem;
-  --btn-icon-margin: 0.35rem;
+  --btn-icon-margin: 0.5rem;
 
   /* x-label */
   --x-label-margin: 2px;
@@ -225,7 +227,7 @@
   --x-label-color-bg-active: var(--btn-color-bg-active);
   --x-label-color-text: var(--color-text);
   --x-label-color-text-active: var(--color-text-active);
-  --x-label-color-outline: #3e4247;
+  --x-label-color-outline: var(--color-gray-400);
   --x-label-border-radius: var(--radius-sm);
   --x-label-rounded-radius: 50rem;
   --x-label-outline: 1px solid var(--btn-color-outline);
@@ -268,21 +270,26 @@
   --x-card-color-border-outer: var(--color-border-outer);
   --x-card-color-border: var(--color-border);
   --x-card-radius: var(--radius-sm);
-  --x-card-shadow: none;
+  --x-card-shadow: var(--shadow-sm);
   --x-card-header-color-bg: var(--color-bg-panel);
   --x-card-header-color-text: var(--color-text);
   --x-card-header-font-size: var(--font-size-base);
   --x-card-header-font-weight: var(--font-weight-semibold);
+  --x-card-title-color: var(--color-text-light);
+  --x-card-title-font-size: var(--font-size-sm);
+  --x-card-title-font-weight: var(--font-weight-semibold);
 
   /* x-list */
-  --x-list-item-line-height: 3em;
-  --x-list-item-padding: 0 1.5em;
+  --x-list-shadow: var(--shadow-sm);
+  --x-list-item-line-height: 1.6;
+  --x-list-item-padding: 0.75rem 1.15rem 0.75rem 1.35rem;
   --x-list-item-border: 1px solid var(--color-border);
   --x-list-header-color: var(--color-text-light);
-  --x-list-header-padding: 0.5rem 1.5rem 0.1rem;
+  --x-list-header-padding: 0.45rem 1.15rem 0.15rem 1.35rem;
   --x-list-header-font-size: var(--font-size-xs);
-  --x-list-item-font-size: var(--font-size-sm);
-  --x-list-item-font-weight: var(--font-weight-normal);
+  --x-list-item-font-size: var(--font-size-xs);
+  --x-list-item-font-weight: var(--font-weight-medium);
+  --x-list-plain-line-height: 2.5;
 
   /* x-contextmenu */
   --x-contextmenu-bg: var(--color-bg-panel);
@@ -329,10 +336,9 @@
   --x-navigation-font-size: 0.95rem;
   --x-navigation-font-weight: var(--font-weight-normal);
   --x-navigation-padding: var(--spacing-sm);
-  --x-navigation-title-color: var(--color-text-muted);
+  --x-navigation-title-color: var(--color-text-light);
   --x-navigation-title-font-weight: var(--font-weight-semibold);
   --x-navigation-title-font-size: var(--font-size-sm);
-  --x-navigation-title-color: var(--color-text-muted);
   --x-navigation-title-margin-top: 1rem;
   --x-navigation-title-margin-bottom: 0.5rem;
   --x-navigation-active-bg: var(--color-bg-active);
@@ -349,27 +355,27 @@
   --x-page-color-text: var(--color-text);
   --x-page-header-bg: var(--color-bg-panel);
   --x-page-header-border: var(--color-border);
-  --x-page-header-padding: 2rem;
+  --x-page-header-padding: 1rem;
+  --x-page-header-min-height: 7rem;
 
   /* x-switch */
   --x-switch-font-family: var(--font-family-sans);
-  --x-switch-font-size: var(--font-size-xs);
+  --x-switch-font-size: 0.75em;
   --x-switch-font-weight: var(--font-weight-semibold);
   --x-switch-height: 2rem;
-  --x-switch-width: 4.5rem;
+  --x-switch-width: 4.1rem;
   --x-switch-color-bg: var(--color-text-muted);
-  --x-switch-color-bg-checked: var(--color-bg-input);
   --x-switch-line-height: var(--line-height);
   --x-switch-border-width: 3px;
   --x-switch-border-radius: var(--radius-sm);
-  --x-switch-text-margin: 10px;
+  --x-switch-text-margin: 0.75em;
   --x-switch-btn-radius: var(--radius-sm);
   --x-switch-btn-size: calc(var(--x-switch-height) - (var(--x-switch-border-width) * 2));
   --x-switch-btn-pl: calc(var(--x-switch-width) - var(--x-switch-height));
 
   /* x-empty */
   --x-empty-padding: 10rem;
-  --x-empty-icon-color: var(--color-text-);
+  --x-empty-icon-color: var(--color-text);
   --x-empty-icon-size: 3rem;
   --x-empty-icon-bottom: 1rem;
   --x-empty-icon-shadow: none;
@@ -406,4 +412,23 @@
   --x-profile-image-border-color: var(--color-text);
   --x-profile-font-size: var(--font-size-sm);
   --x-profile-font-margin: 1rem;
+
+  /* x-badge */
+  --x-badge-font-size: 0.9em;
+  --x-badge-font-weight: var(--font-weight-semibold);
+  --x-badge-padding: 0.35em 0.6em 0.35em 0.6em;
+  --x-badge-background: var(--color-text);
+  --x-badge-color: var(--color-white);
+
+  /* x-iconbox */
+  --x-iconbox-background-color: var(--color-text);
+  --x-iconbox-foreground-color: var(--color-white);
+
+  /* x-checkbox */
+  --x-checkbox-border-color: var(--controls-border-color);
+  --x-checkbox-border: 1px solid var(--x-checkbox-border-color);
+  --x-checkbox-border-radius: 0.3em;
+  --x-checkbox-top: 2px;
+  --x-checkbox-label-margin: 2.15em;
+  --x-checkbox-bg: var(--color-bg-input);
 }

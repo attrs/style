@@ -1,7 +1,5 @@
 import './css/base.css';
 import './css/components.css';
-import { observer } from './observer';
+import { helper } from './helper';
 
-observer.start();
-
-export * from './observer';
+export * from './helper';

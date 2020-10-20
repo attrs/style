@@ -24,3 +24,10 @@
     border-top: 1px solid var(--x-card-color-border);
   }
 }
+
+.x-card-title {
+  font-size: var(--x-card-title-font-size);
+  font-weight: var(--x-card-title-font-weight);
+  color: var(--x-card-title-color);
+  margin: 0 0 0.35rem 0.25rem;
+}

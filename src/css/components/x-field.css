@@ -11,5 +11,23 @@
 
   &:last-child {
     @apply border-none;
+
+    & .x-field-label {
+      @apply pb-0;
+    }
+
+    & .x-field-body {
+      @apply pb-0;
+    }
+  }
+
+  &:first-child {
+    & .x-field-label {
+      @apply pt-0;
+    }
+
+    & .x-field-body {
+      @apply pt-0;
+    }
   }
 }

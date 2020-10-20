@@ -7,15 +7,27 @@
   @apply theme-light;
 }
 
+.theme-inverse {
+  @apply theme-dark;
+}
+
 /* apply prefers-color-scheme */
 @media (prefers-color-scheme: light) {
   :root {
     @apply theme-light;
+  }
+
+  .theme-inverse {
+    @apply theme-dark;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     @apply theme-dark;
+  }
+
+  .theme-inverse {
+    @apply theme-light;
   }
 }

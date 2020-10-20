@@ -23,11 +23,16 @@ span.x-form-control {
   line-height: var(--controls-line-height);
   margin: var(--controls-margin);
   vertical-align: var(--controls-vertical-align);
-  color: var(--controls-color);
+  color: var(--text-color);
+}
+
+.x-form-control-message,
+.x-form-control-error {
+  @apply text-xs my-1;
+  margin: var(--controls-margin);
 }
 
 .x-form-control-error {
-  @apply text-xs m-1;
   color: var(--color-danger);
 }
 

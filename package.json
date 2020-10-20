@@ -1,8 +1,8 @@
 {
   "name": "@attrs/style",
-  "version": "0.6.1",
+  "version": "0.6.4",
   "description": "attrs css theme",
-  "main": "dist/attrs.style.js",
+  "main": "lib/index.js",
   "module": "src/index.js",
   "homepage": "https://github.com/attrs/style",
   "repository": "attrs/style",
@@ -53,8 +53,13 @@
     "webpack-merge": "^4.2.2"
   },
   "files": [
-    "src",
     "lib",
+    "src",
+    "build",
+    ".browserslistrc",
+    ".stylelintrc",
+    "postcss.config.js",
+    "tailwind.config.js",
     "LICENSE",
     "README.md"
   ]
