@@ -66,6 +66,54 @@
   }
 }
 
+.x-list-item {
+  @apply x-row;
+
+  font-size: var(--x-list-item-font-size);
+  font-weight: var(--x-list-item-font-weight);
+
+  & .icon {
+    margin-left: 0;
+  }
+
+  padding: var(--x-list-item-padding);
+  line-height: var(--x-list-item-line-height);
+
+  &.x-list-item-disabled {
+    & .icon {
+      color: var(--color-text-muted);
+    }
+
+    color: var(--color-text-muted);
+  }
+}
+
+a.x-list-item,
+.x-list-item.x-list-item-hover {
+  cursor: pointer;
+
+  &.active {
+    background-color: var(--color-bg-active);
+  }
+
+  &:hover {
+    background-color: var(--color-bg-hover);
+    color: var(--color-text-active);
+
+    & .icon {
+      color: var(--color-icon-active);
+    }
+  }
+}
+
+&.x-list-lined > .x-list-item {
+  border-top: var(--x-list-item-border);
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
 .x-list-plain {
   @apply mb-5 shadow-none;
   user-select: initial;

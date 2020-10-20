@@ -19,6 +19,11 @@
     margin-left: 0.35em;
   }
 
+  &.x-page-header-sm {
+    padding: calc(var(--x-page-header-padding) * 0.8);
+    min-height: calc(var(--x-page-header-min-height) * 0.8);
+  }
+
   & h1,
   & h2,
   & h3,

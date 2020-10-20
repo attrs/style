@@ -6,7 +6,6 @@
 
   & .icon {
     margin: 0 var(--btn-icon-margin);
-    color: var(--btn-color-icon);
   }
 
   &:not(.btn-icon) .icon {
@@ -20,10 +19,6 @@
   &.active {
     background: var(--btn-color-bg-active);
     color: var(--btn-color-text-active);
-
-    & .icon {
-      color: var(--btn-color-icon-active);
-    }
   }
 
   &.btn-primary,
@@ -224,10 +219,6 @@
         border-color: var(--btn-color-outline);
         color: var(--btn-color-text);
 
-        & .icon {
-          color: var(--btn-color-text);
-        }
-
         &:hover,
         &.active {
           border-color: var(--btn-color-bg-hover);
@@ -425,10 +416,6 @@
       &:hover,
       &.active {
         color: var(--btn-color-text-active);
-
-        & .icon {
-          color: var(--btn-color-text-active);
-        }
       }
     }
   }

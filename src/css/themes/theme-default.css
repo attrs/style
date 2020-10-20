@@ -216,7 +216,7 @@
   --btn-padding: calc(var(--row-padding) * 1.3);
   --btn-padding-rounded: calc(var(--btn-padding) * 1.4);
   --btn-padding-icon-only: 1rem;
-  --btn-icon-margin: 0.35rem;
+  --btn-icon-margin: 0.5rem;
 
   /* x-label */
   --x-label-margin: 2px;
@@ -281,11 +281,11 @@
 
   /* x-list */
   --x-list-shadow: var(--shadow-sm);
-  --x-list-item-line-height: 1.8;
-  --x-list-item-padding: 0.65rem 1.15rem 0.65rem 1.35rem;
+  --x-list-item-line-height: 1.6;
+  --x-list-item-padding: 0.75rem 1.15rem 0.75rem 1.35rem;
   --x-list-item-border: 1px solid var(--color-border);
   --x-list-header-color: var(--color-text-light);
-  --x-list-header-padding: 0.65rem 1.15rem 0.35rem 1.35rem;
+  --x-list-header-padding: 0.45rem 1.15rem 0.15rem 1.35rem;
   --x-list-header-font-size: var(--font-size-xs);
   --x-list-item-font-size: var(--font-size-xs);
   --x-list-item-font-weight: var(--font-weight-medium);
