@@ -118,7 +118,9 @@ p {
 }
 
 a.link {
-  color: var(--color-primary);
+  &:hover {
+    color: var(--color-text-link);
+  }
 }
 
 mark {

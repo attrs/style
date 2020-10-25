@@ -23,7 +23,10 @@ module.exports = {
         inverse: 'var(--color-bg-inverse)',
         input: 'var(--color-bg-input)',
         active: 'var(--color-bg-active)',
-        highlight: 'var(--color-bg-highlight)'
+        highlight: 'var(--color-bg-highlight)',
+        border: 'var(--color-border)',
+        text: 'var(--color-text)',
+        muted: 'var(--color-text-muted)'
       },
       mask: {
         default: 'var(--color-bg-mask)',
@@ -33,10 +36,12 @@ module.exports = {
         default: 'var(--color-text)',
         light: 'var(--color-text-light)',
         input: 'var(--color-text-input)',
+        inverse: 'var(--color-text-inverse)',
         placeholder: 'var(--color-text-placeholder)',
         muted: 'var(--color-text-muted)',
         active: 'var(--color-text-active)',
-        highlight: 'var(--color-text-highlight)'
+        highlight: 'var(--color-text-highlight)',
+        link: 'var(--color-text-link)'
       },
       border: {
         default: 'var(--color-border)',

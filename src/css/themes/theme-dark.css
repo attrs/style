@@ -8,6 +8,7 @@
   --color-bg-inverse: #efefef;
   --color-bg-active: #2d3036;
   --color-bg-input: #191d25;
+  --color-bg-icon: #33373f;
 
   --color-bg-hover: rgba(45, 48, 54, 0.5);
   --color-bg-highlight: var(--color-info-transparent);
@@ -25,6 +26,7 @@
   --color-text-muted: #4b4e54;
   --color-text-active: #cfcfcf;
   --color-text-highlight: #333;
+  --color-text-inverse: #5e5e5e;
 
   --color-icon: #afb1b5;
   --color-icon-active: var(--color-primary);

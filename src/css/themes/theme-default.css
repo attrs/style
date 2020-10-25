@@ -9,6 +9,7 @@
   --color-bg-inverse: #e6eaf2;
   --color-bg-active: #f5f8f9;
   --color-bg-input: #fff;
+  --color-bg-icon: #ecf1f9;
 
   --color-bg-hover: #f2f5f9;
   --color-bg-highlight: var(--color-info-transparent);
@@ -23,11 +24,13 @@
 
   --color-text: #5e5e5e;
   --color-text-light: #9baeb8;
+  --color-text-link: var(--color-primary);
   --color-text-muted: #c1c1c1;
   --color-text-active: #232323;
   --color-text-highlight: #333;
   --color-text-input: var(--color-text);
   --color-text-placeholder: var(--color-text-light);
+  --color-text-inverse: #f3f5f8;
 
   --color-icon: #333;
   --color-icon-active: var(--color-primary);
@@ -113,7 +116,7 @@
   --color-gray-900: #212121;
 
   --line-height: 1.52;
-  --font-size-base: 15px;
+  --font-size-base: 14px;
   --font-size-xs: 0.8rem;
   --font-size-sm: 0.9rem;
   --font-size-lg: 1.125rem;
@@ -280,7 +283,6 @@
   --x-card-title-font-weight: var(--font-weight-semibold);
 
   /* x-list */
-  --x-list-shadow: var(--shadow-sm);
   --x-list-item-line-height: 1.6;
   --x-list-item-padding: 0.75rem 1.15rem 0.75rem 1.35rem;
   --x-list-item-border: 1px solid var(--color-border);
@@ -421,7 +423,7 @@
   --x-badge-color: var(--color-white);
 
   /* x-iconbox */
-  --x-iconbox-background-color: var(--color-text);
+  --x-iconbox-background-color: var(--color-bg-icon);
   --x-iconbox-foreground-color: var(--color-white);
 
   /* x-checkbox */

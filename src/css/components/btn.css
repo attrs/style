@@ -16,11 +16,6 @@
     background: var(--btn-color-bg-hover);
   }
 
-  &.active {
-    background: var(--btn-color-bg-active);
-    color: var(--btn-color-text-active);
-  }
-
   &.btn-primary,
   &.btn-secondary,
   &.btn-info,

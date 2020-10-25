@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   text-align: left;
-  box-shadow: var(--x-list-shadow);
 
   & > .x-list-header {
     display: block;
@@ -38,7 +37,6 @@
     }
   }
 
-  & > a.x-list-item,
   & > .x-list-item.x-list-item-hover,
   &.x-list-hover > .x-list-item {
     cursor: pointer;
@@ -62,6 +60,12 @@
 
     &:first-child {
       border-top: none;
+    }
+  }
+
+  & > a.x-list-item {
+    &:hover {
+      color: var(--color-primary);
     }
   }
 }
@@ -88,7 +92,6 @@
   }
 }
 
-a.x-list-item,
 .x-list-item.x-list-item-hover {
   cursor: pointer;
 
@@ -134,8 +137,6 @@ a.x-list-item,
   }
 
   & > a.x-list-item {
-    cursor: pointer;
-
     &.active {
       background-color: transparent;
     }
@@ -143,10 +144,6 @@ a.x-list-item,
     &:hover {
       background-color: transparent;
       color: var(--color-primary);
-
-      & .icon {
-        color: var(--color-primary);
-      }
     }
   }
 }
