@@ -229,6 +229,8 @@ module.exports = {
     }),
     minWidth: (theme) => theme('maxWidth'),
     fontSize: {
+      '3xs': 'var(--font-size-3xs)',
+      '2xs': 'var(--font-size-2xs)',
       'xs': 'var(--font-size-xs)',
       'sm': 'var(--font-size-sm)',
       'base': 'var(--font-size-base)',
@@ -241,6 +243,8 @@ module.exports = {
       '6xl': 'var(--font-size-6xl)'
     },
     fontFamily: {
+      primary: 'var(--font-family-primary)',
+      secondary: 'var(--font-family-secondary)',
       sans: 'var(--font-family-sans)',
       serif: 'var(--font-family-serif)',
       mono: 'var(--font-family-mono)',

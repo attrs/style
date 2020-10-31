@@ -15,28 +15,6 @@
     margin: 0;
   }
 
-  & > .x-list-item {
-    @apply x-row;
-
-    font-size: var(--x-list-item-font-size);
-    font-weight: var(--x-list-item-font-weight);
-
-    & .icon {
-      margin-left: 0;
-    }
-
-    padding: var(--x-list-item-padding);
-    line-height: var(--x-list-item-line-height);
-
-    &.x-list-item-disabled {
-      & .icon {
-        color: var(--color-text-muted);
-      }
-
-      color: var(--color-text-muted);
-    }
-  }
-
   & > .x-list-item.x-list-item-hover,
   &.x-list-hover > .x-list-item {
     cursor: pointer;
@@ -65,7 +43,7 @@
 
   & > a.x-list-item {
     &:hover {
-      color: var(--color-primary);
+      color: var(--color-text-link);
     }
   }
 }
@@ -73,8 +51,8 @@
 .x-list-item {
   @apply x-row;
 
-  font-size: var(--x-list-item-font-size);
-  font-weight: var(--x-list-item-font-weight);
+  -font-size: var(--x-list-item-font-size);
+  -font-weight: var(--x-list-item-font-weight);
 
   & .icon {
     margin-left: 0;
@@ -128,12 +106,6 @@
   & .x-list-item {
     padding: 0;
     line-height: var(--x-list-plain-line-height);
-
-    &:hover,
-    &.active {
-      @apply text-primary;
-      background-color: none;
-    }
   }
 
   & > a.x-list-item {
@@ -143,7 +115,7 @@
 
     &:hover {
       background-color: transparent;
-      color: var(--color-primary);
+      color: var(--color-text-link);
     }
   }
 }

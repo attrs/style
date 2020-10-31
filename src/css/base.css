@@ -6,7 +6,7 @@
 @import './flexbox';
 
 html {
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-primary);
   font-size: var(--font-size-base);
 }
 
@@ -75,32 +75,44 @@ select[multiple] {
 }
 
 h1 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-5xl);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 
 h2 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-4xl);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 
 h3 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-3xl);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 
 h4 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-2xl);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 
 h5 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-lg);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 
 h6 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-base);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 

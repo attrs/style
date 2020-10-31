@@ -8,6 +8,7 @@
     margin: 0 var(--btn-icon-margin);
   }
 
+  /*
   &:not(.btn-icon) .icon {
     margin-left: 0;
   }
@@ -15,6 +16,7 @@
   &:not(.btn-plain):hover {
     background: var(--btn-color-bg-hover);
   }
+  */
 
   &.btn-primary,
   &.btn-secondary,
@@ -23,7 +25,9 @@
   &.btn-warning,
   &.btn-danger,
   &.btn-system,
+  &.btn-white,
   &.btn-black,
+  &.btn-gray,
   &.btn-transparent,
   &.btn-default,
   &.btn-rounded,
@@ -169,19 +173,51 @@
       }
     }
 
-    &.btn-black {
-      --btn-color-icon: var(--color-black-text);
-      --btn-color-icon-active: var(--color-black-text-active);
-      --btn-color-text: var(--color-black-text);
-      --btn-color-text-active: var(--color-black-text-active);
+    &.btn-white {
+      --btn-color-icon: var(--color-black);
+      --btn-color-icon-active: var(--color-black);
+      --btn-color-text: var(--color-black);
+      --btn-color-text-active: var(--color-black);
 
-      background-color: var(--color-black);
-      color: var(--color-black-text);
+      background-color: var(--color-white);
+      color: var(--color-black);
 
       &:hover,
       &.active {
-        background-color: var(--color-black-active);
-        color: var(--color-black-text);
+        background-color: var(--color-gray-100);
+        color: var(--color-black);
+      }
+    }
+
+    &.btn-gray {
+      --btn-color-icon: var(--color-white);
+      --btn-color-icon-active: var(--color-white);
+      --btn-color-text: var(--color-white);
+      --btn-color-text-active: var(--color-white);
+
+      background-color: var(--color-gray);
+      color: var(--color-white);
+
+      &:hover,
+      &.active {
+        background-color: var(--color-gray-active);
+        color: var(--color-white);
+      }
+    }
+
+    &.btn-black {
+      --btn-color-icon: var(--color-white);
+      --btn-color-icon-active: var(--color-white);
+      --btn-color-text: var(--color-white);
+      --btn-color-text-active: var(--color-white);
+
+      background-color: var(--color-black);
+      color: var(--color-white);
+
+      &:hover,
+      &.active {
+        background-color: var(--color-gray-900);
+        color: var(--color-white);
       }
     }
 
@@ -306,15 +342,39 @@
         }
       }
 
+      &.btn-white {
+        border-color: var(--color-white);
+        color: var(--color-white);
+
+        &:hover,
+        &.active {
+          border-color: var(--color-white);
+          background-color: var(--color-white);
+          color: var(--color-black);
+        }
+      }
+
+      &.btn-gray {
+        border-color: var(--color-gray);
+        color: var(--color-gray);
+
+        &:hover,
+        &.active {
+          border-color: var(--color-gray);
+          background-color: var(--color-gray);
+          color: var(--color-white);
+        }
+      }
+
       &.btn-black {
-        border-color: var(--color-black-outline);
+        border-color: var(--color-black);
         color: var(--color-black);
 
         &:hover,
         &.active {
-          border-color: var(--color-black-active);
-          background-color: var(--color-black-active);
-          color: var(--color-black-text-active);
+          border-color: var(--color-black);
+          background-color: var(--color-black);
+          color: var(--color-white);
         }
       }
     }

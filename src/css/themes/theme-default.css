@@ -19,11 +19,11 @@
 
   --color-border: #efefef;
   --color-border-light: #efefef;
-  --color-border-outer: #efefef;
+  --color-border-outer: #e0e0e0;
   --color-border-inverse: #2e3237;
 
   --color-text: #5e5e5e;
-  --color-text-light: #9baeb8;
+  --color-text-light: #8b9ea8;
   --color-text-link: var(--color-primary);
   --color-text-muted: #c1c1c1;
   --color-text-active: #232323;
@@ -42,12 +42,6 @@
   --color-shadow: rgba(0, 0, 0, 0.03);
   --color-badge: #5d6167;
   --color-badge-text: #fff;
-
-  --color-black-active: var(--color-black);
-  --color-black-bg: #ccc;
-  --color-black-text: var(--color-white);
-  --color-black-text-active: var(--color-white);
-  --color-black-outline: var(--color-black);
 
   --color-primary: #42a5f5;
   --color-primary-active: #1976d2;
@@ -117,6 +111,8 @@
 
   --line-height: 1.52;
   --font-size-base: 14px;
+  --font-size-3xs: 0.6rem;
+  --font-size-2xs: 0.7rem;
   --font-size-xs: 0.8rem;
   --font-size-sm: 0.9rem;
   --font-size-lg: 1.125rem;
@@ -136,10 +132,13 @@
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
   --font-weight-black: 900;
+  --font-family-primary: var(--font-family-sans);
+  --font-family-secondary: var(--font-family-serif);
   --font-family-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   --font-family-serif: Georgia, Cambria, 'Times New Roman', Times, serif;
   --font-family-mono: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   --font-family-numeric: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  --font-family-headings: var(--font-family-sans);
 
   --spacing-xs: 0.75rem;
   --spacing-sm: 1.5rem;
@@ -273,7 +272,7 @@
   --x-card-color-border-outer: var(--color-border-outer);
   --x-card-color-border: var(--color-border);
   --x-card-radius: var(--radius-sm);
-  --x-card-shadow: var(--shadow-sm);
+  --x-card-shadow: var(--shadow-none);
   --x-card-header-color-bg: var(--color-bg-panel);
   --x-card-header-color-text: var(--color-text);
   --x-card-header-font-size: var(--font-size-base);
@@ -431,6 +430,6 @@
   --x-checkbox-border: 1px solid var(--x-checkbox-border-color);
   --x-checkbox-border-radius: 0.3em;
   --x-checkbox-top: 2px;
-  --x-checkbox-label-margin: 2.15em;
+  --x-checkbox-label-margin: 2.2em;
   --x-checkbox-bg: var(--color-bg-input);
 }

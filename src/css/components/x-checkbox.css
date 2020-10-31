@@ -1,6 +1,5 @@
 label.x-checkbox {
   user-select: none;
-  line-height: 23px;
 
   & > input {
     display: none;
@@ -13,6 +12,7 @@ label.x-checkbox {
     position: relative;
     padding-left: var(--x-checkbox-label-margin);
     vertical-align: middle;
+    line-height: 24px;
   }
 
   & > span:before {
@@ -27,6 +27,7 @@ label.x-checkbox {
     border-radius: var(--x-checkbox-border-radius);
     vertical-align: middle;
     background-color: var(--x-checkbox-bg);
+    transition: background-color 0.1s ease-out;
   }
 
   & > input[type='checkbox'] + span:before {
