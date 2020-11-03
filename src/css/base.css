@@ -133,7 +133,7 @@ p {
 
 a.link {
   &:hover {
-    color: var(--color-text-link);
+    color: var(--color-text-link) !important;
   }
 }
 
