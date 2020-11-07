@@ -1,16 +1,16 @@
-.swal-modal {
+body .swal-modal {
   background-color: var(--color-bg-panel);
   box-shadow: var(--shadow-xl);
 
   & .swal-title {
     color: var(--color-text-active);
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
   }
 
   & .swal-text {
     color: var(--color-text);
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-normal);
     font-size: var(--font-size-sm);
   }
 
