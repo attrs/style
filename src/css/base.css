@@ -25,6 +25,15 @@ button:focus {
   outline: none;
 }
 
+form,
+.focusable {
+  & a:focus,
+  & button:focus {
+    outline: none;
+    box-shadow: var(--outline);
+  }
+}
+
 input:not([type='checkbox']):not([type='radio']),
 select,
 textarea {
@@ -54,6 +63,14 @@ textarea {
 
   &::placeholder {
     color: var(--controls-placeholder-color);
+  }
+}
+
+input[type='password'] {
+  letter-spacing: 3px;
+
+  &::placeholder {
+    letter-spacing: initial;
   }
 }
 
@@ -131,9 +148,11 @@ p {
   }
 }
 
-a.link {
+a.link,
+a.text-link:hover {
+  transition: color 0.35s ease-in-out;
   &:hover {
-    color: var(--color-text-link) !important;
+    color: var(--color-text-link-active) !important;
   }
 }
 

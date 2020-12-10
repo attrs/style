@@ -144,3 +144,85 @@ a.dotted {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-thin);
 }
+
+@supports (mask-image: paint(smooth-corners)) {
+  .radius-smooth {
+    --smooth-corners-radius: 2.6;
+    mask-image: paint(smooth-corners);
+  }
+
+  .radius-smooth-sm {
+    --smooth-corners-radius: 5;
+    mask-image: paint(smooth-corners);
+  }
+
+  .radius-smooth-lg {
+    --smooth-corners-radius: 2.3;
+    mask-image: paint(smooth-corners);
+  }
+}
+
+@supports not (mask-image: paint(smooth-corners)) {
+  .radius-smooth {
+    border-radius: 45% !important;
+  }
+
+  .radius-smooth-sm {
+    border-radius: 30% !important;
+  }
+
+  .radius-smooth-lg {
+    border-radius: 50% !important;
+  }
+}
+
+.radius-circle {
+  border-radius: var(--radius-full) !important;
+}
+
+.gradient-1 {
+  background: linear-gradient(to right, deepskyblue, royalblue);
+  position: relative;
+}
+
+.gradient-2 {
+  background: linear-gradient(to bottom, yellow, deepskyblue);
+  position: relative;
+}
+
+.gradient-3 {
+  background: linear-gradient(to bottom, deepskyblue, cyan);
+  position: relative;
+}
+
+.gradient-4 {
+  background: linear-gradient(to bottom, cyan, deeppink);
+  position: relative;
+}
+
+.gradient-5 {
+  background: linear-gradient(to right, deeppink, cyan);
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background: linear-gradient(to right, yellow, orangered);
+    mask: linear-gradient(#0000, #000);
+    z-index: 0;
+  }
+
+  & > * {
+    z-index: 2;
+  }
+}
+
+[href][route] {
+  cursor: pointer;
+}

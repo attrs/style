@@ -20,8 +20,13 @@
   }
 
   &.x-page-header-sm {
-    padding: calc(var(--x-page-header-padding) * 0.8);
-    min-height: calc(var(--x-page-header-min-height) * 0.8);
+    padding: calc(var(--x-page-header-padding) * 0.75);
+    min-height: calc(var(--x-page-header-min-height) * 0.75);
+  }
+
+  &.x-page-header-sm {
+    padding: calc(var(--x-page-header-padding) * 1.25);
+    min-height: calc(var(--x-page-header-min-height) * 1.25);
   }
 
   & h1,

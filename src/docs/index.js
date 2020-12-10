@@ -1,6 +1,9 @@
 import '../';
 import './style.css';
 import router from '@attrs/router';
+import SmoothCorners from '../worklets/smooth-corners.worklet.js';
+
+CSS.paintWorklet.addModule(SmoothCorners);
 
 window.theme = (theme) => {
   const body = document.body;

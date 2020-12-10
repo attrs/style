@@ -6,8 +6,7 @@
   & .x-navigation-title {
     padding: 0 var(--x-navigation-padding);
     margin: var(--x-navigation-title-margin-top) 0 var(--x-navigation-title-margin-bottom);
-    line-height: 2.5rem;
-    text-transform: uppercase;
+    line-height: var(--x-navigation-title-line-height);
     color: var(--x-navigation-title-color);
     font-weight: var(--x-navigation-title-font-weight);
     font-size: var(--x-navigation-title-font-size);

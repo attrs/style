@@ -22,6 +22,12 @@
     color: var(--x-label-color-text);
   }
 
+  &.x-label-muted {
+    background-color: var(--color-text-muted);
+    color: var(--color-text-muted);
+  }
+
+
   &.x-label-primary {
     background-color: var(--color-primary);
     color: var(--color-white);

@@ -1,6 +1,8 @@
 .btn {
   @apply x-button;
 
+  outline: none;
+
   font-size: var(--btn-font-size);
   font-weight: var(--btn-font-weight);
 
@@ -18,6 +20,15 @@
   }
   */
 
+  &:hover {
+    background-color: var(--btn-color-bg-hover);
+  }
+
+  &.active {
+    background-color: var(--btn-color-bg-active);
+    color: var(--btn-color-text-active);
+  }
+  
   &.btn-primary,
   &.btn-secondary,
   &.btn-info,

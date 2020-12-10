@@ -1,6 +1,7 @@
 body .swal-modal {
   background-color: var(--color-bg-panel);
   box-shadow: var(--shadow-xl);
+  font-family: var(--font-family-sans);
 
   & .swal-title {
     color: var(--color-text-active);

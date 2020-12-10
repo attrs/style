@@ -7,15 +7,16 @@
   --color-bg-base: #f3f5f8;
   --color-bg-panel: #fff;
   --color-bg-inverse: #e6eaf2;
-  --color-bg-active: #f5f8f9;
+  --color-bg-active: #f1f3f6;
   --color-bg-input: #fff;
   --color-bg-icon: #ecf1f9;
+  --color-bg-hover: rgba(0,0,0,0.05);
+  ---color-bg-hover: #fafbfc;
 
-  --color-bg-hover: #f2f5f9;
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
   --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
-  --color-outline: rgba(66, 165, 255, 0.55);
+  --color-outline: rgba(66, 165, 255, 0.5);
 
   --color-border: #e9e9e9;
   --color-border-light: #efefef;
@@ -25,6 +26,7 @@
   --color-text: #5e5e5e;
   --color-text-light: #8b9ea8;
   --color-text-link: var(--color-primary);
+  --color-text-link-active: var(--color-primary-active);
   --color-text-muted: #c1c1c1;
   --color-text-active: #232323;
   --color-text-highlight: #333;
@@ -48,7 +50,7 @@
   --color-primary-bg: #e3f2fd;
   --color-primary-text: #f0f0f0;
   --color-primary-text-active: #fff;
-  --color-primary-outline: #42a5f5;
+  --color-primary-outline: #cae7ff;
 
   --color-secondary: #ef5350;
   --color-secondary-active: #d32f2f;
@@ -62,7 +64,7 @@
   --color-success-transparent: #e8f5e9;
   --color-success-text: #f0f0f0;
   --color-success-text-active: #fff;
-  --color-success-outline: #66bb6a;
+  --color-success-outline: #a6fbaa;
 
   --color-info: #29b6f6;
   --color-info-active: #0288d1;
@@ -150,7 +152,7 @@
   --radius-sm: 0.3rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
+  --radius-xl: 1.25rem;
   --radius-full: 9999px;
 
   --outline-thickness: 3px;
@@ -207,9 +209,9 @@
   --btn-line-height: calc(var(--row-line-height) * 0.7);
   --btn-color-bg: var(--color-border);
   --btn-color-bg-hover: var(--color-bg-hover);
-  --btn-color-bg-active: var(--color-bg-hover);
+  --btn-color-bg-active: var(--color-bg-active);
   --btn-color-text: var(--color-text);
-  --btn-color-text-active: var(--color-text-active);
+  --btn-color-text-active: var(--color-primary);
   --btn-color-icon: var(--color-icon);
   --btn-color-icon-active: var(--color-icon-active);
   --btn-color-outline: var(--color-border);
@@ -253,7 +255,7 @@
   /* x-separator */
   --x-separator-width: 100%;
   --x-separator-thickness: 1px;
-  --x-separator-margin: 0;
+  --x-separator-margin: 0.25em;
   --x-separator-style: solid;
   --x-separator-color: var(--color-border);
   --x-separator-h-thickness: 1px;
@@ -284,10 +286,10 @@
 
   /* x-list */
   --x-list-item-line-height: 1.6;
-  --x-list-item-padding: 0.75rem 1.15rem 0.75rem 1.35rem;
+  --x-list-item-padding: 0.75em 1.75em 0.75em 1.75em;
   --x-list-item-border: 1px solid var(--color-border);
   --x-list-header-color: var(--color-text-light);
-  --x-list-header-padding: 0.45rem 1.15rem 0.15rem 1.35rem;
+  --x-list-header-padding: 0.75em 1.15em 0.15em 1.75em;
   --x-list-header-font-size: var(--font-size-xs);
   --x-list-item-font-size: var(--font-size-xs);
   --x-list-item-font-weight: var(--font-weight-medium);
@@ -336,13 +338,14 @@
 
   /* x-navigation */
   --x-navigation-font-size: 0.95rem;
-  --x-navigation-font-weight: var(--font-weight-normal);
+  --x-navigation-font-weight: var(--font-weight-medium);
   --x-navigation-padding: var(--spacing-sm);
   --x-navigation-title-color: var(--color-text-light);
-  --x-navigation-title-font-weight: var(--font-weight-semibold);
+  --x-navigation-title-font-weight: var(--font-weight-medium);
   --x-navigation-title-font-size: var(--font-size-sm);
   --x-navigation-title-margin-top: 1rem;
   --x-navigation-title-margin-bottom: 0.5rem;
+  --x-navigation-title-line-height: 2.3em;
   --x-navigation-active-bg: var(--color-bg-active);
   --x-navigation-active-text: var(--color-text-active);
   --x-navigation-active-icon: var(--color-icon-active);
@@ -357,8 +360,8 @@
   --x-page-color-text: var(--color-text);
   --x-page-header-bg: var(--color-bg-panel);
   --x-page-header-border: var(--color-border);
-  --x-page-header-padding: 1rem;
-  --x-page-header-min-height: 7rem;
+  --x-page-header-padding: 0.75rem;
+  --x-page-header-min-height: 5.5rem;
 
   /* x-switch */
   --x-switch-font-family: var(--font-family-sans);

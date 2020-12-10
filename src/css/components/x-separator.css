@@ -2,7 +2,6 @@
   margin: var(--x-separator-margin) 0;
   border-bottom: var(--x-separator-thickness) var(--x-separator-style) var(--x-separator-color);
   width: var(--x-separator-width);
-  margin: 0 auto;
 }
 
 .x-separator-h {
@@ -11,4 +10,14 @@
   margin: 0 var(--x-separator-h-margin);
   vertical-align: text-bottom;
   border-right: var(--x-separator-h-thickness) var(--x-separator-style) var(--x-separator-color);
+}
+
+a.x-separator, span.x-separator {
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  margin: 0 0.5em;
+  vertical-align: middle;
+  border: 1px solid currentColor;
+  border-radius: 50%;
 }

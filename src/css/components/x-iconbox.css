@@ -49,10 +49,6 @@
     border-radius: var(--radius-lg);
   }
 
-  &.x-iconbox-circle {
-    border-radius: var(--radius-full);
-  }
-
   &.x-iconbox-primary {
     background-color: var(--color-primary);
   }

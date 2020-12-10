@@ -24,6 +24,7 @@ module.exports = {
         input: 'var(--color-bg-input)',
         active: 'var(--color-bg-active)',
         highlight: 'var(--color-bg-highlight)',
+        hover: 'var(--color-bg-hover)',
         border: 'var(--color-border)',
         text: 'var(--color-text)',
         muted: 'var(--color-text-muted)'
@@ -199,6 +200,8 @@ module.exports = {
       '250': '250px',
       '300': '300px',
       '600': '600px',
+      '800': '800px',
+      '1000': '1000px',
       'full': '100%',
       'screen': '100vh'
     },

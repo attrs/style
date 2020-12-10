@@ -1,9 +1,13 @@
 label.x-checkbox {
   user-select: none;
+  outline: none;
+
+  &:focus > span:before {
+    box-shadow: var(--outline);
+  }
 
   & > input {
     display: none;
-    user-select: none;
   }
 
   & > span {
