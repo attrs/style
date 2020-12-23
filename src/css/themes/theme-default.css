@@ -286,7 +286,7 @@
 
   /* x-list */
   --x-list-item-line-height: 1.6;
-  --x-list-item-padding: 0.75em 1.75em 0.75em 1.75em;
+  --x-list-item-padding: 0.7em 1.75em 0.7em 1.75em;
   --x-list-item-border: 1px solid var(--color-border);
   --x-list-header-color: var(--color-text-light);
   --x-list-header-padding: 0.75em 1.15em 0.15em 1.75em;

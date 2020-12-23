@@ -28,7 +28,7 @@
     background-color: var(--btn-color-bg-active);
     color: var(--btn-color-text-active);
   }
-  
+
   &.btn-primary,
   &.btn-secondary,
   &.btn-info,
@@ -462,6 +462,7 @@
       cursor: not-allowed;
       background-color: var(--btn-color-bg) !important;
       color: var(--color-text-muted) !important;
+      border-color: var(--color-border) !important;
 
       &:hover,
       &.active {
