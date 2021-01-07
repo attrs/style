@@ -19,7 +19,10 @@ module.exports = {
       bg: {
         default: 'var(--color-bg-base)',
         base: 'var(--color-bg-base)',
-        panel: 'var(--color-bg-panel)',
+        panel: {
+          default: 'var(--color-bg-panel)',
+          light: 'var(--color-bg-panel-light)'
+        },
         inverse: 'var(--color-bg-inverse)',
         input: 'var(--color-bg-input)',
         active: 'var(--color-bg-active)',

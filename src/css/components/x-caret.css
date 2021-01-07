@@ -1,6 +1,6 @@
 .x-caret {
   display: inline-block;
-  margin: 0 0.42rem;
+  -margin: 0 0.42em;
   vertical-align: middle;
   content: '';
   width: 0.42em;

@@ -1,10 +1,13 @@
 // See https://css-houdini.rocks/js-in-css/
 
-registerPaint('background-canvas', class {
+registerPaint(
+  'background-canvas',
+  class {
     static get inputProperties() {
-        return ['--background-canvas'];
+      return ['--background-canvas'];
     }
     paint(ctx, geom, properties) {
-        eval(properties.get('--background-canvas').toString())(ctx, geom, properties);
+      eval(properties.get('--background-canvas').toString())(ctx, geom, properties);
     }
-})
+  }
+);

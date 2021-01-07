@@ -10,6 +10,10 @@
     margin: 0 var(--btn-icon-margin);
   }
 
+  &.btn-icon {
+    font-size: var(--font-size-base);
+  }
+
   /*
   &:not(.btn-icon) .icon {
     margin-left: 0;

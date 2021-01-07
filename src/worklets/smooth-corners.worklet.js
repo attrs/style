@@ -3,10 +3,7 @@
 
 export class SmoothCorners {
   static get inputProperties() {
-    return [
-      '--smooth-corners-radius',
-      '--smooth-corners-fill'
-    ];
+    return ['--smooth-corners-radius', '--smooth-corners-fill'];
   }
 
   paint(ctx, size, styleMap) {
@@ -24,19 +21,17 @@ export class SmoothCorners {
 
     ctx.beginPath();
 
-    for (let i = 0; i < (2 * r + 1); i++) {
-      const x = (i - r) + w;
-      const y = (Math.pow(Math.abs(Math.pow(r, m) - Math.pow(Math.abs(i - r), m)), 1 / m)) + h;
+    for (let i = 0; i < 2 * r + 1; i++) {
+      const x = i - r + w;
+      const y = Math.pow(Math.abs(Math.pow(r, m) - Math.pow(Math.abs(i - r), m)), 1 / m) + h;
 
-      if (i == 0)
-        ctx.moveTo(x, y);
-      else
-        ctx.lineTo(x, y);
+      if (i == 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
     }
 
-    for (let i = (2 * r); i < (4 * r + 1); i++) {
-      const x = (3 * r - i) + w;
-      const y = (-Math.pow(Math.abs(Math.pow(r, m) - Math.pow(Math.abs(3 * r - i), m)), 1 / m)) + h;
+    for (let i = 2 * r; i < 4 * r + 1; i++) {
+      const x = 3 * r - i + w;
+      const y = -Math.pow(Math.abs(Math.pow(r, m) - Math.pow(Math.abs(3 * r - i), m)), 1 / m) + h;
       ctx.lineTo(x, y);
     }
 

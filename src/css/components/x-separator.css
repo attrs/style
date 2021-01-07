@@ -12,7 +12,8 @@
   border-right: var(--x-separator-h-thickness) var(--x-separator-style) var(--x-separator-color);
 }
 
-a.x-separator, span.x-separator {
+a.x-separator,
+span.x-separator {
   display: inline-block;
   width: 1px;
   height: 1px;

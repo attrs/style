@@ -5,11 +5,12 @@
   --color-white: #fefefe;
   --color-bg-base: #23262d;
   --color-bg-panel: #292c33;
+  --color-bg-panel-light: #2c2f36;
   --color-bg-inverse: #efefef;
   --color-bg-active: #31343b;
   --color-bg-input: #191d25;
   --color-bg-icon: #33373f;
-  --color-bg-hover: rgba(255,255,255,0.02);
+  --color-bg-hover: rgba(255, 255, 255, 0.02);
   ---color-bg-hover: rgba(45, 48, 54, 0.75);
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);

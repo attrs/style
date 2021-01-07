@@ -27,7 +27,6 @@
     color: var(--color-text-muted);
   }
 
-
   &.x-label-primary {
     background-color: var(--color-primary);
     color: var(--color-white);

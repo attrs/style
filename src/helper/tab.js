@@ -6,7 +6,7 @@ const findRelatedTabContentsItem = (el, tabid) => {
 };
 
 const selectTab = (tabitem) => {
-  const tab = tabitem.closest('.x-tab');
+  const tab = tabitem && tabitem.closest('.x-tab');
   if (!tab || !tabitem) return;
 
   tab.querySelectorAll('.x-tab-item').forEach((node) => node.classList.remove('active'));

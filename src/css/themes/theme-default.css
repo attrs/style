@@ -6,11 +6,12 @@
   --color-white: #fff;
   --color-bg-base: #f3f5f8;
   --color-bg-panel: #fff;
+  --color-bg-panel-light: #fafcff;
   --color-bg-inverse: #e6eaf2;
   --color-bg-active: #f1f3f6;
   --color-bg-input: #fff;
   --color-bg-icon: #ecf1f9;
-  --color-bg-hover: rgba(0,0,0,0.05);
+  --color-bg-hover: rgba(0, 0, 0, 0.05);
   ---color-bg-hover: #fafbfc;
 
   --color-bg-highlight: var(--color-info-transparent);
@@ -19,7 +20,7 @@
   --color-outline: rgba(66, 165, 255, 0.5);
 
   --color-border: #e9e9e9;
-  --color-border-light: #efefef;
+  --color-border-light: #f3f4f5;
   --color-border-outer: #e0e0e0;
   --color-border-inverse: #2e3237;
 
@@ -116,7 +117,7 @@
   --font-size-3xs: 0.6rem;
   --font-size-2xs: 0.7rem;
   --font-size-xs: 0.8rem;
-  --font-size-sm: 0.9rem;
+  --font-size-sm: 0.875rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
   --font-size-2xl: 1.5rem;
