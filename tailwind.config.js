@@ -49,6 +49,7 @@ module.exports = {
       },
       border: {
         default: 'var(--color-border)',
+        normal: 'var(--color-border)',
         light: 'var(--color-border-light)',
         outer: 'var(--color-border-outer)',
         inverse: 'var(--color-border-inverse)'
