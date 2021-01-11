@@ -12,8 +12,10 @@
   --color-bg-icon: #33373f;
   --color-bg-hover: rgba(255, 255, 255, 0.02);
   ---color-bg-hover: rgba(45, 48, 54, 0.75);
+  
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
+  --color-bg-mask-light: rgba(255, 255, 255, 0.075);
   --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
   --color-outline: rgba(0, 123, 255, 0.35);
 

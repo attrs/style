@@ -48,4 +48,49 @@ body .swal-modal {
   & .swal-icon--success__ring {
     border-color: #a5dc86;
   }
+
+  & .swal-content__input {
+    @apply rounded-sm px-4 py-1 leading-tight bg-input;
+
+    line-height: var(--controls-line-height);
+    margin: var(--controls-margin);
+    vertical-align: var(--controls-vertical-align);
+    border: var(--controls-border);
+    color: var(--controls-color);
+    font-size: var(--controls-font-size);
+
+    &:focus {
+      @apply border-transparent outline-none shadow-outline;
+    }
+  }
+
+  &.danger {
+    background-color: var(--color-danger);
+
+    & .swal-title {
+      color: var(--color-white);
+    }
+
+    & .swal-text {
+      color: var(--color-white);
+    }
+
+    & .swal-button--cancel {
+      background-color: var(--color-white);
+    }
+
+    & .swal-button--confirm {
+      background-color: var(--color-warning);
+
+      &:hover {
+        background-color: var(--color-white);
+        color: var(--color-danger);
+      }
+    }
+  }
+}
+
+body .swal-overlay--show-modal .swal-modal {
+  will-change: initial;
+  animation: none;
 }

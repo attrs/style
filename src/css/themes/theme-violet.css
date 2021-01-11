@@ -13,6 +13,7 @@
   --color-bg-hover: #988fc6;
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(255, 255, 255, 0.075);
+  --color-bg-mask-light: rgba(255, 255, 255, 0.075);
   --color-bg-mask-dark: rgba(255, 255, 255, 0.1);
   --color-outline: #796ea5;
 

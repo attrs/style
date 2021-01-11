@@ -22,30 +22,51 @@
     width: 100%;
   }
 
-  &.x-iconbox-md {
+  &.x-iconbox-3xs {
+    height: 16px;
+    width: 16px;
+    border-radius: var(--radius-xs);
+  }
+
+  &.x-iconbox-2xs {
+    height: 24px;
+    width: 24px;
+    border-radius: var(--radius-xs);
   }
 
   &.x-iconbox-xs {
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 32px;
     border-radius: var(--radius-xs);
   }
 
   &.x-iconbox-sm {
-    height: 45px;
-    width: 45px;
+    height: 48px;
+    width: 48px;
+    border-radius: var(--radius-sm);
+  }
+
+  &.x-iconbox-md {
+    height: 60px;
+    width: 60px;
     border-radius: var(--radius-sm);
   }
 
   &.x-iconbox-lg {
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
     border-radius: var(--radius-md);
   }
 
   &.x-iconbox-xl {
-    height: 120px;
-    width: 120px;
+    height: 114px;
+    width: 114px;
+    border-radius: var(--radius-lg);
+  }
+
+  &.x-iconbox-2xl {
+    height: 128px;
+    width: 128px;
     border-radius: var(--radius-lg);
   }
 
