@@ -85,6 +85,8 @@
   }
 
   &.x-tab-outline {
+    --x-tab-border-width: 1px;
+
     & > .x-tab-item {
       background-color: transparent;
 
@@ -96,6 +98,8 @@
   }
 
   &.x-tab-outline-panel {
+    --x-tab-border-width: 1px;
+
     & > .x-tab-item {
       background-color: transparent;
 

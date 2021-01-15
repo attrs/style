@@ -53,6 +53,7 @@ module.exports = {
         normal: 'var(--color-border)',
         light: 'var(--color-border-light)',
         outer: 'var(--color-border-outer)',
+        control: 'var(--color-border-control)',
         inverse: 'var(--color-border-inverse)'
       },
       icon: {
@@ -149,11 +150,11 @@ module.exports = {
       'xs': 'var(--shadow-xs)',
       'sm': 'var(--shadow-sm)',
       'default': 'var(--shadow)',
-      'md': 'var(--shadow-md)',
+      'md': 'var(--shadow)',
       'lg': 'var(--shadow-lg)',
       'xl': 'var(--shadow-xl)',
       '2xl': 'var(--shadow-2xl)',
-      'inner': 'var(--shadow-xs)',
+      'inset': 'var(--shadow-inset)',
       'outline': 'var(--outline)',
       'outline-none': 'none',
       'outline-primary': 'var(--outline-primary)',
@@ -245,6 +246,7 @@ module.exports = {
       '5xl': '64rem',
       '6xl': '72rem',
       'full': '100%',
+      'screen': '100vw',
       ...breakpoints(theme('screens'))
     }),
     minWidth: (theme) => theme('maxWidth'),

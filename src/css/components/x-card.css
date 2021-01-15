@@ -1,5 +1,5 @@
 .x-card {
-  @apply flex flex-col;
+  /* @apply flex flex-col; */
   background-color: var(--x-card-color-bg);
   border-radius: var(--x-card-radius);
   border: 1px solid var(--x-card-color-border-outer);

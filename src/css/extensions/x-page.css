@@ -10,6 +10,7 @@
   border-bottom: 1px solid var(--x-page-header-border);
   padding: var(--x-page-header-padding);
   min-height: var(--x-page-header-min-height);
+  box-shadow: var(--x-page-header-shadow);
   margin: 0;
 
   & small {

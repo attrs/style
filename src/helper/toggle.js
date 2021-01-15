@@ -23,6 +23,7 @@ const closest = (element, selector) => {
 const listener = (e) => {
   const trigger = e.target.closest('[data-toggle]');
   const toggleid = trigger && trigger.getAttribute('data-toggle');
+  const togglegroup = trigger && trigger.getAttribute('data-toggle-group');
   const target = toggleid && closest(e.target, `[data-toggle-id="${toggleid}"]`);
   // console.log('toggle click', trigger, toggleid, target);
   if (!target) return;

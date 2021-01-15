@@ -1,6 +1,6 @@
 .x-contextmenu {
   @apply text-sm;
-  
+
   min-width: var(--x-contextmenu-min-width);
   background-color: var(--x-contextmenu-bg);
   border: var(--x-contextmenu-border);

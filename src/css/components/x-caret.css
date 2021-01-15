@@ -1,6 +1,6 @@
 .x-caret {
   display: inline-block;
-  -margin: 0 0.42em;
+  margin: 0 var(--x-caret-margin);
   vertical-align: middle;
   content: '';
   width: 0.42em;
@@ -9,6 +9,14 @@
   border-top: 0;
   border-left: 0;
   transform: rotate(-45deg);
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .x-caret-right {

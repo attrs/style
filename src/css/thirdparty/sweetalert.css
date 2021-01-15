@@ -65,7 +65,7 @@ body .swal-modal {
   }
 
   &.danger {
-    background-color: var(--color-danger);
+    background-color: var(--color-warning);
 
     & .swal-title {
       color: var(--color-white);
@@ -80,11 +80,11 @@ body .swal-modal {
     }
 
     & .swal-button--confirm {
-      background-color: var(--color-warning);
+      background-color: var(--color-danger);
 
       &:hover {
-        background-color: var(--color-white);
-        color: var(--color-danger);
+        background-color: var(--color-danger);
+        color: var(--color-white);
       }
     }
   }

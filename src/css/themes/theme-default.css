@@ -24,6 +24,7 @@
   --color-border-light: #f3f4f5;
   --color-border-outer: #e0e0e0;
   --color-border-inverse: #2e3237;
+  --color-border-control: var(--color-border-outer);
 
   --color-text: #5e5e5e;
   --color-text-light: #8b9ea8;
@@ -43,7 +44,7 @@
   --color-scrollbar-thumb: rgba(0, 0, 0, 0.5);
   --color-scrollbar-thumb-border: rgba(255, 255, 255, 0.07);
 
-  --color-shadow: rgba(0, 0, 0, 0.03);
+  --color-shadow: rgba(0, 0, 0, 0.05);
   --color-badge: #5d6167;
   --color-badge-text: #fff;
 
@@ -243,12 +244,12 @@
 
   --shadow-xs: 0 0 0 1px var(--color-shadow);
   --shadow-sm: 0 2px 6px var(--color-shadow);
-  --shadow: 0 3px 2px var(--color-shadow), 0 6px 10px var(--color-shadow);
-  --shadow-md: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow);
+  ---shadow: 0 3px 2px var(--color-shadow), 0 6px 10px var(--color-shadow);
+  --shadow: 0 3px 4px var(--color-shadow), 0 6px 8px var(--color-shadow);
   --shadow-lg: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow);
   --shadow-xl: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow), 0 41px 33px var(--color-shadow);
   --shadow-2xl: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow), 0 41px 33px var(--color-shadow), 0 100px 80px var(--color-shadow);
-  --shadow-inner: inset 0 2px 4px 0 var(--color-shadow);
+  --shadow-inset: inset 0 1px 10px 0 var(--color-shadow);
 
   --outline: 0 0 0 var(--outline-thickness) var(--color-outline);
   --outline-primary: 0 0 0 var(--outline-thickness) var(--color-primary-outline);
@@ -265,7 +266,7 @@
   --controls-margin: 2px;
   --controls-padding: 0 1rem;
   --controls-vertical-align: middle;
-  --controls-border-color: #bababa;
+  --controls-border-color: var(--color-border-control);
   --controls-font-size: var(--font-size-base);
   --controls-border: 1px solid var(--controls-border-color);
   --controls-color: var(--color-text-active);
@@ -354,10 +355,10 @@
 
   /* x-card */
   --x-card-color-bg: var(--color-bg-panel);
-  --x-card-color-border-outer: var(--color-border);
+  --x-card-color-border-outer: var(--color-border-outer);
   --x-card-color-border: var(--color-border);
   --x-card-radius: var(--radius-sm);
-  --x-card-shadow: var(--shadow-none);
+  --x-card-shadow: none;
   --x-card-header-color-bg: var(--color-bg-panel);
   --x-card-header-color-text: var(--color-text);
   --x-card-header-font-size: var(--font-size-base);
@@ -365,6 +366,9 @@
   --x-card-title-color: var(--color-text-light);
   --x-card-title-font-size: var(--font-size-sm);
   --x-card-title-font-weight: var(--font-weight-semibold);
+
+  /* x-caret */
+  --x-caret-margin: 0.6em;
 
   /* x-list */
   --x-list-item-line-height: 1.6;
@@ -443,6 +447,7 @@
   --x-page-header-bg: var(--color-bg-panel);
   --x-page-header-border: var(--color-border);
   --x-page-header-padding: 0.75rem;
+  --x-page-header-shadow: none;
   --x-page-header-min-height: 5.5rem;
 
   /* x-switch */
@@ -518,4 +523,13 @@
   --x-checkbox-top: 2px;
   --x-checkbox-label-margin: 2.2em;
   --x-checkbox-bg: var(--color-bg-input);
+
+  /* x-dot */
+  --x-dot-width: 0.5em;
+  --x-dot-height: 0.5em;
+  --x-dot-vertical-align: middle;
+  --x-dot-border: 0px solid var(--color-border-light);
+  --x-dot-border-radius: 3px;
+  --x-dot-opacity: 0.65;
+  --x-dot-background: var(--color-text-light);
 }
