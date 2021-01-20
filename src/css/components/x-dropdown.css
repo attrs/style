@@ -4,7 +4,7 @@
 
   &:not(.x-dropdown-nocaret) > .btn:after {
     @apply x-caret-down;
-    margin-left: 0.5em;
+    margin-right: 0;
   }
 
   & > .x-dropdown-items {
