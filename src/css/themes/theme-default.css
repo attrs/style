@@ -21,7 +21,7 @@
   --color-outline: var(--color-info-outline);
 
   --color-border: #e9e9e9;
-  --color-border-light: #f3f4f5;
+  --color-border-light: #edeeef;
   --color-border-outer: #e0e0e0;
   --color-border-inverse: #2e3237;
   --color-border-control: var(--color-border-outer);
@@ -119,16 +119,16 @@
   --color-primary-text: #f0f0f0;
   --color-primary-text-active: #fff;
   --color-primary-border: rgba(36, 150, 241, 0.5);
-  --color-primary-outline: rgba(36, 150, 241, 1);
+  --color-primary-outline: rgba(36, 150, 241, 85);
 
-  --color-secondary: #f33430;
-  --color-secondary-bg: rgba(243, 52, 48, 0.05);
-  --color-secondary-active: rgba(243, 52, 48, 0.85);
+  --color-secondary: #ff5151;
+  --color-secondary-bg: rgba(255, 81, 81, 0.05);
+  --color-secondary-active: rgba(255, 81, 81, 0.85);
   --color-secondary-transparent: #ffebee;
   --color-secondary-text: #f0f0f0;
   --color-secondary-text-active: #fff;
-  --color-secondary-border: rgba(243, 52, 48, 0.5);
-  --color-secondary-outline: rgba(243, 52, 48, 1);
+  --color-secondary-border: rgba(255, 81, 81, 0.5);
+  --color-secondary-outline: rgba(255, 81, 81, 85);
 
   --color-success: #5ab75c;
   --color-success-bg: rgba(90, 183, 92, 0.05);
@@ -137,7 +137,7 @@
   --color-success-text: #f0f0f0;
   --color-success-text-active: #fff;
   --color-success-border: rgba(90, 183, 92, 0.5);
-  --color-success-outline: rgba(90, 183, 92, 1);
+  --color-success-outline: rgba(90, 183, 92, 85);
 
   --color-info: #29b6f6;
   --color-info-bg: rgba(41, 182, 246, 0.05);
@@ -146,7 +146,7 @@
   --color-info-text: #f0f0f0;
   --color-info-text-active: #fff;
   --color-info-border: rgba(41, 182, 246, 0.5);
-  --color-info-outline: rgba(41, 182, 246, 1);
+  --color-info-outline: rgba(41, 182, 246, 85);
 
   --color-warning: #ff7043;
   --color-warning-bg: rgba(255, 112, 67, 0.05);
@@ -155,16 +155,16 @@
   --color-warning-text: #f0f0f0;
   --color-warning-text-active: #fff;
   --color-warning-border: rgba(255, 112, 67, 0.5);
-  --color-warning-outline: rgba(255, 112, 67, 1);
+  --color-warning-outline: rgba(255, 112, 67, 85);
 
-  --color-danger: #f33430;
-  --color-danger-bg: rgba(243, 52, 48, 0.05);
-  --color-danger-active: rgba(243, 52, 48, 0.85);
+  --color-danger: #ff5151;
+  --color-danger-bg: rgba(255, 81, 81, 0.05);
+  --color-danger-active: rgba(255, 81, 81, 0.85);
   --color-danger-transparent: #ffebee;
   --color-danger-text: #f0f0f0;
   --color-danger-text-active: #fff;
-  --color-danger-border: rgba(243, 52, 48, 0.5);
-  --color-danger-outline: rgba(243, 52, 48, 1);
+  --color-danger-border: rgba(255, 81, 81, 0.5);
+  --color-danger-outline: rgba(255, 81, 81, 0.85);
 
   --color-system: #9e86ca;
   --color-system-bg: rgba(158, 134, 202, 0.05);
@@ -173,7 +173,7 @@
   --color-system-text: #f0f0f0;
   --color-system-text-active: #fff;
   --color-system-border: rgba(158, 134, 202, 0.5);
-  --color-system-outline: rgba(158, 134, 202, 1);
+  --color-system-outline: rgba(158, 134, 202, 85);
 
   --color-gray: #9e9e9e;
   --color-gray-bg: rgba(158, 158, 158, 0.05);
@@ -182,7 +182,7 @@
   --color-gray-text: #f0f0f0;
   --color-gray-text-active: #fff;
   --color-gray-border: rgba(158, 158, 158, 0.5);
-  --color-gray-outline: rgba(158, 158, 158, 1);
+  --color-gray-outline: rgba(158, 158, 158, 85);
 
   --color-gray-100: #fafafa;
   --color-gray-200: #eeeeee;
@@ -354,9 +354,9 @@
   --x-inputbox-line-height: var(--line-height);
 
   /* x-card */
+  --x-card-border: 1px solid var(--color-border-outer);
+  --x-card-border-inner: 1px solid var(--color-border);
   --x-card-color-bg: var(--color-bg-panel);
-  --x-card-color-border-outer: var(--color-border-outer);
-  --x-card-color-border: var(--color-border);
   --x-card-radius: var(--radius-sm);
   --x-card-shadow: none;
   --x-card-header-color-bg: var(--color-bg-panel);

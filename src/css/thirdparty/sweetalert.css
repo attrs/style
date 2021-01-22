@@ -65,6 +65,7 @@ body .swal-modal {
   }
 
   &.danger {
+    /*
     background-color: var(--color-warning);
 
     & .swal-title {
@@ -77,6 +78,11 @@ body .swal-modal {
 
     & .swal-button--cancel {
       background-color: var(--color-white);
+    }
+    */
+
+    & .swal-content__input:focus {
+      box-shadow: var(--outline-danger);
     }
 
     & .swal-button--confirm {

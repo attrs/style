@@ -25,12 +25,14 @@ const listener = (e) => {
   const toggleid = trigger && trigger.getAttribute('data-toggle');
   const togglegroup = trigger && trigger.getAttribute('data-toggle-group');
   const target = toggleid && closest(e.target, `[data-toggle-id="${toggleid}"]`);
+  const display = target.getAttribute('data-toggle-display');
   // console.log('toggle click', trigger, toggleid, target);
   if (!target) return;
 
   // console.log('toggle display', target.style.display);
-  if (target.style.display === 'none') {
-    target.style.display = null;
+  if (target.style.display === 'none' || window.getComputedStyle(target).getPropertyValue('display') === 'none') {
+    if (display) target.style.setProperty('display', display, 'important');
+    else target.style.display = null;
   } else {
     target.style.display = 'none';
   }
