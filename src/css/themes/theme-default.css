@@ -269,6 +269,7 @@
   --controls-border-color: var(--color-border-control);
   --controls-font-size: var(--font-size-base);
   --controls-border: 1px solid var(--controls-border-color);
+  --controls-border-radius: var(--radius-sm);
   --controls-color: var(--color-text-active);
   --controls-placeholder-color: var(--color-text-muted);
   --controls-select-options-padding: 0.65em;
@@ -368,7 +369,7 @@
   --x-card-title-font-weight: var(--font-weight-semibold);
 
   /* x-caret */
-  --x-caret-margin: 0.6em;
+  --x-caret-margin: 0.8em;
 
   /* x-list */
   --x-list-item-line-height: 1.6;

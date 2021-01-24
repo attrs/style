@@ -27,8 +27,8 @@ button:focus {
 
 form,
 .focusable {
-  & a:focus,
-  & button:focus {
+  & a:not(.outline-none):focus,
+  & button:not(.outline-none):focus {
     outline: none;
     box-shadow: var(--outline);
   }
@@ -43,16 +43,17 @@ textarea {
 input,
 textarea,
 select {
-  @apply rounded-sm px-4 leading-tight bg-input;
+  @apply px-4 leading-tight bg-input;
 
   line-height: var(--controls-line-height);
   margin: var(--controls-margin);
   vertical-align: var(--controls-vertical-align);
   border: var(--controls-border);
+  border-radius: var(--controls-border-radius);
   color: var(--controls-color);
   font-size: var(--controls-font-size);
 
-  &:focus {
+  &:not(.outline-none):focus {
     @apply border-transparent outline-none shadow-outline;
   }
 }

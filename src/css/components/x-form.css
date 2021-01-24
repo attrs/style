@@ -6,7 +6,7 @@
   &.error {
     @apply border-danger;
 
-    &:focus {
+    &:not(.outline-none):focus {
       @apply border-transparent shadow-outline-danger;
     }
   }
@@ -42,4 +42,40 @@ span.x-form-control {
   margin: 2px;
   padding: 0 2px;
   vertical-align: middle;
+}
+
+.x-control-group {
+  /*
+  & > * {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &:first-child {
+    border-radius: var(--controls-border-radius);
+    border-left: var(--controls-border);
+  }
+
+  &:last-child {
+    border-radius: var(--controls-border-radius);
+    border-right: var(--controls-border);
+  }
+  */
+
+  &:not(:only-child:first-child) {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+  }
+
+  &:not(:only-child:last-child) {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+  }
 }
