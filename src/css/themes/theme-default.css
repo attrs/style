@@ -31,7 +31,7 @@
   --color-text-link: var(--color-primary);
   --color-text-link-active: var(--color-primary-active);
   --color-text-muted: #c1c1c1;
-  --color-text-active: #232323;
+  --color-text-active: #434343;
   --color-text-highlight: #333;
   --color-text-input: var(--color-text);
   --color-text-placeholder: var(--color-text-light);
@@ -267,7 +267,7 @@
   --controls-padding: 0 1rem;
   --controls-vertical-align: middle;
   --controls-border-color: var(--color-border-control);
-  --controls-font-size: var(--font-size-base);
+  --controls-font-size: var(--font-size-sm);
   --controls-border: 1px solid var(--controls-border-color);
   --controls-border-radius: var(--radius-sm);
   --controls-color: var(--color-text-active);
