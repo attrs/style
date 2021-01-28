@@ -262,12 +262,13 @@
   --outline-gray: 0 0 0 var(--outline-thickness) var(--color-gray-outline);
 
   /* input/textarea/select */
-  --controls-line-height: 2.7;
+  --controls-background-color: var(--color-bg-input);
+  --controls-line-height: 2.8rem;
   --controls-margin: 2px;
   --controls-padding: 0 1rem;
   --controls-vertical-align: middle;
   --controls-border-color: var(--color-border-control);
-  --controls-font-size: var(--font-size-sm);
+  --controls-font-size: calc(var(--font-size-base) * 0.95);
   --controls-border: 1px solid var(--controls-border-color);
   --controls-border-radius: var(--radius-sm);
   --controls-color: var(--color-text-active);
@@ -290,7 +291,7 @@
   --btn-font-weight: var(--font-weight-semibold);
   --btn-margin: 0.18em 0.25em;
   --btn-font-weight: var(--font-weight-semibold);
-  --btn-line-height: calc(var(--row-line-height) * 0.7);
+  --btn-line-height: calc(2.8rem + 2px);
   --btn-color-bg: var(--color-border);
   --btn-color-bg-hover: var(--color-bg-hover);
   --btn-color-bg-active: var(--color-bg-active);

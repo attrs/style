@@ -1,8 +1,85 @@
 .x-form {
-  @apply px-md py-md;
+  & input:not([type='checkbox']):not([type='radio']),
+  select,
+  textarea {
+    @apply appearance-none;
+  }
+
+  & input,
+  & textarea,
+  & select {
+    line-height: var(--controls-line-height);
+    margin: var(--controls-margin);
+    vertical-align: var(--controls-vertical-align);
+    border: var(--controls-border);
+    border-radius: var(--controls-border-radius);
+    color: var(--controls-color);
+    font-size: var(--controls-font-size);
+    padding: var(--controls-padding);
+    background-color: var(--controls-background-color);
+
+    &:not(.outline-none):focus {
+      @apply border-transparent outline-none shadow-outline;
+    }
+
+    &::placeholder {
+      color: var(--controls-placeholder-color);
+    }
+  }
+
+  & input[type='password'] {
+    letter-spacing: 3px;
+
+    &::placeholder {
+      letter-spacing: initial;
+    }
+  }
+
+  & select {
+    background-image: var(--controls-select-chevron);
+    background-position: var(--controls-select-chevron-position);
+    background-repeat: no-repeat;
+    background-size: var(--controls-select-chevron-size);
+    padding-right: var(--controls-select-chevron-padding);
+
+    & > option {
+      padding: var(--controls-select-options-padding);
+    }
+  }
+
+  & select[multiple] {
+    background-image: none;
+    background-size: 0;
+    padding: 0;
+    border-radius: var(--radius-sm);
+  }
+
+  & a:not(.outline-none):focus,
+  & button:not(.outline-none):focus {
+    outline: none;
+    box-shadow: var(--outline);
+  }
 }
 
 .x-form-control {
+  line-height: var(--controls-line-height);
+  margin: var(--controls-margin);
+  vertical-align: var(--controls-vertical-align);
+  border: var(--controls-border);
+  border-radius: var(--controls-border-radius);
+  color: var(--controls-color);
+  font-size: var(--controls-font-size);
+  padding: var(--controls-padding);
+  background-color: var(--controls-background-color);
+
+  &:not(.outline-none):focus {
+    @apply border-transparent outline-none shadow-outline;
+  }
+
+  &::placeholder {
+    color: var(--controls-placeholder-color);
+  }
+
   &.error {
     @apply border-danger;
 
@@ -12,9 +89,45 @@
   }
 }
 
-input.x-form-control,
+input.x-form-control:not([type='checkbox']):not([type='radio']),
+select.x-form-control,
+textarea.x-form-control {
+  @apply appearance-none;
+}
+
 textarea.x-form-control {
   @apply w-full;
+}
+
+select.x-form-control {
+  background-image: var(--controls-select-chevron);
+  background-position: var(--controls-select-chevron-position);
+  background-repeat: no-repeat;
+  background-size: var(--controls-select-chevron-size);
+  padding-right: var(--controls-select-chevron-padding);
+
+  & > option {
+    padding: var(--controls-select-options-padding);
+  }
+}
+
+select.x-form-control[multiple] {
+  background-image: none;
+  background-size: 0;
+  padding: 0;
+  border-radius: var(--radius-sm);
+}
+
+input.x-form-control[type='password'] {
+  letter-spacing: 3px;
+
+  &::placeholder {
+    letter-spacing: initial;
+  }
+}
+
+div.x-form-control {
+  @apply flex items-center;
 }
 
 p.x-form-control,
@@ -26,6 +139,7 @@ span.x-form-control {
   color: var(--text-color);
 }
 
+/* message */
 .x-form-control-message,
 .x-form-control-error {
   @apply text-xs my-1 text-light;

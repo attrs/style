@@ -403,8 +403,8 @@
 
     &.btn-sm {
       font-size: calc(var(--btn-font-size) * 0.9);
-      line-height: calc(var(--btn-line-height) * 0.75);
-      padding: 0 calc(var(--btn-padding) * 0.75);
+      line-height: calc(var(--btn-line-height) * 0.7);
+      padding: 0 calc(var(--btn-padding) * 0.7);
     }
 
     &.btn-lg {

@@ -9,8 +9,8 @@ window.theme = (theme) => {
   const body = document.body;
   const contents = document.querySelector('#page');
 
-  body.classList.remove('theme-dark', 'theme-light', 'theme-violet');
-  contents.classList.remove('theme-light');
+  body.classList.remove('theme-dark', 'theme-light', 'theme-violet', 'theme-red');
+  contents.classList.remove('theme-dark', 'theme-light', 'theme-violet', 'theme-red');
 
   if (theme === 'dark') {
     body.classList.add('theme-dark');
@@ -21,6 +21,8 @@ window.theme = (theme) => {
   } else if (theme === 'hybrid') {
     body.classList.add('theme-dark');
     contents.classList.add('theme-light');
+  } else if (theme === 'red') {
+    body.classList.add('theme-red');
   }
 };
 

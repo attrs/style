@@ -12,6 +12,8 @@
     color: var(--x-card-header-color-text);
     font-size: var(--x-card-header-font-size);
     font-weight: var(--x-card-header-font-weight);
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
 
     &.x-card-header-sm {
       line-height: 2.5;
@@ -22,6 +24,8 @@
 
   & > .x-card-footer {
     border-top: var(--x-card-border-inner);
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
   }
 }
 
