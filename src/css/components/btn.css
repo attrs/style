@@ -395,6 +395,12 @@
     }
 
     /* sizing */
+    &.btn-2xs {
+      font-size: calc(var(--btn-font-size) * 0.65);
+      line-height: calc(var(--btn-line-height) * 0.5);
+      padding: 0 calc(var(--btn-padding) * 0.5);
+    }
+    
     &.btn-xs {
       font-size: calc(var(--btn-font-size) * 0.83);
       line-height: calc(var(--btn-line-height) * 0.6);
@@ -435,6 +441,10 @@
     &.btn-rounded {
       border-radius: var(--btn-rounded-radius);
       padding: 0 var(--btn-padding-rounded);
+
+      &.btn-2xs {
+        padding: 0 calc(var(--btn-padding-rounded) * 0.35);
+      }
 
       &.btn-xs {
         padding: 0 calc(var(--btn-padding-rounded) * 0.5);

@@ -182,12 +182,12 @@ a.dotted {
 }
 
 .gradient-1 {
-  background: linear-gradient(to right, deepskyblue, royalblue);
+  background: linear-gradient(to right bottom, #8D68EE, #2E98EE);
   position: relative;
 }
 
 .gradient-2 {
-  background: linear-gradient(to bottom, yellow, deepskyblue);
+  background: linear-gradient(to right bottom, deepskyblue, royalblue);
   position: relative;
 }
 

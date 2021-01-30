@@ -23,50 +23,50 @@
   }
 
   &.x-iconbox-3xs {
-    height: 16px;
-    width: 16px;
+    height: var(--font-size-base);
+    width: var(--font-size-base);
     border-radius: var(--radius-xs);
   }
 
   &.x-iconbox-2xs {
-    height: 24px;
-    width: 24px;
+    height: calc(var(--font-size-base) * 1.5);
+    width: calc(var(--font-size-base) * 1.5);
     border-radius: var(--radius-xs);
   }
 
   &.x-iconbox-xs {
-    height: 32px;
-    width: 32px;
+    height: calc(var(--font-size-base) * 2);
+    width: calc(var(--font-size-base) * 2);
     border-radius: var(--radius-xs);
   }
 
   &.x-iconbox-sm {
-    height: 48px;
-    width: 48px;
+    height: calc(var(--font-size-base) * 3);
+    width: calc(var(--font-size-base) * 3);
     border-radius: var(--radius-sm);
   }
 
   &.x-iconbox-md {
-    height: 60px;
-    width: 60px;
+    height: calc(var(--font-size-base) * 4);
+    width: calc(var(--font-size-base) * 4);
     border-radius: var(--radius-sm);
   }
 
   &.x-iconbox-lg {
-    height: 80px;
-    width: 80px;
+    height: calc(var(--font-size-base) * 6);
+    width: calc(var(--font-size-base) * 6);
     border-radius: var(--radius-md);
   }
 
   &.x-iconbox-xl {
-    height: 114px;
-    width: 114px;
+    height: calc(var(--font-size-base) * 8);
+    width: calc(var(--font-size-base) * 8);
     border-radius: var(--radius-lg);
   }
 
   &.x-iconbox-2xl {
-    height: 128px;
-    width: 128px;
+    height: calc(var(--font-size-base) * 10);
+    width: calc(var(--font-size-base) * 10);
     border-radius: var(--radius-lg);
   }
 

@@ -263,7 +263,7 @@
 
   /* input/textarea/select */
   --controls-background-color: var(--color-bg-input);
-  --controls-line-height: 2.8rem;
+  --controls-line-height: 2.6rem;
   --controls-margin: 2px;
   --controls-padding: 0 1rem;
   --controls-vertical-align: middle;
@@ -290,8 +290,7 @@
   --btn-font-size: var(--font-size-sm);
   --btn-font-weight: var(--font-weight-semibold);
   --btn-margin: 0.18em 0.25em;
-  --btn-font-weight: var(--font-weight-semibold);
-  --btn-line-height: calc(2.8rem + 2px);
+  --btn-line-height: calc(2.4rem + 2px);
   --btn-color-bg: var(--color-border);
   --btn-color-bg-hover: var(--color-bg-hover);
   --btn-color-bg-active: var(--color-bg-active);
@@ -309,21 +308,21 @@
   --btn-icon-margin: 0.5rem;
 
   /* x-label */
-  --x-label-margin: 2px;
-  --x-label-font-size: var(--font-size-xs);
-  --x-label-font-weight: var(--font-weight-semibold);
-  --x-label-line-height: 2;
+  --x-label-font-size: var(--btn-font-size);
+  --x-label-font-weight: var(--btn-font-weight);
+  --x-label-margin: var(--btn-margin);
+  --x-label-line-height: var(--btn-line-height);
   --x-label-color-bg: var(--btn-color-bg);
   --x-label-color-bg-active: var(--btn-color-bg-active);
-  --x-label-color-text: var(--color-text);
-  --x-label-color-text-active: var(--color-text-active);
-  --x-label-color-outline: var(--color-gray-400);
-  --x-label-border-radius: var(--radius-sm);
-  --x-label-rounded-radius: 50rem;
-  --x-label-outline: 1px solid var(--btn-color-outline);
-  --x-label-padding: calc(var(--row-padding) * 0.5);
-  --x-label-rounded-padding: calc(var(--btn-padding) * 0.7);
-  --x-label-icon-margin: 0.35rem;
+  --x-label-color-text: var(--btn-color-text);
+  --x-label-color-text-active: var(--btn-color-text-active);
+  --x-label-color-outline: var(--btn-color-outline);
+  --x-label-border-radius: var(--btn-border-radius);
+  --x-label-rounded-radius: var(--btn-rounded-radius);
+  --x-label-outline: var(--btn-outline);
+  --x-label-padding: var(--btn-padding);
+  --x-label-padding-rounded: var(--btn-padding-rounded);
+  --x-label-icon-margin: var(--btn-icon-margin);
 
   /* table */
   --table-font-size: var(--font-size-sm);
