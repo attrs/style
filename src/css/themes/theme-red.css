@@ -3,12 +3,12 @@
 
   --color-black: #000;
   --color-white: #fff;
-  --color-bg-base: #d05045;
-  --color-bg-panel: #d05045;
+  --color-bg-base: #bf3732;
+  --color-bg-panel: #bf3732;
   --color-bg-inverse: #efefef;
-  --color-bg-active: #bf3732;
+  --color-bg-active: #d05045;
   --color-bg-input: #fff;
-  --color-bg-icon: #bf3732;
+  --color-bg-icon: #d05045;
 
   --color-bg-hover: #cf4742;
   --color-bg-highlight: var(--color-info-transparent);
@@ -17,9 +17,9 @@
   --color-bg-mask-dark: rgba(255, 255, 255, 0.1);
   --color-outline: #ce3232;
 
-  --color-border: #e25d52;
-  --color-border-light: #e05549;
-  --color-border-outer: #e25d52;
+  --color-border: #d05045;
+  --color-border-light: #d05045;
+  --color-border-outer: #d05045;
   --color-border-inverse: #fff;
 
   --color-text: #fff;
