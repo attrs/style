@@ -47,7 +47,7 @@
     display: inline-flex;
 
     & > a {
-      margin-left: -1px;
+      margin-left: -2px;
       line-height: calc(var(--x-pagination-line-height) * 1.1);
       padding: 0 calc(var(--x-pagination-padding) * 1.1);
       border: var(--x-pagination-border-width) var(--x-pagination-border-style) var(--x-pagination-border-color);
@@ -113,9 +113,10 @@
     --x-pagination-selected-color: var(--color-white);
   }
 
-  &.x-pagination-dark {
-    --x-pagination-selected-border-color: var(--color-bg-base);
-    --x-pagination-selected-bg: var(--color-bg-panel);
+  &.x-pagination-inverse {
+    --x-pagination-selected-border-color: var(--color-bg-inverse);
+    --x-pagination-selected-bg: var(--color-bg-inverse);
+    --x-pagination-selected-color: var(--color-text-inverse);
   }
 
   &.x-pagination-black {
