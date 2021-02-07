@@ -20,6 +20,7 @@
 @import './components/x-checkbox';
 @import './components/x-section';
 @import './components/x-iconbox';
+@import './components/x-dot';
 @import './components/btn';
 @import './components/table';
 
@@ -32,3 +33,4 @@
 @import './extensions/x-tagbox';
 @import './extensions/x-mouse';
 @import './extensions/x-headline';
+@import './extensions/x-progress-bar';

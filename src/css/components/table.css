@@ -52,4 +52,12 @@
       }
     }
   }
+
+  &.table-mini {
+    & th,
+    & td {
+      font-size: 0.85em;
+      padding: calc(var(--table-padding-y) * 0.6) calc(var(--table-padding-x) * 0.8);
+    }
+  }
 }

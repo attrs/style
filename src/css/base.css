@@ -6,7 +6,7 @@
 @import './flexbox';
 
 html {
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-primary);
   font-size: var(--font-size-base);
 }
 
@@ -25,82 +25,53 @@ button:focus {
   outline: none;
 }
 
-input:not([type='checkbox']):not([type='radio']),
-select,
-textarea {
-  @apply appearance-none;
-}
-
-input,
-textarea,
-select {
-  @apply rounded-sm px-4 leading-tight bg-input;
-  line-height: var(--controls-line-height);
-  margin: var(--controls-margin);
-  vertical-align: var(--controls-vertical-align);
-  border: var(--controls-border);
-  color: var(--controls-color);
-
-  &:focus {
-    @apply border-transparent outline-none shadow-outline;
+.focusable {
+  & a:not(.outline-none):focus,
+  & button:not(.outline-none):focus {
+    outline: none;
+    box-shadow: var(--outline);
   }
-}
-
-input,
-textarea {
-  padding: var(--controls-padding);
-
-  &::placeholder {
-    color: var(--controls-placeholder-color);
-  }
-}
-
-select {
-  background-image: var(--controls-select-chevron);
-  background-position: var(--controls-select-chevron-position);
-  background-repeat: no-repeat;
-  background-size: var(--controls-select-chevron-size);
-  padding-right: var(--controls-select-chevron-padding);
-
-  & > option {
-    padding: var(--controls-select-options-padding);
-  }
-}
-
-select[multiple] {
-  background-image: none;
-  background-size: 0;
-  padding: 0;
-  border-radius: var(--radius-sm);
 }
 
 h1 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-5xl);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 
 h2 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-4xl);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 
 h3 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-3xl);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 
 h4 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-2xl);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 
 h5 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-lg);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 
 h6 {
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-base);
+  color: var(--text-active);
   margin-bottom: 0.5em;
 }
 
@@ -117,8 +88,12 @@ p {
   }
 }
 
-a.link {
-  color: var(--color-primary);
+a.link,
+a.text-link:hover {
+  transition: color 0.35s ease-in-out;
+  &:hover {
+    color: var(--color-text-link-active) !important;
+  }
 }
 
 mark {

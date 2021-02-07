@@ -1,0 +1,53 @@
+.x-progress-bar {
+  position: relative;
+  background-color: var(--color-border);
+  border-radius: 5px;
+
+  & .x-progress-bar-gauge {
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--color-primary);
+  }
+
+  &.x-progress-bar-primary {
+    & .x-progress-bar-gauge {
+      background-color: var(--color-primary);
+    }
+  }
+
+  &.x-progress-bar-info {
+    & .x-progress-bar-gauge {
+      background-color: var(--color-info);
+    }
+  }
+
+  &.x-progress-bar-success {
+    & .x-progress-bar-gauge {
+      background-color: var(--color-success);
+    }
+  }
+
+  &.x-progress-bar-gray {
+    & .x-progress-bar-gauge {
+      background-color: var(--color-text);
+    }
+  }
+
+  &.x-progress-bar-warning {
+    & .x-progress-bar-gauge {
+      background-color: var(--color-warning);
+    }
+  }
+
+  &.x-progress-bar-danger {
+    & .x-progress-bar-gauge {
+      background-color: var(--color-danger);
+    }
+  }
+
+  &.x-progress-bar-system {
+    & .x-progress-bar-gauge {
+      background-color: var(--color-system);
+    }
+  }
+}

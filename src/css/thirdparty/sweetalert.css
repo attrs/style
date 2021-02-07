@@ -1,16 +1,17 @@
-.swal-modal {
+body .swal-modal {
   background-color: var(--color-bg-panel);
   box-shadow: var(--shadow-xl);
+  font-family: var(--font-family-sans);
 
   & .swal-title {
     color: var(--color-text-active);
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
   }
 
   & .swal-text {
     color: var(--color-text);
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-normal);
     font-size: var(--font-size-sm);
   }
 
@@ -47,4 +48,55 @@
   & .swal-icon--success__ring {
     border-color: #a5dc86;
   }
+
+  & .swal-content__input {
+    @apply rounded-sm px-4 py-1 leading-tight bg-input;
+
+    line-height: var(--controls-line-height);
+    margin: var(--controls-margin);
+    vertical-align: var(--controls-vertical-align);
+    border: var(--controls-border);
+    color: var(--controls-color);
+    font-size: var(--controls-font-size);
+
+    &:focus {
+      @apply border-transparent outline-none shadow-outline;
+    }
+  }
+
+  &.danger {
+    /*
+    background-color: var(--color-warning);
+
+    & .swal-title {
+      color: var(--color-white);
+    }
+
+    & .swal-text {
+      color: var(--color-white);
+    }
+
+    & .swal-button--cancel {
+      background-color: var(--color-white);
+    }
+    */
+
+    & .swal-content__input:focus {
+      box-shadow: var(--outline-danger);
+    }
+
+    & .swal-button--confirm {
+      background-color: var(--color-danger);
+
+      &:hover {
+        background-color: var(--color-danger);
+        color: var(--color-white);
+      }
+    }
+  }
+}
+
+body .swal-overlay--show-modal .swal-modal {
+  will-change: initial;
+  animation: none;
 }

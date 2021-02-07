@@ -6,28 +6,35 @@
   --color-white: #fff;
   --color-bg-base: #f3f5f8;
   --color-bg-panel: #fff;
-  --color-bg-inverse: #e6eaf2;
-  --color-bg-active: #f5f8f9;
+  --color-bg-panel-light: #fafcff;
+  --color-bg-inverse: #23262d;
+  --color-bg-active: #f1f3f6;
   --color-bg-input: #fff;
+  --color-bg-icon: #ecf1f9;
+  --color-bg-hover: rgba(0, 0, 0, 0.05);
 
-  --color-bg-hover: #f2f5f9;
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
+  --color-bg-mask-light: rgba(255, 255, 255, 0.7);
   --color-bg-mask-dark: rgba(0, 0, 0, 0.1);
-  --color-outline: rgba(66, 165, 255, 0.55);
+  --color-outline: var(--color-info-outline);
 
-  --color-border: #efefef;
-  --color-border-light: #efefef;
-  --color-border-outer: #efefef;
+  --color-border: #e9e9e9;
+  --color-border-light: #edeeef;
+  --color-border-outer: #e0e0e0;
   --color-border-inverse: #2e3237;
+  --color-border-control: var(--color-border-outer);
 
   --color-text: #5e5e5e;
-  --color-text-light: #9baeb8;
+  --color-text-light: #8b9ea8;
+  --color-text-link: var(--color-primary);
+  --color-text-link-active: var(--color-primary-active);
   --color-text-muted: #c1c1c1;
-  --color-text-active: #232323;
+  --color-text-active: #434343;
   --color-text-highlight: #333;
   --color-text-input: var(--color-text);
   --color-text-placeholder: var(--color-text-light);
+  --color-text-inverse: #afb1b5;
 
   --color-icon: #333;
   --color-icon-active: var(--color-primary);
@@ -36,59 +43,60 @@
   --color-scrollbar-thumb: rgba(0, 0, 0, 0.5);
   --color-scrollbar-thumb-border: rgba(255, 255, 255, 0.07);
 
-  --color-shadow: rgba(0, 0, 0, 0.03);
+  --color-shadow: rgba(0, 0, 0, 0.05);
   --color-badge: #5d6167;
   --color-badge-text: #fff;
 
-  --color-black-active: var(--color-black);
-  --color-black-bg: #ccc;
-  --color-black-text: var(--color-white);
-  --color-black-text-active: var(--color-white);
-  --color-black-outline: var(--color-black);
-
-  --color-primary: #42a5f5;
+  /*
+  --color-primary: #016ecd;
+  --color-primary-bg: rgba(1,110,205,0.05);
   --color-primary-active: #1976d2;
-  --color-primary-bg: #e3f2fd;
   --color-primary-text: #f0f0f0;
   --color-primary-text-active: #fff;
-  --color-primary-outline: #42a5f5;
+  --color-primary-outline: #016ecd;
 
-  --color-secondary: #ef5350;
+  --color-secondary: #da4f4a;
+  --color-secondary-bg: rgba(218,79,74,0.05);
   --color-secondary-active: #d32f2f;
   --color-secondary-transparent: #ffebee;
   --color-secondary-text: #f0f0f0;
   --color-secondary-text-active: #fff;
-  --color-secondary-outline: #ef5350;
+  --color-secondary-outline: #da4f4a;
 
-  --color-success: #66bb6a;
+  --color-success: #5ab75c;
+  --color-success-bg: rgba(90,183,92,0.05);
   --color-success-active: #388e3c;
   --color-success-transparent: #e8f5e9;
   --color-success-text: #f0f0f0;
   --color-success-text-active: #fff;
-  --color-success-outline: #66bb6a;
+  --color-success-outline: #5ab75c;
 
-  --color-info: #29b6f6;
+  --color-info: #4aafcd;
+  --color-info-bg: rgba(74,175,205,0.05);
   --color-info-active: #0288d1;
   --color-info-transparent: #e1f5fe;
   --color-info-text: #f0f0f0;
   --color-info-text-active: #fff;
-  --color-info-outline: #29b6f6;
+  --color-info-outline: #4aafcd;
 
-  --color-warning: #ff7043;
+  --color-warning: #faa632;
+  --color-warning-bg: rgba(250,166,50,0.05);
   --color-warning-active: #e64a19;
   --color-warning-transparent: #fbe9e7;
   --color-warning-text: #f0f0f0;
   --color-warning-text-active: #fff;
-  --color-warning-outline: #ff7043;
+  --color-warning-outline: #faa632;
 
-  --color-danger: #ef5350;
+  --color-danger: #da4f4a;
+  --color-danger-bg: rgba(218,79,74,0.05);
   --color-danger-active: #d32f2f;
   --color-danger-transparent: #ffebee;
   --color-danger-text: #f0f0f0;
   --color-danger-text-active: #fff;
-  --color-danger-outline: #ef5350;
+  --color-danger-outline: #da4f4a;
 
   --color-system: #7e57c2;
+  --color-system-bg: rgba(126,87,194,0.05);
   --color-system-active: #512da8;
   --color-system-transparent: #ede7f6;
   --color-system-text: #f0f0f0;
@@ -96,11 +104,84 @@
   --color-system-outline: #7e57c2;
 
   --color-gray: #9e9e9e;
+  --color-gray-bg: rgba(158,158,158,0.05);
   --color-gray-active: #aeaeae;
   --color-gray-transparent: #fafafa;
   --color-gray-text: #f0f0f0;
   --color-gray-text-active: #fff;
-  --color-gray-outline: #bdbdbd;
+  --color-gray-outline: #9e9e9e;
+  */
+
+  --color-primary: #2496f1;
+  --color-primary-bg: rgba(36, 150, 241, 0.05);
+  --color-primary-active: rgba(36, 150, 241, 0.85);
+  --color-primary-text: #f0f0f0;
+  --color-primary-text-active: #fff;
+  --color-primary-border: rgba(36, 150, 241, 0.5);
+  --color-primary-outline: rgba(36, 150, 241, 85);
+
+  --color-secondary: #ff5151;
+  --color-secondary-bg: rgba(255, 81, 81, 0.05);
+  --color-secondary-active: rgba(255, 81, 81, 0.85);
+  --color-secondary-transparent: #ffebee;
+  --color-secondary-text: #f0f0f0;
+  --color-secondary-text-active: #fff;
+  --color-secondary-border: rgba(255, 81, 81, 0.5);
+  --color-secondary-outline: rgba(255, 81, 81, 85);
+
+  --color-success: #5ab75c;
+  --color-success-bg: rgba(90, 183, 92, 0.05);
+  --color-success-active: rgba(90, 183, 92, 0.85);
+  --color-success-transparent: #e8f5e9;
+  --color-success-text: #f0f0f0;
+  --color-success-text-active: #fff;
+  --color-success-border: rgba(90, 183, 92, 0.5);
+  --color-success-outline: rgba(90, 183, 92, 85);
+
+  --color-info: #29b6f6;
+  --color-info-bg: rgba(41, 182, 246, 0.05);
+  --color-info-active: rgba(41, 182, 246, 0.85);
+  --color-info-transparent: #e1f5fe;
+  --color-info-text: #f0f0f0;
+  --color-info-text-active: #fff;
+  --color-info-border: rgba(41, 182, 246, 0.5);
+  --color-info-outline: rgba(41, 182, 246, 85);
+
+  --color-warning: #ff7043;
+  --color-warning-bg: rgba(255, 112, 67, 0.05);
+  --color-warning-active: rgba(255, 112, 67, 0.85);
+  --color-warning-transparent: #fbe9e7;
+  --color-warning-text: #f0f0f0;
+  --color-warning-text-active: #fff;
+  --color-warning-border: rgba(255, 112, 67, 0.5);
+  --color-warning-outline: rgba(255, 112, 67, 85);
+
+  --color-danger: #ff5151;
+  --color-danger-bg: rgba(255, 81, 81, 0.05);
+  --color-danger-active: rgba(255, 81, 81, 0.85);
+  --color-danger-transparent: #ffebee;
+  --color-danger-text: #f0f0f0;
+  --color-danger-text-active: #fff;
+  --color-danger-border: rgba(255, 81, 81, 0.5);
+  --color-danger-outline: rgba(255, 81, 81, 0.85);
+
+  --color-system: #9e86ca;
+  --color-system-bg: rgba(158, 134, 202, 0.05);
+  --color-system-active: rgba(158, 134, 202, 0.85);
+  --color-system-transparent: #ede7f6;
+  --color-system-text: #f0f0f0;
+  --color-system-text-active: #fff;
+  --color-system-border: rgba(158, 134, 202, 0.5);
+  --color-system-outline: rgba(158, 134, 202, 85);
+
+  --color-gray: #9e9e9e;
+  --color-gray-bg: rgba(158, 158, 158, 0.05);
+  --color-gray-active: rgba(158, 158, 158, 0.85);
+  --color-gray-transparent: #fafafa;
+  --color-gray-text: #f0f0f0;
+  --color-gray-text-active: #fff;
+  --color-gray-border: rgba(158, 158, 158, 0.5);
+  --color-gray-outline: rgba(158, 158, 158, 85);
 
   --color-gray-100: #fafafa;
   --color-gray-200: #eeeeee;
@@ -113,15 +194,17 @@
   --color-gray-900: #212121;
 
   --line-height: 1.52;
-  --font-size-base: 15px;
+  --font-size-base: 14px;
+  --font-size-3xs: 0.6rem;
+  --font-size-2xs: 0.7rem;
   --font-size-xs: 0.8rem;
-  --font-size-sm: 0.9rem;
+  --font-size-sm: 0.875rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
   --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
-  --font-size-5xl: 3rem;
+  --font-size-3xl: 1.75rem;
+  --font-size-4xl: 2rem;
+  --font-size-5xl: 2.5rem;
   --font-size-6xl: 4rem;
   --font-size-icon: 1em;
   --font-weight-hairline: 100;
@@ -133,10 +216,13 @@
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
   --font-weight-black: 900;
+  --font-family-primary: var(--font-family-sans);
+  --font-family-secondary: var(--font-family-serif);
   --font-family-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   --font-family-serif: Georgia, Cambria, 'Times New Roman', Times, serif;
   --font-family-mono: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   --font-family-numeric: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  --font-family-headings: var(--font-family-sans);
 
   --spacing-xs: 0.75rem;
   --spacing-sm: 1.5rem;
@@ -148,7 +234,7 @@
   --radius-sm: 0.3rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
+  --radius-xl: 1.25rem;
   --radius-full: 9999px;
 
   --outline-thickness: 3px;
@@ -157,12 +243,12 @@
 
   --shadow-xs: 0 0 0 1px var(--color-shadow);
   --shadow-sm: 0 2px 6px var(--color-shadow);
-  --shadow: 0 3px 2px var(--color-shadow), 0 6px 10px var(--color-shadow);
-  --shadow-md: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow);
+  ---shadow: 0 3px 2px var(--color-shadow), 0 6px 10px var(--color-shadow);
+  --shadow: 0 3px 4px var(--color-shadow), 0 6px 8px var(--color-shadow);
   --shadow-lg: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow);
   --shadow-xl: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow), 0 41px 33px var(--color-shadow);
   --shadow-2xl: 0 3px 2px var(--color-shadow), 0 6px 5px var(--color-shadow), 0 12px 10px var(--color-shadow), 0 22px 17px var(--color-shadow), 0 41px 33px var(--color-shadow), 0 100px 80px var(--color-shadow);
-  --shadow-inner: inset 0 2px 4px 0 var(--color-shadow);
+  --shadow-inset: inset 0 1px 10px 0 var(--color-shadow);
 
   --outline: 0 0 0 var(--outline-thickness) var(--color-outline);
   --outline-primary: 0 0 0 var(--outline-thickness) var(--color-primary-outline);
@@ -175,12 +261,15 @@
   --outline-gray: 0 0 0 var(--outline-thickness) var(--color-gray-outline);
 
   /* input/textarea/select */
-  --controls-line-height: 2.5;
+  --controls-background-color: var(--color-bg-input);
+  --controls-line-height: 2.6rem;
   --controls-margin: 2px;
   --controls-padding: 0 1rem;
   --controls-vertical-align: middle;
-  --controls-border-color: #c2c2c2;
+  --controls-border-color: var(--color-border-control);
+  --controls-font-size: calc(var(--font-size-base) * 0.95);
   --controls-border: 1px solid var(--controls-border-color);
+  --controls-border-radius: var(--radius-sm);
   --controls-color: var(--color-text-active);
   --controls-placeholder-color: var(--color-text-muted);
   --controls-select-options-padding: 0.65em;
@@ -200,13 +289,12 @@
   --btn-font-size: var(--font-size-sm);
   --btn-font-weight: var(--font-weight-semibold);
   --btn-margin: 0.18em 0.25em;
-  --btn-font-weight: var(--font-weight-semibold);
-  --btn-line-height: calc(var(--row-line-height) * 0.7);
+  --btn-line-height: calc(2.4rem + 2px);
   --btn-color-bg: var(--color-border);
   --btn-color-bg-hover: var(--color-bg-hover);
-  --btn-color-bg-active: var(--color-bg-hover);
+  --btn-color-bg-active: var(--color-bg-active);
   --btn-color-text: var(--color-text);
-  --btn-color-text-active: var(--color-text-active);
+  --btn-color-text-active: var(--color-primary);
   --btn-color-icon: var(--color-icon);
   --btn-color-icon-active: var(--color-icon-active);
   --btn-color-outline: var(--color-border);
@@ -219,21 +307,21 @@
   --btn-icon-margin: 0.5rem;
 
   /* x-label */
-  --x-label-margin: 2px;
-  --x-label-font-size: var(--font-size-xs);
-  --x-label-font-weight: var(--font-weight-semibold);
-  --x-label-line-height: 2;
+  --x-label-font-size: var(--btn-font-size);
+  --x-label-font-weight: var(--btn-font-weight);
+  --x-label-margin: var(--btn-margin);
+  --x-label-line-height: var(--btn-line-height);
   --x-label-color-bg: var(--btn-color-bg);
   --x-label-color-bg-active: var(--btn-color-bg-active);
-  --x-label-color-text: var(--color-text);
-  --x-label-color-text-active: var(--color-text-active);
-  --x-label-color-outline: var(--color-gray-400);
-  --x-label-border-radius: var(--radius-sm);
-  --x-label-rounded-radius: 50rem;
-  --x-label-outline: 1px solid var(--btn-color-outline);
-  --x-label-padding: calc(var(--row-padding) * 0.5);
-  --x-label-rounded-padding: calc(var(--btn-padding) * 0.7);
-  --x-label-icon-margin: 0.35rem;
+  --x-label-color-text: var(--btn-color-text);
+  --x-label-color-text-active: var(--btn-color-text-active);
+  --x-label-color-outline: var(--btn-color-outline);
+  --x-label-border-radius: var(--btn-border-radius);
+  --x-label-rounded-radius: var(--btn-rounded-radius);
+  --x-label-outline: var(--btn-outline);
+  --x-label-padding: var(--btn-padding);
+  --x-label-padding-rounded: var(--btn-padding-rounded);
+  --x-label-icon-margin: var(--btn-icon-margin);
 
   /* table */
   --table-font-size: var(--font-size-sm);
@@ -250,7 +338,7 @@
   /* x-separator */
   --x-separator-width: 100%;
   --x-separator-thickness: 1px;
-  --x-separator-margin: 0;
+  --x-separator-margin: 0.25em;
   --x-separator-style: solid;
   --x-separator-color: var(--color-border);
   --x-separator-h-thickness: 1px;
@@ -266,11 +354,11 @@
   --x-inputbox-line-height: var(--line-height);
 
   /* x-card */
+  --x-card-border: 1px solid var(--color-border-outer);
+  --x-card-border-inner: 1px solid var(--color-border);
   --x-card-color-bg: var(--color-bg-panel);
-  --x-card-color-border-outer: var(--color-border-outer);
-  --x-card-color-border: var(--color-border);
   --x-card-radius: var(--radius-sm);
-  --x-card-shadow: var(--shadow-sm);
+  --x-card-shadow: none;
   --x-card-header-color-bg: var(--color-bg-panel);
   --x-card-header-color-text: var(--color-text);
   --x-card-header-font-size: var(--font-size-base);
@@ -279,13 +367,15 @@
   --x-card-title-font-size: var(--font-size-sm);
   --x-card-title-font-weight: var(--font-weight-semibold);
 
+  /* x-caret */
+  --x-caret-margin: 0.8em;
+
   /* x-list */
-  --x-list-shadow: var(--shadow-sm);
   --x-list-item-line-height: 1.6;
-  --x-list-item-padding: 0.75rem 1.15rem 0.75rem 1.35rem;
+  --x-list-item-padding: 0.7em 1.75em 0.7em 1.75em;
   --x-list-item-border: 1px solid var(--color-border);
   --x-list-header-color: var(--color-text-light);
-  --x-list-header-padding: 0.45rem 1.15rem 0.15rem 1.35rem;
+  --x-list-header-padding: 0.75em 1.15em 0.15em 1.75em;
   --x-list-header-font-size: var(--font-size-xs);
   --x-list-item-font-size: var(--font-size-xs);
   --x-list-item-font-weight: var(--font-weight-medium);
@@ -334,13 +424,14 @@
 
   /* x-navigation */
   --x-navigation-font-size: 0.95rem;
-  --x-navigation-font-weight: var(--font-weight-normal);
+  --x-navigation-font-weight: var(--font-weight-medium);
   --x-navigation-padding: var(--spacing-sm);
   --x-navigation-title-color: var(--color-text-light);
-  --x-navigation-title-font-weight: var(--font-weight-semibold);
+  --x-navigation-title-font-weight: var(--font-weight-medium);
   --x-navigation-title-font-size: var(--font-size-sm);
   --x-navigation-title-margin-top: 1rem;
   --x-navigation-title-margin-bottom: 0.5rem;
+  --x-navigation-title-line-height: 2.3em;
   --x-navigation-active-bg: var(--color-bg-active);
   --x-navigation-active-text: var(--color-text-active);
   --x-navigation-active-icon: var(--color-icon-active);
@@ -355,8 +446,9 @@
   --x-page-color-text: var(--color-text);
   --x-page-header-bg: var(--color-bg-panel);
   --x-page-header-border: var(--color-border);
-  --x-page-header-padding: 1rem;
-  --x-page-header-min-height: 7rem;
+  --x-page-header-padding: 0.75rem;
+  --x-page-header-shadow: none;
+  --x-page-header-min-height: 5.5rem;
 
   /* x-switch */
   --x-switch-font-family: var(--font-family-sans);
@@ -421,7 +513,7 @@
   --x-badge-color: var(--color-white);
 
   /* x-iconbox */
-  --x-iconbox-background-color: var(--color-text);
+  --x-iconbox-background-color: var(--color-bg-icon);
   --x-iconbox-foreground-color: var(--color-white);
 
   /* x-checkbox */
@@ -429,6 +521,15 @@
   --x-checkbox-border: 1px solid var(--x-checkbox-border-color);
   --x-checkbox-border-radius: 0.3em;
   --x-checkbox-top: 2px;
-  --x-checkbox-label-margin: 2.15em;
+  --x-checkbox-label-margin: 2.2em;
   --x-checkbox-bg: var(--color-bg-input);
+
+  /* x-dot */
+  --x-dot-width: 0.5em;
+  --x-dot-height: 0.5em;
+  --x-dot-vertical-align: middle;
+  --x-dot-border: 0px solid var(--color-border-light);
+  --x-dot-border-radius: 3px;
+  --x-dot-opacity: 0.65;
+  --x-dot-background: var(--color-text-light);
 }

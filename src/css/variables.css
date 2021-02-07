@@ -2,6 +2,7 @@
 @import './themes/theme-light';
 @import './themes/theme-dark';
 @import './themes/theme-violet';
+@import './themes/theme-red';
 
 :root {
   @apply theme-light;

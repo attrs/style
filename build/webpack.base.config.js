@@ -54,6 +54,10 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'html-loader'
+      },
+      {
+        test: /\.worklet\.js$/,
+        use: { loader: 'worklet-loader' }
       }
     ]
   },

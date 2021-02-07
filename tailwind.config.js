@@ -19,29 +19,41 @@ module.exports = {
       bg: {
         default: 'var(--color-bg-base)',
         base: 'var(--color-bg-base)',
-        panel: 'var(--color-bg-panel)',
+        panel: {
+          default: 'var(--color-bg-panel)',
+          light: 'var(--color-bg-panel-light)'
+        },
         inverse: 'var(--color-bg-inverse)',
         input: 'var(--color-bg-input)',
         active: 'var(--color-bg-active)',
-        highlight: 'var(--color-bg-highlight)'
+        highlight: 'var(--color-bg-highlight)',
+        hover: 'var(--color-bg-hover)',
+        border: 'var(--color-border)',
+        text: 'var(--color-text)',
+        muted: 'var(--color-text-muted)'
       },
       mask: {
         default: 'var(--color-bg-mask)',
-        dark: 'var(--color-bg-mask)'
+        light: 'var(--color-bg-mask-light)',
+        dark: 'var(--color-bg-mask-dark)'
       },
       text: {
         default: 'var(--color-text)',
         light: 'var(--color-text-light)',
         input: 'var(--color-text-input)',
+        inverse: 'var(--color-text-inverse)',
         placeholder: 'var(--color-text-placeholder)',
         muted: 'var(--color-text-muted)',
         active: 'var(--color-text-active)',
-        highlight: 'var(--color-text-highlight)'
+        highlight: 'var(--color-text-highlight)',
+        link: 'var(--color-text-link)'
       },
       border: {
         default: 'var(--color-border)',
+        normal: 'var(--color-border)',
         light: 'var(--color-border-light)',
         outer: 'var(--color-border-outer)',
+        control: 'var(--color-border-control)',
         inverse: 'var(--color-border-inverse)'
       },
       icon: {
@@ -57,6 +69,7 @@ module.exports = {
         active: 'var(--color-black-active)',
         bg: 'var(--color-black-bg)',
         text: 'var(--color-black-text)',
+        border: 'var(--color-black-border)',
         outline: 'var(--color-black-outline)'
       },
       primary: {
@@ -64,6 +77,7 @@ module.exports = {
         active: 'var(--color-primary-active)',
         bg: 'var(--color-primary-bg)',
         text: 'var(--color-primary-text)',
+        border: 'var(--color-primary-border)',
         outline: 'var(--color-primary-outline)'
       },
       secondary: {
@@ -71,6 +85,7 @@ module.exports = {
         active: 'var(--color-secondary-active)',
         bg: 'var(--color-secondary-bg)',
         text: 'var(--color-secondary-text)',
+        border: 'var(--color-secondary-border)',
         outline: 'var(--color-secondary-outline)'
       },
       success: {
@@ -78,6 +93,7 @@ module.exports = {
         active: 'var(--color-success-active)',
         bg: 'var(--color-success-bg)',
         text: 'var(--color-success-text)',
+        border: 'var(--color-success-border)',
         outline: 'var(--color-success-outline)'
       },
       info: {
@@ -85,6 +101,7 @@ module.exports = {
         active: 'var(--color-info-active)',
         bg: 'var(--color-info-bg)',
         text: 'var(--color-info-text)',
+        border: 'var(--color-info-border)',
         outline: 'var(--color-info-outline)'
       },
       warning: {
@@ -92,6 +109,7 @@ module.exports = {
         active: 'var(--color-warning-active)',
         bg: 'var(--color-warning-bg)',
         text: 'var(--color-warning-text)',
+        border: 'var(--color-warning-border)',
         outline: 'var(--color-warning-outline)'
       },
       danger: {
@@ -99,6 +117,7 @@ module.exports = {
         active: 'var(--color-danger-active)',
         bg: 'var(--color-danger-bg)',
         text: 'var(--color-danger-text)',
+        border: 'var(--color-danger-border)',
         outline: 'var(--color-danger-outline)'
       },
       system: {
@@ -106,10 +125,16 @@ module.exports = {
         active: 'var(--color-system-active)',
         bg: 'var(--color-system-bg)',
         text: 'var(--color-system-text)',
+        border: 'var(--color-system-border)',
         outline: 'var(--color-system-outline)'
       },
       gray: {
         default: 'var(--color-gray)',
+        active: 'var(--color-gray-active)',
+        bg: 'var(--color-gray-bg)',
+        text: 'var(--color-gray-text)',
+        border: 'var(--color-gray-border)',
+        outline: 'var(--color-gray-outline)',
         100: 'var(--color-gray-100)',
         200: 'var(--color-gray-200)',
         300: 'var(--color-gray-300)',
@@ -118,19 +143,18 @@ module.exports = {
         600: 'var(--color-gray-600)',
         700: 'var(--color-gray-700)',
         800: 'var(--color-gray-800)',
-        900: 'var(--color-gray-900)',
-        outline: 'var(--color-gray-outline)'
+        900: 'var(--color-gray-900)'
       }
     },
     boxShadow: (theme) => ({
       'xs': 'var(--shadow-xs)',
       'sm': 'var(--shadow-sm)',
       'default': 'var(--shadow)',
-      'md': 'var(--shadow-md)',
+      'md': 'var(--shadow)',
       'lg': 'var(--shadow-lg)',
       'xl': 'var(--shadow-xl)',
       '2xl': 'var(--shadow-2xl)',
-      'inner': 'var(--shadow-xs)',
+      'inset': 'var(--shadow-inset)',
       'outline': 'var(--outline)',
       'outline-none': 'none',
       'outline-primary': 'var(--outline-primary)',
@@ -194,6 +218,8 @@ module.exports = {
       '250': '250px',
       '300': '300px',
       '600': '600px',
+      '800': '800px',
+      '1000': '1000px',
       'full': '100%',
       'screen': '100vh'
     },
@@ -220,10 +246,13 @@ module.exports = {
       '5xl': '64rem',
       '6xl': '72rem',
       'full': '100%',
+      'screen': '100vw',
       ...breakpoints(theme('screens'))
     }),
     minWidth: (theme) => theme('maxWidth'),
     fontSize: {
+      '3xs': 'var(--font-size-3xs)',
+      '2xs': 'var(--font-size-2xs)',
       'xs': 'var(--font-size-xs)',
       'sm': 'var(--font-size-sm)',
       'base': 'var(--font-size-base)',
@@ -236,6 +265,8 @@ module.exports = {
       '6xl': 'var(--font-size-6xl)'
     },
     fontFamily: {
+      primary: 'var(--font-family-primary)',
+      secondary: 'var(--font-family-secondary)',
       sans: 'var(--font-family-sans)',
       serif: 'var(--font-family-serif)',
       mono: 'var(--font-family-mono)',
@@ -266,6 +297,11 @@ module.exports = {
       'md': 'var(--spacing)',
       'lg': 'var(--spacing-lg)',
       'xl': 'var(--spacing-xl)'
+    }
+  },
+  variants: {
+    extend: {
+      borderWidth: ['last'],
     }
   }
 };

@@ -4,6 +4,7 @@
 
   &:not(.x-dropdown-nocaret) > .btn:after {
     @apply x-caret-down;
+    margin-right: 0;
   }
 
   & > .x-dropdown-items {
@@ -15,8 +16,7 @@
     padding: 0;
 
     opacity: 0;
-    transform: perspective(500px) rotateX(-15deg);
-    transform-origin: 50% -50px;
+    transform: perspective(1500px) rotateX(-5deg);
     will-change: transform, opacity;
     transition: transform 0.15s ease-out, opacity 0.25s;
   }

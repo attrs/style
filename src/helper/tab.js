@@ -5,9 +5,8 @@ const findRelatedTabContentsItem = (el, tabid) => {
   return findRelatedTabContentsItem(el.parentNode, tabid);
 };
 
-const listener = (e) => {
-  const tab = e.target.closest('.x-tab');
-  const tabitem = e.target.closest('.x-tab-item');
+const selectTab = (tabitem) => {
+  const tab = tabitem && tabitem.closest('.x-tab');
   if (!tab || !tabitem) return;
 
   tab.querySelectorAll('.x-tab-item').forEach((node) => node.classList.remove('active'));
@@ -23,7 +22,14 @@ const listener = (e) => {
   tabcontentsitem.classList.add('active');
 };
 
+const listener = (e) => {
+  selectTab(e.target.closest('.x-tab-item'));
+};
+
 export const tab = (element) => {
+  const activetab = element.querySelector('.x-tab-item.active') || element.querySelector('.x-tab-item:first-child');
+  selectTab(activetab);
+
   element.removeEventListener('click', listener);
   element.addEventListener('click', listener);
 };

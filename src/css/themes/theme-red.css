@@ -1,37 +1,37 @@
-.theme-violet {
+.theme-red {
   @apply theme-default;
 
   --color-black: #000;
   --color-white: #fff;
-  --color-bg-base: #796ea5;
-  --color-bg-panel: #796ea5;
+  --color-bg-base: #bf3732;
+  --color-bg-panel: #bf3732;
   --color-bg-inverse: #efefef;
-  --color-bg-active: #887fb6;
+  --color-bg-active: #d05045;
   --color-bg-input: #fff;
-  --color-bg-icon: #9288bb;
+  --color-bg-icon: #d05045;
 
-  --color-bg-hover: #988fc6;
+  --color-bg-hover: #cf4742;
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(255, 255, 255, 0.075);
   --color-bg-mask-light: rgba(255, 255, 255, 0.075);
   --color-bg-mask-dark: rgba(255, 255, 255, 0.1);
-  --color-outline: #796ea5;
+  --color-outline: #ce3232;
 
-  --color-border: #887fb6;
-  --color-border-light: #7f74a9;
-  --color-border-outer: #887fb6;
-  --color-border-inverse: #2e3237;
+  --color-border: #d05045;
+  --color-border-light: #d05045;
+  --color-border-outer: #d05045;
+  --color-border-inverse: #fff;
 
   --color-text: #fff;
-  --color-text-light: #b9aee5;
-  --color-text-muted: #a99ed5;
+  --color-text-light: #fff;
+  --color-text-muted: #f77473;
   --color-text-active: #fff;
   --color-text-highlight: #fff;
   --color-text-input: #5e5e5e;
   --color-text-placeholder: #aeaeae;
 
-  --color-icon: #fff;
-  --color-icon-active: var(--color-primary);
+  --color-icon: #ccc;
+  --color-icon-active: #fff;
 
   --color-shadow: rgba(0, 0, 0, 0.05);
   --color-badge: #5d6167;
@@ -39,7 +39,7 @@
 
   --controls-color: #3e3e3e;
   --controls-placeholder-color: #c1c1c1;
-  
+
   --btn-color-text-active: #fff;
 
   --x-badge-background: var(--color-text-muted);

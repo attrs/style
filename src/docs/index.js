@@ -1,13 +1,16 @@
 import '../';
 import './style.css';
 import router from '@attrs/router';
+import SmoothCorners from '../worklets/smooth-corners.worklet.js';
+
+CSS.paintWorklet.addModule(SmoothCorners);
 
 window.theme = (theme) => {
   const body = document.body;
   const contents = document.querySelector('#page');
 
-  body.classList.remove('theme-dark', 'theme-light', 'theme-violet');
-  contents.classList.remove('theme-light');
+  body.classList.remove('theme-dark', 'theme-light', 'theme-violet', 'theme-red');
+  contents.classList.remove('theme-dark', 'theme-light', 'theme-violet', 'theme-red');
 
   if (theme === 'dark') {
     body.classList.add('theme-dark');
@@ -18,6 +21,8 @@ window.theme = (theme) => {
   } else if (theme === 'hybrid') {
     body.classList.add('theme-dark');
     contents.classList.add('theme-light');
+  } else if (theme === 'red') {
+    body.classList.add('theme-red');
   }
 };
 
@@ -48,6 +53,7 @@ export default router()
   .get('/component/button', async (req, res, next) => await res.view(await import('./component/button.html')).render())
   .get('/component/label', async (req, res, next) => await res.view(await import('./component/label.html')).render())
   .get('/component/table', async (req, res, next) => await res.view(await import('./component/table.html')).render())
+  .get('/component/alert', async (req, res, next) => await res.view(await import('./component/alert.html')).render())
   .get('/component/form', async (req, res, next) => await res.view(await import('./component/form.html')).render())
   .get('/component/list', async (req, res, next) => await res.view(await import('./component/list.html')).render())
   .get('/component/card', async (req, res, next) => await res.view(await import('./component/card.html')).render())
