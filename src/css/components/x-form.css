@@ -148,7 +148,7 @@ span.x-form-control {
 }
 
 .x-form-control-error {
-  color: var(--color-danger);
+  color: var(--color-warning);
 }
 
 .x-form-label {

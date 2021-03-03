@@ -3,21 +3,21 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  width: 60px;
+  height: calc(var(--font-size-base) * 4 * var(--x-iconbox-size-factor));
+  width: calc(var(--font-size-base) * 4 * var(--x-iconbox-size-factor));
   border-radius: var(--radius-sm);
   background-color: var(--x-iconbox-background-color);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
-  & svg {
+  & > svg {
     height: 50%;
     width: 50%;
     fill: var(--x-iconbox-foreground-color);
   }
 
-  & img {
+  & > img {
     height: 100%;
     width: 100%;
   }
@@ -29,44 +29,44 @@
   }
 
   &.x-iconbox-2xs {
-    height: calc(var(--font-size-base) * 1.5);
-    width: calc(var(--font-size-base) * 1.5);
+    height: calc(var(--font-size-base) * 1.5 * var(--x-iconbox-size-factor));
+    width: calc(var(--font-size-base) * 1.5 * var(--x-iconbox-size-factor));
     border-radius: var(--radius-xs);
   }
 
   &.x-iconbox-xs {
-    height: calc(var(--font-size-base) * 2);
-    width: calc(var(--font-size-base) * 2);
+    height: calc(var(--font-size-base) * 2 * var(--x-iconbox-size-factor));
+    width: calc(var(--font-size-base) * 2 * var(--x-iconbox-size-factor));
     border-radius: var(--radius-xs);
   }
 
   &.x-iconbox-sm {
-    height: calc(var(--font-size-base) * 3);
-    width: calc(var(--font-size-base) * 3);
+    height: calc(var(--font-size-base) * 3 * var(--x-iconbox-size-factor));
+    width: calc(var(--font-size-base) * 3 * var(--x-iconbox-size-factor));
     border-radius: var(--radius-sm);
   }
 
   &.x-iconbox-md {
-    height: calc(var(--font-size-base) * 4);
-    width: calc(var(--font-size-base) * 4);
+    height: calc(var(--font-size-base) * 4 * var(--x-iconbox-size-factor));
+    width: calc(var(--font-size-base) * 4 * var(--x-iconbox-size-factor));
     border-radius: var(--radius-sm);
   }
 
   &.x-iconbox-lg {
-    height: calc(var(--font-size-base) * 6);
-    width: calc(var(--font-size-base) * 6);
+    height: calc(var(--font-size-base) * 5 * var(--x-iconbox-size-factor));
+    width: calc(var(--font-size-base) * 5 * var(--x-iconbox-size-factor));
     border-radius: var(--radius-md);
   }
 
   &.x-iconbox-xl {
-    height: calc(var(--font-size-base) * 8);
-    width: calc(var(--font-size-base) * 8);
+    height: calc(var(--font-size-base) * 8 * var(--x-iconbox-size-factor));
+    width: calc(var(--font-size-base) * 8 * var(--x-iconbox-size-factor));
     border-radius: var(--radius-lg);
   }
 
   &.x-iconbox-2xl {
-    height: calc(var(--font-size-base) * 10);
-    width: calc(var(--font-size-base) * 10);
+    height: calc(var(--font-size-base) * 10 * var(--x-iconbox-size-factor));
+    width: calc(var(--font-size-base) * 10 * var(--x-iconbox-size-factor));
     border-radius: var(--radius-lg);
   }
 
