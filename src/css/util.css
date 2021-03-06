@@ -178,6 +178,7 @@ a.dotted {
 
 .radius-circle {
   border-radius: var(--radius-full) !important;
+  overflow: hidden;
 }
 
 .gradient-1 {
