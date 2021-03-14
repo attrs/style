@@ -3,7 +3,7 @@ import './style.css';
 import router from '@attrs/router';
 import SmoothCorners from '../worklets/smooth-corners.worklet.js';
 
-CSS.paintWorklet.addModule(SmoothCorners);
+window.CSS && CSS.paintWorklet && CSS.paintWorklet.addModule && CSS.paintWorklet.addModule(SmoothCorners);
 
 window.theme = (theme) => {
   const body = document.body;
@@ -40,11 +40,15 @@ export default router()
 
     next();
 
-    const response = await fetch('https://api.github.com/repos/attrs/style');
-    const result = await response.json();
+    try {
+      const response = await fetch('https://api.github.com/repos/attrs/style');
+      const result = await response.json();
 
-    const githubStargazersElement = document.querySelector('#github_stargazers');
-    if (result && githubStargazersElement) githubStargazersElement.innerHTML = `${result.stargazers_count}`;
+      const githubStargazersElement = document.querySelector('#github_stargazers');
+      if (result && githubStargazersElement) githubStargazersElement.innerHTML = `${result.stargazers_count}`;
+    } catch (err) {
+      console.warn(err);
+    }
   })
   .get('/', 'base')
   .get('/base', 'base/typography')
