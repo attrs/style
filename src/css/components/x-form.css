@@ -96,7 +96,8 @@ textarea.x-form-control {
 }
 
 textarea.x-form-control {
-  @apply w-full;
+  @apply w-full py-2 text-sm;
+  line-height: var(--line-height);
 }
 
 select.x-form-control {
@@ -147,7 +148,7 @@ span.x-form-control {
 }
 
 .x-form-control-error {
-  color: var(--color-danger);
+  color: var(--color-warning);
 }
 
 .x-form-label {

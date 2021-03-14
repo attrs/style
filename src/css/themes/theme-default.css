@@ -513,6 +513,7 @@
   --x-badge-color: var(--color-white);
 
   /* x-iconbox */
+  --x-iconbox-size-factor: 1;
   --x-iconbox-background-color: var(--color-bg-icon);
   --x-iconbox-foreground-color: var(--color-white);
 

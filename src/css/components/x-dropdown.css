@@ -2,9 +2,17 @@
   position: relative;
   display: inline-block;
 
-  &:not(.x-dropdown-nocaret) > .btn:after {
-    @apply x-caret-down;
-    margin-right: 0;
+  &:not(.x-dropdown-nocaret) {
+    & > .btn:after {
+      @apply x-caret-down;
+      margin-right: 0;
+    }
+
+    & > .btn-xs:after,
+    & > .btn-2xs:after {
+      margin-bottom: 1px;
+      margin-left: 2px;
+    }
   }
 
   & > .x-dropdown-items {
