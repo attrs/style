@@ -64,12 +64,39 @@
 .x-form-control {
   line-height: var(--controls-line-height);
   margin: var(--controls-margin);
-  vertical-align: var(--controls-vertical-align);
+  padding: var(--controls-padding);
   border: var(--controls-border);
   border-radius: var(--controls-border-radius);
+
+  vertical-align: var(--controls-vertical-align);
   color: var(--controls-color);
   font-size: var(--controls-font-size);
-  padding: var(--controls-padding);
+  background-color: var(--controls-background-color);
+
+  &:not(.outline-none):focus {
+    @apply border-transparent outline-none shadow-outline;
+  }
+
+  &::placeholder {
+    color: var(--controls-placeholder-color);
+  }
+
+  &.error {
+    @apply border-danger;
+
+    &:not(.outline-none):focus {
+      @apply border-transparent shadow-outline-danger;
+    }
+  }
+
+  & .x-form-control-inner {
+    line-height: calc(var(--controls-line-height) - 1px);
+  }
+}
+
+.x-input {
+  color: var(--controls-color);
+  font-size: var(--controls-font-size);
   background-color: var(--controls-background-color);
 
   &:not(.outline-none):focus {
