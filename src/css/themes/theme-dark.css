@@ -30,6 +30,7 @@
   --color-text-active: #cfd1d5;
   --color-text-highlight: #333;
   --color-text-inverse: #5e5e5e;
+  --color-text-blackwhite: var(--color-white);
 
   --color-icon: #afb1b5;
   --color-icon-active: var(--color-primary);

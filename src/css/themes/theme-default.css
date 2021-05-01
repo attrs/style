@@ -35,6 +35,7 @@
   --color-text-input: var(--color-text);
   --color-text-placeholder: var(--color-text-light);
   --color-text-inverse: #afb1b5;
+  --color-text-blackwhite: var(--color-black);
 
   --color-icon: #333;
   --color-icon-active: var(--color-primary);
