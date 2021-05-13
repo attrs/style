@@ -46,7 +46,8 @@ module.exports = {
         muted: 'var(--color-text-muted)',
         active: 'var(--color-text-active)',
         highlight: 'var(--color-text-highlight)',
-        link: 'var(--color-text-link)'
+        link: 'var(--color-text-link)',
+        blackwhite: 'var(--color-text-blackwhite)'
       },
       border: {
         default: 'var(--color-border)',
@@ -204,7 +205,7 @@ module.exports = {
       '200': '200px',
       '250': '250px',
       '300': '300px',
-      '300': '300px',
+      '450': '450px',
       '600': '600px',
       'full': '100%',
       'screen': '100vh'

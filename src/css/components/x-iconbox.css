@@ -14,7 +14,7 @@
   & > svg {
     height: 50%;
     width: 50%;
-    fill: var(--x-iconbox-foreground-color);
+    /* fill: var(--x-iconbox-foreground-color); */
   }
 
   & > img {

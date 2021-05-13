@@ -8,7 +8,7 @@
   --color-bg-panel: #fff;
   --color-bg-panel-light: #fafcff;
   --color-bg-inverse: #23262d;
-  --color-bg-active: #f1f3f6;
+  --color-bg-active: #eef0f3;
   --color-bg-input: #fff;
   --color-bg-icon: #ecf1f9;
   --color-bg-hover: rgba(0, 0, 0, 0.05);
@@ -35,6 +35,7 @@
   --color-text-input: var(--color-text);
   --color-text-placeholder: var(--color-text-light);
   --color-text-inverse: #afb1b5;
+  --color-text-blackwhite: var(--color-black);
 
   --color-icon: #333;
   --color-icon-active: var(--color-primary);

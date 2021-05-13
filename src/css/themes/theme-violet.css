@@ -30,6 +30,7 @@
   --color-text-highlight: #fff;
   --color-text-input: #5e5e5e;
   --color-text-placeholder: #aeaeae;
+  --color-text-blackwhite: var(--color-white);
 
   --color-icon: #fff;
   --color-icon-active: var(--color-primary);
