@@ -297,6 +297,7 @@ module.exports = {
       'xs': 'var(--spacing-xs)',
       'sm': 'var(--spacing-sm)',
       'md': 'var(--spacing)',
+      'pg': 'var(--spacing-page)',
       'lg': 'var(--spacing-lg)',
       'xl': 'var(--spacing-xl)'
     }

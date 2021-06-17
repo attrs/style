@@ -231,6 +231,11 @@
   --spacing: 2rem;
   --spacing-lg: 3rem;
   --spacing-xl: 5rem;
+  --spacing-page: 2rem;
+
+  @media (max-width: 640px) {
+    --spacing-page: 1rem;
+  }
 
   --radius: 0.5rem;
   --radius-sm: 0.3rem;
