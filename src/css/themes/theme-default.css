@@ -157,14 +157,14 @@
   --color-warning-border: rgba(255, 112, 67, 0.5);
   --color-warning-outline: rgba(255, 112, 67, 85);
 
-  --color-danger: #ff5151;
-  --color-danger-bg: rgba(255, 81, 81, 0.05);
-  --color-danger-active: rgba(255, 81, 81, 0.85);
+  --color-danger: #ff4e31;
+  --color-danger-bg: rgba(255, 78, 49, 0.05);
+  --color-danger-active: rgba(255, 78, 49, 0.85);
   --color-danger-transparent: #ffebee;
   --color-danger-text: #f0f0f0;
   --color-danger-text-active: #fff;
-  --color-danger-border: rgba(255, 81, 81, 0.5);
-  --color-danger-outline: rgba(255, 81, 81, 0.85);
+  --color-danger-border: rgba(255, 78, 49, 0.5);
+  --color-danger-outline: rgba(255, 78, 49, 0.85);
 
   --color-system: #9e86ca;
   --color-system-bg: rgba(158, 134, 202, 0.05);
