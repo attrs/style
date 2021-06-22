@@ -1,6 +1,6 @@
 const findRelatedTabContentsItem = (el, tabid) => {
   if (!el) return null;
-  const item = el.querySelector('.x-tab-contents *[data-tab="' + tabid + '"]');
+  const item = el.querySelector('.x-tab-contents > *[data-tab="' + tabid + '"]');
   if (item) return item;
   return findRelatedTabContentsItem(el.parentNode, tabid);
 };
@@ -24,6 +24,7 @@ const selectTab = (tabitem) => {
 
 const listener = (e) => {
   selectTab(e.target.closest('.x-tab-item'));
+  e.stopPropagation();
 };
 
 export const tab = (element) => {
