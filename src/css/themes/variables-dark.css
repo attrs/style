@@ -1,6 +1,4 @@
-.theme-dark {
-  @apply theme-default;
-
+.variables-dark {
   --color-black: #000;
   --color-white: #fefefe;
   --color-bg-base: #23262d;

@@ -6,6 +6,10 @@
   font-size: var(--font-size-icon);
 }
 
+.blur-bg {
+  backdrop-filter: blur(5px);
+}
+
 .ratio-1by1 {
   position: relative !important;
   padding-top: 100% !important;

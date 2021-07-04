@@ -1,34 +1,50 @@
-@import './themes/theme-default';
-@import './themes/theme-light';
-@import './themes/theme-dark';
-@import './themes/theme-violet';
-@import './themes/theme-red';
+@import './themes/variables-default';
+@import './themes/variables-light';
+@import './themes/variables-dark';
+@import './themes/variables-violet';
+@import './themes/variables-red';
 
 :root {
-  @apply theme-light;
+  @apply variables-default;
+}
+
+.theme-light {
+  @apply variables-default;
+}
+
+.theme-dark {
+  @apply variables-default variables-dark;
+}
+
+.theme-violet {
+  @apply variables-default variables-violet;
+}
+
+.theme-red {
+  @apply variables-default variables-red;
 }
 
 .theme-inverse {
-  @apply theme-dark;
+  @apply variables-default variables-dark;
 }
 
 /* apply prefers-color-scheme */
 @media (prefers-color-scheme: light) {
   :root {
-    @apply theme-light;
+    @apply variables-default;
   }
 
   .theme-inverse {
-    @apply theme-dark;
+    @apply variables-default variables-dark;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    @apply theme-dark;
+    @apply variables-default variables-dark;
   }
 
   .theme-inverse {
-    @apply theme-light;
+    @apply variables-default;
   }
 }
