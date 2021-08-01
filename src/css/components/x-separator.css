@@ -22,3 +22,8 @@ span.x-separator {
   border: 1px solid currentColor;
   border-radius: 50%;
 }
+
+hr.x-separator {
+  border: none;
+  border-bottom: 1px solid var(--x-separator-color);
+}
