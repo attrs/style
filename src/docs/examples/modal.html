@@ -1,31 +1,30 @@
 <div class="x-card min-w-sm max-w-sm m-auto">
-  <form class="x-form">
+  <form class="p-5">
     <div class="mb-3">
       <label class="x-form-label" for="username">
         Username
       </label>
-      <input class="x-form-control" ref="username" id="username" type="text" placeholder="Username" autocomplete="username" />
+      <input class="x-form-control w-full font-medium ref="username" id="username" type="text" placeholder="Username" autocomplete="username" />
     </div>
     <div class="mb-3">
       <label class="x-form-label" for="password">
         Password
       </label>
-      <input class="x-form-control" ref="password" id="password" type="password" placeholder="Password" autocomplete="current-password" />
+      <input class="x-form-control w-full font-medium error" ref="password" id="password" type="password" placeholder="Password" autocomplete="current-password" />
+      <p class="x-form-control-error">Password Incorrect</p>
     </div>
     <div class="flex items-center justify-between mt-6">
       <div>
-        <label class="inline-flex items-center">
-          <input type="checkbox" class="form-checkbox h-4 w-4" checked />
-          <span class="ml-2">Remember username</span>
+        <label tabindex="4" class="x-checkbox x-checkbox-primary">
+          <input type="checkbox" />
+          <span class="text-sm font-medium">Remember email</span>
         </label>
       </div>
-      <button class="btn btn-primary" type="button">
-        Log In
-      </button>
+      <button type="button" tabindex="5" class="btn btn-primary">Sign in</button>
     </div>
   </form>
 
-  <div class="text-center py-md">
+  <div class="text-center py-md text-sm">
     <a class="font-semibold" href="javascript:;">
       Forgot Password?
     </a>
