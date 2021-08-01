@@ -288,6 +288,13 @@ module.exports = {
         mono: 'var(--font-family-mono)',
         numeric: 'var(--font-family-numeric)'
       },
+      lineHeight: {
+        '11': '2.75rem',
+        '12': '3rem',
+        '14': '3.5rem',
+        '16': '4rem',
+        '20': '5rem'
+      },
       spacing: {
         'px': '1px',
         '0': '0',
@@ -299,7 +306,9 @@ module.exports = {
         '6': '1.5rem',
         '8': '2rem',
         '10': '2.5rem',
+        '11': '2.75rem',
         '12': '3rem',
+        '14': '3.5rem',
         '16': '4rem',
         '20': '5rem',
         '24': '6rem',
