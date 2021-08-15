@@ -207,7 +207,12 @@ module.exports = {
         '250': '250px',
         '300': '300px',
         '450': '450px',
+        '500': '500px',
         '600': '600px',
+        '700': '700px',
+        '800': '800px',
+        '900': '900px',
+        '1000': '1000px',
         'full': '100%',
         'screen': '100vh'
       },
@@ -219,8 +224,12 @@ module.exports = {
         '200': '200px',
         '250': '250px',
         '300': '300px',
+        '450': '450px',
+        '500': '500px',
         '600': '600px',
+        '700': '700px',
         '800': '800px',
+        '900': '900px',
         '1000': '1000px',
         'full': '100%',
         'screen': '100vh'
@@ -278,7 +287,9 @@ module.exports = {
         '3xl': 'var(--font-size-3xl)',
         '4xl': 'var(--font-size-4xl)',
         '5xl': 'var(--font-size-5xl)',
-        '6xl': 'var(--font-size-6xl)'
+        '6xl': 'var(--font-size-6xl)',
+        '7xl': 'var(--font-size-7xl)',
+        '8xl': 'var(--font-size-8xl)'
       },
       fontFamily: {
         primary: 'var(--font-family-primary)',
