@@ -356,6 +356,11 @@ module.exports = {
         'pg': 'var(--spacing-page)',
         'lg': 'var(--spacing-lg)',
         'xl': 'var(--spacing-xl)'
+      },
+      scale: {
+        '60': '.6',
+        '70': '.7',
+        '80': '.8',
       }
     }
   },
