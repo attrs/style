@@ -9,4 +9,5 @@ Source Sans Pro
 
 :root {
   --font-family-sans: -apple-system, BlinkMacSystemFont, Overpass, NanumSquare, 'Varela Round', Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  --font-size-base: 15px;
 }
