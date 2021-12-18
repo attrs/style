@@ -1,0 +1,50 @@
+@import './variables-default';
+@import './variables-light';
+@import './variables-dark';
+@import './variables-violet';
+@import './variables-red';
+
+:root {
+  @apply variables-default;
+}
+
+.theme-light {
+  @apply variables-default;
+}
+
+.theme-dark {
+  @apply variables-default variables-dark;
+}
+
+.theme-violet {
+  @apply variables-default variables-violet;
+}
+
+.theme-red {
+  @apply variables-default variables-red;
+}
+
+.theme-inverse {
+  @apply variables-default variables-dark;
+}
+
+/* apply prefers-color-scheme */
+@media (prefers-color-scheme: light) {
+  :root {
+    @apply variables-default;
+  }
+
+  .theme-inverse {
+    @apply variables-default variables-dark;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @apply variables-default variables-dark;
+  }
+
+  .theme-inverse {
+    @apply variables-default;
+  }
+}

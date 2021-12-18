@@ -1,4 +1,4 @@
-.theme-default {
+.variables-default {
   background-color: var(--color-bg-base);
   color: var(--color-text);
 
@@ -157,14 +157,14 @@
   --color-warning-border: rgba(255, 112, 67, 0.5);
   --color-warning-outline: rgba(255, 112, 67, 85);
 
-  --color-danger: #ff5151;
-  --color-danger-bg: rgba(255, 81, 81, 0.05);
-  --color-danger-active: rgba(255, 81, 81, 0.85);
+  --color-danger: #f75f46;
+  --color-danger-bg: rgba(247, 95, 70, 0.05);
+  --color-danger-active: rgba(247, 95, 70, 0.85);
   --color-danger-transparent: #ffebee;
   --color-danger-text: #f0f0f0;
   --color-danger-text-active: #fff;
-  --color-danger-border: rgba(255, 81, 81, 0.5);
-  --color-danger-outline: rgba(255, 81, 81, 0.85);
+  --color-danger-border: rgba(247, 95, 70, 0.5);
+  --color-danger-outline: rgba(247, 95, 70, 0.85);
 
   --color-system: #9e86ca;
   --color-system-bg: rgba(158, 134, 202, 0.05);
@@ -195,18 +195,21 @@
   --color-gray-900: #212121;
 
   --line-height: 1.52;
-  --font-size-base: 14px;
+  --font-size-base: 1rem;
   --font-size-3xs: 0.6rem;
   --font-size-2xs: 0.7rem;
   --font-size-xs: 0.8rem;
   --font-size-sm: 0.875rem;
+  --font-size-md: 0.925rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.75rem;
-  --font-size-4xl: 2rem;
-  --font-size-5xl: 2.5rem;
+  --font-size-2xl: 1.65rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.5rem;
   --font-size-6xl: 4rem;
+  --font-size-7xl: 4.5rem;
+  --font-size-8xl: 5.5rem;
   --font-size-icon: 1em;
   --font-weight-hairline: 100;
   --font-weight-thin: 200;
@@ -230,6 +233,11 @@
   --spacing: 2rem;
   --spacing-lg: 3rem;
   --spacing-xl: 5rem;
+  --spacing-page: 2rem;
+
+  @media (max-width: 640px) {
+    --spacing-page: 1rem;
+  }
 
   --radius: 0.5rem;
   --radius-sm: 0.3rem;

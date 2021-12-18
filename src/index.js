@@ -1,4 +1,3 @@
-import './css/base.css';
-import './css/components.css';
+import './css/index.css';
 
 export { helper } from './helper';
