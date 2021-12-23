@@ -1,5 +1,15 @@
 .x-alert {
-  @apply border rounded py-4 px-5 border-gray-border text-default bg-gray-bg text-sm mb-3;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  font-size: var(--font-size-sm);
+  border-width: 1px;
+  border-radius: 0.5rem;
+  border-radius: var(--radius);
+
+  color: var(--color-text);
+  background-color: var(--color-gray-bg);
+  border-color: var(--color-gray-border);
 
   &:last-child {
     margin-bottom: 0;
@@ -7,33 +17,49 @@
 }
 
 .x-alert-primary {
-  @apply x-alert border-primary-border text-primary bg-primary-bg;
+  color: var(--color-primary);
+  border-color: var(--color-primary-border);
+  background-color: var(--color-primary-bg);
 }
 
 .x-alert-secondary {
-  @apply x-alert border-secondary-border text-secondary bg-secondary-bg;
+  color: var(--color-secondary);
+  border-color: var(--color-secondary-border);
+  background-color: var(--color-secondary-bg);
 }
 
 .x-alert-success {
-  @apply x-alert border-success-border text-success bg-success-bg;
+  color: var(--color-success);
+  border-color: var(--color-success-border);
+  background-color: var(--color-success-bg);
 }
 
 .x-alert-info {
-  @apply x-alert border-info-border text-info bg-info-bg;
+  color: var(--color-info);
+  border-color: var(--color-info-border);
+  background-color: var(--color-info-bg);
 }
 
 .x-alert-warning {
-  @apply x-alert border-warning-border text-warning bg-warning-bg;
+  color: var(--color-warning);
+  border-color: var(--color-warning-border);
+  background-color: var(--color-warning-bg);
 }
 
 .x-alert-danger {
-  @apply x-alert border-danger-border text-danger bg-danger-bg;
+  color: var(--color-danger);
+  border-color: var(--color-danger-border);
+  background-color: var(--color-danger-bg);
 }
 
 .x-alert-system {
-  @apply x-alert border-system-border text-system bg-system-bg;
+  color: var(--color-system);
+  border-color: var(--color-system-border);
+  background-color: var(--color-system-bg);
 }
 
 .x-alert-gray {
-  @apply x-alert;
+  color: var(--color-text);
+  background-color: var(--color-gray-bg);
+  border-color: var(--color-gray-border);
 }

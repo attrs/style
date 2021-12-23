@@ -1,0 +1,39 @@
+.x-inputbox {
+  @apply flex flex-row justify-between;
+
+  border-radius: var(--x-inputbox-radius);
+  padding: var(--x-inputbox-padding);
+  background-color: var(--x-inputbox-color-bg);
+  border: var(--x-inputbox-border);
+  margin: var(--x-inputbox-margin);
+
+  & > input {
+    outline: none;
+    line-height: var(--x-inputbox-line-height);
+    background-color: transparent;
+    border: none;
+    padding: 0 0.35rem;
+
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  & > .icon {
+    @apply self-center;
+    margin-right: 0.75em;
+    font-size: 0.9rem;
+    color: var(--color-text-input);
+
+    &:last-child {
+      margin-right: -0.1em;
+    }
+  }
+
+  &.x-inputbox-rounded {
+    border-radius: 2em;
+    padding: 0.25em 1.2em;
+  }
+}

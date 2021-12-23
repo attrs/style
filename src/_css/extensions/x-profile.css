@@ -1,0 +1,63 @@
+.x-profile {
+  position: relative;
+  padding: 0 var(--x-profile-padding);
+  margin: var(--x-profile-font-margin) 0;
+  font-size: var(--x-profile-font-size);
+
+  & .x-profile-image {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 10px;
+
+    & .x-profile-image-body {
+      display: block;
+      box-sizing: border-box;
+      width: 40px;
+      height: 40px;
+      border: var(--x-profile-image-border-width) solid var(--x-profile-image-border-color);
+      border-radius: 50%;
+      vertical-align: middle;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  & .x-profile-body {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 3px;
+
+    & .x-profile-links {
+      margin-bottom: 3px;
+      opacity: 0.7;
+
+      & a {
+        margin-right: 5px;
+
+        &:after {
+          margin-left: 5px;
+          font-size: 0.875em;
+          opacity: 0.5;
+          content: '∙';
+        }
+
+        &:last-child:after {
+          margin: 0;
+          content: '';
+        }
+      }
+    }
+
+    & .x-profile-text {
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+  }
+
+  & a,
+  & a:hover,
+  & a:active,
+  & a:focus {
+    text-decoration: none;
+  }
+}

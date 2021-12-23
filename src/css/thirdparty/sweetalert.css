@@ -50,8 +50,15 @@ body .swal-modal {
   }
 
   & .swal-content__input {
-    @apply rounded-sm px-4 py-1 leading-tight bg-input;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    line-height: 1.25;
+    border-radius: 0.3rem;
+    border-radius: var(--radius-sm);
 
+    background-color: var(--color-bg-input);
     line-height: var(--controls-line-height);
     margin: var(--controls-margin);
     vertical-align: var(--controls-vertical-align);
@@ -60,7 +67,9 @@ body .swal-modal {
     font-size: var(--controls-font-size);
 
     &:focus {
-      @apply border-transparent outline-none shadow-outline;
+      outline: 0;
+      border-color: transparent;
+      box-shadow: var(--outline);
     }
   }
 

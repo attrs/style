@@ -1,8 +1,13 @@
 .x-label {
-  @apply x-row;
-
   display: inline-block;
+  vertical-align: middle;
+  text-align: center;
   white-space: nowrap;
+  transition: background 0.25s ease-out;
+  touch-action: manipulation;
+  user-select: none;
+  outline: none;
+
   font-size: var(--x-label-font-size);
   line-height: var(--x-label-line-height);
   padding: 0 var(--x-label-padding);
@@ -11,7 +16,13 @@
   cursor: default;
   margin: var(--x-label-margin);
 
+  & .tools {
+    flex: 1 1 0%;
+    text-align: right;
+  }
+
   & .icon {
+    margin: 0 var(--row-icon-margin);
     margin-left: 0;
     margin-right: var(--x-label-icon-margin);
   }

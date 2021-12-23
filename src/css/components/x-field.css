@@ -1,33 +1,44 @@
 .x-field {
-  @apply grid grid-cols-3 gap-5 border-b border-light;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 1.25rem;
+  gap: 1.25rem;
+  border-bottom-width: 1px;
+  border-color: #edeeef;
+  border-color: var(--color-border-light);
 
   & .x-field-label {
-    @apply col-span-1 py-md pr-md;
+    grid-column: span 1 / span 1;
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+    padding-right: var(--spacing);
   }
 
   & .x-field-body {
-    @apply col-span-2 py-md;
+    grid-column: span 2 / span 2;
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
   }
 
   &:last-child {
-    @apply border-none;
+    border: none;
 
     & .x-field-label {
-      @apply pb-0;
+      padding-bottom: 0;
     }
 
     & .x-field-body {
-      @apply pb-0;
+      padding-bottom: 0;
     }
   }
 
   &:first-child {
     & .x-field-label {
-      @apply pt-0;
+      padding-top: 0;
     }
 
     & .x-field-body {
-      @apply pt-0;
+      padding-top: 0;
     }
   }
 }

@@ -2,7 +2,7 @@
   & input:not([type='checkbox']):not([type='radio']),
   select,
   textarea {
-    @apply appearance-none;
+    appearance: none;
   }
 
   & input,
@@ -19,7 +19,9 @@
     background-color: var(--controls-background-color);
 
     &:not(.outline-none):focus {
-      @apply border-transparent outline-none shadow-outline;
+      outline: 0;
+      border-color: transparent;
+      box-shadow: var(--outline);
     }
 
     &::placeholder {
@@ -62,6 +64,7 @@
 }
 
 .x-form-control {
+  min-height: var(--controls-line-height);
   line-height: var(--controls-line-height);
   margin: var(--controls-margin);
   padding: var(--controls-padding);
@@ -74,7 +77,9 @@
   background-color: var(--controls-background-color);
 
   &:not(.outline-none):focus {
-    @apply border-transparent outline-none shadow-outline;
+    outline: 0;
+    border-color: transparent;
+    box-shadow: var(--outline);
   }
 
   &::placeholder {
@@ -82,10 +87,11 @@
   }
 
   &.error {
-    @apply border-danger;
+    border-color: var(--color-danger-border);
 
     &:not(.outline-none):focus {
-      @apply border-transparent shadow-outline-danger;
+      border-color: transparent;
+      box-shadow: var(--outline-danger);
     }
   }
 
@@ -100,7 +106,9 @@
   background-color: var(--controls-background-color);
 
   &:not(.outline-none):focus {
-    @apply border-transparent outline-none shadow-outline;
+    outline: 0;
+    border-color: transparent;
+    box-shadow: var(--outline);
   }
 
   &::placeholder {
@@ -108,10 +116,11 @@
   }
 
   &.error {
-    @apply border-danger;
+    border-color: var(--color-danger-border);
 
     &:not(.outline-none):focus {
-      @apply border-transparent shadow-outline-danger;
+      border-color: transparent;
+      box-shadow: var(--outline-danger);
     }
   }
 }
@@ -119,11 +128,15 @@
 input.x-form-control:not([type='checkbox']):not([type='radio']),
 select.x-form-control,
 textarea.x-form-control {
-  @apply appearance-none;
+  appearance: none;
 }
 
 textarea.x-form-control {
-  @apply w-full py-2 text-sm;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: var(--font-size-sm);
+
   line-height: var(--line-height);
 }
 
@@ -155,12 +168,18 @@ input.x-form-control[type='password'] {
 }
 
 div.x-form-control {
-  @apply flex items-center;
+  align-items: center;
+  display: flex;
 }
 
 p.x-form-control,
 span.x-form-control {
-  @apply bg-transparent border-none px-0 font-semibold;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 600;
+  border-style: none;
+  background-color: transparent;
+
   line-height: var(--controls-line-height);
   margin: var(--controls-margin);
   vertical-align: var(--controls-vertical-align);
@@ -170,7 +189,11 @@ span.x-form-control {
 /* message */
 .x-form-control-message,
 .x-form-control-error {
-  @apply text-xs my-1 text-light;
+  color: var(--color-text-light);
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: var(--font-size-xs);
+
   margin: var(--controls-margin);
 }
 
@@ -179,7 +202,11 @@ span.x-form-control {
 }
 
 .x-form-label {
-  @apply block text-sm font-bold mb-2;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+
   line-height: 2.5;
   margin: 2px;
   padding: 0 2px;

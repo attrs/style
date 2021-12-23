@@ -1,4 +1,4 @@
-import minimatch from 'minimatch';
+const minimatch = require('minimatch');
 
 const wrap = (type) => {
   const ofn = history[type];
@@ -52,7 +52,7 @@ const popstatelistener = (e) => {
 const opushstate = history.pushState;
 const oreplacestate = history.replaceState;
 
-export const activestate = {
+module.exports = {
   start() {
     history.pushState = wrap('pushState');
     history.replaceState = wrap('replaceState');

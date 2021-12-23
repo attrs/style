@@ -1,5 +1,7 @@
 .x-tab {
-  @apply flex flex-row justify-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 
   background-color: var(--x-tab-bg);
   font-size: var(--x-tab-font-size);
@@ -7,7 +9,6 @@
   margin: var(--x-tab-margin) 0;
 
   & > .x-tab-item {
-    @apply x-row;
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -17,6 +18,10 @@
     border-radius: var(--x-tab-border-radius);
     margin: 0 var(--x-tab-gap);
     text-align: center;
+    align-items: center;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
 
     &:first-child {
       margin-left: 0;
@@ -26,7 +31,21 @@
     }
 
     & .icon {
+      margin: 0 var(--row-icon-margin);
       margin: 0.5rem;
+      margin-bottom: 0.065em;
+    }
+
+    & .tools {
+      flex: 1 1 0%;
+      text-align: right;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      background: none;
     }
 
     & > .icon:first-child {
@@ -167,28 +186,28 @@
   }
 
   &.x-tab-align-start {
-    @apply justify-start;
+    justify-content: flex-start;
   }
 
   &.x-tab-align-end {
-    @apply justify-end;
+    justify-content: flex-end;
   }
 
   &.x-tab-align-center {
-    @apply justify-center;
+    justify-content: center;
   }
 
   &.x-tab-align-around {
-    @apply justify-around;
+    justify-content: space-around;
   }
 
   &.x-tab-align-between {
-    @apply justify-between;
+    justify-content: space-between;
   }
 
   &.x-tab-stretch {
     & > .x-tab-item {
-      @apply flex-1;
+      flex: 1 1 0%;
     }
   }
 
@@ -277,5 +296,11 @@
 }
 
 .x-tab-contents {
-  @apply x-stack;
+  & > * {
+    display: none;
+  }
+
+  & > .active {
+    display: inherit;
+  }
 }

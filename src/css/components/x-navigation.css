@@ -34,11 +34,32 @@
     cursor: pointer;
 
     & > a {
-      @apply x-row;
+      display: flex;
+      align-items: center;
+
+      position: relative;
+      vertical-align: middle;
+      line-height: var(--row-line-height);
       padding: 0 var(--x-navigation-padding);
+      text-align: left;
+      white-space: nowrap;
 
       & .icon {
+        margin: 0 var(--row-icon-margin);
+        margin-bottom: 0.065em;
         margin-left: 0;
+      }
+
+      & .tools {
+        flex: 1 1 0%;
+        text-align: right;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        background: none;
       }
 
       &:hover {

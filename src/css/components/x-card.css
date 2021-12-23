@@ -1,12 +1,38 @@
 .x-card {
-  /* @apply flex flex-col; */
   background-color: var(--x-card-color-bg);
   border-radius: var(--x-card-radius);
   border: var(--x-card-border);
   box-shadow: var(--x-card-shadow);
 
   & > .x-card-header {
-    @apply x-row;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    vertical-align: middle;
+    line-height: var(--row-line-height);
+    padding: 0 var(--row-padding);
+    -color: var(--row-color-text);
+    text-align: left;
+    white-space: nowrap;
+
+    & .icon {
+      margin: 0 var(--row-icon-margin);
+      margin-bottom: 0.065em;
+    }
+
+    & .tools {
+      flex: 1 1 0%;
+      text-align: right;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      background: none;
+    }
+
     background-color: var(--x-card-header-color-bg);
     border-bottom: var(--x-card-border-inner);
     color: var(--x-card-header-color-text);
