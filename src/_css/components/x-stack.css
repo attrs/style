@@ -1,9 +1,0 @@
-.x-stack {
-  & > * {
-    display: none;
-  }
-
-  & > .active {
-    display: inherit;
-  }
-}
