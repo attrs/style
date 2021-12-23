@@ -9,19 +9,16 @@ const toJson = (filepath) => {
   try {
     const file = path.join(__dirname, filepath);
     const source = fs.readFileSync(file, 'utf-8').toString();
-    const compiled = postcss()
-      .use(postcssImport())
-      .process(source, {
-        from: file
-      })
-      .css;
+    const compiled = postcss().use(postcssImport()).process(source, {
+      from: file
+    }).css;
 
     return postcssJs.objectify(postcss.parse(compiled));
   } catch (err) {
     console.error(err);
     throw err;
   }
-}
+};
 
 const pluginfn = ({ addBase, addComponents, addUtilities, theme }) => {
   const options = theme('attrs');

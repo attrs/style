@@ -18,48 +18,18 @@ module.exports = merge(base, {
     docs: path.resolve(src, 'index.js')
   },
   devtool: production ? false : 'source-map',
-  output: production
-    ? {
-        path: path.join(dist, 'js'),
-        publicPath: '/js/',
-        filename: '[name].js',
-        chunkFilename: '[name].js'
-      }
-    : {
-        path: dist,
-        publicPath: '/',
-        filename: '[name].js'
-      },
+  output: {
+    path: dist,
+    publicPath: '/',
+    filename: '[name].js'
+  },
   devServer: {
     inline: true,
     hot: true,
     contentBase: dist,
     historyApiFallback: true
   },
-  optimization: production
-    ? {
-        splitChunks: {
-          cacheGroups: {
-            styles: {
-              name: 'styles',
-              test: /\.css$/,
-              chunks: 'all',
-              enforce: true
-            }
-          }
-        },
-        minimize: true,
-        minimizer: [
-          new TerserJSPlugin({ extractComments: false }),
-          new OptimizeCSSAssetsPlugin({
-            cssProcessor: require('cssnano'),
-            cssProcessorPluginOptions: {
-              preset: ['default', { discardComments: { removeAll: true } }]
-            }
-          })
-        ]
-      }
-    : {},
+  optimization: {},
   plugins: [
     new HtmPlugin({
       inject: 'head',
@@ -73,11 +43,6 @@ module.exports = merge(base, {
         { from: path.join(assets, 'screenshot.jpg'), to: dist },
         { from: path.join(assets, 'CNAME'), to: dist }
       ]
-    }),
-    production &&
-      new PurgecssPlugin({
-        paths: glob.sync(src + '/**/*', { nodir: true }),
-        whitelistPatterns: [/^x-/]
-      })
+    })
   ].filter((v) => v)
 });
