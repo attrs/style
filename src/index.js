@@ -1,3 +1,3 @@
-import './css/index.css';
-
-export { helper } from './helper';
+module.exports.helper = () => {
+  return require('./helper');
+};

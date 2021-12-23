@@ -1,9 +1,25 @@
-.icon {
-  @apply antialiased;
-  display: inline-block;
-  text-rendering: auto;
-  margin: 0 var(--icon-margin);
-  font-size: var(--font-size-icon);
+[data-toggle] {
+  cursor: pointer;
+}
+
+a.text-link {
+  transition: color 0.35s ease-in-out;
+  color: var(--color-text-link-active);
+}
+
+a.link {
+  transition: color 0.35s ease-in-out;
+  &:hover {
+    color: var(--color-text-link-active);
+  }
+}
+
+.focusable {
+  & a:not(.outline-none):focus,
+  & button:not(.outline-none):focus {
+    outline: none;
+    box-shadow: var(--outline);
+  }
 }
 
 .scrollbar-none {
@@ -184,37 +200,49 @@ a.dotted {
 }
 
 .display-1 {
-  @apply display;
+  font-weight: var(--font-weight-thin);
+  line-height: 1.3;
+  margin: 0;
   font-size: var(--font-size-6xl);
   letter-spacing: 0.03em;
 }
 
 .display-2 {
-  @apply display;
+  font-weight: var(--font-weight-thin);
+  line-height: 1.3;
+  margin: 0;
   font-size: var(--font-size-5xl);
   letter-spacing: 0.03em;
 }
 
 .display-3 {
-  @apply display;
+  font-weight: var(--font-weight-thin);
+  line-height: 1.3;
+  margin: 0;
   font-size: var(--font-size-4xl);
   letter-spacing: 0.03em;
 }
 
 .display-4 {
-  @apply display;
+  font-weight: var(--font-weight-thin);
+  line-height: 1.3;
+  margin: 0;
   font-size: var(--font-size-3xl);
   letter-spacing: 0.03em;
 }
 
 .display-5 {
-  @apply display;
+  font-weight: var(--font-weight-thin);
+  line-height: 1.3;
+  margin: 0;
   font-size: var(--font-size-xl);
   letter-spacing: 0.03em;
 }
 
 .display-6 {
-  @apply display;
+  font-weight: var(--font-weight-thin);
+  line-height: 1.3;
+  margin: 0;
   font-size: var(--font-size-xl);
   letter-spacing: 0.03em;
 }

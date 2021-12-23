@@ -1,9 +1,9 @@
-import debounce from 'debounce';
-import { dropdown } from './dropdown';
-import { navigation } from './navigation';
-import { tab } from './tab';
-import { toggle } from './toggle';
-import { activestate } from './activestate';
+const debounce = require('debounce');
+const dropdown = require('./dropdown');
+const navigation = require('./navigation');
+const tab = require('./tab');
+const toggle = require('./toggle');
+const activestate = require('./activestate');
 
 const blacklist = ['.x-noob'];
 const scan = () => {
@@ -44,7 +44,7 @@ const stop = () => {
   activestate.stop();
 };
 
-export const helper = {
+module.exports = {
   blacklist,
   scan,
   start,

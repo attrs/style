@@ -4,7 +4,8 @@
 }
 
 .x-page-header {
-  @apply flex items-center;
+  display: flex;
+  align-items: center;
 
   background-color: var(--x-page-header-bg);
   border-bottom: 1px solid var(--x-page-header-border);

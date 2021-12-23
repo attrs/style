@@ -1,7 +1,38 @@
 .btn {
-  @apply x-button;
-
+  display: inline-block;
+  align-items: center;
+  vertical-align: middle;
+  line-height: var(--row-line-height);
+  padding: 0 var(--row-padding);
+  text-align: center;
+  white-space: nowrap;
+  transition: background 0.25s ease-out;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
   outline: none;
+  text-decoration: none;
+
+  & a {
+    text-decoration: none;
+  }
+
+  & .icon {
+    margin: 0 var(--row-icon-margin);
+    margin-bottom: 0.065em;
+  }
+
+  & .tools {
+    flex: 1 1 0%;
+    text-align: right;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    background: none;
+  }
 
   font-size: var(--btn-font-size);
   font-weight: var(--btn-font-weight);

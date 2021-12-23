@@ -1,0 +1,219 @@
+label.x-switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  cursor: pointer;
+  height: var(--x-switch-height);
+  min-height: var(--x-switch-height);
+  width: var(--x-switch-width);
+  margin-bottom: 0;
+
+  & > span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+
+    font-size: var(--x-switch-font-size);
+    font-weight: var(--x-switch-font-weight);
+    font-family: var(--x-switch-font-family);
+    line-height: var(--x-switch-line-height);
+    color: var(--color-white);
+    text-align: center;
+    background: var(--x-switch-color-bg);
+    border: var(--x-switch-border-width) solid var(--x-switch-color-bg);
+    transition: 0.2s ease-in-out;
+    border-radius: var(--x-switch-border-radius);
+  }
+
+  & > span:before {
+    content: attr(data-off);
+    position: absolute;
+    right: var(--x-switch-text-margin);
+    line-height: var(--x-switch-btn-size);
+  }
+
+  & > span:after {
+    content: '';
+    width: var(--x-switch-btn-size);
+    height: var(--x-switch-btn-size);
+    display: block;
+    background: var(--color-white);
+    border-radius: var(--x-switch-btn-radius);
+  }
+
+  &.x-switch-rounded > span,
+  &.x-switch-rounded > span:after {
+    border-radius: var(--radius-full);
+  }
+
+  & > input {
+    appearance: none;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    left: 0;
+    top: 0;
+  }
+
+  & > input:focus {
+    outline: none;
+  }
+
+  & > input:focus + span {
+    color: var(--color-white);
+    border-color: var(--x-switch-color-bg);
+    background: var(--x-switch-color-bg);
+  }
+
+  & > input:focus + span:after {
+    background: var(--color-white);
+  }
+
+  & > input:checked + span {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    padding-left: var(--x-switch-btn-pl);
+    color: var(--color-white);
+  }
+
+  & > input:checked + span:before {
+    content: attr(data-on);
+    left: var(--x-switch-text-margin);
+    right: initial;
+  }
+
+  & > input:checked + span:after {
+    background: var(--color-white);
+  }
+
+  &.x-switch-default > input:checked + span {
+    background: var(--color-text);
+    border-color: var(--color-text);
+  }
+
+  &.x-switch-default > input:checked + span:after {
+    color: var(--color-text);
+  }
+
+  &.x-switch-default > input:checked:focus + span {
+    background: var(--color-text);
+    border-color: var(--color-text);
+  }
+
+  &.x-switch-primary > input:checked + span {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  &.x-switch-primary > input:checked + span:after {
+    color: var(--color-primary);
+  }
+
+  &.x-switch-primary > input:checked:focus + span {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  &.x-switch-secondary > input:checked + span {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+  }
+
+  &.x-switch-secondary > input:checked + span:after {
+    color: var(--color-secondary);
+  }
+
+  &.x-switch-secondary > input:checked:focus + span {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+  }
+
+  &.x-switch-success > input:checked + span {
+    background: var(--color-success);
+    border-color: var(--color-success);
+  }
+
+  &.x-switch-success > input:checked + span:after {
+    color: var(--color-success);
+  }
+
+  &.x-switch-success > input:checked:focus + span {
+    background: var(--color-success);
+    border-color: var(--color-success);
+  }
+
+  &.x-switch-info > input:checked + span {
+    background: var(--color-info);
+    border-color: var(--color-info);
+  }
+  &.x-switch-info > input:checked + span:after {
+    color: var(--color-info);
+  }
+  &.x-switch-info > input:checked:focus + span {
+    background: var(--color-info);
+    border-color: var(--color-info);
+  }
+
+  &.x-switch-warning > input:checked + span {
+    background: var(--color-warning);
+    border-color: var(--color-warning);
+  }
+  &.x-switch-warning > input:checked + span:after {
+    color: var(--color-warning);
+  }
+  &.x-switch-warning > input:checked:focus + span {
+    background: var(--color-warning);
+    border-color: var(--color-warning);
+  }
+
+  &.x-switch-danger > input:checked + span {
+    background: var(--color-danger);
+    border-color: var(--color-danger);
+  }
+  &.x-switch-danger > input:checked + span:after {
+    color: var(--color-danger);
+  }
+  &.x-switch-danger > input:checked:focus + span {
+    background: var(--color-danger);
+    border-color: var(--color-danger);
+  }
+
+  &.x-switch-system > input:checked + span {
+    background: var(--color-system);
+    border-color: var(--color-system);
+  }
+  &.x-switch-system > input:checked + span:after {
+    color: var(--color-system);
+  }
+  &.x-switch-system > input:checked:focus + span {
+    background: var(--color-system);
+    border-color: var(--color-system);
+  }
+
+  &.x-switch-black > input:checked + span {
+    background: var(--color-black);
+    border-color: var(--color-black);
+  }
+  &.x-switch-black > input:checked + span:after {
+    color: var(--color-black);
+  }
+  &.x-switch-black > input:checked:focus + span {
+    background: var(--color-black);
+    border-color: var(--color-black);
+  }
+
+  &.x-switch-rounded {
+    & > span {
+      border-radius: 50rem;
+    }
+
+    & > span:after {
+      border-radius: 50rem;
+    }
+  }
+}

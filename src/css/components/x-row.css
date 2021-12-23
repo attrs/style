@@ -1,5 +1,6 @@
 .x-row {
-  @apply flex items-center;
+  display: flex;
+  align-items: center;
 
   position: relative;
   vertical-align: middle;
@@ -15,7 +16,7 @@
   }
 
   & .tools {
-    @apply flex-1;
+    flex: 1 1 0%;
     text-align: right;
   }
 

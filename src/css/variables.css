@@ -1,0 +1,78 @@
+@import './variables/variables-default';
+@import './variables/variables-light';
+@import './variables/variables-dark';
+@import './variables/variables-violet';
+@import './variables/variables-red';
+
+:root {
+  @apply variables-default;
+
+  *,
+  ::before,
+  ::after {
+    border-color: var(--color-border);
+  }
+}
+
+.theme-light {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
+  @apply variables-default;
+}
+
+.theme-dark {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
+  @apply variables-default variables-dark;
+}
+
+.theme-violet {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
+  @apply variables-default variables-violet;
+}
+
+.theme-red {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
+  @apply variables-default variables-red;
+}
+
+.theme-inverse {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
+  @apply variables-default variables-dark;
+}
+
+/* apply prefers-color-scheme */
+@media (prefers-color-scheme: light) {
+  :root {
+    @apply variables-default;
+  }
+
+  .theme-inverse {
+    background-color: var(--color-bg-base);
+    color: var(--color-text);
+    @apply variables-default variables-dark;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @apply variables-default variables-dark;
+  }
+
+  .theme-inverse {
+    background-color: var(--color-bg-base);
+    color: var(--color-text);
+    @apply variables-default;
+  }
+}
+
+.bg-panel {
+  background-color: var(--color-bg-panel);
+}
+
+.bg-base {
+  background-color: var(--color-bg-base);
+}

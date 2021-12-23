@@ -1,0 +1,13 @@
+.x-cells {
+  display: table;
+  width: 100%;
+
+  & .x-cell {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  &.x-cells-fixed {
+    table-layout: fixed;
+  }
+}
