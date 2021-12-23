@@ -9,22 +9,32 @@
 }
 
 .theme-light {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
   @apply variables-default;
 }
 
 .theme-dark {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
   @apply variables-default variables-dark;
 }
 
 .theme-violet {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
   @apply variables-default variables-violet;
 }
 
 .theme-red {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
   @apply variables-default variables-red;
 }
 
 .theme-inverse {
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
   @apply variables-default variables-dark;
 }
 
@@ -35,6 +45,8 @@
   }
 
   .theme-inverse {
+    background-color: var(--color-bg-base);
+    color: var(--color-text);
     @apply variables-default variables-dark;
   }
 }
@@ -45,6 +57,8 @@
   }
 
   .theme-inverse {
+    background-color: var(--color-bg-base);
+    color: var(--color-text);
     @apply variables-default;
   }
 }

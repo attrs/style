@@ -27,7 +27,7 @@ const listener = (e) => {
   e.stopPropagation();
 };
 
-export const tab = (element) => {
+module.exports = (element) => {
   const activetab = element.querySelector('.x-tab-item.active') || element.querySelector('.x-tab-item:first-child');
   selectTab(activetab);
 

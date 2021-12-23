@@ -38,7 +38,7 @@ const listener = (e) => {
   }
 };
 
-export const toggle = (element) => {
+module.exports = (element) => {
   // console.log('toggle', element);
   element.removeEventListener('click', listener);
   element.addEventListener('click', listener);

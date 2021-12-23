@@ -25,7 +25,8 @@ document.addEventListener('click', (e) => {
   opened = null;
 });
 
-export const dropdown = (element) => {
+
+module.exports = (element) => {
   element.removeEventListener('click', listener);
   element.addEventListener('click', listener);
 };

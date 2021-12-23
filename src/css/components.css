@@ -1,7 +1,6 @@
 @import './components/x-row';
 @import './components/x-separator';
 @import './components/x-caret';
-@import './components/x-button';
 @import './components/x-navigation';
 @import './components/x-navbar';
 @import './components/x-badge';
@@ -21,6 +20,7 @@
 @import './components/x-section';
 @import './components/x-iconbox';
 @import './components/x-dot';
+@import './components/icon';
 @import './components/btn';
 @import './components/table';
 
@@ -34,3 +34,7 @@
 @import './extensions/x-mouse';
 @import './extensions/x-headline';
 @import './extensions/x-progress-bar';
+
+@import './thirdparty/markdown';
+@import './thirdparty/sweetalert';
+@import './thirdparty/vue-agile';

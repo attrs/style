@@ -1,7 +1,4 @@
 .variables-default {
-  background-color: var(--color-bg-base);
-  color: var(--color-text);
-
   --color-black: #000;
   --color-white: #fff;
   --color-bg-base: #f3f5f8;
@@ -207,9 +204,9 @@
   --font-size-3xl: 2rem;
   --font-size-4xl: 2.5rem;
   --font-size-5xl: 3.5rem;
-  --font-size-6xl: 4rem;
-  --font-size-7xl: 4.5rem;
-  --font-size-8xl: 5.5rem;
+  --font-size-6xl: 3.5rem;
+  --font-size-7xl: 4rem;
+  --font-size-8xl: 4.5rem;
   --font-size-icon: 1em;
   --font-weight-hairline: 100;
   --font-weight-thin: 200;
@@ -363,11 +360,11 @@
   --x-inputbox-line-height: var(--line-height);
 
   /* x-card */
-  --x-card-border: 1px solid var(--color-border-outer);
+  --x-card-border: 0 solid var(--color-border-outer);
   --x-card-border-inner: 1px solid var(--color-border);
   --x-card-color-bg: var(--color-bg-panel);
   --x-card-radius: var(--radius-sm);
-  --x-card-shadow: none;
+  --x-card-shadow: var(--shadow);
   --x-card-header-color-bg: var(--color-bg-panel);
   --x-card-header-color-text: var(--color-text);
   --x-card-header-font-size: var(--font-size-base);
@@ -392,7 +389,7 @@
 
   /* x-contextmenu */
   --x-contextmenu-bg: var(--color-bg-panel);
-  --x-contextmenu-border: 1px solid var(--color-border);
+  --x-contextmenu-border: 0 solid var(--color-border);
   --x-contextmenu-border-radius: var(--radius);
   --x-contextmenu-shadow: var(--shadow-lg);
 
@@ -427,7 +424,7 @@
   --x-tab-hover-color: var(--color-text-active);
   --x-tab-selection-color: var(--color-text-active);
   --x-tab-selection-font-weight: var(--font-weight-semibold);
-  --x-tab-border-width: 1px;
+  --x-tab-border-width: 0;
   --x-tab-border-color: var(--color-border);
   --x-tab-border-radius: var(--radius-sm);
 
@@ -454,9 +451,9 @@
   --x-page-color-bg: var(--color-bg-base);
   --x-page-color-text: var(--color-text);
   --x-page-header-bg: var(--color-bg-panel);
-  --x-page-header-border: var(--color-border);
+  --x-page-header-border: transparent;
   --x-page-header-padding: 0.75rem;
-  --x-page-header-shadow: none;
+  --x-page-header-shadow: var(--shadow-sm);
   --x-page-header-min-height: 5.5rem;
 
   /* x-switch */

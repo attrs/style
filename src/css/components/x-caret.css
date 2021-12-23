@@ -20,23 +20,19 @@
 }
 
 .x-caret-right {
-  @apply x-caret;
 }
 
 .x-caret-down {
-  @apply x-caret;
   transform: rotate(45deg);
   margin-bottom: 4px;
 }
 
 .x-caret-left {
-  @apply x-caret;
   transform: rotate(135deg);
   margin-bottom: 2px;
 }
 
 .x-caret-up {
-  @apply x-caret;
   transform: rotate(225deg);
   margin-top: 4px;
   margin-bottom: 0;

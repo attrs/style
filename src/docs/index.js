@@ -1,4 +1,5 @@
 import '../';
+import '../css/index.css';
 import './style.css';
 import router from '@attrs/router';
 import SmoothCorners from '../worklets/smooth-corners.worklet.js';

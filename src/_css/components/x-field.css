@@ -1,0 +1,33 @@
+.x-field {
+  @apply grid grid-cols-3 gap-5 border-b border-light;
+
+  & .x-field-label {
+    @apply col-span-1 py-md pr-md;
+  }
+
+  & .x-field-body {
+    @apply col-span-2 py-md;
+  }
+
+  &:last-child {
+    @apply border-none;
+
+    & .x-field-label {
+      @apply pb-0;
+    }
+
+    & .x-field-body {
+      @apply pb-0;
+    }
+  }
+
+  &:first-child {
+    & .x-field-label {
+      @apply pt-0;
+    }
+
+    & .x-field-body {
+      @apply pt-0;
+    }
+  }
+}

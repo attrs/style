@@ -22,7 +22,7 @@ const listener = (e) => {
   setParentActive(navitem);
 };
 
-export const navigation = (element) => {
+module.exports = (element) => {
   element.removeEventListener('click', listener);
   element.addEventListener('click', listener);
 };

@@ -1,35 +1,69 @@
 .x-navbar {
-  @apply flex flex-row justify-between items-center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
   &.x-navbar-align-start {
-    @apply justify-start;
+    justify-content: flex-start;
 
     &:last-child {
-      @apply flex-1;
+      flex: 1 1 0%;
     }
   }
 
   &.x-navbar-align-end {
-    @apply justify-end;
+    justify-content: flex-end;
 
     &:first-child {
-      @apply flex-1;
+      flex: 1 1 0%;
     }
   }
 
   &.x-navbar-align-center {
-    @apply justify-center;
+    justify-content: center;
   }
 
   &.x-navbar-align-around {
-    @apply justify-around;
+    justify-content: space-around;
   }
 
   &.x-navbar-align-between {
-    @apply justify-between;
+    justify-content: space-between;
   }
 }
 
 .x-navbar-v {
-  @apply x-navbar flex-col;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &.x-navbar-align-start {
+    justify-content: flex-start;
+
+    &:last-child {
+      flex: 1 1 0%;
+    }
+  }
+
+  &.x-navbar-align-end {
+    justify-content: flex-end;
+
+    &:first-child {
+      flex: 1 1 0%;
+    }
+  }
+
+  &.x-navbar-align-center {
+    justify-content: center;
+  }
+
+  &.x-navbar-align-around {
+    justify-content: space-around;
+  }
+
+  &.x-navbar-align-between {
+    justify-content: space-between;
+  }
 }
