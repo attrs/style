@@ -6,3 +6,6 @@
 /* @import './flexbox'; */
 @import './base';
 @import './components';
+@import './thirdparty/markdown.css';
+@import './thirdparty/sweetalert.css';
+@import './thirdparty/vue-agile.css';

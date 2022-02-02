@@ -1,5 +1,4 @@
 // See https://css-houdini.rocks/posts/smooth-corners/paint.js
-// modified by @joje
 
 export class SmoothCorners {
   static get inputProperties() {
