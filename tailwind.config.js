@@ -311,7 +311,9 @@ module.exports = {
         '5xl': 'var(--font-size-5xl)',
         '6xl': 'var(--font-size-6xl)',
         '7xl': 'var(--font-size-7xl)',
-        '8xl': 'var(--font-size-8xl)'
+        '8xl': 'var(--font-size-8xl)',
+        '9xl': 'var(--font-size-9xl)',
+        '10xl': 'var(--font-size-10xl)'
       },
       fontFamily: {
         primary: 'var(--font-family-primary)',
