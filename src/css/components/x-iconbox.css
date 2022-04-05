@@ -60,14 +60,14 @@
   }
 
   &.x-iconbox-xl {
-    height: calc(var(--font-size-base) * 8 * var(--x-iconbox-size-factor));
-    width: calc(var(--font-size-base) * 8 * var(--x-iconbox-size-factor));
+    height: calc(var(--font-size-base) * 6 * var(--x-iconbox-size-factor));
+    width: calc(var(--font-size-base) * 6 * var(--x-iconbox-size-factor));
     border-radius: var(--radius-lg);
   }
 
   &.x-iconbox-2xl {
-    height: calc(var(--font-size-base) * 10 * var(--x-iconbox-size-factor));
-    width: calc(var(--font-size-base) * 10 * var(--x-iconbox-size-factor));
+    height: calc(var(--font-size-base) * 8 * var(--x-iconbox-size-factor));
+    width: calc(var(--font-size-base) * 8 * var(--x-iconbox-size-factor));
     border-radius: var(--radius-lg);
   }
 
