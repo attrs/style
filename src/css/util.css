@@ -19,6 +19,10 @@
   }
 }
 
+.z-1 {
+  z-index: 1 !important;
+}
+
 .blur-bg {
   backdrop-filter: blur(5px);
 }
