@@ -11,13 +11,14 @@ module.exports = {
       current: 'currentColor',
       inherit: 'inherit',
       transparent: 'transparent',
-      _black: 'var(--color-black)',
-      _white: 'var(--color-white)',
+      black: 'var(--color-black)',
+      white: 'var(--color-white)',
       shadow: 'var(--color-shadow)',
       outline: 'var(--color-outline)',
       bg: {
         default: 'var(--color-bg-base)',
         base: 'var(--color-bg-base)',
+        black: 'var(--color-black)',
         panel: {
           default: 'var(--color-bg-panel)',
           light: 'var(--color-bg-panel-light)'
@@ -64,7 +65,7 @@ module.exports = {
         default: 'var(--color-badge)',
         text: 'var(--color-badge-text)'
       },
-      _black: {
+      black: {
         default: 'var(--color-black)',
         active: 'var(--color-black-active)',
         bg: 'var(--color-black-bg)',
@@ -128,7 +129,7 @@ module.exports = {
         border: 'var(--color-system-border)',
         outline: 'var(--color-system-outline)'
       },
-      _gray: {
+      gray: {
         default: 'var(--color-gray)',
         active: 'var(--color-gray-active)',
         bg: 'var(--color-gray-bg)',

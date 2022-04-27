@@ -19,6 +19,14 @@
   }
 }
 
+.link {
+  color: var(--color-text-link);
+
+  &:hover {
+    color: var(--color-text-link);
+  }
+}
+
 .z-1 {
   z-index: 1 !important;
 }

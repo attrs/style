@@ -23,6 +23,7 @@ const toJson = (filepath) => {
 const pluginfn = ({ addBase, addComponents, addUtilities, theme }) => {
   const options = theme('attrs');
 
+  addBase(toJson('css/base.css'));
   addBase(toJson('css/variables.css'));
   addUtilities(toJson('css/util.css'));
   addComponents(toJson('css/components.css'));

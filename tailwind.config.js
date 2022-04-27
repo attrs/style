@@ -34,6 +34,7 @@ module.exports = {
       outline: 'var(--color-outline)',
       bg: {
         default: 'var(--color-bg-base)',
+        black: 'var(--color-black)',
         base: 'var(--color-bg-base)',
         panel: {
           default: 'var(--color-bg-panel)',
