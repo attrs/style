@@ -1,4 +1,15 @@
-const path = require('path');
+module.exports = (ctx) => ({
+  map: ctx.options.map,
+  plugins: [
+    require("postcss-import"),
+    require("tailwindcss/nesting"),
+    require("tailwindcss"),
+    require("autoprefixer"),
+    ctx.env === 'production' && require('cssnano')
+  ].filter((v) => v)
+});
+
+/*const path = require('path');
 
 module.exports = (ctx) => ({
   map: ctx.options.map,
@@ -24,3 +35,4 @@ module.exports = (ctx) => ({
     // ctx.env === 'production' && require('cssnano')
   ].filter((v) => v)
 });
+*/

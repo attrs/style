@@ -1,67 +1,154 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
-
 module.exports = {
   important: true,
-  darkMode: 'class',
   plugins: [require('./plugin.js')],
   theme: {
-    extend: {
-      colors: {
-        current: 'currentColor',
-        inherit: 'inherit',
-        transparent: 'transparent',
+    colors: {
+      current: 'currentColor',
+      inherit: 'inherit',
+      transparent: 'transparent',
+      black: 'var(--color-black)',
+      white: 'var(--color-white)',
+      shadow: 'var(--color-shadow)',
+      outline: 'var(--color-outline)',
+      bg: {
+        default: 'var(--color-bg-base)',
+        base: 'var(--color-bg-base)',
         black: 'var(--color-black)',
-        white: 'var(--color-white)',
-        shadow: 'var(--color-shadow)',
-        outline: 'var(--color-outline)',
-        gray: 'var(--color-gray)',
-        primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
-        info: 'var(--color-info)',
-        success: 'var(--color-success)',
-        warning: 'var(--color-warning)',
-        danger: 'var(--color-danger)',
-        system: 'var(--color-system)',
-        slate: colors.slate,
-        sky: colors.sky,
-        amber: colors.amber,
-        sky: colors.sky,
-        green: colors.green,
-        orange: colors.orange,
-        red: colors.red,
-        system: colors.purple,
-        code: {
-          highlight: 'rgb(125 211 252 / 0.1)',
+        panel: {
+          default: 'var(--color-bg-panel)',
+          light: 'var(--color-bg-panel-light)'
         },
+        inverse: 'var(--color-bg-inverse)',
+        input: 'var(--color-bg-input)',
+        active: 'var(--color-bg-active)',
+        highlight: 'var(--color-bg-highlight)',
+        hover: 'var(--color-bg-hover)',
+        border: 'var(--color-border)',
+        text: 'var(--color-text)',
+        muted: 'var(--color-text-muted)'
       },
+      mask: {
+        default: 'var(--color-bg-mask)',
+        light: 'var(--color-bg-mask-light)',
+        dark: 'var(--color-bg-mask-dark)'
+      },
+      text: {
+        default: 'var(--color-text)',
+        light: 'var(--color-text-light)',
+        input: 'var(--color-text-input)',
+        inverse: 'var(--color-text-inverse)',
+        placeholder: 'var(--color-text-placeholder)',
+        muted: 'var(--color-text-muted)',
+        active: 'var(--color-text-active)',
+        highlight: 'var(--color-text-highlight)',
+        link: 'var(--color-text-link)',
+        blackwhite: 'var(--color-text-blackwhite)'
+      },
+      border: {
+        default: 'var(--color-border)',
+        normal: 'var(--color-border)',
+        light: 'var(--color-border-light)',
+        outer: 'var(--color-border-outer)',
+        control: 'var(--color-border-control)',
+        inverse: 'var(--color-border-inverse)'
+      },
+      icon: {
+        default: 'var(--color-icon)',
+        active: 'var(--color-icon-active)'
+      },
+      badge: {
+        default: 'var(--color-badge)',
+        text: 'var(--color-badge-text)'
+      },
+      black: {
+        default: 'var(--color-black)',
+        active: 'var(--color-black-active)',
+        bg: 'var(--color-black-bg)',
+        text: 'var(--color-black-text)',
+        border: 'var(--color-black-border)',
+        outline: 'var(--color-black-outline)'
+      },
+      primary: {
+        default: 'var(--color-primary)',
+        active: 'var(--color-primary-active)',
+        bg: 'var(--color-primary-bg)',
+        text: 'var(--color-primary-text)',
+        border: 'var(--color-primary-border)',
+        outline: 'var(--color-primary-outline)'
+      },
+      secondary: {
+        default: 'var(--color-secondary)',
+        active: 'var(--color-secondary-active)',
+        bg: 'var(--color-secondary-bg)',
+        text: 'var(--color-secondary-text)',
+        border: 'var(--color-secondary-border)',
+        outline: 'var(--color-secondary-outline)'
+      },
+      success: {
+        default: 'var(--color-success)',
+        active: 'var(--color-success-active)',
+        bg: 'var(--color-success-bg)',
+        text: 'var(--color-success-text)',
+        border: 'var(--color-success-border)',
+        outline: 'var(--color-success-outline)'
+      },
+      info: {
+        default: 'var(--color-info)',
+        active: 'var(--color-info-active)',
+        bg: 'var(--color-info-bg)',
+        text: 'var(--color-info-text)',
+        border: 'var(--color-info-border)',
+        outline: 'var(--color-info-outline)'
+      },
+      warning: {
+        default: 'var(--color-warning)',
+        active: 'var(--color-warning-active)',
+        bg: 'var(--color-warning-bg)',
+        text: 'var(--color-warning-text)',
+        border: 'var(--color-warning-border)',
+        outline: 'var(--color-warning-outline)'
+      },
+      danger: {
+        default: 'var(--color-danger)',
+        active: 'var(--color-danger-active)',
+        bg: 'var(--color-danger-bg)',
+        text: 'var(--color-danger-text)',
+        border: 'var(--color-danger-border)',
+        outline: 'var(--color-danger-outline)'
+      },
+      system: {
+        default: 'var(--color-system)',
+        active: 'var(--color-system-active)',
+        bg: 'var(--color-system-bg)',
+        text: 'var(--color-system-text)',
+        border: 'var(--color-system-border)',
+        outline: 'var(--color-system-outline)'
+      },
+      gray: {
+        default: 'var(--color-gray)',
+        active: 'var(--color-gray-active)',
+        bg: 'var(--color-gray-bg)',
+        text: 'var(--color-gray-text)',
+        border: 'var(--color-gray-border)',
+        outline: 'var(--color-gray-outline)',
+        100: 'var(--color-gray-100)',
+        200: 'var(--color-gray-200)',
+        300: 'var(--color-gray-300)',
+        400: 'var(--color-gray-400)',
+        500: 'var(--color-gray-500)',
+        600: 'var(--color-gray-600)',
+        700: 'var(--color-gray-700)',
+        800: 'var(--color-gray-800)',
+        900: 'var(--color-gray-900)'
+      }
+    },
+    extend: {
       screens: {
         sm: '640px',
         md: '768px',
         lg: '1024px',
         xl: '1280px',
         '2xl': '1536px',
-      },
-      aspectRatio: {
-        auto: 'auto',
-        square: '1 / 1',
-        video: '16 / 9',
-        1: '1',
-        2: '2',
-        3: '3',
-        4: '4',
-        5: '5',
-        6: '6',
-        7: '7',
-        8: '8',
-        9: '9',
-        10: '10',
-        11: '11',
-        12: '12',
-        13: '13',
-        14: '14',
-        15: '15',
-        16: '16',
       },
       opacity: {
         0: '0',
@@ -79,15 +166,15 @@ module.exports = {
         90: '.9',
         100: '1'
       },
-      boxShadow: {
-        // 'xs': 'var(--shadow-xs)',
-        // 'sm': 'var(--shadow-sm)',
-        // 'default': 'var(--shadow)',
-        // 'md': 'var(--shadow)',
-        // 'lg': 'var(--shadow-lg)',
-        // 'xl': 'var(--shadow-xl)',
-        // '2xl': 'var(--shadow-2xl)',
-        // 'inset': 'var(--shadow-inset)',
+      boxShadow: (theme) => ({
+        'xs': 'var(--shadow-xs)',
+        'sm': 'var(--shadow-sm)',
+        'default': 'var(--shadow)',
+        'md': 'var(--shadow)',
+        'lg': 'var(--shadow-lg)',
+        'xl': 'var(--shadow-xl)',
+        '2xl': 'var(--shadow-2xl)',
+        'inset': 'var(--shadow-inset)',
         'outline': 'var(--outline)',
         'outline-none': 'none',
         'outline-primary': 'var(--outline-primary)',
@@ -99,82 +186,7 @@ module.exports = {
         'outline-system': 'var(--outline-system)',
         'outline-gray': 'var(--outline-gray)',
         'none': 'none'
-      },
-      backgroundColor: {
-        default: 'var(--color-bg-base)',
-        base: 'var(--color-bg-base)',
-        black: 'var(--color-black)',
-        panel: {
-          default: 'var(--color-bg-panel)',
-          light: 'var(--color-bg-panel-light)'
-        },
-        inverse: 'var(--color-bg-inverse)',
-        input: 'var(--color-bg-input)',
-        active: 'var(--color-bg-active)',
-        highlight: 'var(--color-bg-highlight)',
-        hover: 'var(--color-bg-hover)',
-        border: 'var(--color-border)',
-        text: 'var(--color-text)',
-        muted: 'var(--color-text-muted)',
-        gray: 'var(--color-gray-bg)',
-        primary: 'var(--color-primary-bg)',
-        secondary: 'var(--color-secondary-bg)',
-        info: 'var(--color-info-bg)',
-        success: 'var(--color-success-bg)',
-        warning: 'var(--color-warning-bg)',
-        danger: 'var(--color-danger-bg)',
-        system: 'var(--color-system-bg)',
-        slate: colors.slate,
-        sky: colors.sky,
-        amber: colors.amber,
-        sky: colors.sky,
-        green: colors.green,
-        orange: colors.orange,
-        red: colors.red,
-        system: colors.purple,
-      },
-      textColor: {
-        default: 'var(--color-text)',
-        light: 'var(--color-text-light)',
-        input: 'var(--color-text-input)',
-        inverse: 'var(--color-text-inverse)',
-        placeholder: 'var(--color-text-placeholder)',
-        muted: 'var(--color-text-muted)',
-        active: 'var(--color-text-active)',
-        highlight: 'var(--color-text-highlight)',
-        link: 'var(--color-text-link)',
-        blackwhite: 'var(--color-text-blackwhite)',
-        black: 'var(--color-black)',
-        white: 'var(--color-white)',
-        gray: 'var(--color-gray)',
-        primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
-        info: 'var(--color-info)',
-        success: 'var(--color-success)',
-        warning: 'var(--color-warning)',
-        danger: 'var(--color-danger)',
-        system: 'var(--color-system)',
-      },
-      borderColor: {
-        default: 'var(--color-border)',
-        normal: 'var(--color-border)',
-        light: 'var(--color-border-light)',
-        outer: 'var(--color-border-outer)',
-        control: 'var(--color-border-control)',
-        inverse: 'var(--color-border-inverse)',
-        blackwhite: 'var(--color-text-blackwhite)',
-        black: 'var(--color-black)',
-        white: 'var(--color-white)',
-        gray: 'var(--color-gray-border)',
-        primary: 'var(--color-primary-border)',
-        secondary: 'var(--color-secondary-border)',
-        info: 'var(--color-info-border)',
-        success: 'var(--color-success-border)',
-        warning: 'var(--color-warning-border)',
-        danger: 'var(--color-danger-border)',
-        system: 'var(--color-system-border)'
-      },
-      /*
+      }),
       backgroundColor: (theme) => ({
         ...theme('colors'),
         ...theme('colors.bg'),
@@ -195,7 +207,6 @@ module.exports = {
         ...theme('colors.text'),
         default: theme('colors.text.default', 'currentColor')
       }),
-      */
       borderRadius: {
         none: '0',
         sm: 'var(--radius-sm)',
