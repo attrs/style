@@ -20,8 +20,6 @@
 }
 
 .link {
-  color: var(--color-text-link);
-
   &:hover {
     color: var(--color-text-link);
   }

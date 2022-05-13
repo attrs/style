@@ -3,7 +3,7 @@
   --color-white: #fff;
   --color-bg-base: #f3f5f8;
   --color-bg-panel: #fff;
-  --color-bg-panel-light: #fafcff;
+  --color-bg-light: #fafcff;
   --color-bg-inverse: #23262d;
   --color-bg-active: #eef0f3;
   --color-bg-input: #fff;
@@ -210,9 +210,9 @@
   --font-size-icon: 1em;
   --font-weight-hairline: 100;
   --font-weight-thin: 200;
-  --font-weight-light: 400;
+  --font-weight-light: 300;
   --font-weight-normal: 400;
-  --font-weight-medium: 400;
+  --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
@@ -478,9 +478,9 @@
   --x-empty-icon-bottom: 1rem;
   --x-empty-icon-shadow: none;
   --x-empty-text-color: var(--color-text);
-  --x-empty-text-size: var(--font-size-lg);
+  --x-empty-text-size: var(--font-size-base);
   --x-empty-text-line-height: 3rem;
-  --x-empty-text-weight: var(--font-weight-semibold);
+  --x-empty-text-weight: var(--font-weight-medium);
   --x-empty-text-shadow: none;
   --x-empty-desc-color: var(--color-text);
   --x-empty-desc-size: var(--font-size-sm);
