@@ -189,12 +189,12 @@ span.x-form-control {
 /* message */
 .x-form-control-message,
 .x-form-control-error {
-  color: var(--color-text-light);
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  font-size: var(--font-size-xs);
-
-  margin: var(--controls-margin);
+  color: var(--x-form-control-message-color);
+  font-size: var(--x-form-control-message-font-size);
+  font-weight: var(--x-form-control-message-font-weight);
+  margin: var(--x-form-control-message-margin);
+  padding: var(--x-form-control-message-padding);
+  line-height: var(--x-form-control-message-line-height);
 }
 
 .x-form-control-error {
@@ -203,13 +203,12 @@ span.x-form-control {
 
 .x-form-label {
   display: block;
-  margin-bottom: 0.5rem;
-  font-size: var(--font-size-sm);
-  font-weight: 700;
+  font-size: var(--x-form-label-font-size);
+  font-weight: var(--x-form-label-font-weight);
 
-  line-height: 2.5;
-  margin: 2px;
-  padding: 0 2px;
+  line-height: var(--x-form-label-line-height);
+  margin: var(--x-form-label-margin);
+  padding: var(--x-form-label-padding);
   vertical-align: middle;
 }
 

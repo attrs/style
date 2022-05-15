@@ -196,8 +196,8 @@
   --font-size-3xs: 0.6rem;
   --font-size-2xs: 0.7rem;
   --font-size-xs: 0.8rem;
-  --font-size-sm: 0.875rem;
-  --font-size-md: 0.925rem;
+  --font-size-sm: 0.9rem;
+  --font-size-md: 0.95rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
   --font-size-2xl: 1.65rem;
@@ -430,7 +430,7 @@
 
   /* x-navigation */
   --x-navigation-font-size: 0.95rem;
-  --x-navigation-font-weight: var(--font-weight-medium);
+  --x-navigation-font-weight: var(--font-weight-normal);
   --x-navigation-padding: var(--spacing-sm);
   --x-navigation-title-color: var(--color-text-light);
   --x-navigation-title-font-weight: var(--font-weight-medium);
@@ -539,4 +539,18 @@
   --x-dot-border-radius: 3px;
   --x-dot-opacity: 0.65;
   --x-dot-background: var(--color-text-light);
+
+  /* x-form */
+  --x-form-label-font-size: var(--font-size-sm);
+  --x-form-label-font-weight: var(--font-weight-medium);
+  --x-form-label-margin: 2px;
+  --x-form-label-padding: 0 2px;
+  --x-form-label-line-height: 2.5;
+
+  --x-form-control-message-color: var(--color-text-light);
+  --x-form-control-message-font-size: var(--font-size-xs);
+  --x-form-control-message-font-weight: var(--font-weight-normal);
+  --x-form-control-message-margin: 0.15rem 0 0 0;
+  --x-form-control-message-padding: 0 5px;
+  --x-form-control-message-line-height: 2;
 }

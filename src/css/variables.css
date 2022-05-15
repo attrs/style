@@ -44,31 +44,7 @@
   @apply variables-default variables-dark;
 }
 
-/* apply prefers-color-scheme */
-@media (prefers-color-scheme: light) {
-  :root {
-    @apply variables-default;
-  }
-
-  .theme-inverse {
-    background-color: var(--color-bg-base);
-    color: var(--color-text);
-    @apply variables-default variables-dark;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    @apply variables-default variables-dark;
-  }
-
-  .theme-inverse {
-    background-color: var(--color-bg-base);
-    color: var(--color-text);
-    @apply variables-default;
-  }
-}
-
+/*
 .bg-panel {
   background-color: var(--color-bg-panel);
 }
@@ -76,3 +52,4 @@
 .bg-base {
   background-color: var(--color-bg-base);
 }
+*/
