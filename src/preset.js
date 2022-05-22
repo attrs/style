@@ -1,5 +1,5 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   important: true,
@@ -32,15 +32,15 @@ module.exports = {
         red: colors.red,
         system: colors.purple,
         code: {
-          highlight: 'rgb(125 211 252 / 0.1)',
-        },
+          highlight: 'rgb(125 211 252 / 0.1)'
+        }
       },
       screens: {
-        sm: '640px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1280px',
-        '2xl': '1536px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px'
       },
       aspectRatio: {
         auto: 'auto',
@@ -61,7 +61,7 @@ module.exports = {
         13: '13',
         14: '14',
         15: '15',
-        16: '16',
+        16: '16'
       },
       opacity: {
         0: '0',
@@ -129,7 +129,7 @@ module.exports = {
         green: colors.green,
         orange: colors.orange,
         red: colors.red,
-        system: colors.purple,
+        system: colors.purple
       },
       textColor: {
         default: 'var(--color-text)',
@@ -151,7 +151,7 @@ module.exports = {
         success: 'var(--color-success)',
         warning: 'var(--color-warning)',
         danger: 'var(--color-danger)',
-        system: 'var(--color-system)',
+        system: 'var(--color-system)'
       },
       borderColor: {
         default: 'var(--color-border)',
@@ -360,7 +360,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      borderWidth: ['last'],
+      borderWidth: ['last']
     }
   }
 };
