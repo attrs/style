@@ -1,7 +1,10 @@
 module.exports = {
   important: true,
-  content: ['./src/docs/**/*.{html}'],
+  content: [
+    "./index.html",
+    "./src/docs/**/*.{vue,js,html}",
+  ],
   presets: [
     require('./preset')
-  ],
+  ]
 };
