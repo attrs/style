@@ -6,7 +6,7 @@ import { resolve } from 'path';
 export default defineConfig({
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
+      '@': resolve(__dirname, 'docs'),
       'buffer': 'buffer',
       'process': 'process',
       'util': 'rollup-plugin-node-polyfills/polyfills/util',
