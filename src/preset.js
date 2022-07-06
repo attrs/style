@@ -1,4 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
@@ -26,11 +25,9 @@ module.exports = {
         slate: colors.slate,
         sky: colors.sky,
         amber: colors.amber,
-        sky: colors.sky,
         green: colors.green,
         orange: colors.orange,
         red: colors.red,
-        system: colors.purple,
         code: {
           highlight: 'rgb(125 211 252 / 0.1)'
         }
