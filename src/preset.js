@@ -122,11 +122,9 @@ module.exports = {
         slate: colors.slate,
         sky: colors.sky,
         amber: colors.amber,
-        sky: colors.sky,
         green: colors.green,
         orange: colors.orange,
-        red: colors.red,
-        system: colors.purple
+        red: colors.red
       },
       textColor: {
         default: 'var(--color-text)',
