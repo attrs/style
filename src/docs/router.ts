@@ -70,8 +70,32 @@ const routes = [
     component: () => import('@/views/examples/list.vue')
   },
   {
+    path: '/examples/join',
+    component: () => import('@/views/examples/join.vue')
+  },
+  {
     path: '/examples/login',
     component: () => import('@/views/examples/login.vue')
+  },
+  {
+    path: '/examples/login-simple',
+    component: () => import('@/views/examples/login-simple.vue')
+  },
+  {
+    path: '/examples/settings',
+    component: () => import('@/views/examples/settings.vue')
+  },
+  {
+    path: '/examples/project',
+    component: () => import('@/views/examples/project.vue')
+  },
+  {
+    path: '/examples/detail',
+    component: () => import('@/views/examples/detail.vue')
+  },
+  {
+    path: '/examples/billing',
+    component: () => import('@/views/examples/billing.vue')
   }
 ];
 

@@ -146,30 +146,35 @@
     font-size: calc(var(--x-label-font-size) * 0.6);
     line-height: calc(var(--x-label-line-height) * 0.4);
     padding: 0 calc(var(--x-label-padding) * 0.3);
+    padding-bottom: 1px;
   }
 
   &.x-label-2xs {
     font-size: calc(var(--x-label-font-size) * 0.65);
     line-height: calc(var(--x-label-line-height) * 0.5);
     padding: 0 calc(var(--x-label-padding) * 0.4);
+    padding-bottom: 1px;
   }
 
   &.x-label-xs {
     font-size: calc(var(--x-label-font-size) * 0.83);
     line-height: calc(var(--x-label-line-height) * 0.6);
     padding: 0 calc(var(--x-label-padding) * 0.5);
+    padding-bottom: 1px;
   }
 
   &.x-label-sm {
     font-size: calc(var(--x-label-font-size) * 0.9);
     line-height: calc(var(--x-label-line-height) * 0.7);
     padding: 0 calc(var(--x-label-padding) * 0.7);
+    padding-bottom: 1px;
   }
 
   &.x-label-lg {
     font-size: calc(var(--x-label-font-size) * 1);
     line-height: calc(var(--x-label-line-height) * 1.3);
     padding: 0 calc(var(--x-label-padding) * 1.3);
+    padding-bottom: 1px;
   }
 
   &.x-label-xl {

@@ -32,7 +32,7 @@
         </a>
         <div class="x-dropdown-items">
           <div class="x-contextmenu">
-            <div class="x-list min-w-200">
+            <div class="x-list x-list-hover min-w-200">
               <div class="x-list-header">Select a theme</div>
               <a class="x-list-item cursor-pointer" @click="setTheme('dark')">
                 <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

@@ -3,6 +3,8 @@
   --color-white: #fff;
   --color-bg-base: #f3f5f8;
   --color-bg-panel: #fff;
+  --color-bg-card: #fff;
+  --color-bg-panel-em: #f8fafc;
   --color-bg-light: #fafcff;
   --color-bg-inverse: #23262d;
   --color-bg-active: #eef0f3;
@@ -17,13 +19,15 @@
   --color-outline: var(--color-info-outline);
 
   --color-border: #e9e9e9;
-  --color-border-light: #edeeef;
+  --color-border-light: #f2f5f9;
+  --color-border-lighter: #fafcfe;
   --color-border-outer: #e0e0e0;
   --color-border-inverse: #2e3237;
   --color-border-control: var(--color-border-outer);
 
   --color-text: #5e5e5e;
   --color-text-light: #8b9ea8;
+  --color-text-lighter: #a1a1a1;
   --color-text-link: var(--color-primary);
   --color-text-link-active: var(--color-primary-active);
   --color-text-muted: #c1c1c1;
@@ -200,7 +204,7 @@
   --font-size-md: 0.95rem;
   --font-size-lg: 1.25rem;
   --font-size-xl: 1.5rem;
-  --font-size-2xl: 1.75rem;
+  --font-size-2xl: 1.65rem;
   --font-size-3xl: 2rem;
   --font-size-4xl: 2.5rem;
   --font-size-5xl: 3rem;
@@ -346,7 +350,7 @@
   --x-separator-thickness: 1px;
   --x-separator-margin: 0.25em;
   --x-separator-style: solid;
-  --x-separator-color: var(--color-border);
+  --x-separator-color: var(--color-border-light);
   --x-separator-h-thickness: 1px;
   --x-separator-h-margin: 0.75rem;
   --x-separator-h-height: 1.2em;
@@ -362,7 +366,7 @@
   /* x-card */
   --x-card-border: 0 solid var(--color-border-outer);
   --x-card-border-inner: 1px solid var(--color-border);
-  --x-card-color-bg: var(--color-bg-panel);
+  --x-card-color-bg: var(--color-bg-card);
   --x-card-radius: var(--radius);
   --x-card-shadow: none; /*var(--shadow);*/
   --x-card-header-color-bg: var(--color-bg-panel);
@@ -379,7 +383,7 @@
   /* x-list */
   --x-list-item-line-height: 1.6;
   --x-list-item-padding: 0.7em 1em 0.7em 1em;
-  --x-list-item-border: 1px solid var(--color-border);
+  --x-list-item-border: 1px solid var(--color-border-light);
   --x-list-item-hover-bg: var(--color-bg-hover);
   --x-list-header-color: var(--color-text-light);
   --x-list-header-padding: 0.75em 1.15em 0.15em 1.75em;
@@ -514,9 +518,9 @@
   --x-profile-font-margin: 1rem;
 
   /* x-badge */
-  --x-badge-font-size: 0.9em;
+  --x-badge-font-size: 0.8em;
   --x-badge-font-weight: var(--font-weight-semibold);
-  --x-badge-padding: 0.35em 0.6em 0.35em 0.6em;
+  --x-badge-padding: 0.3em 0.6em 0.25em 0.6em;
   --x-badge-background: var(--color-text);
   --x-badge-color: var(--color-white);
 
@@ -538,7 +542,7 @@
   --x-dot-height: 0.5em;
   --x-dot-vertical-align: middle;
   --x-dot-border: 0px solid var(--color-border-light);
-  --x-dot-border-radius: 3px;
+  --x-dot-border-radius: var(--radius-full);
   --x-dot-opacity: 0.65;
   --x-dot-background: var(--color-text-light);
 

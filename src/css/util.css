@@ -262,6 +262,11 @@ a.dotted {
   overflow: hidden;
 }
 
+.rounded-circle {
+  border-radius: var(--radius-full) !important;
+  overflow: hidden;
+}
+
 .gradient-1 {
   background: linear-gradient(to right bottom, #8d68ee, #2e98ee);
   position: relative;

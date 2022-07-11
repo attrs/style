@@ -14,10 +14,6 @@
     margin: 0;
   }
 
-  &.x-list-hover {
-    padding-bottom: 0.2rem;
-  }
-
   & > .x-list-item.x-list-item-hover,
   &.x-list-hover > .x-list-item {
     cursor: pointer;
@@ -49,6 +45,15 @@
       color: var(--color-text-link);
     }
   }
+
+  &.x-list-hover {
+    padding: 0.1rem 0;
+
+    & .x-list-item {
+      border-radius: 6px;
+      margin: 0.5rem 0.5rem;
+    }
+  }
 }
 
 .x-list-item {
@@ -62,8 +67,6 @@
   vertical-align: middle;
   padding: var(--x-list-item-padding);
   line-height: var(--x-list-item-line-height);
-  border-radius: 6px;
-  margin: 0 0.5rem;
   text-align: left;
   white-space: nowrap;
 

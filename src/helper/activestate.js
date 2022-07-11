@@ -20,7 +20,7 @@ const setParentActiveAndExpand = (el) => {
     el.classList.add('x-navitem-expand');
   }
   if (el && el.classList && el.classList.contains('x-navigation')) return;
-  setParentActiveAndExpand(el.parentNode);
+  // setParentActiveAndExpand(el.parentNode);
 };
 
 const findandfire = (detail) => {

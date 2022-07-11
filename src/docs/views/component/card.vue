@@ -1,30 +1,34 @@
 <template>
-  <div class="x-page">
-    <header class="x-page-header">
-      <h1>
-        <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" /></svg>
-        Card
-        <small>Card</small>
-      </h1>
-    </header>
-    <div class="p-md">
+  <div class="container p-pg mx-auto">
+    <div class="pb-md border-b">
+      <div class="flex items-center">
+        <div class="x-iconbox x-iconbox-lg radius-circle mr-2 border text-active hidden mr-5">
+          <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" /></svg>
+        </div>
+
+        <div class="flex-1">
+          <h3>Cards</h3>
+          <p class="text-light font-light">Card examples</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-md">
       <div class="grid grid-cols-3 gap-5">
         <!-- card -->
         <div class="x-card flex flex-col">
-          <div class="x-card-header">
+          <div class="x-card-header pr-0">
             <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
             </svg>
             Title
             <div class="tools">
               <div class="x-dropdown x-dropdown-align-right x-dropdown-nocaret">
-                <button class="btn btn-icon btn-sm">
+                <button class="btn btn-icon btn-md">
                   <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      fill-rule="evenodd"
-                      d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"
+                      d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
                     />
-                    <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z" />
                   </svg>
                 </button>
 
@@ -106,7 +110,7 @@
         <div class="x-card rounded-lg overflow-hidden">
           <div class="ratio-16by9 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/462024/pexels-photo-462024.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')" title="Image"></div>
           <div class="p-5">
-            <div class="font-bold text-xl mb-2">Lorem ipsum dolor sit amet</div>
+            <div class="font-semibold text-lg mb-2">Lorem ipsum dolor sit amet</div>
             <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
           </div>
           <hr class="x-separator mb-0" />
@@ -119,7 +123,7 @@
         <div class="x-card overflow-hidden">
           <div class="ratio-16by9 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')" title="Image"></div>
           <div class="p-5">
-            <div class="font-bold text-xl mb-2">Lorem ipsum dolor sit amet</div>
+            <div class="font-semibold text-lg mb-2">Lorem ipsum dolor sit amet</div>
             <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
           </div>
           <hr class="x-separator mb-0" />
@@ -132,24 +136,24 @@
         <!-- // card -->
 
         <!-- card -->
-        <div class="x-card col-span-2 bg-gray-200 overflow-hidden">
+        <div class="x-card col-span-2 bg-gray-500/10 overflow-hidden">
           <div class="h-full w-full flex">
             <div class="h-auto w-56 flex-none bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')" title="Image"></div>
             <div class="p-4 flex flex-col justify-between leading-normal">
               <div class="mb-8">
-                <p class="text-sm text-gray-600 flex items-center">
-                  <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <p class="text-sm text-light flex items-center">
+                  <svg class="fill-current text-light w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
                   </svg>
                   Members only
                 </p>
-                <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-                <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+                <div class="text-active font-medium text-lg mb-2">Can coffee make you a better developer?</div>
+                <p class="text-light text-base font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
               </div>
               <div class="flex items-center">
                 <div class="text-sm">
-                  <p class="text-gray-900 leading-none">Jonathan Reinink</p>
-                  <p class="text-gray-600">Aug 18</p>
+                  <p class="text-active leading-none">Jonathan Reinink</p>
+                  <p class="text-light">Aug 18</p>
                 </div>
               </div>
             </div>
@@ -175,14 +179,14 @@
             <div class="h-auto w-56 flex-none bg-cover bg-right" style="background-image: url('https://images.pexels.com/photos/4065907/pexels-photo-4065907.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')" title="Image"></div>
             <div class="p-4 flex flex-col justify-between leading-normal">
               <div class="mb-8">
-                <p class="text-sm text-muted flex items-center">
+                <p class="text-sm text-light flex items-center">
                   <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
                   </svg>
                   Members only
                 </p>
                 <div class="font-semibold mb-2">Can coffee make you a better developer?</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+                <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
               </div>
               <div class="flex items-center">
                 <div class="text-sm">

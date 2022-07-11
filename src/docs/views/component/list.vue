@@ -1,13 +1,19 @@
 <template>
-  <div class="x-page">
-    <header class="x-page-header">
-      <h1>
-        <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" /></svg>
-        List
-        <small>List</small>
-      </h1>
-    </header>
-    <div class="p-md">
+  <div class="container p-pg mx-auto">
+    <div class="pb-md border-b">
+      <div class="flex items-center">
+        <div class="x-iconbox x-iconbox-lg radius-circle mr-2 border text-active hidden mr-5">
+          <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" /></svg>
+        </div>
+
+        <div class="flex-1">
+          <h3>List</h3>
+          <p class="text-light font-light">List examples</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-md">
       <div class="grid grid-cols-3 gap-5">
         <!-- card -->
         <div>
@@ -286,13 +292,13 @@
             <div class="x-list x-list-lined x-list-hover">
               <div class="x-list-item">
                 <div class="flex-1">
-                  <div class="font-bold text-lg">Can coffee make you a better developer?</div>
+                  <div class="font-medium text-lg">Can coffee make you a better developer?</div>
                 </div>
               </div>
               <div class="x-list-item">
                 <div class="flex-1">
-                  <div class="font-bold text-lg">Can coffee make you a better developer?</div>
-                  <div class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
+                  <div class="font-medium text-lg">Can coffee make you a better developer?</div>
+                  <div class="text-gray-500/50 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
                 </div>
               </div>
               <div class="x-list-item">
@@ -305,7 +311,7 @@
                   </svg>
                 </div>
                 <div class="flex-1">
-                  <div class="font-bold text-lg">Can coffee make you a better developer?</div>
+                  <div class="font-medium text-lg">Can coffee make you a better developer?</div>
                 </div>
                 <div class="x-badge x-badge-warning">New</div>
                 <div class="x-caret"></div>
@@ -320,16 +326,16 @@
                   </svg>
                 </div>
                 <div class="flex-1">
-                  <div class="font-bold text-lg">Can coffee make you a better developer?</div>
-                  <div class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
+                  <div class="font-medium text-lg">Can coffee make you a better developer?</div>
+                  <div class="text-gray-500/50 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
                 </div>
-                <div class="btn btn-default">Button</div>
+                <div class="btn btn-sm btn-default">Button</div>
               </div>
               <div class="x-list-item">
                 <div class="x-iconbox mr-5" style="background-image: url(https://picsum.photos/536/354)"></div>
                 <div class="flex-1">
-                  <div class="font-bold text-lg">Can coffee make you a better developer?</div>
-                  <div class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
+                  <div class="font-medium text-lg">Can coffee make you a better developer?</div>
+                  <div class="text-gray-500/50 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
                 </div>
                 <label class="x-switch x-switch-primary">
                   <input id="distbystage" type="checkbox" />
@@ -339,8 +345,8 @@
               <div class="x-list-item">
                 <div class="x-iconbox x-iconbox-circle mr-5" style="background-image: url(https://picsum.photos/536/354)"></div>
                 <div class="flex-1">
-                  <div class="font-bold text-lg">Can coffee make you a better developer?</div>
-                  <div class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
+                  <div class="font-medium text-lg">Can coffee make you a better developer?</div>
+                  <div class="text-gray-500/50 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
                 </div>
                 <label class="x-switch x-switch-primary">
                   <input id="distbystage" type="checkbox" />

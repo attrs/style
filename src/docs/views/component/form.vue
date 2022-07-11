@@ -1,13 +1,19 @@
 <template>
-  <div class="x-page">
-    <header class="x-page-header">
-      <h1>
-        <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" /></svg>
-        Form
-        <small>Form</small>
-      </h1>
-    </header>
-    <div class="p-md">
+  <div class="container p-pg mx-auto">
+    <div class="pb-md border-b">
+      <div class="flex items-center">
+        <div class="x-iconbox x-iconbox-lg radius-circle mr-2 border text-active hidden mr-5">
+          <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" /></svg>
+        </div>
+
+        <div class="flex-1">
+          <h3>Form</h3>
+          <p class="text-light font-light">Form examples</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-md">
       <div class="x-card-title">Vertical</div>
       <div class="x-card mb-md p-sm">
         <div>
@@ -472,7 +478,7 @@
       </div>
 
       <div class="x-card-title">Field Form</div>
-      <div class="x-card bg-base p-sm mb-md">
+      <div class="x-card p-sm mb-md">
         <div class="x-field">
           <div class="x-field-label">
             <h6 class="font-bold text-lg">Project Name</h6>
@@ -492,7 +498,7 @@
             <a href="javascript:;" class="link text-xs">Learn more.</a>
           </div>
           <div class="x-field-body">
-            <div class="x-card x-list x-list-lined">
+            <div class="x-card bg-panel-em x-list x-list-lined">
               <div class="x-list-item" data-toggle="project-settings">
                 <div class="flex-1">
                   <div class="font-bold text-lg">Project</div>
@@ -520,7 +526,7 @@
             <a href="javascript:;" class="link text-xs">Learn more.</a>
           </div>
           <div class="x-field-body">
-            <div class="x-card x-list x-list-lined">
+            <div class="x-card bg-panel-em x-list x-list-lined">
               <div class="x-list-item" data-toggle="project-settings">
                 <div class="flex-1">
                   <div class="font-bold text-lg">Environment</div>

@@ -1,15 +1,78 @@
 <template>
-  <div class="x-page">
-    <header class="x-page-header">
-      <h1>
-        <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" /></svg>
-        List Page
-        <small>List Page</small>
-      </h1>
-    </header>
-    <div class="p-md">
+  <div class="container p-pg mx-auto">
+    <div class="pb-md border-b">
+      <div class="flex items-center">
+        <div class="x-iconbox x-iconbox-lg radius-circle mr-2 border text-active">
+          <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" /></svg>
+        </div>
+
+        <div class="flex-1 ml-5">
+          <h3>List Page</h3>
+          <p class="text-light">List page examples</p>
+        </div>
+
+        <div class="x-navbar">
+          <div class="x-navbar border rounded">
+            <div class="x-dropdown x-dropdown-align-left">
+              <a class="btn btn-sm btn-transparent m-0">
+                <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                </svg>
+                View Type
+              </a>
+              <div class="x-dropdown-items">
+                <div class="x-contextmenu">
+                  <div class="x-list min-w-200">
+                    <div class="x-list-header">Header A</div>
+                    <a class="x-list-item">
+                      <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+                      </svg>
+                      List 1
+                      <div class="tools">
+                        <span class="x-badge">100</span>
+                        <div class="x-caret"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="x-dropdown x-dropdown-align-right">
+              <a class="btn btn-sm btn-transparent m-0">
+                <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                Sort
+              </a>
+              <div class="x-dropdown-items">
+                <div class="x-contextmenu">
+                  <div class="x-list min-w-200">
+                    <div class="x-list-header">Header A</div>
+                    <a class="x-list-item">
+                      <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+                      </svg>
+                      List 1
+                      <div class="tools">
+                        <span class="x-badge">100</span>
+                        <div class="x-caret"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn btn-sm btn-info">Button</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-md">
       <!-- filter navbar-->
-      <div class="x-navbar border -border-outer rounded bg-panel">
+      <div class="x-navbar rounded bg-panel">
         <div class="x-navbar">
           <div class="x-inputbox mx-3">
             <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -149,7 +212,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="text-center" colspan="6">No Applications</td>
+              <td class="text-center" colspan="6">No Data</td>
             </tr>
           </tbody>
         </table>
@@ -170,10 +233,10 @@
           </thead>
           <tbody>
             <tr>
-              <td class="font-bold">
+              <td class="font-medium">
                 <a>web</a>
               </td>
-              <td class="font-bold text-info">nginx@latest</td>
+              <td class="font-medium text-info">nginx@latest</td>
               <td>2020.05.31 00:00</td>
               <td>2020.05.31 00:00</td>
               <td>labels</td>
