@@ -183,7 +183,7 @@
               </a>
             </div>
             <div class="x-navbar pr-2">
-              <a class="btn btn-sm btn-default btn-outline">Open</a>
+              <a class="btn btn-sm btn-default btn-outline">접속하기</a>
             </div>
           </div>
         </div>

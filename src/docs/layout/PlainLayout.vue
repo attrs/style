@@ -40,7 +40,7 @@
               <Topbar class="flex-1" />
             </div>
           </div>
-          <div class="flex flex-col flex-1 mt-16 lg:mt-0 h-full overflow-auto">
+          <div class="flex flex-col flex-1 mt-16 lg:mt-0 h-full overflow-auto bg-base">
             <slot />
           </div>
         </div>

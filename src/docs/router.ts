@@ -96,6 +96,10 @@ const routes = [
   {
     path: '/examples/billing',
     component: () => import('@/views/examples/billing.vue')
+  },
+  {
+    path: '/examples/command-palette',
+    component: () => import('@/views/examples/command-palette.vue')
   }
 ];
 

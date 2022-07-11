@@ -369,7 +369,7 @@
   --x-card-color-bg: var(--color-bg-card);
   --x-card-radius: var(--radius);
   --x-card-shadow: none; /*var(--shadow);*/
-  --x-card-header-color-bg: var(--color-bg-panel);
+  --x-card-header-color-bg: var(--color-bg-card);
   --x-card-header-color-text: var(--color-text);
   --x-card-header-font-size: var(--font-size-base);
   --x-card-header-font-weight: var(--font-weight-semibold);

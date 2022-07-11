@@ -10,6 +10,13 @@
   }
 }
 
+.theme-light,
+.theme-dark,
+.theme-violet,
+.theme-red {
+  @apply variable-override;
+}
+
 /* apply prefers-color-scheme */
 @media (prefers-color-scheme: light) {
   :root {
