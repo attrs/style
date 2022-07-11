@@ -20,9 +20,9 @@
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./docs/*"]
+      "@/*": ["./src/docs/*"]
     }
   },
-  "include": ["docs/**/*.ts", "docs/**/*.d.ts", "docs/**/*.tsx", "docs/**/*.vue"],
+  "include": ["src/docs/**/*.ts", "src/docs/**/*.d.ts", "src/docs/**/*.tsx", "src/docs/**/*.vue"],
   "exclude": ["node_modules", "*.js"]
 }

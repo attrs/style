@@ -1,6 +1,6 @@
 // See https://css-houdini.rocks/background-properties
 
-registerPaint(
+typeof registerPaint === 'function' && registerPaint(
   'background',
   class {
     static get inputProperties() {

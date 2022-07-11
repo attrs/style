@@ -18,49 +18,47 @@ button:focus {
   outline: none;
 }
 
-/*
 h1 {
   font-family: var(--font-family-headings);
   font-size: var(--font-size-5xl);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
 
 h2 {
   font-family: var(--font-family-headings);
   font-size: var(--font-size-4xl);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
 
 h3 {
   font-family: var(--font-family-headings);
   font-size: var(--font-size-3xl);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
 
 h4 {
   font-family: var(--font-family-headings);
   font-size: var(--font-size-2xl);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
 
 h5 {
   font-family: var(--font-family-headings);
   font-size: var(--font-size-lg);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
 
 h6 {
   font-family: var(--font-family-headings);
   font-size: var(--font-size-base);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
-*/
 
 hr {
   margin: 1rem 0;

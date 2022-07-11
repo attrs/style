@@ -1,3 +1,3 @@
-module.exports.helper = () => {
+export const helper = () => {
   return require('./helper');
 };

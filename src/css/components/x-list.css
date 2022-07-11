@@ -14,6 +14,10 @@
     margin: 0;
   }
 
+  &.x-list-hover {
+    padding-bottom: 0.2rem;
+  }
+
   & > .x-list-item.x-list-item-hover,
   &.x-list-hover > .x-list-item {
     cursor: pointer;
@@ -23,7 +27,7 @@
     }
 
     &:hover {
-      background-color: var(--color-bg-hover);
+      background: var(--x-list-item-hover-bg);
       color: var(--color-text-active);
 
       & .icon {
@@ -48,14 +52,18 @@
 }
 
 .x-list-item {
+  -font-size: var(--x-list-item-font-size);
+  -font-weight: var(--x-list-item-font-weight);
+
   display: flex;
   align-items: center;
 
   position: relative;
   vertical-align: middle;
-  line-height: var(--row-line-height);
-  padding: 0 var(--row-padding);
-  -color: var(--row-color-text);
+  padding: var(--x-list-item-padding);
+  line-height: var(--x-list-item-line-height);
+  border-radius: 6px;
+  margin: 0 0.5rem;
   text-align: left;
   white-space: nowrap;
 
@@ -77,12 +85,6 @@
     background: none;
   }
 
-  -font-size: var(--x-list-item-font-size);
-  -font-weight: var(--x-list-item-font-weight);
-
-  padding: var(--x-list-item-padding);
-  line-height: var(--x-list-item-line-height);
-
   &.x-list-item-disabled {
     & .icon {
       color: var(--color-text-muted);
@@ -100,7 +102,7 @@
   }
 
   &:hover {
-    background-color: var(--color-bg-hover);
+    background: var(--x-list-item-hover-bg);
     color: var(--color-text-active);
 
     & .icon {

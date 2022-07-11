@@ -40,4 +40,5 @@ export class SmoothCorners {
   }
 }
 
-registerPaint('smooth-corners', SmoothCorners);
+typeof registerPaint === 'function' && registerPaint('smooth-corners', SmoothCorners);
+// window.CSS && CSS.paintWorklet && CSS.paintWorklet.addModule && CSS.paintWorklet.addModule(SmoothCorners);

@@ -1,7 +1,7 @@
 const setParentActive = (el) => {
   el.classList.add('active');
   if (el && el.classList && el.classList.contains('x-navigation')) return;
-  setParentActive(el.parentNode);
+  // setParentActive(el.parentNode);
 };
 
 const listener = (e) => {
@@ -22,7 +22,7 @@ const listener = (e) => {
   setParentActive(navitem);
 };
 
-module.exports = (element) => {
+export default (element) => {
   element.removeEventListener('click', listener);
   element.addEventListener('click', listener);
 };

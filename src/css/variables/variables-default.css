@@ -8,7 +8,7 @@
   --color-bg-active: #eef0f3;
   --color-bg-input: #fff;
   --color-bg-icon: #ecf1f9;
-  --color-bg-hover: rgba(0, 0, 0, 0.05);
+  --color-bg-hover: #f5f7fa;
 
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
@@ -198,12 +198,12 @@
   --font-size-xs: 0.8rem;
   --font-size-sm: 0.9rem;
   --font-size-md: 0.95rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.65rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 1.75rem;
   --font-size-3xl: 2rem;
   --font-size-4xl: 2.5rem;
-  --font-size-5xl: 3.5rem;
+  --font-size-5xl: 3rem;
   --font-size-6xl: 3.5rem;
   --font-size-7xl: 4rem;
   --font-size-8xl: 4.5rem;
@@ -364,7 +364,7 @@
   --x-card-border-inner: 1px solid var(--color-border);
   --x-card-color-bg: var(--color-bg-panel);
   --x-card-radius: var(--radius);
-  --x-card-shadow: var(--shadow);
+  --x-card-shadow: none; /*var(--shadow);*/
   --x-card-header-color-bg: var(--color-bg-panel);
   --x-card-header-color-text: var(--color-text);
   --x-card-header-font-size: var(--font-size-base);
@@ -378,8 +378,9 @@
 
   /* x-list */
   --x-list-item-line-height: 1.6;
-  --x-list-item-padding: 0.7em 1.75em 0.7em 1.75em;
+  --x-list-item-padding: 0.7em 1em 0.7em 1em;
   --x-list-item-border: 1px solid var(--color-border);
+  --x-list-item-hover-bg: var(--color-bg-hover);
   --x-list-header-color: var(--color-text-light);
   --x-list-header-padding: 0.75em 1.15em 0.15em 1.75em;
   --x-list-header-font-size: var(--font-size-xs);
@@ -430,6 +431,7 @@
 
   /* x-navigation */
   --x-navigation-font-size: 0.95rem;
+  --x-navigation-line-height: 3.5;
   --x-navigation-font-weight: var(--font-weight-normal);
   --x-navigation-padding: var(--spacing-sm);
   --x-navigation-title-color: var(--color-text-light);

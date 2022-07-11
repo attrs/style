@@ -641,7 +641,7 @@ const window = {};
     : (window.tinycolor = b);
 })(Math);
 
-registerPaint(
+typeof registerPaint === 'function' && registerPaint(
   'corners-gradient',
   class {
     static get inputArguments() {

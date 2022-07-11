@@ -39,8 +39,10 @@
 
       position: relative;
       vertical-align: middle;
-      line-height: var(--row-line-height);
-      padding: 0 var(--x-navigation-padding);
+      line-height: var(--x-navigation-line-height);
+      padding: 0 calc(var(--x-navigation-padding) * 0.5);
+      margin: 0 calc(var(--x-navigation-padding) * 0.5);
+      border-radius: var(--radius-md);
       text-align: left;
       white-space: nowrap;
 
