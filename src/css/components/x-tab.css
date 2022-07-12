@@ -147,41 +147,49 @@
 
   &.x-tab-bg-primary {
     --x-tab-selection-bg: var(--color-primary);
+    --x-tab-underline-color: var(--color-primary);
     --x-tab-selection-color: var(--color-white);
   }
 
   &.x-tab-bg-info {
     --x-tab-selection-bg: var(--color-info);
+    --x-tab-underline-color: var(--color-info);
     --x-tab-selection-color: var(--color-white);
   }
 
   &.x-tab-bg-success {
     --x-tab-selection-bg: var(--color-success);
+    --x-tab-underline-color: var(--color-success);
     --x-tab-selection-color: var(--color-white);
   }
 
   &.x-tab-bg-warning {
     --x-tab-selection-bg: var(--color-warning);
+    --x-tab-underline-color: var(--color-warning);
     --x-tab-selection-color: var(--color-white);
   }
 
   &.x-tab-bg-danger {
     --x-tab-selection-bg: var(--color-danger);
+    --x-tab-underline-color: var(--color-danger);
     --x-tab-selection-color: var(--color-white);
   }
 
   &.x-tab-bg-system {
     --x-tab-selection-bg: var(--color-system);
+    --x-tab-underline-color: var(--color-system);
     --x-tab-selection-color: var(--color-white);
   }
 
   &.x-tab-bg-black {
     --x-tab-selection-bg: var(--color-black);
+    --x-tab-underline-color: var(--color-black);
     --x-tab-selection-color: var(--color-white);
   }
 
   &.x-tab-bg-border {
     --x-tab-selection-bg: var(--color-border);
+    --x-tab-underline-color: var(--color-border);
     --x-tab-selection-color: var(--color-text);
   }
 
@@ -212,9 +220,47 @@
   }
 
   &.x-tab-plain {
-    --x-tab-border-width: 0;
-    --x-tab-bg: transparent;
-    --x-tab-selection-bg: transparent;
+    & > .x-tab-item {
+      background-color: transparent;
+      line-height: 1.8rem;
+      padding: 0;
+      border: none;
+      border-radius: var(--x-tab-border-radius);
+      margin: 0 var(--x-tab-gap);
+      margin-right: 2.4em;
+      font-size: intitial;
+      border: 0;
+      border-radius: 0;
+      letter-spacing: 0.025em;
+
+      &:hover {
+        background-color: transparent;
+        border-color: var(--x-tab-selection-color);
+        font-weight: initial;
+      }
+
+      &.active {
+        background-color: transparent;
+        border-color: var(--x-tab-selection-bg);
+        color: var(--color-text-active);
+        font-weight: var(--x-tab-selection-font-weight);
+      }
+    }
+
+    &.x-tab-underline {
+      & > .x-tab-item {
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+          border-color: var(--x-tab-underline-color);
+          opacity: 0.9;
+        }
+
+        &.active {
+          border-color: var(--x-tab-underline-color);
+        }
+      }
+    }
   }
 
   &.x-tab-xs {

@@ -432,9 +432,10 @@
   --x-tab-border-width: 0;
   --x-tab-border-color: var(--color-border);
   --x-tab-border-radius: var(--radius-sm);
+  --x-tab-underline-color: var(--color-black);
 
   /* x-navigation */
-  --x-navigation-font-size: 0.95rem;
+  --x-navigation-font-size: var(--font-size-md);
   --x-navigation-line-height: 3.5;
   --x-navigation-font-weight: var(--font-weight-normal);
   --x-navigation-padding: var(--spacing-sm);
@@ -449,6 +450,11 @@
   --x-navigation-active-icon: var(--color-icon-active);
   --x-navigation-selected-bg: var(--x-navigation-active-bg);
   --x-navigation-hover-bg: var(--color-bg-hover);
+
+  --x-navigation-sm-font-size: var(--font-size-md);
+  --x-navigation-sm-font-weight: var(--x-navigation-font-weight);
+  --x-navigation-sm-line-height: 2.5;
+  --x-navigation-sm-padding: var(--x-navigation-padding);
 
   /* x-profile */
   --x-profile-padding: var(--spacing-sm);

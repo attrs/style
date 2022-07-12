@@ -8,7 +8,7 @@
               <Profile />
             </div>
             <div class="mt-4 px-1">
-              <Commands />
+              <CommandForm />
             </div>
           </div>
 
@@ -17,7 +17,7 @@
           </div>
 
           <!-- sidebar footer -->
-          <div class="sticky bottom-0 bg-panel-em rounded m-3 mb-8 border hover:bg-active hover:text-active transition duration-300">
+          <div class="sticky bottom-0 bg-panel-em rounded m-3 mb-8 border border-light hover:bg-active hover:text-active transition duration-300">
             <div class="flex py-2 px-3 items-center mx-0 rounded cursor-pointer">
               <div class="mr-2 text-lg text-info">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
@@ -27,7 +27,7 @@
               <div class="flex-1 text-sm">
                 <div class="font-medium mx-1">Free Plan</div>
               </div>
-              <div class="text-xs font-medium">Upgrade</div>
+              <div class="text-xs font-medium hover:text-green-500">Upgrade</div>
             </div>
           </div>
           <!-- // sidebar footer -->
@@ -56,7 +56,7 @@ import IconActivity from 'bootstrap-icons/icons/activity.svg';
 import Topbar from './Topbar.vue';
 import Sidebar from './Sidebar.vue';
 import Profile from './Profile.vue';
-import Commands from './Commands.vue';
+import CommandForm from './CommandForm.vue';
 
 @Options({
   components: {
@@ -64,7 +64,7 @@ import Commands from './Commands.vue';
     Topbar,
     Sidebar,
     Profile,
-    Commands
+    CommandForm
   }
 })
 export default class PlainLayout extends Vue {}

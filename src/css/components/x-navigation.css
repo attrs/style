@@ -113,4 +113,17 @@
       display: block;
     }
   }
+
+  &.x-navigation-sm {
+    font-size: var(--x-navigation-sm-font-size);
+    font-weight: var(--x-navigation-sm-font-weight);
+
+    & .x-navitem {
+      & > a {
+        line-height: var(--x-navigation-sm-line-height);
+        padding: 0 calc(var(--x-navigation-sm-padding) * 0.5);
+        margin: 0 calc(var(--x-navigation-sm-padding) * 0.5);
+      }
+    }
+  }
 }
