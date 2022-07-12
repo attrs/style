@@ -320,34 +320,28 @@
         </div>
         <div class="p-lg flex items-center justify-center">
           <figure>
-            <svg class="icon text-4xl text-primary" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon text-xs text-primary" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
             </svg>
-            <svg class="icon text-4xl text-secondary" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon text-sm text-secondary" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
             </svg>
-            <svg class="icon text-4xl text-info" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon text-md text-info" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
             </svg>
-            <svg class="icon text-4xl text-success" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon text-lg text-success" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
             </svg>
-            <svg class="icon text-4xl text-warning" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon text-xl text-warning" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
             </svg>
-            <svg class="icon text-4xl text-danger" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon text-2xl text-danger" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
             </svg>
-            <svg class="icon text-4xl text-system" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon text-3xl text-system" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
             </svg>
             <svg class="icon text-4xl text-black" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
-            </svg>
-            <svg class="icon text-4xl text-gray" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
-            </svg>
-            <svg class="icon text-4xl text-default" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
             </svg>
             <figcaption class="mt-md">Colorizing</figcaption>
@@ -813,7 +807,7 @@
         <!-- square -->
         <div>
           <!-- x-iconbox -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox x-iconbox-xs">
               <svg class="icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -862,7 +856,7 @@
           <!-- // x-iconbox -->
 
           <!-- x-iconbox-primary -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox x-iconbox-xs x-iconbox-primary">
               <svg class="icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -911,7 +905,7 @@
           <!-- // x-iconbox-primary -->
 
           <!-- x-iconbox-secondary -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox x-iconbox-xs x-iconbox-secondary">
               <svg class="icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -963,7 +957,7 @@
         <!-- circle -->
         <div>
           <!-- x-iconbox -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox radius-circle x-iconbox-xs">
               <svg class="icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -1012,7 +1006,7 @@
           <!-- // x-iconbox -->
 
           <!-- x-iconbox-primary -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox radius-circle x-iconbox-xs x-iconbox-primary">
               <svg class="icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -1061,7 +1055,7 @@
           <!-- // x-iconbox-primary -->
 
           <!-- x-iconbox-secondary -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox radius-circle x-iconbox-xs x-iconbox-secondary">
               <svg class="icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -1113,7 +1107,7 @@
         <!-- radius-smooth -->
         <div>
           <!-- x-iconbox -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox radius-smooth-sm x-iconbox-xs">
               <svg class="icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -1162,7 +1156,7 @@
           <!-- // x-iconbox -->
 
           <!-- x-iconbox-primary -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox radius-smooth x-iconbox-xs x-iconbox-primary">
               <svg class="icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -1211,7 +1205,7 @@
           <!-- // x-iconbox-primary -->
 
           <!-- x-iconbox-secondary -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox radius-smooth-lg x-iconbox-xs x-iconbox-secondary">
               <svg class="icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -1263,7 +1257,7 @@
         <!-- thumbnail -->
         <div>
           <!-- with background-image -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox radius-smooth x-iconbox-xs" style="background-image: url(https://picsum.photos/id/1033/200/200)"></div>
             <div class="x-iconbox radius-smooth x-iconbox-sm" style="background-image: url(https://picsum.photos/id/1033/200/200)"></div>
             <div class="x-iconbox radius-smooth" style="background-image: url(https://picsum.photos/id/1033/200/200)"></div>
@@ -1273,7 +1267,7 @@
           <!-- // with background-image -->
 
           <!-- with background-image & circle -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox radius-circle x-iconbox-xs" style="background-image: url(https://picsum.photos/id/1033/200/200)"></div>
             <div class="x-iconbox radius-circle x-iconbox-sm" style="background-image: url(https://picsum.photos/id/1033/200/200)"></div>
             <div class="x-iconbox radius-circle" style="background-image: url(https://picsum.photos/id/1033/200/200)"></div>
@@ -1283,7 +1277,7 @@
           <!-- // with background-image & circle -->
 
           <!-- with img -->
-          <div class="p-sm text-center">
+          <div class="p-sm text-center flex items-center space-x-3 justify-center">
             <div class="x-iconbox radius-smooth x-iconbox-xs">
               <img src="https://raw.githubusercontent.com/fluent/fluentd-docs-gitbook/53020426cdcfcb5a5f722031838ee1cb95b5a7a2/images/logo/Fluentd_icon.svg" style="width: 80%" />
             </div>

@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-panel shadow-none md:rounded-lg">
+  <div class="bg-panel shadow-lg md:rounded-lg">
     <div class="bg-card px-5 py-5 md:rounded-t-lg border-b border-light">
-      <input id="lastname" class="bg-transparent outline-none appearance-none w-full placeholder:text-light" type="text" placeholder="Enter a keyword or commands" />
+      <input ref="inputbox" class="bg-transparent outline-none appearance-none w-full placeholder:text-light" type="text" placeholder="Enter a keyword or command" />
     </div>
-    <div class="bg-panel md:rounded-b-lg md:max-h-[50vh] overflow-y-auto">
+    <div class="bg-panel md:rounded-b-lg md:max-h-[50vh] overflow-y-auto mini-scroll">
       <div class="x-list x-list-hover my-3">
         <div class="x-list-header">Create New</div>
         <a class="x-list-item">
@@ -54,8 +54,11 @@
             Project Core API
           </div>
           <div class="tools flex space-x-1">
-            <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">Alt</div>
-            <div class="text-muted text-xs">+</div>
+            <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shift" viewBox="0 0 16 16">
+                <path d="M7.27 2.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v3a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-3H1.654C.78 10.5.326 9.455.924 8.816L7.27 2.047zM14.346 9.5 8 2.731 1.654 9.5H4.5a1 1 0 0 1 1 1v3h5v-3a1 1 0 0 1 1-1h2.846z" />
+              </svg>
+            </div>
             <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">1</div>
           </div>
         </a>
@@ -67,8 +70,11 @@
             Project Admin
           </div>
           <div class="tools flex space-x-1">
-            <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">Alt</div>
-            <div class="text-muted text-xs">+</div>
+            <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shift" viewBox="0 0 16 16">
+                <path d="M7.27 2.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v3a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-3H1.654C.78 10.5.326 9.455.924 8.816L7.27 2.047zM14.346 9.5 8 2.731 1.654 9.5H4.5a1 1 0 0 1 1 1v3h5v-3a1 1 0 0 1 1-1h2.846z" />
+              </svg>
+            </div>
             <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">2</div>
           </div>
         </a>
@@ -81,8 +87,11 @@
             Account Settings
           </div>
           <div class="tools flex space-x-1">
-            <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">Alt</div>
-            <div class="text-muted text-xs">+</div>
+            <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shift" viewBox="0 0 16 16">
+                <path d="M7.27 2.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v3a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-3H1.654C.78 10.5.326 9.455.924 8.816L7.27 2.047zM14.346 9.5 8 2.731 1.654 9.5H4.5a1 1 0 0 1 1 1v3h5v-3a1 1 0 0 1 1-1h2.846z" />
+              </svg>
+            </div>
             <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">S</div>
           </div>
         </a>
@@ -94,11 +103,14 @@
                 d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"
               />
             </svg>
-            Prefernces
+            Preferences
           </div>
           <div class="tools flex space-x-1">
-            <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">Alt</div>
-            <div class="text-muted text-xs">+</div>
+            <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shift" viewBox="0 0 16 16">
+                <path d="M7.27 2.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v3a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-3H1.654C.78 10.5.326 9.455.924 8.816L7.27 2.047zM14.346 9.5 8 2.731 1.654 9.5H4.5a1 1 0 0 1 1 1v3h5v-3a1 1 0 0 1 1-1h2.846z" />
+              </svg>
+            </div>
             <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">S</div>
           </div>
         </a>
@@ -111,8 +123,11 @@
             Logout
           </div>
           <div class="tools flex space-x-1">
-            <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">Alt</div>
-            <div class="text-muted text-xs">+</div>
+            <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shift" viewBox="0 0 16 16">
+                <path d="M7.27 2.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v3a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-3H1.654C.78 10.5.326 9.455.924 8.816L7.27 2.047zM14.346 9.5 8 2.731 1.654 9.5H4.5a1 1 0 0 1 1 1v3h5v-3a1 1 0 0 1 1-1h2.846z" />
+              </svg>
+            </div>
             <div class="ml-1.5 rounded-sm font-mono text-[0.625rem] leading-6 px-1.5 ring-slate-100 bg-active text-light">Q</div>
           </div>
         </a>
@@ -122,16 +137,18 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-property-decorator';
+import { Options, Vue, Ref } from 'vue-property-decorator';
 import Mousetrap from 'mousetrap';
 
 @Options({
   components: {}
 })
 export default class CommandPalette extends Vue {
+  @Ref() inputbox: HTMLInputElement;
   private listener: () => void;
 
   public mounted() {
+    this.inputbox?.focus();
     this.listener = this.listener = () => {
       //
     };
