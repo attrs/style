@@ -12,7 +12,7 @@
             </div>
           </div>
 
-          <div class="flex-1 overflow-y-auto mini-scroll overflow-x-hidden h-full pb-20">
+          <div class="flex-1 overflow-y-auto scrollbar overflow-x-hidden h-full pb-20">
             <Sidebar />
           </div>
 

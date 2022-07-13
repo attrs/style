@@ -127,7 +127,7 @@ textarea {
   -webkit-app-region: none;
 }
 
-.mini-scroll {
+.scrollbar {
   &::-webkit-scrollbar {
     width: 6px;
   }
@@ -140,8 +140,10 @@ textarea {
   }
 
   &::-webkit-scrollbar-track {
+    padding: 5px 0;
     background-color: transparent;
     border-radius: 10px;
+    margin: 5px 0;
   }
 
   &:hover {

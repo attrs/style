@@ -66,37 +66,212 @@
           </div>
         </div>
       </div>
-      <div class="x-card p-sm">
-        <h6 class="text-light font-medium text-md mb-5">Usage</h6>
-        <div class="mb-1 text-xs">
-          <div class="text-light min-w-150">
-            CPU
-            <small class="font-normal">(0 vCore/0.1 vCore)</small>
+      <div class="x-card">
+        <h6 class="text-default font-medium text-md mb-5 m-sm">Usage</h6>
+
+        <div class="my-6 px-sm">
+          <div class="mb-1 text-xs">
+            <div class="text-light min-w-150">
+              CPU
+              <small class="font-normal">(0 vCore/0.1 vCore)</small>
+            </div>
+            <div class="min-w-150 my-3">
+              <div class="x-progress-bar x-progress-bar-info overflow-hidden"><div class="x-progress-bar-gauge" style="width: 0%"></div></div>
+            </div>
           </div>
-          <div class="min-w-150 my-3">
-            <div class="x-progress-bar x-progress-bar-info overflow-hidden"><div class="x-progress-bar-gauge" style="width: 0%"></div></div>
-          </div>
-        </div>
-        <div class="mb-1 text-xs">
-          <div class="text-light min-w-150">
-            Memory
-            <small class="font-normal">(5.15MB/32MB)</small>
-          </div>
-          <div class="min-w-150 my-3">
-            <div class="x-progress-bar x-progress-bar-info overflow-hidden"><div class="x-progress-bar-gauge" style="width: 16.1%"></div></div>
+          <div class="mb-1 text-xs">
+            <div class="text-light min-w-150">
+              Memory
+              <small class="font-normal">(5.15MB/32MB)</small>
+            </div>
+            <div class="min-w-150 my-3">
+              <div class="x-progress-bar x-progress-bar-info overflow-hidden"><div class="x-progress-bar-gauge" style="width: 16.1%"></div></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="x-card p-sm">
-        <h6 class="text-light font-medium text-md mb-5">Links</h6>
+      <div class="x-card">
+        <h6 class="text-default font-medium text-md mb-5 m-sm">Deployments</h6>
+
+        <div class="mt-6">
+          <div class="x-list">
+            <div class="x-list-item px-6 py-1">
+              <div class="x-iconbox x-iconbox-2xs radius-circle x-iconbox-info text-white mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="width: 80%; height: 80%"><path d="M10.97 4.97a.75.75 0 011.07 1.05l-3.99 4.99a.75.75 0 01-1.08.02L4.324 8.384a.75.75 0 111.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 01.02-.022z"></path></svg>
+              </div>
+              <div class="flex-1">
+                <div class="font-normal">
+                  <a class="cursor-pointer link text-xs mr-2">https://port-0-node-ex...jv.gksl1.cloudtype.app</a>
+                </div>
+              </div>
+              <a class="ml-2 cursor-pointer text-sm text-light hover:text-default transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="x-list-item px-6 py-1">
+              <div class="x-iconbox x-iconbox-2xs radius-circle x-iconbox-success text-white mr-3"><div class="ratio-1by1 w-full bg-cover" style="background-image: url('https://avatars.githubusercontent.com/u/2775009?s=70&amp;v=4')"></div></div>
+              <div class="flex-1">
+                <div class="font-normal">
+                  <a class="cursor-pointer link text-xs mr-2">https://port-0-node-ex...3k.gksl1.cloudtype.app</a>
+                </div>
+              </div>
+              <a class="ml-2 cursor-pointer text-sm text-light hover:text-default transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="py-md">
-      <h5 class="hidden">
-        <span class="x-dot x-dot-info mr-[8px] ring-4 ring-sky-500/40 mx-2"></span>
-        Usage &amp; Links
-      </h5>
+    <div class="pb-md">
+      <div class="hidden">
+        <h6 class="relative mt-lg mb-4 px-1">
+          Deployments
+          <a class="absolute right-2 text-base text-default hover:text-light cursor-pointer transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill rounded-circle" viewBox="0 0 16 16">
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+            </svg>
+          </a>
+        </h6>
+
+        <div class="x-card">
+          <div>
+            <div class="x-list">
+              <div class="x-list-header">Main</div>
+              <div class="x-list-item px-6">
+                <div class="x-iconbox x-iconbox-xs radius-circle x-iconbox-success text-white mr-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="width: 80%; height: 80%"><path d="M10.97 4.97a.75.75 0 011.07 1.05l-3.99 4.99a.75.75 0 01-1.08.02L4.324 8.384a.75.75 0 111.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 01.02-.022z"></path></svg>
+                </div>
+                <div class="flex-1 mb-2">
+                  <div class="font-medium text-base">
+                    <span class="text-sm mr-2">node@16</span>
+                    <span class="text-xs text-success">2 days ago</span>
+                  </div>
+                  <div class="text-light text-xs mt-[2px]">
+                    <a href="https://github.com/cloudtype/node-express.git" target="_blank" rel="noopener noreferrer" class="link text-light">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="text-active bi bi-github mr-1 text-md">
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"
+                        ></path>
+                      </svg>
+                      username/repo ·
+                      <span class="font-medium text-info">master</span>
+                    </a>
+                  </div>
+                </div>
+                <a class="btn btn-xs btn-default">Connect</a>
+                <a class="ml-2 cursor-pointer text-sm text-light hover:text-default transition duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi" viewBox="0 0 16 16">
+                    <path
+                      d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="x-list-header">Branch</div>
+              <div class="x-list-item px-6">
+                <div class="x-iconbox x-iconbox-xs radius-circle x-iconbox-success text-white mr-5"><div class="ratio-1by1 w-full bg-cover" style="background-image: url('https://avatars.githubusercontent.com/u/2775009?s=70&amp;v=4')"></div></div>
+                <div class="flex-1 mb-2">
+                  <div class="font-medium text-base">
+                    <span class="text-sm mr-2">node@16</span>
+                    <span class="text-xs text-success">2 days ago</span>
+                  </div>
+                  <div class="text-light text-xs mt-[2px]">
+                    <a href="https://github.com/cloudtype/node-express.git" target="_blank" rel="noopener noreferrer" class="link text-light">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="text-active bi bi-github mr-1 text-md">
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"
+                        ></path>
+                      </svg>
+                      username/repo ·
+                      <span class="font-medium text-info">feature/CRT-102</span>
+                    </a>
+                  </div>
+                </div>
+                <a class="btn btn-xs btn-default">Connect</a>
+                <a class="ml-2 cursor-pointer text-sm text-light hover:text-default transition duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi" viewBox="0 0 16 16">
+                    <path
+                      d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="relative mt-lg mb-4 px-1">
+          Deployment History
+          <a class="absolute right-2 text-base text-default hover:text-light cursor-pointer transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill rounded-circle" viewBox="0 0 16 16">
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+            </svg>
+          </a>
+        </h6>
+
+        <div class="x-card">
+          <div>
+            <div class="x-list">
+              <div class="x-list-item px-6">
+                <div class="x-iconbox x-iconbox-xs radius-circle x-iconbox-success text-white mr-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="width: 80%; height: 80%"><path d="M10.97 4.97a.75.75 0 011.07 1.05l-3.99 4.99a.75.75 0 01-1.08.02L4.324 8.384a.75.75 0 111.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 01.02-.022z"></path></svg>
+                </div>
+                <div class="flex-1 mb-2">
+                  <div class="font-medium text-base">
+                    <span class="text-sm mr-2">node@16</span>
+                    <span class="text-xs text-success">2 days ago</span>
+                  </div>
+                  <div class="text-light text-xs mt-[2px]">
+                    <a href="https://github.com/cloudtype/node-express.git" target="_blank" rel="noopener noreferrer" class="link text-light">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="text-active bi bi-github mr-1 text-md">
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"
+                        ></path>
+                      </svg>
+                      username/repo ·
+                      <span class="font-medium text-info">master</span>
+                    </a>
+                  </div>
+                </div>
+                <a class="btn btn-xs btn-primary">Restore</a>
+              </div>
+              <div class="x-list-item px-6">
+                <div class="x-iconbox x-iconbox-xs radius-circle x-iconbox-success text-white mr-5"><div class="ratio-1by1 w-full bg-cover" style="background-image: url('https://avatars.githubusercontent.com/u/2775009?s=70&amp;v=4')"></div></div>
+                <div class="flex-1 mb-2">
+                  <div class="font-medium text-base">
+                    <span class="text-sm mr-2">node@16</span>
+                    <span class="text-xs text-success">2 days ago</span>
+                  </div>
+                  <div class="text-light text-xs mt-[2px]">
+                    <a href="https://github.com/cloudtype/node-express.git" target="_blank" rel="noopener noreferrer" class="link text-light">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="text-active bi bi-github mr-1 text-md">
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"
+                        ></path>
+                      </svg>
+                      username/repo ·
+                      <span class="font-medium text-info">feature/CRT-102</span>
+                    </a>
+                  </div>
+                </div>
+                <a class="btn btn-xs btn-primary">Restore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
