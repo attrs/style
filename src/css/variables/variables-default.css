@@ -1,7 +1,7 @@
 .variables-default {
   --color-black: #000;
   --color-white: #fff;
-  --color-bg-base: #f3f5f8;
+  --color-bg-base: #f9fafc;
   --color-bg-panel: #fff;
   --color-bg-card: #fff;
   --color-bg-panel-em: #f8fafc;
@@ -364,8 +364,8 @@
   --x-inputbox-line-height: var(--line-height);
 
   /* x-card */
-  --x-card-border: 0 solid var(--color-border-outer);
-  --x-card-border-inner: 1px solid var(--color-border);
+  --x-card-border: 0 solid var(--color-border-light);
+  --x-card-border-inner: 1px solid var(--color-border-light);
   --x-card-color-bg: var(--color-bg-card);
   --x-card-radius: var(--radius);
   --x-card-shadow: none; /*var(--shadow);*/
@@ -453,7 +453,7 @@
 
   --x-navigation-sm-font-size: var(--font-size-md);
   --x-navigation-sm-font-weight: var(--x-navigation-font-weight);
-  --x-navigation-sm-line-height: 2.5;
+  --x-navigation-sm-line-height: 2.8;
   --x-navigation-sm-padding: var(--x-navigation-padding);
 
   /* x-profile */

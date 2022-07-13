@@ -87,7 +87,7 @@
       </div>
       <div class="x-dropdown x-dropdown-align-right">
         <a class="btn flex items-center px-3 pr-5 text-sm">
-          <div class="x-iconbox x-iconbox-xs radius-circle border"><div class="ratio-1by1 w-full bg-cover" style="background-image: url('https://avatars.githubusercontent.com/u/6936583?s=200&v=4')"></div></div>
+          <div class="x-iconbox x-iconbox-xs radius-circle border bg-green-500/80 ring-1 ring-gray-500/30">J</div>
           &nbsp;
         </a>
         <div class="x-dropdown-items">

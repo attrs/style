@@ -232,6 +232,7 @@
       border: 0;
       border-radius: 0;
       letter-spacing: 0.025em;
+      color: var(--color-text-default);
 
       &:hover {
         background-color: transparent;
@@ -243,7 +244,7 @@
         background-color: transparent;
         border-color: var(--x-tab-selection-bg);
         color: var(--color-text-active);
-        font-weight: var(--x-tab-selection-font-weight);
+        font-weight: initial;
       }
     }
 

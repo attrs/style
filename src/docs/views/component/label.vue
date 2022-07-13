@@ -14,7 +14,7 @@
     </div>
 
     <div class="py-md">
-      <div class="x-card grid grid-cols-1 divide-x divide-y divide-border mb-md">
+      <div class="x-card grid grid-cols-1 mb-md">
         <div class="p-sm">
           <h6 class="text-muted font-semibold">Default Size</h6>
           <div class="my-md">

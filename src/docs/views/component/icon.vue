@@ -14,7 +14,7 @@
     </div>
 
     <div class="py-md">
-      <div class="x-card grid grid-cols-2 divide-x divide-y divide-border mb-md">
+      <div class="x-card grid grid-cols-2 mb-md">
         <div class="p-lg flex items-center justify-center">
           <figure>
             <svg class="icon text-xs" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -803,7 +803,7 @@
       </div>
 
       <div class="x-card-title">Boxed Icon</div>
-      <div class="x-card grid grid-cols-2 divide-x divide-y divide-border mb-md">
+      <div class="x-card grid grid-cols-2 mb-md">
         <!-- square -->
         <div>
           <!-- x-iconbox -->

@@ -3,7 +3,7 @@
     <div class="absolute x-navbar p-2 z-10">
       <div></div>
       <div>
-        <a href="#" class="btn btn-sm btn-outline border-none btn-default">
+        <a href="javascript:;" class="btn btn-sm btn-outline border-none btn-default">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-left mr-1"><path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"></path></svg>
           홈으로
         </a>
@@ -86,16 +86,16 @@
         <div class="font-semibold text-center mt-8">
           <div class="text-sm text-light">
             <span class="text-default">이미 가입하셨나요?</span>
-            <a href="#" route="" class="text-link ml-2">로그인하기</a>
+            <a href="javascript:;" class="text-link ml-2">로그인하기</a>
           </div>
         </div>
       </div>
     </div>
     <div class="mb-12 max-w-xl mx-auto text-center">
       <div class="my-4 text-sm font-semibold text-light">
-        <a href="#" target="help" class="link mx-2">서비스이용약관</a>
+        <a href="javascript:;" target="help" class="link mx-2">서비스이용약관</a>
         ·
-        <a href="#" target="help" class="link mx-2">개인정보처리방침</a>
+        <a href="javascript:;" target="help" class="link mx-2">개인정보처리방침</a>
       </div>
       <div class="text-sm font-semibold opacity-75 hidden">© Cloudtype Inc.</div>
     </div>

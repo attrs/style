@@ -33,21 +33,21 @@
                 <td>nginx@latest</td>
                 <td>2020.05.31 00:00</td>
                 <td>2020.05.31 00:00</td>
-                <td><span class="x-label x-label-info">labels</span></td>
+                <td><span class="x-label x-label-xs x-label-info">labels</span></td>
               </tr>
               <tr>
                 <td>Name</td>
                 <td>nginx@latest</td>
                 <td>2020.05.31 00:00</td>
                 <td>2020.05.31 00:00</td>
-                <td><span class="x-label x-label-danger">labels</span></td>
+                <td><span class="x-label x-label-xs x-label-danger">labels</span></td>
               </tr>
               <tr>
                 <td>Name</td>
                 <td>nginx@latest</td>
                 <td>2020.05.31 00:00</td>
                 <td>2020.05.31 00:00</td>
-                <td><span class="x-label x-label-warning">labels</span></td>
+                <td><span class="x-label x-label-xs x-label-warning">labels</span></td>
               </tr>
             </tbody>
           </table>
@@ -72,21 +72,21 @@
                   <td>nginx@latest</td>
                   <td>2020.05.31 00:00</td>
                   <td>2020.05.31 00:00</td>
-                  <td><span class="x-label x-label-info">labels</span></td>
+                  <td><span class="x-label x-label-xs x-label-info">labels</span></td>
                 </tr>
                 <tr>
                   <td>Name</td>
                   <td>nginx@latest</td>
                   <td>2020.05.31 00:00</td>
                   <td>2020.05.31 00:00</td>
-                  <td><span class="x-label x-label-danger">labels</span></td>
+                  <td><span class="x-label x-label-xs x-label-danger">labels</span></td>
                 </tr>
                 <tr>
                   <td>Name</td>
                   <td>nginx@latest</td>
                   <td>2020.05.31 00:00</td>
                   <td>2020.05.31 00:00</td>
-                  <td><span class="x-label x-label-warning">labels</span></td>
+                  <td><span class="x-label x-label-xs x-label-warning">labels</span></td>
                 </tr>
               </tbody>
             </table>
@@ -112,21 +112,21 @@
               <td>nginx@latest</td>
               <td>2020.05.31 00:00</td>
               <td>2020.05.31 00:00</td>
-              <td><span class="x-label x-label-info">labels</span></td>
+              <td><span class="x-label x-label-xs x-label-info">labels</span></td>
             </tr>
             <tr>
               <td>Name</td>
               <td>nginx@latest</td>
               <td>2020.05.31 00:00</td>
               <td>2020.05.31 00:00</td>
-              <td><span class="x-label x-label-danger">labels</span></td>
+              <td><span class="x-label x-label-xs x-label-danger">labels</span></td>
             </tr>
             <tr>
               <td>Name</td>
               <td>nginx@latest</td>
               <td>2020.05.31 00:00</td>
               <td>2020.05.31 00:00</td>
-              <td><span class="x-label x-label-warning">labels</span></td>
+              <td><span class="x-label x-label-xs x-label-warning">labels</span></td>
             </tr>
           </tbody>
         </table>
@@ -150,21 +150,21 @@
               <td>nginx@latest</td>
               <td>2020.05.31 00:00</td>
               <td>2020.05.31 00:00</td>
-              <td><span class="x-label x-label-info">labels</span></td>
+              <td><span class="x-label x-label-xs x-label-info">labels</span></td>
             </tr>
             <tr>
               <td>Name</td>
               <td>nginx@latest</td>
               <td>2020.05.31 00:00</td>
               <td>2020.05.31 00:00</td>
-              <td><span class="x-label x-label-danger">labels</span></td>
+              <td><span class="x-label x-label-xs x-label-danger">labels</span></td>
             </tr>
             <tr>
               <td>Name</td>
               <td>nginx@latest</td>
               <td>2020.05.31 00:00</td>
               <td>2020.05.31 00:00</td>
-              <td><span class="x-label x-label-warning">labels</span></td>
+              <td><span class="x-label x-label-xs x-label-warning">labels</span></td>
             </tr>
           </tbody>
         </table>
@@ -191,7 +191,7 @@
               <td class="font-bold text-info">nginx@latest</td>
               <td>2020.05.31 00:00</td>
               <td>2020.05.31 00:00</td>
-              <td><span class="x-label x-label-info">labels</span></td>
+              <td><span class="x-label x-label-xs x-label-info">labels</span></td>
               <td class="text-right p-2">
                 <button class="btn btn-icon btn-sm btn-primary">
                   <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -281,14 +281,14 @@
               </div>
             </div>
             <div class="x-navbar">
-              <a href="/examples/modal-list" route ghost class="btn btn-icon">
+              <a href="javascript:;" class="btn btn-icon">
                 <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 0 0 3 14.5h8a1.5 1.5 0 0 0 1.5-1.5V9a.5.5 0 0 0-1 0v4a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 0 0-1H3A1.5 1.5 0 0 0 1.5 5v8zm7-11a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.5H9a.5.5 0 0 1-.5-.5z" />
                   <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 0 1 0 .708l-8 8a.5.5 0 0 1-.708-.708l8-8a.5.5 0 0 1 .708 0z" />
                 </svg>
               </a>
               <div class="x-dropdown x-dropdown-align-right">
-                <a class="btn">
+                <a class="btn font-normal">
                   <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                   </svg>
@@ -340,7 +340,7 @@
                 </div>
               </div>
               <div class="x-dropdown x-dropdown-align-right">
-                <a class="btn">
+                <a class="btn font-normal">
                   <svg class="icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
                   </svg>
@@ -410,21 +410,21 @@
                 <td>nginx@latest</td>
                 <td>2020.05.31 00:00</td>
                 <td>2020.05.31 00:00</td>
-                <td><span class="x-label x-label-info">labels</span></td>
+                <td><span class="x-label x-label-xs x-label-info">labels</span></td>
               </tr>
               <tr>
                 <td>Name</td>
                 <td>nginx@latest</td>
                 <td>2020.05.31 00:00</td>
                 <td>2020.05.31 00:00</td>
-                <td><span class="x-label x-label-black">labels</span></td>
+                <td><span class="x-label x-label-xs x-label-black">labels</span></td>
               </tr>
               <tr>
                 <td>Name</td>
                 <td>nginx@latest</td>
                 <td>2020.05.31 00:00</td>
                 <td>2020.05.31 00:00</td>
-                <td><span class="x-label x-label-system">labels</span></td>
+                <td><span class="x-label x-label-xs x-label-system">labels</span></td>
               </tr>
             </tbody>
           </table>
@@ -475,21 +475,21 @@
               <td>nginx@latest</td>
               <td>2020.05.31 00:00</td>
               <td>2020.05.31 00:00</td>
-              <td><span class="x-label x-label-info">labels</span></td>
+              <td><span class="x-label x-label-xs x-label-info">labels</span></td>
             </tr>
             <tr>
               <td>Name</td>
               <td>nginx@latest</td>
               <td>2020.05.31 00:00</td>
               <td>2020.05.31 00:00</td>
-              <td><span class="x-label x-label-black">labels</span></td>
+              <td><span class="x-label x-label-xs x-label-black">labels</span></td>
             </tr>
             <tr>
               <td>Name</td>
               <td>nginx@latest</td>
               <td>2020.05.31 00:00</td>
               <td>2020.05.31 00:00</td>
-              <td><span class="x-label x-label-system">labels</span></td>
+              <td><span class="x-label x-label-xs x-label-system">labels</span></td>
             </tr>
           </tbody>
         </table>

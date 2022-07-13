@@ -106,7 +106,7 @@
       </div>
 
       <div class="x-card-title">Checkbox</div>
-      <div class="x-card grid grid-cols-2 divide-x divide-y divide-border mb-md">
+      <div class="x-card grid grid-cols-2 mb-md">
         <!-- Square-->
         <div class="p-md">
           <h6 class="text-light font-semibold mb-xs">Default</h6>
@@ -187,7 +187,7 @@
       </div>
 
       <div class="x-card-title">Radio</div>
-      <div class="x-card grid grid-cols-2 divide-x divide-y divide-border mb-md">
+      <div class="x-card grid grid-cols-2 mb-md">
         <!-- Square-->
         <div class="p-md">
           <h6 class="text-light font-semibold mb-xs">Default</h6>
@@ -268,7 +268,7 @@
       </div>
 
       <div class="x-card-title">Switch</div>
-      <div class="x-card grid grid-cols-2 divide-x divide-y divide-border mb-md">
+      <div class="x-card grid grid-cols-2 mb-md">
         <!-- Square-->
         <div class="p-md">
           <h6 class="text-light font-semibold mb-xs">Default</h6>
@@ -345,7 +345,7 @@
       </div>
 
       <div class="x-card-title">Login</div>
-      <div class="x-card grid grid-cols-2 divide-x divide-y divide-border mb-md">
+      <div class="x-card grid grid-cols-2 mb-md">
         <div class="p-sm">
           <div class="w-full max-w-md m-auto self-center">
             <form class="x-form">
