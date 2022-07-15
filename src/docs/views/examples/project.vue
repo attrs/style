@@ -19,7 +19,7 @@
                       <span class="text-default font-medium">512MB</span>
                       <span class="text-light">Memory</span>
                     </div>
-                    <div class="flex text-xs space-x-1">
+                    <div class="md:flex text-xs space-x-1 hidden">
                       <span class="text-default font-medium">4</span>
                       <span class="text-light">Services</span>
                     </div>
@@ -43,8 +43,8 @@
 
           <div class="x-navbar self-end">
             <div class="x-navbar items-stretch space-x-3 pr-1">
-              <div class="x-dropdown x-dropdown-align-right border rounded">
-                <a class="btn btn-sm btn-transparent bg-light m-0 font-normal">
+              <div class="x-dropdown x-dropdown-align-right">
+                <a class="btn btn-sm btn-default m-0 font-normal">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="icon ml-0">
                     <path fill-rule="evenodd" d="M5.75 21a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM2.5 19.25a3.25 3.25 0 106.5 0 3.25 3.25 0 00-6.5 0zM5.75 6.5a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM2.5 4.75a3.25 3.25 0 106.5 0 3.25 3.25 0 00-6.5 0zM18.25 6.5a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM15 4.75a3.25 3.25 0 106.5 0 3.25 3.25 0 00-6.5 0z"></path>
                     <path fill-rule="evenodd" d="M5.75 16.75A.75.75 0 006.5 16V8A.75.75 0 005 8v8c0 .414.336.75.75.75z"></path>
@@ -77,13 +77,9 @@
     </div>
 
     <div class="py-md">
-      <div class="mx-1 mb-4 flex space-x-3 items-center">
-        <div class="flex-1">
-          <h5 class="hidden">
-            <span class="x-dot x-dot-info mr-[8px] ring-4 ring-sky-500/40 mx-2 hidden"></span>
-            Services
-          </h5>
-          <div class="my-sm x-tab x-tab-plain x-tab-underline x-tab-bg-primary text-md">
+      <div class="mx-1 mb-4 hidden md:flex space-x-3 items-center">
+        <div class="flex-1 py-sm">
+          <div class="x-tab x-tab-plain x-tab-underline x-tab-bg-primary text-md">
             <div class="x-tab-item active" data-tab="services">
               <span class="x-dot x-dot-info mr-[8px] ring-4 ring-sky-500/40 mx-2 hidden"></span>
               Services
@@ -271,7 +267,7 @@
             </div>
             <!-- // service -->
             <div class="rounded-lg flex items-center justify-center hover:border border-dashed border-sky-500/50 bg-transparent opacity-20 hover:opacity-100 cursor-pointer transition duration-300">
-              <div>
+              <div class="py-md">
                 <div class="x-iconbox flex items-center justify-center bg-sky-500 relative cursor-pointer x-iconbox-sm radius-circle text-white ring-4 ring-sky-300/20">
                   <svg fill="currentColor" viewBox="0 0 1000 1000">
                     <g><path d="M905.3,407.7H584.1l0.6-310.3c0-0.3-0.1-0.4-0.1-0.7v-4.9h-0.5c-3.3-43.8-40.4-78.8-84.9-79.1c-44.5-0.3-81.1,34.1-83.8,77.9h-0.6l0.1,317H93.5C47.1,407.3,9.7,445.5,10,492c0.3,46.5,38.2,84.4,84.7,84.7l320.1-0.3l0.1,326.2c0.3,46.5,38.2,84.4,84.7,84.7c46.5,0.3,83.8-37.1,83.5-83.5l0.6-327.5l322.8-0.3c46.5,0.3,83.8-37.1,83.5-83.6C989.7,445.9,951.8,408,905.3,407.7z" /></g>

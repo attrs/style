@@ -16,11 +16,10 @@ const wrap = (type) => {
 
 const setParentActiveAndExpand = (el) => {
   if (el.classList.contains('x-navitem')) {
-    el.classList.add('active');
     el.classList.add('x-navitem-expand');
   }
   if (el && el.classList && el.classList.contains('x-navigation')) return;
-  // setParentActiveAndExpand(el.parentNode);
+  setParentActiveAndExpand(el.parentNode);
 };
 
 const findandfire = (detail) => {
@@ -33,8 +32,12 @@ const findandfire = (detail) => {
     if (!paths || !paths.length) return;
 
     if (paths.find((p) => p.trim() && minimatch(chref, p.trim()))) {
-      if (node.classList.contains('x-navitem')) setParentActiveAndExpand(node);
-      else node.classList.add('active');
+      if (node.classList.contains('x-navitem')) {
+        node.classList.add('active');
+        setParentActiveAndExpand(node);
+      } else {
+        node.classList.add('active');
+      }
     } else {
       node.classList.remove('active');
     }

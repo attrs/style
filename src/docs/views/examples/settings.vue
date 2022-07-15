@@ -14,46 +14,6 @@
     </div>
 
     <h4 class="mt-lg mb-sm">Headings</h4>
-    <div class="mb-md">
-      <div class="flex space-x-6">
-        <div class="flex-1 x-card p-md">
-          <h6 class="text-muted font-semibold">Heading</h6>
-          <h1>
-            Heading
-            <small class="text-muted">H1</small>
-          </h1>
-          <h2>
-            Heading
-            <small class="text-muted">H2</small>
-          </h2>
-          <h3>
-            Heading
-            <small class="text-muted">H3</small>
-          </h3>
-          <h4>
-            Heading
-            <small class="text-muted">H4</small>
-          </h4>
-          <h5>
-            Heading
-            <small class="text-muted">H5</small>
-          </h5>
-          <h6>
-            Heading
-            <small class="text-muted">H6</small>
-          </h6>
-        </div>
-        <div class="flex-1 x-card p-md">
-          <h6 class="text-muted font-semibold">Display Heading</h6>
-
-          <h1 class="display-1">Display 1</h1>
-          <h1 class="display-2">Display 2</h1>
-          <h1 class="display-3">Display 3</h1>
-          <h1 class="display-4">Display 4</h1>
-          <h1 class="display-5">Display 5</h1>
-          <h1 class="display-6">Display 6</h1>
-        </div>
-      </div>
-    </div>
-
+    <div class="mb-md"></div>
+  </div>
 </template>

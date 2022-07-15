@@ -48,14 +48,14 @@ h4 {
 
 h5 {
   font-family: var(--font-family-headings);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   color: var(--color-text-active);
   margin-bottom: 0.15em;
 }
 
 h6 {
   font-family: var(--font-family-headings);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-lg);
   color: var(--color-text-active);
   margin-bottom: 0.15em;
 }

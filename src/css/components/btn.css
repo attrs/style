@@ -95,6 +95,7 @@
     /* color */
     &.btn-default {
       background-color: var(--btn-color-bg);
+      border: 1px solid var(--btn-color-border);
       color: var(--btn-color-text);
 
       &:hover {
