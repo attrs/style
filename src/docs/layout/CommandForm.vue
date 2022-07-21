@@ -11,7 +11,7 @@
 
     <XModal ref="modalCommandPalette">
       <div class="relative lg:my-16 min-w-screen min-h-screen bg-panel md:bg-transparent max-w-screen md:min-w-2xl md:max-w-2xl md:min-h-full md:max-h-full md:shadow">
-        <CommandPalette />
+        <CommandPalette @close="modalCommandPalette.close()" />
       </div>
     </XModal>
   </div>
