@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "prepublishOnly": "npm run format",
-    "start": "httpd serve docs -p 3000 -s",
+    "start": "httpd serve dist -p 3000 -s",
     "dev": "vite",
     "build": "npm run format && vite build",
     "lint": "vue-tsc --noEmit && eslint --ext .ts,vue --ignore-path .gitignore . && stylelint src/**/*.{css,vue}",
