@@ -25,7 +25,7 @@ document.addEventListener('click', (e) => {
   opened = null;
 });
 
-module.exports = (element) => {
+export default (element) => {
   element.removeEventListener('click', listener);
   element.addEventListener('click', listener);
 };

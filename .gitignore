@@ -30,8 +30,8 @@ jspm_packages
 \#*\#
 \.#*
 .projectile
+
+
 .test
-.cache
-.parcel-cache
+*.local
 dist
-lib

@@ -1,0 +1,4 @@
+name: attrs-style
+app: web
+options:
+  docbase: /dist

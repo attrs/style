@@ -1,1 +1,1 @@
-module.exports = module.exports = require('./src/preset');
+module.exports = module.exports = require('./src/tailwindcss/preset');

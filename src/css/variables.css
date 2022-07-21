@@ -1,8 +1,8 @@
-@import './variables/variables-default';
-@import './variables/variables-light';
-@import './variables/variables-dark';
-@import './variables/variables-violet';
-@import './variables/variables-red';
+@import './variables/variables-default.css';
+@import './variables/variables-light.css';
+@import './variables/variables-dark.css';
+@import './variables/variables-violet.css';
+@import './variables/variables-red.css';
 
 :root {
   @apply variables-default;

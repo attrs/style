@@ -2,7 +2,9 @@
   --color-black: #000;
   --color-white: #fefefe;
   --color-bg-base: #23262d;
-  --color-bg-panel: #292c33;
+  --color-bg-panel: #23262d;
+  --color-bg-card: #292c33;
+  --color-bg-panel-em: #26292f;
   --color-bg-light: #2c2f36;
   --color-bg-inverse: #efefef;
   --color-bg-active: #31343b;
@@ -18,12 +20,14 @@
 
   --color-border: #303439;
   --color-border-light: #2d3037;
+  --color-border-lighter: #1d2027;
   --color-border-outer: #2c3136;
   --color-border-inverse: #ccc;
   --color-border-control: #141920;
 
   --color-text: #cfd1d5;
-  --color-text-light: #5f6165;
+  --color-text-light: #8a8d94;
+  --color-text-lighter: #6a6d74;
   --color-text-muted: #4b4e54;
   --color-text-active: #eff1f5;
   --color-text-highlight: #333;

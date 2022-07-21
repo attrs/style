@@ -1,6 +1,6 @@
 // See https://css-houdini.rocks/js-in-css/
 
-registerPaint(
+typeof registerPaint === 'function' && registerPaint(
   'background-canvas',
   class {
     static get inputProperties() {

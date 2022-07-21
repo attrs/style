@@ -45,6 +45,22 @@ label.x-switch {
     border-radius: var(--x-switch-btn-radius);
   }
 
+  &.x-switch-sm {
+    height: calc(var(--x-switch-height) * 0.7);
+    min-height: calc(var(--x-switch-height) * 0.7);
+    width: calc(var(--x-switch-width) * 0.7);
+
+    & > span:before {
+      right: calc(var(--x-switch-text-margin) * 0.7);
+      line-height: calc(var(--x-switch-btn-size) * 0.7);
+    }
+
+    & > span:after {
+      width: calc(var(--x-switch-btn-size) * 0.65);
+      height: calc(var(--x-switch-btn-size) * 0.65);
+    }
+  }
+
   &.x-switch-rounded > span,
   &.x-switch-rounded > span:after {
     border-radius: var(--radius-full);

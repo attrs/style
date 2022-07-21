@@ -23,7 +23,7 @@
     }
 
     &:hover {
-      background-color: var(--color-bg-hover);
+      background: var(--x-list-item-hover-bg);
       color: var(--color-text-active);
 
       & .icon {
@@ -45,17 +45,37 @@
       color: var(--color-text-link);
     }
   }
+
+  &.x-list-hover {
+    padding: 0.1rem 0;
+
+    & .x-list-item {
+      border-radius: 6px;
+      margin: 0.5rem 0.5rem;
+    }
+  }
+
+  &.x-list-hover.x-list-lined {
+    padding: 0;
+
+    & .x-list-item {
+      border-radius: 0;
+      margin: 0;
+    }
+  }
 }
 
 .x-list-item {
+  -font-size: var(--x-list-item-font-size);
+  -font-weight: var(--x-list-item-font-weight);
+
   display: flex;
   align-items: center;
 
   position: relative;
   vertical-align: middle;
-  line-height: var(--row-line-height);
-  padding: 0 var(--row-padding);
-  -color: var(--row-color-text);
+  padding: var(--x-list-item-padding);
+  line-height: var(--x-list-item-line-height);
   text-align: left;
   white-space: nowrap;
 
@@ -67,6 +87,9 @@
 
   & .tools {
     flex: 1 1 0%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     text-align: right;
   }
 
@@ -76,12 +99,6 @@
     text-decoration: none;
     background: none;
   }
-
-  -font-size: var(--x-list-item-font-size);
-  -font-weight: var(--x-list-item-font-weight);
-
-  padding: var(--x-list-item-padding);
-  line-height: var(--x-list-item-line-height);
 
   &.x-list-item-disabled {
     & .icon {
@@ -100,7 +117,7 @@
   }
 
   &:hover {
-    background-color: var(--color-bg-hover);
+    background: var(--x-list-item-hover-bg);
     color: var(--color-text-active);
 
     & .icon {

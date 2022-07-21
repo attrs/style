@@ -1,12 +1,12 @@
-const debounce = require('debounce');
-const dropdown = require('./dropdown');
-const navigation = require('./navigation');
-const tab = require('./tab');
-const toggle = require('./toggle');
-const activestate = require('./activestate');
+import debounce from 'debounce';
+import dropdown from './dropdown';
+import navigation from './navigation';
+import tab from './tab';
+import toggle from './toggle';
+import activestate from './activestate';
 
-const blacklist = ['.x-noob'];
-const scan = () => {
+export const blacklist = ['.x-noob'];
+export const scan = () => {
   const blacklistselector = blacklist.join(',');
   const selectors = ['.x-dropdown:not(' + blacklistselector + ')', '.x-tab:not(' + blacklistselector + ')', '.x-navigation:not(' + blacklistselector + ')', '[data-toggle]'];
 
@@ -21,7 +21,7 @@ const scan = () => {
   activestate.scan();
 };
 
-const start = () => {
+export const start = () => {
   if (window._attrs_style_observer_) _attrs_style_observer_.disconnect();
   if (!window.MutationObserver) return console.warn('[@attrs/style] browser does not support "MutationObserver"');
 
@@ -39,16 +39,9 @@ const start = () => {
   else window.addEventListener('DOMContentLoaded', connect);
 };
 
-const stop = () => {
+export const stop = () => {
   if (window._attrs_style_observer_) _attrs_style_observer_.disconnect();
   activestate.stop();
-};
-
-module.exports = {
-  blacklist,
-  scan,
-  start,
-  stop
 };
 
 start();

@@ -1,13 +1,17 @@
+/*
 const setParentActive = (el) => {
   el.classList.add('active');
   if (el && el.classList && el.classList.contains('x-navigation')) return;
   setParentActive(el.parentNode);
 };
+*/
 
 const listener = (e) => {
   const navigation = e.target.closest('.x-navigation');
   const navitem = e.target.closest('.x-navitem');
   const group = navigation.getAttribute('data-navigation-group');
+
+  console.log('navitem', navitem);
 
   if (!navigation || !navitem) return;
 
@@ -19,10 +23,13 @@ const listener = (e) => {
   }
 
   navigation.querySelectorAll('.x-navitem.active').forEach((node) => node.classList.remove('active'));
-  setParentActive(navitem);
+  navitem.classList.add('active');
+
+  // setParentActive(navitem);
+  e.stopPropagation();
 };
 
-module.exports = (element) => {
+export default (element) => {
   element.removeEventListener('click', listener);
   element.addEventListener('click', listener);
 };

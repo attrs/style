@@ -1,7 +1,7 @@
 // See https://css-houdini.rocks/posts/smooth-corners/paint.js
 // modified by @joje
 
-export class SmoothCorners {
+export default class SmoothCorners {
   static get inputProperties() {
     return ['--smooth-corners-radius', '--smooth-corners-fill'];
   }
@@ -40,4 +40,5 @@ export class SmoothCorners {
   }
 }
 
-registerPaint('smooth-corners', SmoothCorners);
+// eslint-disable-next-line no-undef
+typeof registerPaint === 'function' && registerPaint('smooth-corners', SmoothCorners);

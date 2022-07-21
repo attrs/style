@@ -13,7 +13,7 @@
 }
 */
 
-registerPaint(
+typeof registerPaint === 'function' && registerPaint(
   'tooltip',
   class Bubble {
     static get inputProperties() {

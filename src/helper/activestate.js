@@ -1,4 +1,4 @@
-const minimatch = require('minimatch');
+import minimatch from 'minimatch';
 
 const wrap = (type) => {
   const ofn = history[type];
@@ -16,7 +16,6 @@ const wrap = (type) => {
 
 const setParentActiveAndExpand = (el) => {
   if (el.classList.contains('x-navitem')) {
-    el.classList.add('active');
     el.classList.add('x-navitem-expand');
   }
   if (el && el.classList && el.classList.contains('x-navigation')) return;
@@ -33,8 +32,12 @@ const findandfire = (detail) => {
     if (!paths || !paths.length) return;
 
     if (paths.find((p) => p.trim() && minimatch(chref, p.trim()))) {
-      if (node.classList.contains('x-navitem')) setParentActiveAndExpand(node);
-      else node.classList.add('active');
+      if (node.classList.contains('x-navitem')) {
+        node.classList.add('active');
+        setParentActiveAndExpand(node);
+      } else {
+        node.classList.add('active');
+      }
     } else {
       node.classList.remove('active');
     }
@@ -52,7 +55,7 @@ const popstatelistener = (e) => {
 const opushstate = history.pushState;
 const oreplacestate = history.replaceState;
 
-module.exports = {
+export default {
   start() {
     history.pushState = wrap('pushState');
     history.replaceState = wrap('replaceState');

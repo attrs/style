@@ -39,8 +39,10 @@
 
       position: relative;
       vertical-align: middle;
-      line-height: var(--row-line-height);
-      padding: 0 var(--x-navigation-padding);
+      line-height: var(--x-navigation-line-height);
+      padding: 0 calc(var(--x-navigation-padding) * 0.5);
+      margin: 0 calc(var(--x-navigation-padding) * 0.5);
+      border-radius: var(--radius-md);
       text-align: left;
       white-space: nowrap;
 
@@ -109,6 +111,19 @@
 
     &.x-navitem-expand > ul.x-navitem-items {
       display: block;
+    }
+  }
+
+  &.x-navigation-sm {
+    font-size: var(--x-navigation-sm-font-size);
+    font-weight: var(--x-navigation-sm-font-weight);
+
+    & .x-navitem {
+      & > a {
+        line-height: var(--x-navigation-sm-line-height);
+        padding: 0 calc(var(--x-navigation-sm-padding) * 0.5);
+        margin: 0 calc(var(--x-navigation-sm-padding) * 0.5);
+      }
     }
   }
 }

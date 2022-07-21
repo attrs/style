@@ -1,4 +1,4 @@
-/* divide border fix */
+/* divide border fix 
 .grid-cols-1.divide-border {
   &.divide-x > *:nth-child(n + 1) {
     border-left-width: 0 !important;
@@ -74,3 +74,4 @@
     border-left-width: 0 !important;
   }
 }
+*/

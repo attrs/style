@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .variable-override {
+    --font-family-sans: 'Inter var', Inter, 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    --font-family-numeric: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    --font-size-base: 14px;
+  }
+}
+
+.theme-light,
+.theme-dark,
+.theme-violet,
+.theme-red {
+  @apply variable-override;
+}
+
+/* apply prefers-color-scheme */
+@media (prefers-color-scheme: light) {
+  :root {
+    @apply variables-default variable-override;
+  }
+
+  .theme-inverse {
+    background-color: var(--color-bg-base);
+    color: var(--color-text);
+    @apply variables-default variables-dark;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @apply variables-default variables-dark variable-override;
+  }
+
+  .theme-inverse {
+    background-color: var(--color-bg-base);
+    color: var(--color-text);
+    @apply variables-default;
+  }
+}
+
+.bi {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}

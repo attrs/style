@@ -1,14 +1,16 @@
 .variables-default {
   --color-black: #000;
   --color-white: #fff;
-  --color-bg-base: #f3f5f8;
+  --color-bg-base: #f7f8fa;
   --color-bg-panel: #fff;
+  --color-bg-card: #fff;
+  --color-bg-panel-em: #f8fafc;
   --color-bg-light: #fafcff;
   --color-bg-inverse: #23262d;
   --color-bg-active: #eef0f3;
   --color-bg-input: #fff;
   --color-bg-icon: #ecf1f9;
-  --color-bg-hover: rgba(0, 0, 0, 0.05);
+  --color-bg-hover: #f5f7fa;
 
   --color-bg-highlight: var(--color-info-transparent);
   --color-bg-mask: rgba(0, 0, 0, 0.075);
@@ -17,13 +19,15 @@
   --color-outline: var(--color-info-outline);
 
   --color-border: #e9e9e9;
-  --color-border-light: #edeeef;
+  --color-border-light: #f2f5f9;
+  --color-border-lighter: #fafcfe;
   --color-border-outer: #e0e0e0;
   --color-border-inverse: #2e3237;
   --color-border-control: var(--color-border-outer);
 
   --color-text: #5e5e5e;
   --color-text-light: #8b9ea8;
+  --color-text-lighter: #a1a1a1;
   --color-text-link: var(--color-primary);
   --color-text-link-active: var(--color-primary-active);
   --color-text-muted: #c1c1c1;
@@ -198,12 +202,12 @@
   --font-size-xs: 0.8rem;
   --font-size-sm: 0.9rem;
   --font-size-md: 0.95rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.65rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 1.75rem;
   --font-size-3xl: 2rem;
   --font-size-4xl: 2.5rem;
-  --font-size-5xl: 3.5rem;
+  --font-size-5xl: 3rem;
   --font-size-6xl: 3.5rem;
   --font-size-7xl: 4rem;
   --font-size-8xl: 4.5rem;
@@ -222,7 +226,7 @@
   --font-family-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   --font-family-serif: Georgia, Cambria, 'Times New Roman', Times, serif;
   --font-family-mono: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
-  --font-family-numeric: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  --font-family-numeric: var(--font-family-sans);
   --font-family-headings: var(--font-family-sans);
 
   --spacing-xs: 0.75rem;
@@ -296,8 +300,9 @@
   --btn-font-weight: var(--font-weight-semibold);
   --btn-margin: 0.18em 0.25em;
   --btn-line-height: calc(2.4rem + 2px);
-  --btn-color-bg: var(--color-border);
-  --btn-color-bg-hover: var(--color-bg-hover);
+  --btn-color-bg: rgba(0, 0, 0, 0);
+  --btn-color-border: var(--color-border);
+  --btn-color-bg-hover: rgba(128, 128, 128, 0.2);
   --btn-color-bg-active: var(--color-bg-active);
   --btn-color-text: var(--color-text);
   --btn-color-text-active: var(--color-primary);
@@ -346,7 +351,7 @@
   --x-separator-thickness: 1px;
   --x-separator-margin: 0.25em;
   --x-separator-style: solid;
-  --x-separator-color: var(--color-border);
+  --x-separator-color: var(--color-border-light);
   --x-separator-h-thickness: 1px;
   --x-separator-h-margin: 0.75rem;
   --x-separator-h-height: 1.2em;
@@ -360,12 +365,12 @@
   --x-inputbox-line-height: var(--line-height);
 
   /* x-card */
-  --x-card-border: 0 solid var(--color-border-outer);
-  --x-card-border-inner: 1px solid var(--color-border);
-  --x-card-color-bg: var(--color-bg-panel);
+  --x-card-border: 1px solid var(--color-border-light);
+  --x-card-border-inner: 1px solid var(--color-border-light);
+  --x-card-color-bg: var(--color-bg-card);
   --x-card-radius: var(--radius);
-  --x-card-shadow: var(--shadow);
-  --x-card-header-color-bg: var(--color-bg-panel);
+  --x-card-shadow: none; /*var(--shadow);*/
+  --x-card-header-color-bg: var(--color-bg-card);
   --x-card-header-color-text: var(--color-text);
   --x-card-header-font-size: var(--font-size-base);
   --x-card-header-font-weight: var(--font-weight-semibold);
@@ -378,8 +383,9 @@
 
   /* x-list */
   --x-list-item-line-height: 1.6;
-  --x-list-item-padding: 0.7em 1.75em 0.7em 1.75em;
-  --x-list-item-border: 1px solid var(--color-border);
+  --x-list-item-padding: 0.7em 1em 0.7em 1em;
+  --x-list-item-border: 1px solid var(--color-border-light);
+  --x-list-item-hover-bg: var(--color-bg-hover);
   --x-list-header-color: var(--color-text-light);
   --x-list-header-padding: 0.75em 1.15em 0.15em 1.75em;
   --x-list-header-font-size: var(--font-size-xs);
@@ -427,9 +433,11 @@
   --x-tab-border-width: 0;
   --x-tab-border-color: var(--color-border);
   --x-tab-border-radius: var(--radius-sm);
+  --x-tab-underline-color: var(--color-black);
 
   /* x-navigation */
-  --x-navigation-font-size: 0.95rem;
+  --x-navigation-font-size: var(--font-size-md);
+  --x-navigation-line-height: 3.5;
   --x-navigation-font-weight: var(--font-weight-normal);
   --x-navigation-padding: var(--spacing-sm);
   --x-navigation-title-color: var(--color-text-light);
@@ -443,6 +451,11 @@
   --x-navigation-active-icon: var(--color-icon-active);
   --x-navigation-selected-bg: var(--x-navigation-active-bg);
   --x-navigation-hover-bg: var(--color-bg-hover);
+
+  --x-navigation-sm-font-size: var(--font-size-sm);
+  --x-navigation-sm-font-weight: var(--x-navigation-font-weight);
+  --x-navigation-sm-line-height: 2.8;
+  --x-navigation-sm-padding: var(--x-navigation-padding);
 
   /* x-profile */
   --x-profile-padding: var(--spacing-sm);
@@ -512,10 +525,10 @@
   --x-profile-font-margin: 1rem;
 
   /* x-badge */
-  --x-badge-font-size: 0.9em;
+  --x-badge-font-size: 0.8em;
   --x-badge-font-weight: var(--font-weight-semibold);
-  --x-badge-padding: 0.35em 0.6em 0.35em 0.6em;
-  --x-badge-background: var(--color-text);
+  --x-badge-padding: 0.25em 0.6em 0.25em 0.6em;
+  --x-badge-background: var(--color-black);
   --x-badge-color: var(--color-white);
 
   /* x-iconbox */
@@ -536,7 +549,7 @@
   --x-dot-height: 0.5em;
   --x-dot-vertical-align: middle;
   --x-dot-border: 0px solid var(--color-border-light);
-  --x-dot-border-radius: 3px;
+  --x-dot-border-radius: var(--radius-full);
   --x-dot-opacity: 0.65;
   --x-dot-background: var(--color-text-light);
 

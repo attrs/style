@@ -18,49 +18,47 @@ button:focus {
   outline: none;
 }
 
-/*
 h1 {
   font-family: var(--font-family-headings);
   font-size: var(--font-size-5xl);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
 
 h2 {
   font-family: var(--font-family-headings);
   font-size: var(--font-size-4xl);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
 
 h3 {
   font-family: var(--font-family-headings);
   font-size: var(--font-size-3xl);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
 
 h4 {
   font-family: var(--font-family-headings);
   font-size: var(--font-size-2xl);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
 
 h5 {
   font-family: var(--font-family-headings);
-  font-size: var(--font-size-lg);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  font-size: var(--font-size-xl);
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
 
 h6 {
   font-family: var(--font-family-headings);
-  font-size: var(--font-size-base);
-  color: var(--text-active);
-  margin-bottom: 0.5em;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-active);
+  margin-bottom: 0.15em;
 }
-*/
 
 hr {
   margin: 1rem 0;
@@ -127,4 +125,30 @@ input,
 select,
 textarea {
   -webkit-app-region: none;
+}
+
+.scrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    padding: 5px 0;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 5px 0;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.45);
+    }
+  }
 }

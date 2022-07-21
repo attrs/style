@@ -1,5 +1,5 @@
 .icon {
-  -webkit-font-smoothing: antialiased;
+  @apply antialiased;
   display: inline-block;
   text-rendering: auto;
   margin: 0 var(--icon-margin);
